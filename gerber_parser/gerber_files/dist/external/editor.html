@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PCB Visualizer</title>
+    <script src="https://unpkg.com/paper@0.12.15/dist/paper-full.min.js"></script>
+    <style>
+      html, body, canvas {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: green;">EDITOR LOADED</h1>
+
+    <canvas id="myCanvas" resize></canvas>
+
+    <!-- Electron IPC Setup -->
+    <script>
+      const { ipcRenderer } = require('electron');
+      paper.setup(document.getElementById("myCanvas"));
+
+      const scale = 10;
+      const offset = new paper.Point(200, 500); // Adjust to center your drawing
+
+      ipcRenderer.on("shape", (_event, data) => {
+ console.log("Received shape:", data);  // ✅ This should appear in DevTools
+        if (data.type === "circle") {
+          const { center, radius } = data.circle;
+          const paperCenter = new paper.Point(center.x * scale, -center.y * scale).add(offset);
+          new paper.Path.Circle({
+            center: paperCenter,
+            radius: radius * scale,
+            strokeColor: "red",
+            fillColor: new paper.Color(1, 0, 0, 0.2),
+            strokeWidth: 1
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

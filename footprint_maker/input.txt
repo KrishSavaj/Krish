@@ -1,0 +1,103 @@
+{
+  "units": "mm",
+  "board": {
+    "width": 100,
+    "height": 80,
+    "outline": [
+      [0, 0], [100, 0], [100, 80], [0, 80], [0, 0]
+    ]
+  },
+  "layers": {
+    "top": { "color": "#FF0000", "visible": true },
+    "bottom": { "color": "#0000FF", "visible": true },
+    "drill": { "color": "#999999", "visible": true }
+  },
+  "components": [
+    {
+      "id": "U1",
+      "type": "IC",
+      "shape": "rectangle",
+      "position": [30, 40],
+      "width": 10,
+      "height": 5,
+      "rotation": 0,
+      "layer": "top",
+      "color": "#FFC107",
+      "pins": [
+        { "id": "U1-1", "position": [-4, -2], "net": "NET1" },
+        { "id": "U1-2", "position": [4, -2], "net": "GND" }
+      ]
+    },
+    {
+      "id": "R1",
+      "type": "resistor",
+      "shape": "rectangle",
+      "position": [60, 40],
+      "width": 8,
+      "height": 2,
+      "rotation": 90,
+      "layer": "top",
+      "color": "#4CAF50",
+      "pins": [
+        { "id": "R1-1", "position": [-4, 0], "net": "NET1" },
+        { "id": "R1-2", "position": [4, 0], "net": "GND" }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "net": "NET1",
+      "points": [[26, 38], [45, 38], [45, 40], [56, 40]],
+      "width": 0.5,
+      "layer": "top",
+      "color": "#FF5722"
+    },
+    {
+      "net": "GND",
+      "points": [[34, 38], [50, 38], [50, 40], [64, 40]],
+      "width": 0.5,
+      "layer": "top",
+      "color": "#009688"
+    }
+  ],
+  "vias": [
+    {
+      "id": "V1",
+      "position": [45, 40],
+      "drill": 0.3,
+      "diameter": 0.8,
+      "net": "NET1",
+      "color": "#9E9E9E"
+    },
+    {
+      "id": "V2",
+      "position": [50, 40],
+      "drill": 0.3,
+      "diameter": 0.8,
+      "net": "GND",
+      "color": "#9E9E9E"
+    }
+  ],
+  "texts": [
+    {
+      "text": "U1",
+      "position": [30, 46],
+      "size": 1.5,
+      "layer": "top",
+      "rotation": 0,
+      "color": "#000000"
+    },
+    {
+      "text": "R1",
+      "position": [60, 46],
+      "size": 1.5,
+      "layer": "top",
+      "rotation": 90,
+      "color": "#000000"
+    }
+  ],
+  "nets": {
+    "NET1": { "name": "Signal A", "color": "#FF5722" },
+    "GND": { "name": "Ground", "color": "#009688" }
+  }
+}

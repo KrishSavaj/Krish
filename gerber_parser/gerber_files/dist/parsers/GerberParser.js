@@ -1,0 +1,42 @@
+"use strict";
+// src/parsers/GerberParser.ts
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GerberParser = void 0;
+/**
+ * GerberParser
+ *
+ * Implements the ShapeSource interface to turn raw Gerber data
+ * into our common CanonicalShape objects.
+ */
+class GerberParser {
+    /**
+     * @param gerberText
+     *   The full text of a Gerber file (RS-274X) as a string.
+     *   In the future this might come from a C++ PCBBaseline exporter
+     *   or direct file read in JS.
+     */
+    constructor(gerberText) {
+        this.gerberText = gerberText;
+    }
+    /**
+     * loadShapes()
+     *
+     * Reads through the supplied Gerber text and emits a Promise
+     * that resolves to an array of CanonicalShape objects.
+     *
+     * Right now this is a stub—so it just logs a warning and returns []
+     * so that the editor will compile and run without errors.
+     *
+     * Later, you’ll replace this body with:
+     * 1. Call into your PCBBaseline importGerber(...) binding
+     * 2. Receive back a vector<Shape> or JSON from C++
+     * 3. Map that into our CanonicalShape interface
+     */
+    async loadShapes() {
+        // Inform the developer that this method needs a real implementation
+        console.warn("GerberParser.loadShapes() is still a stub");
+        // Return an empty array for now to satisfy the interface
+        return [];
+    }
+}
+exports.GerberParser = GerberParser;

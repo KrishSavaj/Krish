@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Grid with Axes</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #2a2a2e;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            display: block;
+        }
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn {
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: rgba(50, 50, 55, 0.8);
+            color: #ccc;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background-color: rgba(60, 60, 65, 0.9);
+        }
+        #axis-selector {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(50, 50, 55, 0.8);
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .axis-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .axis-dot:hover {
+            transform: scale(1.2);
+        }
+        #x-axis {
+            background-color: #ff3333;
+            right: 10px;
+        }
+        #y-axis {
+            background-color: #3388ff;
+            top: 10px;
+        }
+        #z-axis {
+            background-color: #33dd77;
+            left: 10px;
+        }
+        #center-axis {
+            background-color: #888;
+            width: 8px;
+            height: 8px;
+        }
+        .axis-line {
+            position: absolute;
+            background-color: #666;
+            width: 2px;
+            height: 20px;
+            transform-origin: center;
+        }
+        #x-line {
+            transform: rotate(0deg);
+            width: 20px;
+            height: 2px;
+        }
+        #y-line {
+            transform: rotate(-90deg);
+        }
+        #z-line {
+            transform: rotate(180deg);
+            width: 20px;
+            height: 2px;
+        }
+        
+        /* Toolbar styles */
+        #toolbar {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            background-color: #333;
+            border-radius: 50px;
+            padding: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .tool-group {
+            display: flex;
+            align-items: center;
+            border-right: 1px solid #444;
+            padding: 0 5px;
+        }
+        
+        .tool-group:last-child {
+            border-right: none;
+        }
+        
+        .tool-btn {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: 0 3px;
+            cursor: pointer;
+            color: #ccc;
+            background-color: transparent;
+            transition: all 0.2s;
+            border: none;
+            position: relative;
+        }
+        
+        .tool-btn:hover {
+            background-color: #444;
+        }
+        
+        .tool-btn.active {
+            background-color: #0078ff;
+            color: white;
+        }
+        
+        .tool-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .separator {
+            width: 1px;
+            height: 24px;
+            background-color: #444;
+            margin: 0 5px;
+        }
+        
+        .tooltip {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #222;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+        
+        .tool-btn:hover .tooltip {
+            opacity: 1;
+        }
+        
+        #zoom-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            width: 60px;
+        }
+        
+        #export-btn {
+            background-color: #444;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-left: 10px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        #export-btn:hover {
+            background-color: #555;
+        }
+
+         /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            max-height: 400px;
+            overflow-y: scroll;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 5px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            pointer-events: auto;
+        }
+
+        .dropdown-content::-webkit-scrollbar {
+            display: none;
+        }
+
+        .dropdown-item {
+            color: #ccc;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .dropdown-item:hover {
+            background-color: #0078ff !important;
+            color: white !important;
+        }
+
+        .dropdown-item svg {
+            width: 18px;
+            height: 18px;
+            stroke-width: 1.5;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Toolbar -->
+    <div id="toolbar">
+        <!-- <div class="tool-group">
+            <button class="tool-btn" id="create-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span class="tooltip">Create New</span>
+            </button>
+        </div> -->
+        <div class="tool-group dropdown">
+            <button class="tool-btn" id="create-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span class="tooltip">Create New</span>
+            </button>
+            <div id="shape-dropdown" class="dropdown-content" onwheel="event.stopPropagation();">
+                <!-- 2D Shapes -->
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="0"/></svg>
+                    Rectangle
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/></svg>
+                    Circle
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 22 22 2 22"/></svg>
+                    Triangle
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 19.5 21 4.5 21"/></svg>
+                    Pentagon
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    Star
+                </a>
+                
+                <!-- 3D Shapes -->
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    Cube
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="10" ry="4"/></svg>
+                    Sphere
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2v20M22 12H2M5 22l7-20 7 20"/></svg>
+                    Cylinder
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 100 16 8 8 0 000-16z"/></svg>
+                    Torus
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5.5 5.5l13 13M18.5 5.5l-13 13"/></svg>
+                    Helix
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L4 13h16L12 2zM12 22l8-11H4l8 11z"/></svg>
+                    Cone
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zM12 6l7 14H5l7-14z"/></svg>
+                    Pyramid
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l8 20-8-5-8 5 8-20z"/></svg>
+                    Icosahedron
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l8 20-8-5-8 5 8-20zM4 12l8-5 8 5-8 5-8-5z"/></svg>
+                    Dodecahedron
+                </a>
+                <a class="dropdown-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 100 16 8 8 0 000-16zm0 1l4 9-4 2-4-2 4-9z"/></svg>
+                    Torus Knot
+                </a>
+            </div>
+        </div>
+
+
+        
+        <div class="tool-group">
+            <button class="tool-btn" id="select-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3l7 7m0 0v-6m0 6h-6"></path>
+                    <path d="M21 3l-7 7"></path>
+                </svg>
+                <span class="tooltip">Select</span>
+            </button>
+            
+            <button class="tool-btn" id="rectangle-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="0"></rect>
+                </svg>
+                <span class="tooltip">Rectangle</span>
+            </button>
+            
+            <button class="tool-btn" id="circle-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="8"></circle>
+                </svg>
+                <span class="tooltip">Circle</span>
+            </button>
+            
+            <button class="tool-btn" id="text-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="8" y1="6" x2="16" y2="6"></line>
+                    <line x1="12" y1="6" x2="12" y2="18"></line>
+                </svg>
+                <span class="tooltip">Text</span>
+            </button>
+            
+            <button class="tool-btn" id="cube-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+                <span class="tooltip">Cube</span>
+            </button>
+            
+            <button class="tool-btn" id="sphere-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <ellipse cx="12" cy="12" rx="10" ry="4"></ellipse>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                </svg>
+                <span class="tooltip">Sphere</span>
+            </button>
+            
+            <button class="tool-btn" id="vector-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="19" x2="19" y2="5"></line>
+                    <polyline points="15 5 19 5 19 9"></polyline>
+                </svg>
+                <span class="tooltip">Vector</span>
+            </button>
+        </div>
+        
+        <div class="tool-group">
+            <button class="tool-btn active" id="selected-tool-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L4 13h16L12 2z"></path>
+                </svg>
+                <span class="tooltip">Selected Tool</span>
+            </button>
+        </div>
+        
+        <div class="tool-group">
+            <button class="tool-btn" id="comment-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span class="tooltip">Comment</span>
+            </button>
+        </div>
+        
+        <div class="tool-group">
+            <div id="zoom-display">100%</div>
+        </div>
+        
+        <div class="tool-group">
+            <button id="export-btn">Export</button>
+        </div>
+        
+        <div class="tool-group">
+            <button class="tool-btn" id="play-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span class="tooltip">Play</span>
+            </button>
+        </div>
+
+        
+    </div>
+    
+    <!-- Bottom Controls -->
+    <div id="controls">
+        <button id="reset-btn" class="btn">Reset</button>
+        <div id="axis-selector">
+            <div class="axis-line" id="x-line"></div>
+            <div class="axis-line" id="y-line"></div>
+            <div class="axis-line" id="z-line"></div>
+            <div class="axis-dot" id="center-axis"></div>
+            <div class="axis-dot" id="x-axis"></div>
+            <div class="axis-dot" id="y-axis"></div>
+            <div class="axis-dot" id="z-axis"></div>
+        </div>
+        <button id="isometric-btn" class="btn">Isometric</button>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <button id="orthographic-btn" class="btn">Orthographic</button>
+            <button id="perspective-btn" class="btn">Perspective</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Set up scene
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x2a2a2e);
+        
+        // Set up cameras
+        const perspectiveCamera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        perspectiveCamera.position.set(5, 5, 10);
+        perspectiveCamera.lookAt(0, 0, 0);
+        
+        const orthographicCamera = new THREE.OrthographicCamera(
+            window.innerWidth / -80, window.innerWidth / 80,
+            window.innerHeight / 80, window.innerHeight / -80,
+            0.1, 1000
+        );
+        orthographicCamera.position.set(5, 5, 10);
+        orthographicCamera.lookAt(0, 0, 0);
+        
+        // Current active camera
+        let camera = perspectiveCamera;
+        let currentProjection = 'perspective';
+        
+        // Set up renderer
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        
+        // Create grid
+        const gridSize = 10;
+        const gridDivisions = 10;
+        const gridHelper = new THREE.GridHelper(gridSize, gridDivisions, 0x444444, 0x333333);
+        scene.add(gridHelper);
+        
+        // Create axes
+        const axesLength = 10;
+        
+        // X-axis (red)
+        const xAxisGeometry = new THREE.BufferGeometry();
+        xAxisGeometry.setAttribute('position', new THREE.Float32BufferAttribute([-axesLength, 0, 0, axesLength, 0, 0], 3));
+        const xAxisMaterial = new THREE.LineBasicMaterial({ color: 0xff3333 });
+        const xAxis = new THREE.Line(xAxisGeometry, xAxisMaterial);
+        scene.add(xAxis);
+        
+        // Y-axis (blue)
+        const yAxisGeometry = new THREE.BufferGeometry();
+        yAxisGeometry.setAttribute('position', new THREE.Float32BufferAttribute([0, -axesLength, 0, 0, axesLength, 0], 3));
+        const yAxisMaterial = new THREE.LineBasicMaterial({ color: 0x3388ff });
+        const yAxis = new THREE.Line(yAxisGeometry, yAxisMaterial);
+        scene.add(yAxis);
+        
+        // Z-axis (green)
+        const zAxisGeometry = new THREE.BufferGeometry();
+        zAxisGeometry.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, -axesLength, 0, 0, axesLength], 3));
+        const zAxisMaterial = new THREE.LineBasicMaterial({ color: 0x33dd77 });
+        const zAxis = new THREE.Line(zAxisGeometry, zAxisMaterial);
+        scene.add(zAxis);
+        
+        // Group all elements
+        const gridGroup = new THREE.Group();
+        gridGroup.add(gridHelper);
+        gridGroup.add(xAxis);
+        gridGroup.add(yAxis);
+        gridGroup.add(zAxis);
+        scene.add(gridGroup);
+        
+        // Rotation controls
+        let isRotating = false;
+        let previousMouseX = 0;
+        let previousMouseY = 0;
+        let altPressed = false;
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Alt') {
+                altPressed = true;
+                event.preventDefault();
+            }
+        });
+        
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Alt') {
+                altPressed = false;
+                isRotating = false;
+            }
+        });
+        
+        document.addEventListener('mousedown', function(event) {
+            if (altPressed) {
+                isRotating = true;
+                previousMouseX = event.clientX;
+                previousMouseY = event.clientY;
+                event.preventDefault();
+            }
+        });
+        
+        document.addEventListener('mouseup', function() {
+            isRotating = false;
+        });
+        
+        document.addEventListener('mousemove', function(event) {
+            if (isRotating) {
+                const deltaX = event.clientX - previousMouseX;
+                const deltaY = event.clientY - previousMouseY;
+                
+                camera.position.x = camera.position.x * Math.cos(deltaX * 0.01) - camera.position.z * Math.sin(deltaX * 0.01);
+                camera.position.z = camera.position.x * Math.sin(deltaX * 0.01) + camera.position.z * Math.cos(deltaX * 0.01);
+                
+                camera.position.y += deltaY * 0.05;
+                
+                camera.lookAt(0, 0, 0);
+                
+                previousMouseX = event.clientX;
+                previousMouseY = event.clientY;
+            }
+        });
+        
+        // Zoom functionality
+        let currentZoom = 100;
+        
+        document.addEventListener('wheel', function(event) {
+            const delta = -Math.sign(event.deltaY);
+            const zoomFactor = delta * -0.5;
+            
+            const direction = new THREE.Vector3().subVectors(camera.position, new THREE.Vector3(0, 0, 0)).normalize();
+            camera.position.addScaledVector(direction, zoomFactor);
+            
+            const distanceToCenter = camera.position.length();
+            if (distanceToCenter < 2) {
+                camera.position.setLength(2);
+            }
+            
+            if (currentProjection === 'orthographic') {
+                // Adjust the orthographic camera zoom
+                orthographicCamera.zoom += delta * 0.1;
+                orthographicCamera.zoom = Math.max(0.1, orthographicCamera.zoom);
+                orthographicCamera.updateProjectionMatrix();
+            }
+            
+            // Update zoom display
+            currentZoom += delta * 5;
+            currentZoom = Math.max(10, Math.min(200, currentZoom));
+            document.getElementById('zoom-display').textContent = currentZoom + '%';
+            
+            event.preventDefault();
+        }, { passive: false });
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            // Update perspective camera
+            perspectiveCamera.aspect = window.innerWidth / window.innerHeight;
+            perspectiveCamera.updateProjectionMatrix();
+            
+            // Update orthographic camera
+            orthographicCamera.left = window.innerWidth / -80;
+            orthographicCamera.right = window.innerWidth / 80;
+            orthographicCamera.top = window.innerHeight / 80;
+            orthographicCamera.bottom = window.innerHeight / -80;
+            orthographicCamera.updateProjectionMatrix();
+            
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+        
+        // Tool buttons functionality
+        const toolButtons = document.querySelectorAll('.tool-btn');
+        toolButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                toolButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Make sure grid is visible when selecting tools
+                gridGroup.visible = true;
+                
+                // You can add specific tool functionality later
+                console.log('Selected tool:', this.id);
+            });
+        });
+        
+        // Control buttons functionality
+        document.getElementById('reset-btn').addEventListener('click', function() {
+            gridGroup.visible = false;
+        });
+        
+        document.getElementById('isometric-btn').addEventListener('click', function() {
+            gridGroup.visible = true;
+            camera = perspectiveCamera;
+            currentProjection = 'perspective';
+            
+            // Isometric view (equal angles)
+            const distance = 15;
+            const angle = Math.PI / 4; // 45 degrees
+            camera.position.set(
+                distance * Math.cos(angle),
+                distance * 0.5,
+                distance * Math.sin(angle)
+            );
+            camera.lookAt(0, 0, 0);
+            camera.updateProjectionMatrix();
+        });
+        
+        document.getElementById('orthographic-btn').addEventListener('click', function() {
+            gridGroup.visible = true;
+            camera = orthographicCamera;
+            currentProjection = 'orthographic';
+            camera.updateProjectionMatrix();
+        });
+        
+        document.getElementById('perspective-btn').addEventListener('click', function() {
+            gridGroup.visible = true;
+            camera = perspectiveCamera;
+            currentProjection = 'perspective';
+            camera.updateProjectionMatrix();
+        });
+        
+        // Axis selector functionality
+        document.getElementById('x-axis').addEventListener('click', function() {
+            gridGroup.visible = true;
+            // View along X-axis
+            const distance = camera.position.length();
+            camera.position.set(distance, 0, 0);
+            camera.lookAt(0, 0, 0);
+            camera.up.set(0, 1, 0);
+        });
+        
+        document.getElementById('y-axis').addEventListener('click', function() {
+            gridGroup.visible = true;
+            // View along Y-axis
+            const distance = camera.position.length();
+            camera.position.set(0, distance, 0);
+            camera.lookAt(0, 0, 0);
+            camera.up.set(0, 0, 1);
+        });
+        
+        document.getElementById('z-axis').addEventListener('click', function() {
+            gridGroup.visible = true;
+            // View along Z-axis
+            const distance = camera.position.length();
+            camera.position.set(0, 0, distance);
+            camera.lookAt(0, 0, 0);
+            camera.up.set(0, 1, 0);
+        });
+        
+        document.getElementById('center-axis').addEventListener('click', function() {
+            gridGroup.visible = true;
+            // Reset to default view
+            camera.position.set(5, 5, 10);
+            camera.lookAt(0, 0, 0);
+            camera.up.set(0, 1, 0);
+        });
+        
+        document.getElementById('axis-selector').addEventListener('click', function() {
+            gridGroup.visible = true;
+        });
+        
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+        
+        animate();
+
+
+
+        // top create new
+        // Dropdown functionality
+        const createBtn = document.getElementById('create-btn');
+        const dropdown = document.getElementById('shape-dropdown');
+
+        createBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdown.classList.toggle('show');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!createBtn.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
+
+        // Handle shape selection
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function() {
+                console.log('Creating:', this.textContent.trim());
+                dropdown.classList.remove('show');
+            });
+        });
+
+        // Prevent grid scrolling when dropdown is open
+        document.getElementById('shape-dropdown').addEventListener('wheel', function(e) {
+            e.stopPropagation();
+        });
+
+    </script>
+</body>
+</html>
