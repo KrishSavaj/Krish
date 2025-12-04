@@ -1,0 +1,54 @@
+set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
+set(OUTPUT_DIR "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
+set(GENERATED_DIR "${CMAKE_CURRENT_BINARY_DIR}")  # <-- Where Bison/Flex outputs go
+
+# Enable FLEX and BISON
+find_package(FLEX REQUIRED)
+find_package(BISON REQUIRED)
+
+# Define FLEX and BISON outputs
+set(LEXER_OUT "${GENERATED_DIR}/lexer.cpp")
+set(PARSER_OUT "${GENERATED_DIR}/parser.cpp")
+set(LEXER_HEADER "${GENERATED_DIR}/lexer.hpp")
+set(PARSER_HEADER "${GENERATED_DIR}/parser.hpp")
+
+# Run FLEX and BISON targets
+flex_target(LEXER "${SRC_DIR}/lexer.l" "${LEXER_OUT}" DEFINES_FILE "${LEXER_HEADER}")
+bison_target(PARSER "${SRC_DIR}/parser.y" "${PARSER_OUT}" DEFINES_FILE "${PARSER_HEADER}")
+add_flex_bison_dependency(LEXER PARSER)
+
+# Collect source files (excluding generated files to avoid duplicates)
+file(GLOB_RECURSE CPP_SOURCES "${SRC_DIR}/*.cpp")
+file(GLOB_RECURSE C_SOURCES "${SRC_DIR}/*.c")
+
+# Create executable
+add_executable(${PROJECT_NAME}
+    ${LEXER_OUT}
+    ${PARSER_OUT}
+    ${CPP_SOURCES}
+    ${C_SOURCES}
+)
+
+# Include directories
+target_include_directories(${PROJECT_NAME} PRIVATE
+    "${SRC_DIR}"
+    "${SRC_DIR}/../include"       # <-- To access include/sexpr.hpp
+    "${GENERATED_DIR}"            # <-- To access parser.hpp, lexer.hpp
+)
+get_target_property(INCLUDES ${PROJECT_NAME} INCLUDE_DIRECTORIES)
+message(STATUS "INCLUDE DIRS: ${INCLUDES}")
+
+# Debug print
+get_target_property(TARGET_INCLUDES ${PROJECT_NAME} INCLUDE_DIRECTORIES)
+message(STATUS "Include directories for ${PROJECT_NAME}: ${TARGET_INCLUDES}")
+
+# Link libraries (if needed)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    # Add libraries if any
+)
+
+# Additional options
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED YES
+)

@@ -1,0 +1,585 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20220904
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    776ab682-a66a-485f-8b01-1127e87612ac
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Regulator_Linear:LP3982ILD-3.3" (in_bom yes) (on_board yes) (property "Reference" "U1" (id 0) (at 0 8.890000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LP3982ILD-3.3" (id 1) (at 0 6.350000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" (id 2) (at 5.080000 -8.890000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lp3982.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "linear regulator" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "3.3V, 300mA, Micropower, Ultra-Low-Dropout, Low-Noise CMOS Regulator, WSON-8" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "WSON*1EP*3x2.5mm*P0.5mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LP3982ILD-3.3_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "LP3982ILD-3.3_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) hide (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at -7.620000 -2.540000 0) (length 2.540000) hide (name "NC" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 -2.540000 180) (length 2.540000) (name "CC" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 0 0) (length 2.540000) (name "~{SHDN}" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 0 180) (length 2.540000) (name "~{FAULT}" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 2.540000 -7.620000 90) (length 2.540000) (name "EP" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:170.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:91b2a5ec-3c62-4238-9d23-edd2113e4ace }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(170.180,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(170.180,60.960,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,76.200,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(170.180,67.310,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:98cdeafb-9fec-4cb2-b0e0-dd01c8d9a0e6 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(121.920,54.610,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,57.150,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,72.390,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,63.500,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:180 name:62.230000 value:190.500000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:ec75eb37-1e9e-4445-af6e-4e1214099824 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(190.500,71.120,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(190.500,68.580,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(185.420,53.340,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(190.500,62.230,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Regulator_Linear:LP3982ILD-3.3" (in_bom yes) (on_board yes) (property "Reference" "U1" (id 0) (at 0 8.890000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LP3982ILD-3.3" (id 1) (at 0 6.350000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" (id 2) (at 5.080000 -8.890000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lp3982.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "linear regulator" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "3.3V, 300mA, Micropower, Ultra-Low-Dropout, Low-Noise CMOS Regulator, WSON-8" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "WSON*1EP*3x2.5mm*P0.5mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LP3982ILD-3.3_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "LP3982ILD-3.3_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) hide (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at -7.620000 -2.540000 0) (length 2.540000) hide (name "NC" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 -2.540000 180) (length 2.540000) (name "CC" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 0 0) (length 2.540000) (name "~{SHDN}" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 0 180) (length 2.540000) (name "~{FAULT}" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 2.540000 -7.620000 90) (length 2.540000) (name "EP" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:170.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:91b2a5ec-3c62-4238-9d23-edd2113e4ace }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(170.180,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(170.180,60.960,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,76.200,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(170.180,67.310,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:98cdeafb-9fec-4cb2-b0e0-dd01c8d9a0e6 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(121.920,54.610,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,57.150,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,72.390,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,63.500,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:180 name:62.230000 value:190.500000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:ec75eb37-1e9e-4445-af6e-4e1214099824 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(190.500,71.120,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(190.500,68.580,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(185.420,53.340,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(190.500,62.230,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Regulator_Linear:LP3982ILD-3.3" (in_bom yes) (on_board yes) (property "Reference" "U1" (id 0) (at 0 8.890000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LP3982ILD-3.3" (id 1) (at 0 6.350000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" (id 2) (at 5.080000 -8.890000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lp3982.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "linear regulator" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "3.3V, 300mA, Micropower, Ultra-Low-Dropout, Low-Noise CMOS Regulator, WSON-8" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "WSON*1EP*3x2.5mm*P0.5mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LP3982ILD-3.3_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "LP3982ILD-3.3_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) hide (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at -7.620000 -2.540000 0) (length 2.540000) hide (name "NC" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 -2.540000 180) (length 2.540000) (name "CC" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 0 0) (length 2.540000) (name "~{SHDN}" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 0 180) (length 2.540000) (name "~{FAULT}" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 2.540000 -7.620000 90) (length 2.540000) (name "EP" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:170.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:91b2a5ec-3c62-4238-9d23-edd2113e4ace }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(170.180,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(170.180,60.960,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,76.200,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(170.180,67.310,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:98cdeafb-9fec-4cb2-b0e0-dd01c8d9a0e6 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(121.920,54.610,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,57.150,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,72.390,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,63.500,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:180 name:62.230000 value:190.500000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:ec75eb37-1e9e-4445-af6e-4e1214099824 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(190.500,71.120,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(190.500,68.580,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(185.420,53.340,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(190.500,62.230,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Regulator_Linear:LP3982ILD-3.3" (in_bom yes) (on_board yes) (property "Reference" "U1" (id 0) (at 0 8.890000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LP3982ILD-3.3" (id 1) (at 0 6.350000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" (id 2) (at 5.080000 -8.890000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lp3982.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "linear regulator" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "3.3V, 300mA, Micropower, Ultra-Low-Dropout, Low-Noise CMOS Regulator, WSON-8" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "WSON*1EP*3x2.5mm*P0.5mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LP3982ILD-3.3_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "LP3982ILD-3.3_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) hide (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at -7.620000 -2.540000 0) (length 2.540000) hide (name "NC" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 -2.540000 180) (length 2.540000) (name "CC" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 0 0) (length 2.540000) (name "~{SHDN}" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 0 180) (length 2.540000) (name "~{FAULT}" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 2.540000 -7.620000 90) (length 2.540000) (name "EP" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:170.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:91b2a5ec-3c62-4238-9d23-edd2113e4ace }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(170.180,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(170.180,60.960,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,76.200,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(170.180,67.310,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:98cdeafb-9fec-4cb2-b0e0-dd01c8d9a0e6 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(121.920,54.610,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,57.150,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,72.390,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,63.500,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:180 name:62.230000 value:190.500000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:ec75eb37-1e9e-4445-af6e-4e1214099824 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(190.500,71.120,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(190.500,68.580,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(185.420,53.340,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(190.500,62.230,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Regulator_Linear:LP3982ILD-3.3" (in_bom yes) (on_board yes) (property "Reference" "U1" (id 0) (at 0 8.890000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LP3982ILD-3.3" (id 1) (at 0 6.350000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" (id 2) (at 5.080000 -8.890000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lp3982.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "linear regulator" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "3.3V, 300mA, Micropower, Ultra-Low-Dropout, Low-Noise CMOS Regulator, WSON-8" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "WSON*1EP*3x2.5mm*P0.5mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LP3982ILD-3.3_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "LP3982ILD-3.3_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) hide (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at -7.620000 -2.540000 0) (length 2.540000) hide (name "NC" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 -2.540000 180) (length 2.540000) (name "CC" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 0 0) (length 2.540000) (name "~{SHDN}" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 0 180) (length 2.540000) (name "~{FAULT}" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 2.540000 -7.620000 90) (length 2.540000) (name "EP" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:170.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:91b2a5ec-3c62-4238-9d23-edd2113e4ace }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(170.180,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(170.180,60.960,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,76.200,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(170.180,67.310,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:98cdeafb-9fec-4cb2-b0e0-dd01c8d9a0e6 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(121.920,54.610,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,57.150,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,72.390,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,63.500,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:180 name:62.230000 value:190.500000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:ec75eb37-1e9e-4445-af6e-4e1214099824 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(190.500,71.120,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(190.500,68.580,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(185.420,53.340,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(190.500,62.230,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Regulator_Linear:LP3982ILD-3.3" (in_bom yes) (on_board yes) (property "Reference" "U1" (id 0) (at 0 8.890000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LP3982ILD-3.3" (id 1) (at 0 6.350000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" (id 2) (at 5.080000 -8.890000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lp3982.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "linear regulator" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "3.3V, 300mA, Micropower, Ultra-Low-Dropout, Low-Noise CMOS Regulator, WSON-8" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "WSON*1EP*3x2.5mm*P0.5mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LP3982ILD-3.3_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "LP3982ILD-3.3_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) hide (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at -7.620000 -2.540000 0) (length 2.540000) hide (name "NC" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 -2.540000 180) (length 2.540000) (name "CC" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 0 0) (length 2.540000) (name "~{SHDN}" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 0 180) (length 2.540000) (name "~{FAULT}" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 2.540000 -7.620000 90) (length 2.540000) (name "EP" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:170.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:91b2a5ec-3c62-4238-9d23-edd2113e4ace }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(170.180,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(170.180,60.960,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,76.200,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(170.180,67.310,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:98cdeafb-9fec-4cb2-b0e0-dd01c8d9a0e6 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(121.920,54.610,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,57.150,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,72.390,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,63.500,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <symbol>
+  <at> attrs{misc:180 name:62.230000 value:190.500000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:ec75eb37-1e9e-4445-af6e-4e1214099824 }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"LP3982ILD-3.3" }
+  <footprint>
+  <property> at=(190.500,71.120,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(190.500,68.580,0.000) attrs{name:"LP3982ILD-3.3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(185.420,53.340,0.000) attrs{name:"Package_SON:WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack_ThermalVias" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(190.500,62.230,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lp3982.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

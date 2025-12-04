@@ -1,0 +1,196 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+Parsed GlobalLabel: (unnamed)
+
+=== Schematic Metadata ===
+Version:      20231120
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "617edc57-1dbf-4296-b365-6d76f68a1c0f"
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:90 name:13.970000 value:73.660000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cb3ce4bd-6991-4e3e-b715-a5a49f5b8b78" }
+  <property> at=(77.470,13.970,0.000) attrs{name:"#PWR013" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(70.358,13.970,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f" path_reference:"#PWR013" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:90 name:13.970000 value:73.660000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cb3ce4bd-6991-4e3e-b715-a5a49f5b8b78" }
+  <property> at=(77.470,13.970,0.000) attrs{name:"#PWR013" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(70.358,13.970,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f" path_reference:"#PWR013" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:90 name:13.970000 value:73.660000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cb3ce4bd-6991-4e3e-b715-a5a49f5b8b78" }
+  <property> at=(77.470,13.970,0.000) attrs{name:"#PWR013" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(70.358,13.970,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f" path_reference:"#PWR013" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:90 name:13.970000 value:73.660000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cb3ce4bd-6991-4e3e-b715-a5a49f5b8b78" }
+  <property> at=(77.470,13.970,0.000) attrs{name:"#PWR013" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(70.358,13.970,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f" path_reference:"#PWR013" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:90 name:13.970000 value:73.660000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cb3ce4bd-6991-4e3e-b715-a5a49f5b8b78" }
+  <property> at=(77.470,13.970,0.000) attrs{name:"#PWR013" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(70.358,13.970,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f" path_reference:"#PWR013" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:90 name:13.970000 value:73.660000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cb3ce4bd-6991-4e3e-b715-a5a49f5b8b78" }
+  <property> at=(77.470,13.970,0.000) attrs{name:"#PWR013" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(70.358,13.970,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(73.660,13.970,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f" path_reference:"#PWR013" path_unit:1 value:"UCV6_P_Screen" }
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,2019 @@
+[DEBUG] Root children: 96
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="generator_version"
+  child 4 tag="uuid"
+  child 5 tag="paper"
+  child 6 tag="title_block"
+  child 7 tag="lib_symbols"
+  child 8 tag="wire"
+  child 9 tag="wire"
+  child 10 tag="wire"
+  child 11 tag="wire"
+  child 12 tag="wire"
+  child 13 tag="wire"
+  child 14 tag="wire"
+  child 15 tag="wire"
+  child 16 tag="wire"
+  child 17 tag="wire"
+  child 18 tag="wire"
+  child 19 tag="wire"
+  child 20 tag="wire"
+  child 21 tag="wire"
+  child 22 tag="wire"
+  child 23 tag="wire"
+  child 24 tag="wire"
+  child 25 tag="wire"
+  child 26 tag="wire"
+  child 27 tag="wire"
+  child 28 tag="wire"
+  child 29 tag="wire"
+  child 30 tag="wire"
+  child 31 tag="wire"
+  child 32 tag="wire"
+  child 33 tag="wire"
+  child 34 tag="wire"
+  child 35 tag="wire"
+  child 36 tag="wire"
+  child 37 tag="wire"
+  child 38 tag="wire"
+  child 39 tag="wire"
+  child 40 tag="wire"
+  child 41 tag="wire"
+  child 42 tag="wire"
+  child 43 tag="wire"
+  child 44 tag="wire"
+  child 45 tag="wire"
+  child 46 tag="wire"
+  child 47 tag="wire"
+  child 48 tag="wire"
+  child 49 tag="wire"
+  child 50 tag="wire"
+  child 51 tag="wire"
+  child 52 tag="text"
+  child 53 tag="label"
+  child 54 tag="label"
+  child 55 tag="label"
+  child 56 tag="label"
+  child 57 tag="label"
+  child 58 tag="label"
+  child 59 tag="label"
+  child 60 tag="label"
+  child 61 tag="label"
+  child 62 tag="label"
+  child 63 tag="label"
+  child 64 tag="label"
+  child 65 tag="label"
+  child 66 tag="label"
+  child 67 tag="label"
+  child 68 tag="label"
+  child 69 tag="label"
+  child 70 tag="label"
+  child 71 tag="label"
+  child 72 tag="label"
+  child 73 tag="label"
+  child 74 tag="label"
+  child 75 tag="label"
+  child 76 tag="label"
+  child 77 tag="label"
+  child 78 tag="label"
+  child 79 tag="label"
+  child 80 tag="label"
+  child 81 tag="label"
+  child 82 tag="label"
+  child 83 tag="label"
+  child 84 tag="label"
+  child 85 tag="label"
+  child 86 tag="label"
+  child 87 tag="label"
+  child 88 tag="label"
+  child 89 tag="symbol"
+  child 90 tag="symbol"
+  child 91 tag="symbol"
+  child 92 tag="symbol"
+  child 93 tag="symbol"
+  child 94 tag="symbol"
+  child 95 tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=31796
+kicad_sch  (children=96)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=22
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=25
+  generator_version  (children=2)
+[BaselineBoard] appendRawPiece len=45
+  uuid  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=34
+  title_block  (children=2)
+[BaselineBoard] appendRawPiece len=10692
+  lib_symbols  (children=5)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=10692
+[BaselineBoard] setLibSymbolsRaw len=10692
+[BaselineBoard] appendRawPiece len=10692
+AstCleaner: handling lib_symbols at 0x7ffecf5d6360
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5ff9fb3fcbc0 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5ff9fb3fbd90 atom="exclude_from_sim"
+    [1] addr=0x5ff9fb3fbdd0 atom="no"
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5ff9fb3fc110 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5ff9fb425cd0 atom="exclude_from_sim"
+    [1] addr=0x5ff9fb425d10 atom="no"
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5ff9fb429a60 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5ff9fb429e50 atom="exclude_from_sim"
+    [1] addr=0x5ff9fb429e90 atom="no"
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5ff9fb42dbe0 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5ff9fb42e020 atom="exclude_from_sim"
+    [1] addr=0x5ff9fb42e060 atom="no"
+[handleLibSymbolsCleanNode] called, children=4
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=10692
+[BaselineBoard] appendRawPiece len=7113
+    symbol  (children=14)
+[BaselineBoard] appendRawPiece len=1236
+    symbol  (children=15)
+[BaselineBoard] appendRawPiece len=1225
+    symbol  (children=15)
+[BaselineBoard] appendRawPiece len=1101
+    symbol  (children=15)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,45.720001->128.270004,45.720001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=1
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,40.639999->73.660004,40.639999 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=2
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,27.940001->128.270004,27.940001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=3
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,48.259998->128.270004,48.259998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=4
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 27.940001,35.560001->45.720001,35.560001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=5
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,35.560001->128.270004,35.560001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=6
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,33.020000->95.250000,33.020000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=7
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,35.560001->95.250000,35.560001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=8
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,35.560001->73.660004,35.560001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=9
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,45.720001->95.250000,45.720001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=10
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 27.940001,40.639999->45.720001,40.639999 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=11
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,43.180000->73.660004,43.180000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=12
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 27.940001,27.940001->45.720001,27.940001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=13
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 27.940001,30.480000->45.720001,30.480000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=14
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 27.940001,48.259998->45.720001,48.259998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=15
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,38.099998->95.250000,38.099998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=16
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,27.940001->95.250000,27.940001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=17
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,30.480000->128.270004,30.480000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=18
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 27.940001,45.720001->45.720001,45.720001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=19
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 27.940001,43.180000->45.720001,43.180000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=20
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,38.099998->73.660004,38.099998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=21
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,25.400000->110.489998,25.400000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=22
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 110.489998,25.400000->110.489998,50.799999 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=23
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,43.180000->128.270004,43.180000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=24
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,30.480000->95.250000,30.480000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=25
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,43.180000->95.250000,43.180000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=26
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,27.940001->60.959999,27.940001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=27
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 60.959999,27.940001->60.959999,50.799999 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=28
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,48.259998->95.250000,48.259998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=29
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 43.180000,22.860001->43.180000,25.400000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=30
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 43.180000,25.400000->45.720001,25.400000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=31
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,25.400000->60.959999,25.400000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=32
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 60.959999,22.860001->60.959999,25.400000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=33
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,33.020000->128.270004,33.020000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=34
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,25.400000->95.250000,25.400000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=35
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,40.639999->128.270004,40.639999 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=36
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,33.020000->73.660004,33.020000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=37
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,30.480000->73.660004,30.480000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=38
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,48.259998->73.660004,48.259998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=39
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 27.940001,38.099998->45.720001,38.099998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=40
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 27.940001,33.020000->45.720001,33.020000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=41
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 107.949997,38.099998->128.270004,38.099998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=42
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 78.739998,40.639999->95.250000,40.639999 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=43
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=140
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=140
+[BaselineBoard] appendRawPiece len=140
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 58.419998,45.720001->73.660004,45.720001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=44
+[BaselineBoard] appendRawPiece len=55
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=31
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=12
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=5
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=358
+  text  (children=6)
+[BaselineBoard] appendRawPiece len=183
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=178
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=175
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=193
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=191
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=174
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=174
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=178
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=183
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=179
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=183
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=188
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=183
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=184
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=173
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=191
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=175
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=175
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=173
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=183
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=174
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=174
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=175
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=193
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=191
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=187
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=888
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=2066
+  symbol  (children=35)
+[BaselineBoard] appendRawPiece len=891
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=2056
+  symbol  (children=35)
+[BaselineBoard] appendRawPiece len=894
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=888
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=39
+  sheet_instances  (children=2)
+  [UNHANDLED-PCB] tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=21
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+[UNHANDLED] cleanInner:generator_version addr=0x5ff9fb40be50 -> (generator_version "8.0" )
+  children details (child_index: addr type extra):
+    [0] addr=0x5ff9fb3f8720 atom="generator_version"
+    [1] addr=0x5ff9fb3f8760 atom=""8.0""
+AstCleaner: handling lib_symbols at 0x5ff9fb40bf50
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5ff9fb4549f0 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5ff9fb452cf0 atom="exclude_from_sim"
+    [1] addr=0x5ff9fb452d30 atom="no"
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5ff9fb42dbe0 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5ff9fb41aec0 atom="exclude_from_sim"
+    [1] addr=0x5ff9fb41af00 atom="no"
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5ff9fb429a60 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5ff9fb4450e0 atom="exclude_from_sim"
+    [1] addr=0x5ff9fb445120 atom="no"
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5ff9fb3fc110 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5ff9fb448e90 atom="exclude_from_sim"
+    [1] addr=0x5ff9fb448ed0 atom="no"
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20231120 }
+  <generator> attrs{value:"eeschema" }
+  <generator_version> attrs{value:"8.0" }
+  <paper> attrs{value:"A4" }
+  <'...
+[BaselineBoard] appendRawPiece len=40005 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=94
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20231120 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:"eeschema" }'...
+[BaselineBoard] appendRawPiece len=36 head="generator"
+[walkSchematicOnce] child tag='generator_version' children=0
+[appendRawPieceFromClean] piece_head='<generator_version> attrs{value:"8.0" }'...
+[BaselineBoard] appendRawPiece len=39 head="generator_version"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='title_block' children=1
+[appendRawPieceFromClean] piece_head='<title_block>
+  <date> attrs{value:"19 oct 2012" }'...
+[BaselineBoard] appendRawPiece len=50 head="title_block"
+[walkSchematicOnce] child tag='lib_symbols' children=4
+[handleLibSymbolsCleanNode] called, children=4
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='text' children=4
+[handleTextFromClean] called for tag='text'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='symbol' children=33
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=33
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='symbol' children=33
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=33
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='sheet_instances' children=1
+[appendRawPieceFromClean] piece_head='<sheet_instances>
+  <path> attrs{page:"1" }'...
+[BaselineBoard] appendRawPiece len=43 head="sheet_instances"
+=== SUMMARY === junctionShapes=0 wireShapes=88 symbols=6 rawPieces=764
+=== DUMP wires: count=88 ===
+ wire[0] start=(107.95,45.72) end=(128.27,45.72)
+ wire[1] start=(58.42,40.64) end=(73.66,40.64)
+ wire[2] start=(107.95,27.94) end=(128.27,27.94)
+ wire[3] start=(107.95,48.26) end=(128.27,48.26)
+ wire[4] start=(27.94,35.56) end=(45.72,35.56)
+ wire[5] start=(107.95,35.56) end=(128.27,35.56)
+ wire[6] start=(78.74,33.02) end=(95.25,33.02)
+ wire[7] start=(78.74,35.56) end=(95.25,35.56)
+ wire[8] start=(58.42,35.56) end=(73.66,35.56)
+ wire[9] start=(78.74,45.72) end=(95.25,45.72)
+ wire[10] start=(27.94,40.64) end=(45.72,40.64)
+ wire[11] start=(58.42,43.18) end=(73.66,43.18)
+ wire[12] start=(27.94,27.94) end=(45.72,27.94)
+ wire[13] start=(27.94,30.48) end=(45.72,30.48)
+ wire[14] start=(27.94,48.26) end=(45.72,48.26)
+ wire[15] start=(78.74,38.10) end=(95.25,38.10)
+ wire[16] start=(78.74,27.94) end=(95.25,27.94)
+ wire[17] start=(107.95,30.48) end=(128.27,30.48)
+ wire[18] start=(27.94,45.72) end=(45.72,45.72)
+ wire[19] start=(27.94,43.18) end=(45.72,43.18)
+ wire[20] start=(58.42,38.10) end=(73.66,38.10)
+ wire[21] start=(107.95,25.40) end=(110.49,25.40)
+ wire[22] start=(110.49,25.40) end=(110.49,50.80)
+ wire[23] start=(107.95,43.18) end=(128.27,43.18)
+ wire[24] start=(78.74,30.48) end=(95.25,30.48)
+ wire[25] start=(78.74,43.18) end=(95.25,43.18)
+ wire[26] start=(58.42,27.94) end=(60.96,27.94)
+ wire[27] start=(60.96,27.94) end=(60.96,50.80)
+ wire[28] start=(78.74,48.26) end=(95.25,48.26)
+ wire[29] start=(43.18,22.86) end=(43.18,25.40)
+ wire[30] start=(45.72,25.40) end=(43.18,25.40)
+ wire[31] start=(58.42,25.40) end=(60.96,25.40)
+ wire[32] start=(60.96,22.86) end=(60.96,25.40)
+ wire[33] start=(107.95,33.02) end=(128.27,33.02)
+ wire[34] start=(78.74,25.40) end=(95.25,25.40)
+ wire[35] start=(107.95,40.64) end=(128.27,40.64)
+ wire[36] start=(58.42,33.02) end=(73.66,33.02)
+ wire[37] start=(58.42,30.48) end=(73.66,30.48)
+ wire[38] start=(58.42,48.26) end=(73.66,48.26)
+ wire[39] start=(27.94,38.10) end=(45.72,38.10)
+ wire[40] start=(27.94,33.02) end=(45.72,33.02)
+ wire[41] start=(107.95,38.10) end=(128.27,38.10)
+ wire[42] start=(78.74,40.64) end=(95.25,40.64)
+ wire[43] start=(58.42,45.72) end=(73.66,45.72)
+ wire[44] start=(107.95,45.72) end=(128.27,45.72)
+ wire[45] start=(58.42,40.64) end=(73.66,40.64)
+ wire[46] start=(107.95,27.94) end=(128.27,27.94)
+ wire[47] start=(107.95,48.26) end=(128.27,48.26)
+ wire[48] start=(27.94,35.56) end=(45.72,35.56)
+ wire[49] start=(107.95,35.56) end=(128.27,35.56)
+ wire[50] start=(78.74,33.02) end=(95.25,33.02)
+ wire[51] start=(78.74,35.56) end=(95.25,35.56)
+ wire[52] start=(58.42,35.56) end=(73.66,35.56)
+ wire[53] start=(78.74,45.72) end=(95.25,45.72)
+ wire[54] start=(27.94,40.64) end=(45.72,40.64)
+ wire[55] start=(58.42,43.18) end=(73.66,43.18)
+ wire[56] start=(27.94,27.94) end=(45.72,27.94)
+ wire[57] start=(27.94,30.48) end=(45.72,30.48)
+ wire[58] start=(27.94,48.26) end=(45.72,48.26)
+ wire[59] start=(78.74,38.10) end=(95.25,38.10)
+ wire[60] start=(78.74,27.94) end=(95.25,27.94)
+ wire[61] start=(107.95,30.48) end=(128.27,30.48)
+ wire[62] start=(27.94,45.72) end=(45.72,45.72)
+ wire[63] start=(27.94,43.18) end=(45.72,43.18)
+ wire[64] start=(58.42,38.10) end=(73.66,38.10)
+ wire[65] start=(107.95,25.40) end=(110.49,25.40)
+ wire[66] start=(110.49,25.40) end=(110.49,50.80)
+ wire[67] start=(107.95,43.18) end=(128.27,43.18)
+ wire[68] start=(78.74,30.48) end=(95.25,30.48)
+ wire[69] start=(78.74,43.18) end=(95.25,43.18)
+ wire[70] start=(58.42,27.94) end=(60.96,27.94)
+ wire[71] start=(60.96,27.94) end=(60.96,50.80)
+ wire[72] start=(78.74,48.26) end=(95.25,48.26)
+ wire[73] start=(43.18,22.86) end=(43.18,25.40)
+ wire[74] start=(45.72,25.40) end=(43.18,25.40)
+ wire[75] start=(58.42,25.40) end=(60.96,25.40)
+ wire[76] start=(60.96,22.86) end=(60.96,25.40)
+ wire[77] start=(107.95,33.02) end=(128.27,33.02)
+ wire[78] start=(78.74,25.40) end=(95.25,25.40)
+ wire[79] start=(107.95,40.64) end=(128.27,40.64)
+ wire[80] start=(58.42,33.02) end=(73.66,33.02)
+ wire[81] start=(58.42,30.48) end=(73.66,30.48)
+ wire[82] start=(58.42,48.26) end=(73.66,48.26)
+ wire[83] start=(27.94,38.10) end=(45.72,38.10)
+ wire[84] start=(27.94,33.02) end=(45.72,33.02)
+ wire[85] start=(107.95,38.10) end=(128.27,38.10)
+ wire[86] start=(78.74,40.64) end=(95.25,40.64)
+ wire[87] start=(58.42,45.72) end=(73.66,45.72)
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

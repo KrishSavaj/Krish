@@ -1,0 +1,579 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20211123
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    ea4bce34-3f98-4ba7-9e01-06f7904e5f9a
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "+3.3V_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR?" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V_1" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_1_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "74xGxx:74AHC1G00" (pin_names (offset 1.016000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -2.540000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74AHC1G00" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Single Gate NAND LVC CMOS" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Single NAND Gate, Low-Voltage CMOS" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT* SG-*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74AHC1G00_0_1" (arc (start 0 -2.540000) (mid 2.540000 0) (end 0 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 -2.540000) (xy -3.810000 -2.540000) (xy -3.810000 2.540000) (xy 0 2.540000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "74AHC1G00_1_1" (pin input line (at -7.620000 1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -7.620000 -1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 -2.540000 270) (length 0) hide (name "GND" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000))))) (pin output inverted (at 6.350000 0 180) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 2.540000 90) (length 0) hide (name "VCC" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))))) (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "D" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LED" (id 1) (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "LED diode" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Light emitting diode" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LED_0_1" (polyline (pts (xy -1.270000 -1.270000) (xy -1.270000 1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.270000 0) (xy 1.270000 0)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 1.270000 -1.270000) (xy 1.270000 1.270000) (xy -1.270000 0) (xy 1.270000 -1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -3.048000 -0.762000) (xy -4.572000 -2.286000) (xy -3.810000 -2.286000) (xy -4.572000 -2.286000) (xy -4.572000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.778000 -0.762000) (xy -3.302000 -2.286000) (xy -2.540000 -2.286000) (xy -3.302000 -2.286000) (xy -3.302000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "LED_1_1" (pin passive line (at -3.810000 0 0) (length 2.540000) (name "K" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 2.540000) (name "A" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3.3V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <lib_id> attrs{value:"power:+3.3V" }
+  <at> attrs{misc:0 name:76.200000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1bf214b1-6ac9-4694-be83-f308ad0a37fa }
+  <property> at=(114.300,80.010,0.000) attrs{name:"#PWR01002" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:129.540000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:801334a8-b16d-4581-b41c-57060138b236 }
+  <property> at=(127.000,80.010,0.000) attrs{name:"U1001" value:"Reference" }
+  <property> at=(129.540,87.630,0.000) attrs{name:"74AHC1G00" value:"Value" }
+  <property> at=(129.540,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,83.820,0.000) attrs{name:"http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ac2f871a-42f2-48ee-931a-84e6d47f5587 }
+  <property> at=(146.050,99.060,0.000) attrs{name:"#PWR01003" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,96.520,0.000) attrs{name:"GND" value:"Value" }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:180 name:83.820000 value:142.240000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e3eceee5-b863-4693-8411-20a6d0dcce37 }
+  <property> at=(142.240,86.360,0.000) attrs{name:"D1001" value:"Reference" }
+  <property> at=(142.240,81.280,0.000) attrs{name:"LED" value:"Value" }
+  <property> at=(142.240,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(142.240,83.820,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:106.680000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e5f27bfb-b54d-4584-a941-e20e21a3cd13 }
+  <property> at=(106.680,80.010,0.000) attrs{name:"#PWR01001" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "+3.3V_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR?" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V_1" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_1_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "74xGxx:74AHC1G00" (pin_names (offset 1.016000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -2.540000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74AHC1G00" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Single Gate NAND LVC CMOS" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Single NAND Gate, Low-Voltage CMOS" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT* SG-*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74AHC1G00_0_1" (arc (start 0 -2.540000) (mid 2.540000 0) (end 0 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 -2.540000) (xy -3.810000 -2.540000) (xy -3.810000 2.540000) (xy 0 2.540000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "74AHC1G00_1_1" (pin input line (at -7.620000 1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -7.620000 -1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 -2.540000 270) (length 0) hide (name "GND" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000))))) (pin output inverted (at 6.350000 0 180) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 2.540000 90) (length 0) hide (name "VCC" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))))) (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "D" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LED" (id 1) (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "LED diode" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Light emitting diode" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LED_0_1" (polyline (pts (xy -1.270000 -1.270000) (xy -1.270000 1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.270000 0) (xy 1.270000 0)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 1.270000 -1.270000) (xy 1.270000 1.270000) (xy -1.270000 0) (xy 1.270000 -1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -3.048000 -0.762000) (xy -4.572000 -2.286000) (xy -3.810000 -2.286000) (xy -4.572000 -2.286000) (xy -4.572000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.778000 -0.762000) (xy -3.302000 -2.286000) (xy -2.540000 -2.286000) (xy -3.302000 -2.286000) (xy -3.302000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "LED_1_1" (pin passive line (at -3.810000 0 0) (length 2.540000) (name "K" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 2.540000) (name "A" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3.3V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <lib_id> attrs{value:"power:+3.3V" }
+  <at> attrs{misc:0 name:76.200000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1bf214b1-6ac9-4694-be83-f308ad0a37fa }
+  <property> at=(114.300,80.010,0.000) attrs{name:"#PWR01002" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:129.540000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:801334a8-b16d-4581-b41c-57060138b236 }
+  <property> at=(127.000,80.010,0.000) attrs{name:"U1001" value:"Reference" }
+  <property> at=(129.540,87.630,0.000) attrs{name:"74AHC1G00" value:"Value" }
+  <property> at=(129.540,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,83.820,0.000) attrs{name:"http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ac2f871a-42f2-48ee-931a-84e6d47f5587 }
+  <property> at=(146.050,99.060,0.000) attrs{name:"#PWR01003" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,96.520,0.000) attrs{name:"GND" value:"Value" }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:180 name:83.820000 value:142.240000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e3eceee5-b863-4693-8411-20a6d0dcce37 }
+  <property> at=(142.240,86.360,0.000) attrs{name:"D1001" value:"Reference" }
+  <property> at=(142.240,81.280,0.000) attrs{name:"LED" value:"Value" }
+  <property> at=(142.240,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(142.240,83.820,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:106.680000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e5f27bfb-b54d-4584-a941-e20e21a3cd13 }
+  <property> at=(106.680,80.010,0.000) attrs{name:"#PWR01001" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "+3.3V_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR?" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V_1" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_1_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "74xGxx:74AHC1G00" (pin_names (offset 1.016000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -2.540000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74AHC1G00" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Single Gate NAND LVC CMOS" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Single NAND Gate, Low-Voltage CMOS" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT* SG-*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74AHC1G00_0_1" (arc (start 0 -2.540000) (mid 2.540000 0) (end 0 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 -2.540000) (xy -3.810000 -2.540000) (xy -3.810000 2.540000) (xy 0 2.540000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "74AHC1G00_1_1" (pin input line (at -7.620000 1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -7.620000 -1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 -2.540000 270) (length 0) hide (name "GND" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000))))) (pin output inverted (at 6.350000 0 180) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 2.540000 90) (length 0) hide (name "VCC" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))))) (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "D" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LED" (id 1) (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "LED diode" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Light emitting diode" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LED_0_1" (polyline (pts (xy -1.270000 -1.270000) (xy -1.270000 1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.270000 0) (xy 1.270000 0)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 1.270000 -1.270000) (xy 1.270000 1.270000) (xy -1.270000 0) (xy 1.270000 -1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -3.048000 -0.762000) (xy -4.572000 -2.286000) (xy -3.810000 -2.286000) (xy -4.572000 -2.286000) (xy -4.572000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.778000 -0.762000) (xy -3.302000 -2.286000) (xy -2.540000 -2.286000) (xy -3.302000 -2.286000) (xy -3.302000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "LED_1_1" (pin passive line (at -3.810000 0 0) (length 2.540000) (name "K" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 2.540000) (name "A" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3.3V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <lib_id> attrs{value:"power:+3.3V" }
+  <at> attrs{misc:0 name:76.200000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1bf214b1-6ac9-4694-be83-f308ad0a37fa }
+  <property> at=(114.300,80.010,0.000) attrs{name:"#PWR01002" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:129.540000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:801334a8-b16d-4581-b41c-57060138b236 }
+  <property> at=(127.000,80.010,0.000) attrs{name:"U1001" value:"Reference" }
+  <property> at=(129.540,87.630,0.000) attrs{name:"74AHC1G00" value:"Value" }
+  <property> at=(129.540,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,83.820,0.000) attrs{name:"http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ac2f871a-42f2-48ee-931a-84e6d47f5587 }
+  <property> at=(146.050,99.060,0.000) attrs{name:"#PWR01003" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,96.520,0.000) attrs{name:"GND" value:"Value" }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:180 name:83.820000 value:142.240000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e3eceee5-b863-4693-8411-20a6d0dcce37 }
+  <property> at=(142.240,86.360,0.000) attrs{name:"D1001" value:"Reference" }
+  <property> at=(142.240,81.280,0.000) attrs{name:"LED" value:"Value" }
+  <property> at=(142.240,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(142.240,83.820,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:106.680000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e5f27bfb-b54d-4584-a941-e20e21a3cd13 }
+  <property> at=(106.680,80.010,0.000) attrs{name:"#PWR01001" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "+3.3V_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR?" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V_1" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_1_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "74xGxx:74AHC1G00" (pin_names (offset 1.016000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -2.540000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74AHC1G00" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Single Gate NAND LVC CMOS" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Single NAND Gate, Low-Voltage CMOS" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT* SG-*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74AHC1G00_0_1" (arc (start 0 -2.540000) (mid 2.540000 0) (end 0 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 -2.540000) (xy -3.810000 -2.540000) (xy -3.810000 2.540000) (xy 0 2.540000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "74AHC1G00_1_1" (pin input line (at -7.620000 1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -7.620000 -1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 -2.540000 270) (length 0) hide (name "GND" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000))))) (pin output inverted (at 6.350000 0 180) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 2.540000 90) (length 0) hide (name "VCC" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))))) (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "D" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LED" (id 1) (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "LED diode" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Light emitting diode" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LED_0_1" (polyline (pts (xy -1.270000 -1.270000) (xy -1.270000 1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.270000 0) (xy 1.270000 0)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 1.270000 -1.270000) (xy 1.270000 1.270000) (xy -1.270000 0) (xy 1.270000 -1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -3.048000 -0.762000) (xy -4.572000 -2.286000) (xy -3.810000 -2.286000) (xy -4.572000 -2.286000) (xy -4.572000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.778000 -0.762000) (xy -3.302000 -2.286000) (xy -2.540000 -2.286000) (xy -3.302000 -2.286000) (xy -3.302000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "LED_1_1" (pin passive line (at -3.810000 0 0) (length 2.540000) (name "K" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 2.540000) (name "A" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3.3V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <lib_id> attrs{value:"power:+3.3V" }
+  <at> attrs{misc:0 name:76.200000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1bf214b1-6ac9-4694-be83-f308ad0a37fa }
+  <property> at=(114.300,80.010,0.000) attrs{name:"#PWR01002" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:129.540000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:801334a8-b16d-4581-b41c-57060138b236 }
+  <property> at=(127.000,80.010,0.000) attrs{name:"U1001" value:"Reference" }
+  <property> at=(129.540,87.630,0.000) attrs{name:"74AHC1G00" value:"Value" }
+  <property> at=(129.540,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,83.820,0.000) attrs{name:"http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ac2f871a-42f2-48ee-931a-84e6d47f5587 }
+  <property> at=(146.050,99.060,0.000) attrs{name:"#PWR01003" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,96.520,0.000) attrs{name:"GND" value:"Value" }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:180 name:83.820000 value:142.240000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e3eceee5-b863-4693-8411-20a6d0dcce37 }
+  <property> at=(142.240,86.360,0.000) attrs{name:"D1001" value:"Reference" }
+  <property> at=(142.240,81.280,0.000) attrs{name:"LED" value:"Value" }
+  <property> at=(142.240,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(142.240,83.820,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:106.680000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e5f27bfb-b54d-4584-a941-e20e21a3cd13 }
+  <property> at=(106.680,80.010,0.000) attrs{name:"#PWR01001" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "+3.3V_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR?" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V_1" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_1_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "74xGxx:74AHC1G00" (pin_names (offset 1.016000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -2.540000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74AHC1G00" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Single Gate NAND LVC CMOS" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Single NAND Gate, Low-Voltage CMOS" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT* SG-*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74AHC1G00_0_1" (arc (start 0 -2.540000) (mid 2.540000 0) (end 0 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 -2.540000) (xy -3.810000 -2.540000) (xy -3.810000 2.540000) (xy 0 2.540000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "74AHC1G00_1_1" (pin input line (at -7.620000 1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -7.620000 -1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 -2.540000 270) (length 0) hide (name "GND" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000))))) (pin output inverted (at 6.350000 0 180) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 2.540000 90) (length 0) hide (name "VCC" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))))) (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "D" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LED" (id 1) (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "LED diode" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Light emitting diode" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LED_0_1" (polyline (pts (xy -1.270000 -1.270000) (xy -1.270000 1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.270000 0) (xy 1.270000 0)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 1.270000 -1.270000) (xy 1.270000 1.270000) (xy -1.270000 0) (xy 1.270000 -1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -3.048000 -0.762000) (xy -4.572000 -2.286000) (xy -3.810000 -2.286000) (xy -4.572000 -2.286000) (xy -4.572000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.778000 -0.762000) (xy -3.302000 -2.286000) (xy -2.540000 -2.286000) (xy -3.302000 -2.286000) (xy -3.302000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "LED_1_1" (pin passive line (at -3.810000 0 0) (length 2.540000) (name "K" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 2.540000) (name "A" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3.3V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <lib_id> attrs{value:"power:+3.3V" }
+  <at> attrs{misc:0 name:76.200000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1bf214b1-6ac9-4694-be83-f308ad0a37fa }
+  <property> at=(114.300,80.010,0.000) attrs{name:"#PWR01002" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:129.540000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:801334a8-b16d-4581-b41c-57060138b236 }
+  <property> at=(127.000,80.010,0.000) attrs{name:"U1001" value:"Reference" }
+  <property> at=(129.540,87.630,0.000) attrs{name:"74AHC1G00" value:"Value" }
+  <property> at=(129.540,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,83.820,0.000) attrs{name:"http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ac2f871a-42f2-48ee-931a-84e6d47f5587 }
+  <property> at=(146.050,99.060,0.000) attrs{name:"#PWR01003" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,96.520,0.000) attrs{name:"GND" value:"Value" }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:180 name:83.820000 value:142.240000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e3eceee5-b863-4693-8411-20a6d0dcce37 }
+  <property> at=(142.240,86.360,0.000) attrs{name:"D1001" value:"Reference" }
+  <property> at=(142.240,81.280,0.000) attrs{name:"LED" value:"Value" }
+  <property> at=(142.240,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(142.240,83.820,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:106.680000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e5f27bfb-b54d-4584-a941-e20e21a3cd13 }
+  <property> at=(106.680,80.010,0.000) attrs{name:"#PWR01001" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "+3.3V_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR?" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V_1" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_1_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "74xGxx:74AHC1G00" (pin_names (offset 1.016000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -2.540000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74AHC1G00" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Single Gate NAND LVC CMOS" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Single NAND Gate, Low-Voltage CMOS" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT* SG-*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74AHC1G00_0_1" (arc (start 0 -2.540000) (mid 2.540000 0) (end 0 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 -2.540000) (xy -3.810000 -2.540000) (xy -3.810000 2.540000) (xy 0 2.540000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "74AHC1G00_1_1" (pin input line (at -7.620000 1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -7.620000 -1.270000 0) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 -2.540000 270) (length 0) hide (name "GND" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000))))) (pin output inverted (at 6.350000 0 180) (length 3.810000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at 0 2.540000 90) (length 0) hide (name "VCC" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))))) (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "D" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LED" (id 1) (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "LED diode" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Light emitting diode" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LED_0_1" (polyline (pts (xy -1.270000 -1.270000) (xy -1.270000 1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.270000 0) (xy 1.270000 0)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 1.270000 -1.270000) (xy 1.270000 1.270000) (xy -1.270000 0) (xy 1.270000 -1.270000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -3.048000 -0.762000) (xy -4.572000 -2.286000) (xy -3.810000 -2.286000) (xy -4.572000 -2.286000) (xy -4.572000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -1.778000 -0.762000) (xy -3.302000 -2.286000) (xy -2.540000 -2.286000) (xy -3.302000 -2.286000) (xy -3.302000 -1.524000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "LED_1_1" (pin passive line (at -3.810000 0 0) (length 2.540000) (name "K" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 2.540000) (name "A" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+3.3V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3.3V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <lib_id> attrs{value:"power:+3.3V" }
+  <at> attrs{misc:0 name:76.200000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1bf214b1-6ac9-4694-be83-f308ad0a37fa }
+  <property> at=(114.300,80.010,0.000) attrs{name:"#PWR01002" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:129.540000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:801334a8-b16d-4581-b41c-57060138b236 }
+  <property> at=(127.000,80.010,0.000) attrs{name:"U1001" value:"Reference" }
+  <property> at=(129.540,87.630,0.000) attrs{name:"74AHC1G00" value:"Value" }
+  <property> at=(129.540,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,83.820,0.000) attrs{name:"http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ac2f871a-42f2-48ee-931a-84e6d47f5587 }
+  <property> at=(146.050,99.060,0.000) attrs{name:"#PWR01003" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,96.520,0.000) attrs{name:"GND" value:"Value" }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,92.710,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:180 name:83.820000 value:142.240000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e3eceee5-b863-4693-8411-20a6d0dcce37 }
+  <property> at=(142.240,86.360,0.000) attrs{name:"D1001" value:"Reference" }
+  <property> at=(142.240,81.280,0.000) attrs{name:"LED" value:"Value" }
+  <property> at=(142.240,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(142.240,83.820,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:106.680000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e5f27bfb-b54d-4584-a941-e20e21a3cd13 }
+  <property> at=(106.680,80.010,0.000) attrs{name:"#PWR01001" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,72.644,0.000) attrs{name:"+3.3V" value:"Value" }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(106.680,76.200,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+  (wire (start 106.68 85.09) (end 121.92 85.09) (angle 0) (thickness 0.25))
+  (wire (start 114.3 76.2) (end 114.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 135.89 83.82) (end 138.43 83.82) (angle 0) (thickness 0.25))
+  (wire (start 114.3 82.55) (end 121.92 82.55) (angle 0) (thickness 0.25))
+  (wire (start 106.68 76.2) (end 106.68 85.09) (angle 0) (thickness 0.25))
+  (wire (start 146.05 83.82) (end 146.05 92.71) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

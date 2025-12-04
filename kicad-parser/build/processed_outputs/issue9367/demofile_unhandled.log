@@ -1,0 +1,920 @@
+[DEBUG] Root children: 46
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="uuid"
+  child 4 tag="paper"
+  child 5 tag="lib_symbols"
+  child 6 tag="no_connect"
+  child 7 tag="no_connect"
+  child 8 tag="wire"
+  child 9 tag="wire"
+  child 10 tag="wire"
+  child 11 tag="wire"
+  child 12 tag="wire"
+  child 13 tag="wire"
+  child 14 tag="wire"
+  child 15 tag="wire"
+  child 16 tag="wire"
+  child 17 tag="wire"
+  child 18 tag="wire"
+  child 19 tag="text_box"
+  child 20 tag="text_box"
+  child 21 tag="text_box"
+  child 22 tag="text_box"
+  child 23 tag="text_box"
+  child 24 tag="text_box"
+  child 25 tag="text_box"
+  child 26 tag="text_box"
+  child 27 tag="text_box"
+  child 28 tag="label"
+  child 29 tag="label"
+  child 30 tag="label"
+  child 31 tag="label"
+  child 32 tag="label"
+  child 33 tag="label"
+  child 34 tag="global_label"
+  child 35 tag="global_label"
+  child 36 tag="global_label"
+  child 37 tag="global_label"
+  child 38 tag="global_label"
+  child 39 tag="global_label"
+  child 40 tag="global_label"
+  child 41 tag="hierarchical_label"
+  child 42 tag="symbol"
+  child 43 tag="symbol"
+  child 44 tag="symbol"
+  child 45 tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=12506
+kicad_sch  (children=46)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=20
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=43
+  uuid  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=1222
+  lib_symbols  (children=2)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=1222
+[BaselineBoard] setLibSymbolsRaw len=1222
+[BaselineBoard] appendRawPiece len=1222
+AstCleaner: handling lib_symbols at 0x7fff1c6d8d20
+[handleLibSymbolsCleanNode] called, children=1
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=1222
+[BaselineBoard] appendRawPiece len=1208
+    symbol  (children=15)
+[BaselineBoard] appendRawPiece len=82
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=82
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=144
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=144
+[BaselineBoard] appendRawPiece len=144
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 238.759995,109.220001->240.029999,109.220001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=1
+[BaselineBoard] appendRawPiece len=59
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=26
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=26
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=144
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=144
+[BaselineBoard] appendRawPiece len=144
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 238.759995,118.110001->238.759995,119.379997 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=2
+[BaselineBoard] appendRawPiece len=59
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=26
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=26
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 121.919998,78.739998->138.429993,78.739998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=3
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=144
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=144
+[BaselineBoard] appendRawPiece len=144
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 238.759995,109.220001->238.759995,110.489998 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=4
+[BaselineBoard] appendRawPiece len=59
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=26
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=26
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 87.629997,124.459999->91.440002,124.459999 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=5
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 121.919998,71.120003->138.429993,71.120003 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=6
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 237.490005,85.089996->241.300003,85.089996 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=7
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 124.459999,97.790001->135.889999,97.790001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=8
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=144
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=144
+[BaselineBoard] appendRawPiece len=144
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 238.759995,119.379997->240.029999,119.379997 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=9
+[BaselineBoard] appendRawPiece len=59
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=26
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=26
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 87.629997,118.110001->91.440002,118.110001 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=10
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 237.490005,92.709999->241.300003,92.709999 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=11
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=345
+  text_box  (children=8)
+[BaselineBoard] appendRawPiece len=291
+  text_box  (children=8)
+[BaselineBoard] appendRawPiece len=313
+  text_box  (children=8)
+[BaselineBoard] appendRawPiece len=282
+  text_box  (children=8)
+[BaselineBoard] appendRawPiece len=346
+  text_box  (children=8)
+[BaselineBoard] appendRawPiece len=289
+  text_box  (children=8)
+[BaselineBoard] appendRawPiece len=288
+  text_box  (children=8)
+[BaselineBoard] appendRawPiece len=291
+  text_box  (children=8)
+[BaselineBoard] appendRawPiece len=276
+  text_box  (children=8)
+[BaselineBoard] appendRawPiece len=169
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=169
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=169
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=169
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=170
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=169
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=433
+  global_label  (children=9)
+[BaselineBoard] appendRawPiece len=429
+  global_label  (children=9)
+[BaselineBoard] appendRawPiece len=429
+  global_label  (children=9)
+[BaselineBoard] appendRawPiece len=429
+  global_label  (children=9)
+[BaselineBoard] appendRawPiece len=431
+  global_label  (children=9)
+[BaselineBoard] appendRawPiece len=431
+  global_label  (children=9)
+[BaselineBoard] appendRawPiece len=431
+  global_label  (children=9)
+[BaselineBoard] appendRawPiece len=190
+  hierarchical_label  (children=7)
+[BaselineBoard] appendRawPiece len=806
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=811
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=806
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=39
+  sheet_instances  (children=2)
+  [UNHANDLED-PCB] tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=21
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+AstCleaner: handling lib_symbols at 0x62b6747d52b0
+[UNHANDLED] cleanInner:no_connect addr=0x62b6747d52f0 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747d7f00 atom="no_connect"
+    [1] addr=0x62b6747d7f40 list_size=3 head="at"
+    [2] addr=0x62b6747d7f80 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x62b6747d5330 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747d8130 atom="no_connect"
+    [1] addr=0x62b6747d8170 list_size=3 head="at"
+    [2] addr=0x62b6747d81b0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:text_box addr=0x62b6747d5630 -> (text_box "We do not raise an unconnected error on the NC because the error is most likely in the label naming not the NC placement" (at) (size) (stroke) (fill) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747c3040 atom="text_box"
+    [1] addr=0x62b6747c3080 atom=""We do not raise an unconnected error on the NC because the error is most likely in the label naming not the NC placement""
+    [2] addr=0x62b6747c30c0 list_size=4 head="at"
+    [3] addr=0x62b6747c3100 list_size=3 head="size"
+    [4] addr=0x62b6747c3140 list_size=3 head="stroke"
+    [5] addr=0x62b6747c3180 list_size=2 head="fill"
+    [6] addr=0x62b6747c31c0 list_size=3 head="effects"
+    [7] addr=0x62b6747c3200 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:text_box addr=0x62b6747d5670 -> (text_box "Each label on a net without a pin gets the unconnected label error" (at) (size) (stroke) (fill) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747c3250 atom="text_box"
+    [1] addr=0x62b6747c3290 atom=""Each label on a net without a pin gets the unconnected label error""
+    [2] addr=0x62b6747c32d0 list_size=4 head="at"
+    [3] addr=0x62b6747c3310 list_size=3 head="size"
+    [4] addr=0x62b6747c3350 list_size=3 head="stroke"
+    [5] addr=0x62b6747c3390 list_size=2 head="fill"
+    [6] addr=0x62b6747c33d0 list_size=3 head="effects"
+    [7] addr=0x62b6747c3410 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:text_box addr=0x62b6747d56b0 -> (text_box "Global labels connect to local labels, so this should be an error connecting RX1 to TX1" (at) (size) (stroke) (fill) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747d0c30 atom="text_box"
+    [1] addr=0x62b6747d0c70 atom=""Global labels connect to local labels, so this should be an error connecting RX1 to TX1""
+    [2] addr=0x62b6747d0cb0 list_size=4 head="at"
+    [3] addr=0x62b6747d0cf0 list_size=3 head="size"
+    [4] addr=0x62b6747d0d30 list_size=3 head="stroke"
+    [5] addr=0x62b6747d0d70 list_size=2 head="fill"
+    [6] addr=0x62b6747d0db0 list_size=3 head="effects"
+    [7] addr=0x62b6747d0df0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:text_box addr=0x62b6747d56f0 -> (text_box "LL2 labels are unconnected because they only have 1 pin" (at) (size) (stroke) (fill) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747d0f40 atom="text_box"
+    [1] addr=0x62b6747d0f80 atom=""LL2 labels are unconnected because they only have 1 pin""
+    [2] addr=0x62b6747d0fc0 list_size=4 head="at"
+    [3] addr=0x62b6747d1000 list_size=3 head="size"
+    [4] addr=0x62b6747d1040 list_size=3 head="stroke"
+    [5] addr=0x62b6747d1080 list_size=2 head="fill"
+    [6] addr=0x62b6747d10c0 list_size=3 head="effects"
+    [7] addr=0x62b6747d1100 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:text_box addr=0x62b6747d5730 -> (text_box "An error is raised here that `GL1` is not connected anywhere else in the schematic (i.e. there are no pins for this net)" (at) (size) (stroke) (fill) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747de7f0 atom="text_box"
+    [1] addr=0x62b6747de830 atom=""An error is raised here that `GL1` is not connected anywhere else in the schematic (i.e. there are no pins for this net)""
+    [2] addr=0x62b6747de870 list_size=4 head="at"
+    [3] addr=0x62b6747de8b0 list_size=3 head="size"
+    [4] addr=0x62b6747de8f0 list_size=3 head="stroke"
+    [5] addr=0x62b6747de930 list_size=2 head="fill"
+    [6] addr=0x62b6747de970 list_size=3 head="effects"
+    [7] addr=0x62b6747de9b0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:text_box addr=0x62b6747d5770 -> (text_box "GL4 labels should not raise an error because they have 2 pins" (at) (size) (stroke) (fill) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747df310 atom="text_box"
+    [1] addr=0x62b6747df350 atom=""GL4 labels should not raise an error because they have 2 pins""
+    [2] addr=0x62b6747df390 list_size=4 head="at"
+    [3] addr=0x62b6747df3d0 list_size=3 head="size"
+    [4] addr=0x62b6747df410 list_size=3 head="stroke"
+    [5] addr=0x62b6747df450 list_size=2 head="fill"
+    [6] addr=0x62b6747df490 list_size=3 head="effects"
+    [7] addr=0x62b6747df4d0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:text_box addr=0x62b6747d57b0 -> (text_box "LL3 labels should not raise an error because they have 2 pins" (at) (size) (stroke) (fill) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747dfda0 atom="text_box"
+    [1] addr=0x62b6747dfde0 atom=""LL3 labels should not raise an error because they have 2 pins""
+    [2] addr=0x62b6747dfe20 list_size=4 head="at"
+    [3] addr=0x62b6747dfe60 list_size=3 head="size"
+    [4] addr=0x62b6747dfea0 list_size=3 head="stroke"
+    [5] addr=0x62b6747dfee0 list_size=2 head="fill"
+    [6] addr=0x62b6747dff20 list_size=3 head="effects"
+    [7] addr=0x62b6747dff60 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:text_box addr=0x62b6747d57f0 -> (text_box "All three label types should raise the same error when floating" (at) (size) (stroke) (fill) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e0830 atom="text_box"
+    [1] addr=0x62b6747e0870 atom=""All three label types should raise the same error when floating""
+    [2] addr=0x62b6747e08b0 list_size=4 head="at"
+    [3] addr=0x62b6747e08f0 list_size=3 head="size"
+    [4] addr=0x62b6747e0930 list_size=3 head="stroke"
+    [5] addr=0x62b6747e0970 list_size=2 head="fill"
+    [6] addr=0x62b6747e09b0 list_size=3 head="effects"
+    [7] addr=0x62b6747e09f0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:text_box addr=0x62b6747d5830 -> (text_box "Two global labels on the same net should be an error" (at) (size) (stroke) (fill) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e12c0 atom="text_box"
+    [1] addr=0x62b6747e1300 atom=""Two global labels on the same net should be an error""
+    [2] addr=0x62b6747e1340 list_size=4 head="at"
+    [3] addr=0x62b6747e1380 list_size=3 head="size"
+    [4] addr=0x62b6747e13c0 list_size=3 head="stroke"
+    [5] addr=0x62b6747e1400 list_size=2 head="fill"
+    [6] addr=0x62b6747e1440 list_size=3 head="effects"
+    [7] addr=0x62b6747e1480 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:global_label addr=0x62b6747d59f0 -> (global_label "GL2" (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e42f0 atom="global_label"
+    [1] addr=0x62b6747e4330 atom=""GL2""
+    [2] addr=0x62b6747e4370 list_size=2 head="shape"
+    [3] addr=0x62b6747e43b0 list_size=4 head="at"
+    [4] addr=0x62b6747e43f0 list_size=1 head="fields_autoplaced"
+    [5] addr=0x62b6747e4430 list_size=3 head="effects"
+    [6] addr=0x62b6747e4470 list_size=2 head="uuid"
+    [7] addr=0x62b6747e44b0 list_size=5 head="property"
+    [8] addr=0x62b6747e44f0 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x62b6747e4370 -> (shape input )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e4540 atom="shape"
+    [1] addr=0x62b6747e4580 atom="input"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x62b6747e43f0 -> (fields_autoplaced )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e46e0 atom="fields_autoplaced"
+[UNHANDLED] cleanInner:global_label addr=0x62b6747d5a30 -> (global_label "GL1" (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e5590 atom="global_label"
+    [1] addr=0x62b6747e55d0 atom=""GL1""
+    [2] addr=0x62b6747e5610 list_size=2 head="shape"
+    [3] addr=0x62b6747e5650 list_size=4 head="at"
+    [4] addr=0x62b6747e5690 list_size=1 head="fields_autoplaced"
+    [5] addr=0x62b6747e56d0 list_size=3 head="effects"
+    [6] addr=0x62b6747e5710 list_size=2 head="uuid"
+    [7] addr=0x62b6747e5750 list_size=5 head="property"
+    [8] addr=0x62b6747e5790 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x62b6747e5610 -> (shape input )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e57e0 atom="shape"
+    [1] addr=0x62b6747e5820 atom="input"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x62b6747e5690 -> (fields_autoplaced )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e5980 atom="fields_autoplaced"
+[UNHANDLED] cleanInner:global_label addr=0x62b6747d5a70 -> (global_label "RX1" (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e6830 atom="global_label"
+    [1] addr=0x62b6747e6870 atom=""RX1""
+    [2] addr=0x62b6747e68b0 list_size=2 head="shape"
+    [3] addr=0x62b6747e68f0 list_size=4 head="at"
+    [4] addr=0x62b6747e6930 list_size=1 head="fields_autoplaced"
+    [5] addr=0x62b6747e6970 list_size=3 head="effects"
+    [6] addr=0x62b6747e69b0 list_size=2 head="uuid"
+    [7] addr=0x62b6747e69f0 list_size=5 head="property"
+    [8] addr=0x62b6747e6a30 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x62b6747e68b0 -> (shape input )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e6a80 atom="shape"
+    [1] addr=0x62b6747e6ac0 atom="input"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x62b6747e6930 -> (fields_autoplaced )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e6c20 atom="fields_autoplaced"
+[UNHANDLED] cleanInner:global_label addr=0x62b6747d5ab0 -> (global_label "TX1" (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e7ad0 atom="global_label"
+    [1] addr=0x62b6747e7b10 atom=""TX1""
+    [2] addr=0x62b6747e7b50 list_size=2 head="shape"
+    [3] addr=0x62b6747e7b90 list_size=4 head="at"
+    [4] addr=0x62b6747e7bd0 list_size=1 head="fields_autoplaced"
+    [5] addr=0x62b6747e7c10 list_size=3 head="effects"
+    [6] addr=0x62b6747e7c50 list_size=2 head="uuid"
+    [7] addr=0x62b6747e7c90 list_size=5 head="property"
+    [8] addr=0x62b6747e7cd0 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x62b6747e7b50 -> (shape input )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e7d20 atom="shape"
+    [1] addr=0x62b6747e7d60 atom="input"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x62b6747e7bd0 -> (fields_autoplaced )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e7ec0 atom="fields_autoplaced"
+[UNHANDLED] cleanInner:global_label addr=0x62b6747d5af0 -> (global_label "GL4" (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e8d70 atom="global_label"
+    [1] addr=0x62b6747e8db0 atom=""GL4""
+    [2] addr=0x62b6747e8df0 list_size=2 head="shape"
+    [3] addr=0x62b6747e8e30 list_size=4 head="at"
+    [4] addr=0x62b6747e8e70 list_size=1 head="fields_autoplaced"
+    [5] addr=0x62b6747e8eb0 list_size=3 head="effects"
+    [6] addr=0x62b6747e8ef0 list_size=2 head="uuid"
+    [7] addr=0x62b6747e8f30 list_size=5 head="property"
+    [8] addr=0x62b6747e8f70 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x62b6747e8df0 -> (shape input )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e8fc0 atom="shape"
+    [1] addr=0x62b6747e9000 atom="input"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x62b6747e8e70 -> (fields_autoplaced )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747e9160 atom="fields_autoplaced"
+[UNHANDLED] cleanInner:global_label addr=0x62b6747d5b30 -> (global_label "GL4" (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747ea010 atom="global_label"
+    [1] addr=0x62b6747ea050 atom=""GL4""
+    [2] addr=0x62b6747ea090 list_size=2 head="shape"
+    [3] addr=0x62b6747ea0d0 list_size=4 head="at"
+    [4] addr=0x62b6747ea110 list_size=1 head="fields_autoplaced"
+    [5] addr=0x62b6747ea150 list_size=3 head="effects"
+    [6] addr=0x62b6747ea190 list_size=2 head="uuid"
+    [7] addr=0x62b6747ea1d0 list_size=5 head="property"
+    [8] addr=0x62b6747ea210 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x62b6747ea090 -> (shape input )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747ea260 atom="shape"
+    [1] addr=0x62b6747ea2a0 atom="input"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x62b6747ea110 -> (fields_autoplaced )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747ea400 atom="fields_autoplaced"
+[UNHANDLED] cleanInner:global_label addr=0x62b6747d5b70 -> (global_label "GL3" (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747eb2b0 atom="global_label"
+    [1] addr=0x62b6747eb2f0 atom=""GL3""
+    [2] addr=0x62b6747eb330 list_size=2 head="shape"
+    [3] addr=0x62b6747eb370 list_size=4 head="at"
+    [4] addr=0x62b6747eb3b0 list_size=1 head="fields_autoplaced"
+    [5] addr=0x62b6747eb3f0 list_size=3 head="effects"
+    [6] addr=0x62b6747eb430 list_size=2 head="uuid"
+    [7] addr=0x62b6747eb470 list_size=5 head="property"
+    [8] addr=0x62b6747eb4b0 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x62b6747eb330 -> (shape input )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747eb500 atom="shape"
+    [1] addr=0x62b6747eb540 atom="input"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x62b6747eb3b0 -> (fields_autoplaced )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747eb6a0 atom="fields_autoplaced"
+[UNHANDLED] cleanInner:hierarchical_label addr=0x62b6747d5bb0 -> (hierarchical_label "HL1" (shape) (at) (fields_autoplaced) (effects) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747ec550 atom="hierarchical_label"
+    [1] addr=0x62b6747ec590 atom=""HL1""
+    [2] addr=0x62b6747ec5d0 list_size=2 head="shape"
+    [3] addr=0x62b6747ec610 list_size=4 head="at"
+    [4] addr=0x62b6747ec650 list_size=1 head="fields_autoplaced"
+    [5] addr=0x62b6747ec690 list_size=3 head="effects"
+    [6] addr=0x62b6747ec6d0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:shape addr=0x62b6747ec5d0 -> (shape input )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747ec750 atom="shape"
+    [1] addr=0x62b6747ec790 atom="input"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x62b6747ec650 -> (fields_autoplaced )
+  children details (child_index: addr type extra):
+    [0] addr=0x62b6747ec8f0 atom="fields_autoplaced"
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20221206 }
+  <generator> attrs{value:eeschema }
+  <paper> attrs{value:"A4" }
+  <lib_symbols>
+  <symbol> property{"Reference"'...
+[BaselineBoard] appendRawPiece len=15213 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=44
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20221206 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:eeschema }'...
+[BaselineBoard] appendRawPiece len=34 head="generator"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=1
+[handleLibSymbolsCleanNode] called, children=1
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(91.440,110.490,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(121.920,78.740,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='text_box' children=4
+[appendRawPieceFromClean] piece_head='<text_box> at=(90.170,77.470,0.000) attrs{value:"We do not raise an unconnected error on the NC because the error is most likely in the label naming not the NC '...
+[BaselineBoard] appendRawPiece len=390 head="text_box"
+[walkSchematicOnce] child tag='text_box' children=4
+[appendRawPieceFromClean] piece_head='<text_box> at=(90.170,62.230,0.000) attrs{value:"Each label on a net without a pin gets the unconnected label error" }
+  <size> attrs{token_1:30.480000 token_2:'...
+[BaselineBoard] appendRawPiece len=336 head="text_box"
+[walkSchematicOnce] child tag='text_box' children=4
+[appendRawPieceFromClean] piece_head='<text_box> at=(146.050,64.770,0.000) attrs{value:"Global labels connect to local labels, so this should be an error connecting RX1 to TX1" }
+  <size> attrs{toke'...
+[BaselineBoard] appendRawPiece len=358 head="text_box"
+[walkSchematicOnce] child tag='text_box' children=4
+[appendRawPieceFromClean] piece_head='<text_box> at=(69.850,110.490,0.000) attrs{value:"LL2 labels are unconnected because they only have 1 pin" }
+  <size> attrs{token_1:13.970000 token_2:15.240000 '...
+[BaselineBoard] appendRawPiece len=327 head="text_box"
+[walkSchematicOnce] child tag='text_box' children=4
+[appendRawPieceFromClean] piece_head='<text_box> at=(144.780,96.520,0.000) attrs{value:"An error is raised here that `GL1` is not connected anywhere else in the schematic (i.e. there are no pins for'...
+[BaselineBoard] appendRawPiece len=391 head="text_box"
+[walkSchematicOnce] child tag='text_box' children=4
+[appendRawPieceFromClean] piece_head='<text_box> at=(219.710,105.410,0.000) attrs{value:"GL4 labels should not raise an error because they have 2 pins" }
+  <size> attrs{token_1:13.970000 token_2:15.'...
+[BaselineBoard] appendRawPiece len=334 head="text_box"
+[walkSchematicOnce] child tag='text_box' children=4
+[appendRawPieceFromClean] piece_head='<text_box> at=(219.710,81.280,0.000) attrs{value:"LL3 labels should not raise an error because they have 2 pins" }
+  <size> attrs{token_1:13.970000 token_2:15.2'...
+[BaselineBoard] appendRawPiece len=333 head="text_box"
+[walkSchematicOnce] child tag='text_box' children=4
+[appendRawPieceFromClean] piece_head='<text_box> at=(119.380,119.380,0.000) attrs{value:"All three label types should raise the same error when floating" }
+  <size> attrs{token_1:13.970000 token_2:1'...
+[BaselineBoard] appendRawPiece len=336 head="text_box"
+[walkSchematicOnce] child tag='text_box' children=4
+[appendRawPieceFromClean] piece_head='<text_box> at=(86.360,96.520,0.000) attrs{value:"Two global labels on the same net should be an error" }
+  <size> attrs{token_1:30.480000 token_2:6.350000 }
+  <'...
+[BaselineBoard] appendRawPiece len=321 head="text_box"
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='global_label' children=5
+[appendRawPieceFromClean] piece_head='<global_label> at=(124.460,97.790,180.000) property{"Intersheetrefs"="${INTERSHEET_REFS}"} attrs{value:"GL2" }
+  <shape> attrs{value:input }
+  <fields_autoplace'...
+[BaselineBoard] appendRawPiece len=511 head="global_label"
+[walkSchematicOnce] child tag='global_label' children=5
+[appendRawPieceFromClean] piece_head='<global_label> at=(135.890,97.790,0.000) property{"Intersheetrefs"="${INTERSHEET_REFS}"} attrs{value:"GL1" }
+  <shape> attrs{value:input }
+  <fields_autoplaced>'...
+[BaselineBoard] appendRawPiece len=508 head="global_label"
+[walkSchematicOnce] child tag='global_label' children=5
+[appendRawPieceFromClean] piece_head='<global_label> at=(138.430,78.740,0.000) property{"Intersheetrefs"="${INTERSHEET_REFS}"} attrs{value:"RX1" }
+  <shape> attrs{value:input }
+  <fields_autoplaced>'...
+[BaselineBoard] appendRawPiece len=508 head="global_label"
+[walkSchematicOnce] child tag='global_label' children=5
+[appendRawPieceFromClean] piece_head='<global_label> at=(138.430,71.120,0.000) property{"Intersheetrefs"="${INTERSHEET_REFS}"} attrs{value:"TX1" }
+  <shape> attrs{value:input }
+  <fields_autoplaced>'...
+[BaselineBoard] appendRawPiece len=508 head="global_label"
+[walkSchematicOnce] child tag='global_label' children=5
+[appendRawPieceFromClean] piece_head='<global_label> at=(240.030,119.380,0.000) property{"Intersheetrefs"="${INTERSHEET_REFS}"} attrs{value:"GL4" }
+  <shape> attrs{value:input }
+  <fields_autoplaced'...
+[BaselineBoard] appendRawPiece len=510 head="global_label"
+[walkSchematicOnce] child tag='global_label' children=5
+[appendRawPieceFromClean] piece_head='<global_label> at=(240.030,109.220,0.000) property{"Intersheetrefs"="${INTERSHEET_REFS}"} attrs{value:"GL4" }
+  <shape> attrs{value:input }
+  <fields_autoplaced'...
+[BaselineBoard] appendRawPiece len=510 head="global_label"
+[walkSchematicOnce] child tag='global_label' children=5
+[appendRawPieceFromClean] piece_head='<global_label> at=(135.890,120.650,0.000) property{"Intersheetrefs"="${INTERSHEET_REFS}"} attrs{value:"GL3" }
+  <shape> attrs{value:input }
+  <fields_autoplaced'...
+[BaselineBoard] appendRawPiece len=510 head="global_label"
+[walkSchematicOnce] child tag='hierarchical_label' children=3
+[handleTextFromClean] called for tag='hierarchical_label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='sheet_instances' children=1
+[appendRawPieceFromClean] piece_head='<sheet_instances>
+  <path> attrs{page:"1" }'...
+[BaselineBoard] appendRawPiece len=43 head="sheet_instances"
+=== SUMMARY === junctionShapes=0 wireShapes=22 symbols=3 rawPieces=235
+=== DUMP wires: count=22 ===
+ wire[0] start=(238.76,109.22) end=(240.03,109.22)
+ wire[1] start=(238.76,119.38) end=(238.76,118.11)
+ wire[2] start=(121.92,78.74) end=(138.43,78.74)
+ wire[3] start=(238.76,110.49) end=(238.76,109.22)
+ wire[4] start=(87.63,124.46) end=(91.44,124.46)
+ wire[5] start=(121.92,71.12) end=(138.43,71.12)
+ wire[6] start=(237.49,85.09) end=(241.30,85.09)
+ wire[7] start=(124.46,97.79) end=(135.89,97.79)
+ wire[8] start=(240.03,119.38) end=(238.76,119.38)
+ wire[9] start=(87.63,118.11) end=(91.44,118.11)
+ wire[10] start=(237.49,92.71) end=(241.30,92.71)
+ wire[11] start=(238.76,109.22) end=(240.03,109.22)
+ wire[12] start=(238.76,119.38) end=(238.76,118.11)
+ wire[13] start=(121.92,78.74) end=(138.43,78.74)
+ wire[14] start=(238.76,110.49) end=(238.76,109.22)
+ wire[15] start=(87.63,124.46) end=(91.44,124.46)
+ wire[16] start=(121.92,71.12) end=(138.43,71.12)
+ wire[17] start=(237.49,85.09) end=(241.30,85.09)
+ wire[18] start=(124.46,97.79) end=(135.89,97.79)
+ wire[19] start=(240.03,119.38) end=(238.76,119.38)
+ wire[20] start=(87.63,118.11) end=(91.44,118.11)
+ wire[21] start=(237.49,92.71) end=(241.30,92.71)
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

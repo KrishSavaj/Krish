@@ -1,0 +1,39 @@
+
+=== JUNCTION ===
+❌ Missing (3):
+   - (130.809998, 101.599998)
+   - (130.809998, 113.029999)
+   - (148.589996, 101.599998)
+
+=== WIRE ===
+❌ Missing (10):
+   - [(124.46, 113.03), (130.81, 113.03)]
+   - [(124.46, 114.3), (124.46, 113.03)]
+   - [(130.81, 101.6), (140.97, 101.6)]
+   - [(130.81, 111.76), (130.81, 113.03)]
+   - [(130.81, 113.03), (130.81, 114.3)]
+   - [(130.81, 78.74), (130.81, 101.6)]
+   - [(148.59, 101.6), (157.48, 101.6)]
+   - [(157.48, 78.74), (130.81, 78.74)]
+   - [(171.45, 101.6), (187.96, 101.6)]
+   - [(171.45, 78.74), (187.96, 78.74)]
+
+=== SYMBOL ===
+❌ Missing (15):
+   - (symbol "Device:C" (pin_numbers (hide yes)) (pin_names (offset 0.25)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C" (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0.97 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Unpolarized capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "cap capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "C_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "C_0_1" (polyline (pts (xy -2.03 0.76) (xy 2.03 0.76)) (stroke (width 0.51) (type default)) (fill (type none))) (polyline (pts (xy -2.03 -0.76) (xy 2.03 -0.76)) (stroke (width 0.51) (type default)) (fill (type none))))
+   - (symbol "C_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "Device:R" (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "power:GND" (power) (pin_numbers (hide yes)) (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "power:PWR_FLAG" (power) (pin_numbers (hide yes)) (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.91 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "PWR_FLAG" (at 0 3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+   - (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy -1.02 1.91) (xy 0 2.54) (xy 1.02 1.91) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none)))) (embedded_fonts no))
+   - (symbol "project:VSOURCE" (pin_names (offset 1.02)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "V1" (at 3.25 1.17 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SINE(0 1.5 1k 0 0 0 0)" (at 3.25 -1.14 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Fieldname" "Value" (at 0 0 0) (effects (font (size 1.52 1.52)) (hide yes))) (property "Sim.Pins" "1=1 2=2" (at -7.62 5.08 0) (effects (font (size 1.52 1.52)) (hide yes)))
+   - (symbol "VSOURCE_0_1" (polyline (pts (xy 0 1.91) (xy -0.64 0.64) (xy 0.64 0.64) (xy 0 1.91)) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 0 0) (radius 2.54) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 -1.91) (xy 0 1.91)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "VSOURCE_1_1" (pin input line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)))
+
+Some cleaned files differ from originals ❌

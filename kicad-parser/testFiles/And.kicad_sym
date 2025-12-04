@@ -1,0 +1,35 @@
+(kicad_symbol_lib (version 20211014) (generator "kicad_symbol_editor")
+  (symbol "74LS08" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at 0 5 0) (layer "F.SilkS") (effects (font (size 1 1)) (justify top)))
+    (property "Value" "74LS08" (at 0 -5 0) (layer "F.Fab") (effects (font (size 1 1))))
+    (property "Footprint" "" (at 0 0 0) (layer "F.Fab") (effects (font (size 1 1))))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74ls08.pdf" (at 0 0 0) (layer "F.Fab") (effects (font (size 1 1))))
+
+    (symbol "Gate1"
+      (pin input line (at -2.54 2.54 0) (length 1.27) (name "A") (number "1"))
+      (pin input line (at -2.54 -2.54 0) (length 1.27) (name "B") (number "2"))
+      (pin output line (at 2.54 0 0) (length 1.27) (name "Y") (number "3"))
+      (graphic arc (start -1 1.5) (mid 0 2) (end 1 1.5) (width 0.2))
+      (graphic line (start -1 -1.5) (end 1 -1.5) (width 0.2))
+      (graphic line (start -1 1.5) (end -1 -1.5) (width 0.2))
+      (graphic line (start 1 1.5) (end 1 -1.5) (width 0.2))
+      (graphic line (start 1 0) (end 2 0) (width 0.2))
+    )
+
+    (symbol "Gate2"
+      (pin input line (at -2.54 2.54 0) (length 1.27) (name "A") (number "4"))
+      (pin input line (at -2.54 -2.54 0) (length 1.27) (name "B") (number "5"))
+      (pin output line (at 2.54 0 0) (length 1.27) (name "Y") (number "6"))
+      (graphic arc (start -1 1.5) (mid 0 2) (end 1 1.5) (width 0.2))
+      (graphic line (start -1 -1.5) (end 1 -1.5) (width 0.2))
+      (graphic line (start -1 1.5) (end -1 -1.5) (width 0.2))
+      (graphic line (start 1 1.5) (end 1 -1.5) (width 0.2))
+      (graphic line (start 1 0) (end 2 0) (width 0.2))
+    )
+
+    (symbol "Power"
+      (pin power_in line (at 0 5 0) (length 1.27) (name "VCC") (number "14"))
+      (pin power_in line (at 0 -5 0) (length 1.27) (name "GND") (number "7"))
+    )
+  )
+)

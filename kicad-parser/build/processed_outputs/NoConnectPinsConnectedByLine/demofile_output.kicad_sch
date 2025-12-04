@@ -1,0 +1,315 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20210621
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    30e8acf8-7226-4732-b3c9-71b04b8ebe5e
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (id 0) (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (id 1) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:25.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:75662485-d96e-4e3d-93ab-28c4521800ac }
+  <property> at=(27.940,21.018,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(30.480,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:87711a3d-275a-423c-bbd3-157dc0279528 }
+  <property> at=(45.720,21.018,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(45.720,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(48.260,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(48.260,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (junction (at 25.400000 26.670000))
+  (junction (at 25.400000 26.670000) (color 0 0 0 0) (diameter 0.914400))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (id 0) (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (id 1) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:25.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:75662485-d96e-4e3d-93ab-28c4521800ac }
+  <property> at=(27.940,21.018,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(30.480,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:87711a3d-275a-423c-bbd3-157dc0279528 }
+  <property> at=(45.720,21.018,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(45.720,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(48.260,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(48.260,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (junction (at 25.400000 26.670000))
+  (junction (at 25.400000 26.670000) (color 0 0 0 0) (diameter 0.914400))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (id 0) (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (id 1) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:25.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:75662485-d96e-4e3d-93ab-28c4521800ac }
+  <property> at=(27.940,21.018,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(30.480,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:87711a3d-275a-423c-bbd3-157dc0279528 }
+  <property> at=(45.720,21.018,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(45.720,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(48.260,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(48.260,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (junction (at 25.400000 26.670000))
+  (junction (at 25.400000 26.670000) (color 0 0 0 0) (diameter 0.914400))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (id 0) (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (id 1) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:25.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:75662485-d96e-4e3d-93ab-28c4521800ac }
+  <property> at=(27.940,21.018,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(30.480,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:87711a3d-275a-423c-bbd3-157dc0279528 }
+  <property> at=(45.720,21.018,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(45.720,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(48.260,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(48.260,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (junction (at 25.400000 26.670000))
+  (junction (at 25.400000 26.670000) (color 0 0 0 0) (diameter 0.914400))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (id 0) (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (id 1) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:25.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:75662485-d96e-4e3d-93ab-28c4521800ac }
+  <property> at=(27.940,21.018,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(30.480,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:87711a3d-275a-423c-bbd3-157dc0279528 }
+  <property> at=(45.720,21.018,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(45.720,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(48.260,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(48.260,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (junction (at 25.400000 26.670000))
+  (junction (at 25.400000 26.670000) (color 0 0 0 0) (diameter 0.914400))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (id 0) (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (id 1) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:25.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:75662485-d96e-4e3d-93ab-28c4521800ac }
+  <property> at=(27.940,21.018,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(30.480,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:87711a3d-275a-423c-bbd3-157dc0279528 }
+  <property> at=(45.720,21.018,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(45.720,23.558,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(48.260,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(48.260,24.130,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (wire (start 25.4 24.13) (end 25.4 26.67) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 25.4 29.21) (angle 0) (thickness 0.25))
+  (wire (start 25.4 26.67) (end 43.18 26.67) (angle 0) (thickness 0.25))
+  (wire (start 43.18 26.67) (end 43.18 24.13) (angle 0) (thickness 0.25))
+  (junction (at 25.400000 26.670000))
+  (junction (at 25.400000 26.670000) (color 0 0 0 0) (diameter 0.914400))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

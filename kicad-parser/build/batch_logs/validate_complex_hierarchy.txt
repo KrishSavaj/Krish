@@ -1,0 +1,95 @@
+
+=== JUNCTION ===
+❌ Missing (7):
+   - (233.679993, 33.02)
+   - (233.679993, 69.849998)
+   - (55.880001, 33.02)
+   - (55.880001, 43.18)
+   - (63.5, 33.02)
+   - (76.199997, 63.5)
+   - (81.279999, 63.5)
+
+=== WIRE ===
+❌ Missing (44):
+   - [(168.91, 63.5), (179.07, 63.5)]
+   - [(168.91, 66.04), (168.91, 63.5)]
+   - [(168.91, 73.66), (168.91, 76.2)]
+   - [(168.91, 76.2), (179.07, 76.2)]
+   - [(179.07, 63.5), (179.07, 67.31)]
+   - [(179.07, 67.31), (180.34, 67.31)]
+   - [(179.07, 72.39), (180.34, 72.39)]
+   - [(179.07, 76.2), (179.07, 72.39)]
+   - [(187.96, 31.75), (187.96, 33.02)]
+   - [(187.96, 33.02), (190.5, 33.02)]
+   - [(200.66, 41.91), (200.66, 40.64)]
+   - [(200.66, 55.88), (200.66, 57.15)]
+   - [(200.66, 91.44), (200.66, 90.17)]
+   - [(210.82, 33.02), (233.68, 33.02)]
+   - [(223.52, 69.85), (233.68, 69.85)]
+   - [(229.87, 57.15), (233.68, 57.15)]
+   - [(229.87, 58.42), (229.87, 57.15)]
+   - [(233.68, 31.75), (233.68, 33.02)]
+   - [(233.68, 33.02), (233.68, 36.83)]
+   - [(233.68, 44.45), (233.68, 45.72)]
+   - [(233.68, 59.69), (233.68, 57.15)]
+   - [(233.68, 67.31), (233.68, 69.85)]
+   - [(233.68, 69.85), (237.49, 69.85)]
+   - [(50.8, 33.02), (55.88, 33.02)]
+   - [(50.8, 38.1), (53.34, 38.1)]
+   - [(50.8, 63.5), (66.04, 63.5)]
+   - [(53.34, 38.1), (53.34, 43.18)]
+   - [(53.34, 43.18), (55.88, 43.18)]
+   - [(53.34, 68.58), (50.8, 68.58)]
+   - [(53.34, 71.12), (53.34, 68.58)]
+   - [(55.88, 31.75), (55.88, 33.02)]
+   - [(55.88, 33.02), (63.5, 33.02)]
+   - [(55.88, 41.91), (55.88, 43.18)]
+   - [(55.88, 43.18), (55.88, 44.45)]
+   - [(63.5, 31.75), (63.5, 33.02)]
+   - [(63.5, 33.02), (63.5, 34.29)]
+   - [(63.5, 41.91), (63.5, 43.18)]
+   - [(71.12, 63.5), (76.2, 63.5)]
+   - [(76.2, 63.5), (76.2, 62.23)]
+   - [(76.2, 63.5), (81.28, 63.5)]
+   - [(81.28, 63.5), (81.28, 66.04)]
+   - [(81.28, 63.5), (90.17, 63.5)]
+   - [(81.28, 73.66), (81.28, 76.2)]
+   - [(90.17, 62.23), (90.17, 63.5)]
+
+=== SYMBOL ===
+❌ Missing (33):
+   - (symbol "complex_hierarchy_schlib:+12V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+12V" (at 0 3.56 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "+12V_0_1" (polyline (pts (xy -0.76 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0.76 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+12V" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "complex_hierarchy_schlib:-VAA" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 2.54 0) (effects (font (size 0.51 0.51)) (hide yes))) (property "Value" "-VAA" (at 0 2.54 0) (effects (font (size 0.76 0.76)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "-VAA_0_0" (pin power_in line (at 0 0 90) (length 0) hide (name "-VAA" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))))
+   - (symbol "-VAA_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.03) (xy 0.76 1.27) (xy -0.51 1.27) (xy -0.76 1.27) (xy 0 2.03) (xy 0 2.03) (xy 0 2.03)) (stroke (width 0) (type default)) (fill (type outline)))))
+   - (symbol "complex_hierarchy_schlib:7805" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 -4.98 0) (effects (font (size 1.52 1.52)))) (property "Value" "7805" (at 0 5.08 0) (effects (font (size 1.52 1.52)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "7805_0_1" (rectangle (start -5.08 -3.81) (end 5.08 3.81) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "7805_1_1" (pin power_out line (at 10.16 1.27 180) (length 5.08) (name "VO" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 0.76 0.76))))) (pin input line (at 0 -6.35 90) (length 2.54) (name "GND" (effects (font (size 1.02 1.02)))) (number "2" (effects (font (size 0.76 0.76))))) (pin input line (at -10.16 1.27 0) (length 5.08) (name "VI" (effects (font (size 1.02 1.02)))) (number "3" (effects (font (size 0.76 0.76)))))))
+   - (symbol "complex_hierarchy_schlib:CONN_2" (pin_names (offset 1.02) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "P" (at -1.27 0 90) (effects (font (size 1.02 1.02)))) (property "Value" "CONN_2" (at 1.27 0 90) (effects (font (size 1.02 1.02)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "CONN_2_0_1" (rectangle (start -2.54 3.81) (end 2.54 -3.81) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "CONN_2_1_1" (pin passive inverted (at -8.89 2.54 0) (length 6.35) (name "P1" (effects (font (size 1.52 1.52)))) (number "1" (effects (font (size 1.52 1.52))))) (pin passive inverted (at -8.89 -2.54 0) (length 6.35) (name "PM" (effects (font (size 1.52 1.52)))) (number "2" (effects (font (size 1.52 1.52)))))))
+   - (symbol "complex_hierarchy_schlib:CP" (pin_numbers hide) (pin_names (offset 0.25)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "CP" (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0.97 -3.81 0) (effects (font (size 0.76 0.76)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "CP* Elko* TantalC* C*elec c_elec* SMD*_Pol" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "CP_0_1" (rectangle (start -2.29 0.51) (end -2.29 1.02) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -2.29 0.51) (end 2.29 0.51) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -1.78 2.29) (end -0.76 2.29) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -1.27 1.78) (end -1.27 2.79) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 2.29 -0.51) (end -2.29 -1.02) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start 2.29 1.02) (end -2.29 1.02) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 2.29 1.02) (end 2.29 0.51) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "CP_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "~" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "~" (effects (font (size 1.02 1.02)))) (number "2" (effects (font (size 1.02 1.02)))))))
+   - (symbol "complex_hierarchy_schlib:D_Small" (pin_numbers hide) (pin_names (offset 0.25) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "D" (at -1.27 2.03 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "D_Small" (at -3.81 -2.03 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 90) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 90) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "Diode_* D-Pak_TO252AA *SingleDiode *SingleDiode* *_Diode_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "D_Small_0_1" (polyline (pts (xy -0.76 -1.02) (xy -0.76 1.02)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.76 -1.02) (xy -0.76 0) (xy 0.76 1.02) (xy 0.76 -1.02)) (stroke (width 0) (type default)) (fill (type outline))))
+   - (symbol "D_Small_1_1" (pin passive line (at -2.54 0 0) (length 1.78) (name "K" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 0 180) (length 1.78) (name "A" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "complex_hierarchy_schlib:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 0 -3.12 0) (effects (font (size 0.76 0.76)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 0.76 0.76)))) (number "1" (effects (font (size 0.51 0.51)))))))
+   - (symbol "complex_hierarchy_schlib:HT" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 3.05 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "HT" (at 0 2.29 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "HT_0_0" (pin power_in line (at 0 0 90) (length 0) hide (name "HT" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))))
+   - (symbol "HT_0_1" (polyline (pts (xy 0 0) (xy 0 1.02) (xy 0 1.02)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 1.02) (xy 0.51 0.51) (xy 0 1.78) (xy -0.51 0.51) (xy 0 1.02) (xy 0 1.02)) (stroke (width 0) (type default)) (fill (type none)))))
+   - (symbol "complex_hierarchy_schlib:ICL7660" (pin_names (offset 1.02)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 5.08 10.16 0) (effects (font (size 1.78 1.78)) (justify left))) (property "Value" "ICL7660" (at 1.27 -11.43 0) (effects (font (size 1.78 1.78)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "ICL7660_0_1" (rectangle (start -13.97 -8.89) (end 13.97 8.89) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "ICL7660_1_1" (pin input line (at -21.59 6.35 0) (length 7.62) (name "CAP+" (effects (font (size 1.52 1.52)))) (number "2" (effects (font (size 1.52 1.52))))) (pin power_in line (at -1.27 -16.51 90) (length 7.62) (name "GND" (effects (font (size 1.52 1.52)))) (number "3" (effects (font (size 1.52 1.52))))) (pin input line (at -21.59 1.27 0) (length 7.62) (name "CAP-" (effects (font (size 1.52 1.52)))) (number "4" (effects (font (size 1.52 1.52))))) (pin power_out line (at 21.59 3.81 180) (length 7.62) (name "VOUT" (effects (font (size 1.52 1.52)))) (number "5" (effects (font (size 1.52 1.52))))) (pin input line (at 21.59 -3.81 180) (length 7.62) (name "LV" (effects (font (size 1.52 1.52)))) (number "6" (effects (font (size 1.52 1.52))))) (pin input line (at -21.59 -3.81 0) (length 7.62) (name "OSC" (effects (font (size 1.52 1.52)))) (number "7" (effects (font (size 1.52 1.52))))) (pin power_in line (at -1.27 16.51 270) (length 7.62) (name "V+" (effects (font (size 1.52 1.52)))) (number "8" (effects (font (size 1.52 1.52)))))))
+   - (symbol "complex_hierarchy_schlib:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 2.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "PWR_FLAG" (at 0 4.57 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))))
+   - (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy -1.91 2.54) (xy 0 3.81) (xy 1.91 2.54) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none)))))
+   - (symbol "complex_hierarchy_schlib:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "VCC" (at 0 3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "VCC_0_1" (polyline (pts (xy 0 0) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 0 1.91) (radius 0.64) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

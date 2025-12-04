@@ -1,0 +1,399 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20240602
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "f2962ffc-7611-4acf-99f0-0fa9b77a86b5"
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20240602) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:Conn_01x02_Pin" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02_Pin" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x02, script generated" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x02_Pin_1_1" (rectangle (start 0.863600 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type outline))) (rectangle (start 0.863600 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type outline))) (polyline (pts (xy 1.270000 0) (xy 0.863600 0)) (stroke (width 0.152400) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -2.540000) (xy 0.863600 -2.540000)) (stroke (width 0.152400) (type default)) (fill (type none))) (pin passive line (at 5.080000 0 180) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 180) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:97.790000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cc0918f1-8eae-4343-b7bb-78b5b2dc2bb2" }
+  <property> at=(98.425,69.850,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(98.425,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:128.270000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"d1063ea8-90b1-4317-b030-2ae7c71614c3" }
+  <property> at=(127.635,69.850,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.635,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J2" path_unit:1 value:"issue18346" }
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (junction (at 106.680000 74.930000))
+  (junction (at 106.680000 74.930000) (uuid "4a56ee91-5004-412e-8909-01a9249bf883") (color 0 0 0 0))
+)
+(kicad_sch (version 20240602) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:Conn_01x02_Pin" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02_Pin" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x02, script generated" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x02_Pin_1_1" (rectangle (start 0.863600 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type outline))) (rectangle (start 0.863600 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type outline))) (polyline (pts (xy 1.270000 0) (xy 0.863600 0)) (stroke (width 0.152400) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -2.540000) (xy 0.863600 -2.540000)) (stroke (width 0.152400) (type default)) (fill (type none))) (pin passive line (at 5.080000 0 180) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 180) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:97.790000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cc0918f1-8eae-4343-b7bb-78b5b2dc2bb2" }
+  <property> at=(98.425,69.850,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(98.425,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:128.270000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"d1063ea8-90b1-4317-b030-2ae7c71614c3" }
+  <property> at=(127.635,69.850,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.635,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J2" path_unit:1 value:"issue18346" }
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (junction (at 106.680000 74.930000))
+  (junction (at 106.680000 74.930000) (uuid "4a56ee91-5004-412e-8909-01a9249bf883") (color 0 0 0 0))
+)
+(kicad_sch (version 20240602) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:Conn_01x02_Pin" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02_Pin" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x02, script generated" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x02_Pin_1_1" (rectangle (start 0.863600 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type outline))) (rectangle (start 0.863600 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type outline))) (polyline (pts (xy 1.270000 0) (xy 0.863600 0)) (stroke (width 0.152400) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -2.540000) (xy 0.863600 -2.540000)) (stroke (width 0.152400) (type default)) (fill (type none))) (pin passive line (at 5.080000 0 180) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 180) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:97.790000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cc0918f1-8eae-4343-b7bb-78b5b2dc2bb2" }
+  <property> at=(98.425,69.850,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(98.425,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:128.270000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"d1063ea8-90b1-4317-b030-2ae7c71614c3" }
+  <property> at=(127.635,69.850,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.635,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J2" path_unit:1 value:"issue18346" }
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (junction (at 106.680000 74.930000))
+  (junction (at 106.680000 74.930000) (uuid "4a56ee91-5004-412e-8909-01a9249bf883") (color 0 0 0 0))
+)
+(kicad_sch (version 20240602) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:Conn_01x02_Pin" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02_Pin" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x02, script generated" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x02_Pin_1_1" (rectangle (start 0.863600 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type outline))) (rectangle (start 0.863600 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type outline))) (polyline (pts (xy 1.270000 0) (xy 0.863600 0)) (stroke (width 0.152400) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -2.540000) (xy 0.863600 -2.540000)) (stroke (width 0.152400) (type default)) (fill (type none))) (pin passive line (at 5.080000 0 180) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 180) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:97.790000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cc0918f1-8eae-4343-b7bb-78b5b2dc2bb2" }
+  <property> at=(98.425,69.850,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(98.425,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:128.270000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"d1063ea8-90b1-4317-b030-2ae7c71614c3" }
+  <property> at=(127.635,69.850,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.635,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J2" path_unit:1 value:"issue18346" }
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (junction (at 106.680000 74.930000))
+  (junction (at 106.680000 74.930000) (uuid "4a56ee91-5004-412e-8909-01a9249bf883") (color 0 0 0 0))
+)
+(kicad_sch (version 20240602) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:Conn_01x02_Pin" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02_Pin" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x02, script generated" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x02_Pin_1_1" (rectangle (start 0.863600 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type outline))) (rectangle (start 0.863600 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type outline))) (polyline (pts (xy 1.270000 0) (xy 0.863600 0)) (stroke (width 0.152400) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -2.540000) (xy 0.863600 -2.540000)) (stroke (width 0.152400) (type default)) (fill (type none))) (pin passive line (at 5.080000 0 180) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 180) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:97.790000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cc0918f1-8eae-4343-b7bb-78b5b2dc2bb2" }
+  <property> at=(98.425,69.850,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(98.425,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:128.270000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"d1063ea8-90b1-4317-b030-2ae7c71614c3" }
+  <property> at=(127.635,69.850,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.635,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J2" path_unit:1 value:"issue18346" }
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (junction (at 106.680000 74.930000))
+  (junction (at 106.680000 74.930000) (uuid "4a56ee91-5004-412e-8909-01a9249bf883") (color 0 0 0 0))
+)
+(kicad_sch (version 20240602) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:Conn_01x02_Pin" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02_Pin" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x02, script generated" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x02_Pin_1_1" (rectangle (start 0.863600 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type outline))) (rectangle (start 0.863600 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type outline))) (polyline (pts (xy 1.270000 0) (xy 0.863600 0)) (stroke (width 0.152400) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -2.540000) (xy 0.863600 -2.540000)) (stroke (width 0.152400) (type default)) (fill (type none))) (pin passive line (at 5.080000 0 180) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 180) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:97.790000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"cc0918f1-8eae-4343-b7bb-78b5b2dc2bb2" }
+  <property> at=(98.425,69.850,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(98.425,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(97.790,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:74.930000 value:128.270000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"d1063ea8-90b1-4317-b030-2ae7c71614c3" }
+  <property> at=(127.635,69.850,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.635,72.390,0.000) attrs{name:"Conn_01x02_Pin" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(128.270,74.930,0.000) attrs{name:"Generic connector, single row, 01x02, script generated" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/69309afb-88b0-4112-b019-2bea5a178880" path_reference:"J2" path_unit:1 value:"issue18346" }
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 106.68 80.01) (angle 0) (thickness 0.25))
+  (wire (start 102.87 77.47) (end 123.19 77.47) (angle 0) (thickness 0.25))
+  (wire (start 106.68 74.93) (end 123.19 74.93) (angle 0) (thickness 0.25))
+  (wire (start 102.87 74.93) (end 106.68 74.93) (angle 0) (thickness 0.25))
+  (junction (at 106.680000 74.930000))
+  (junction (at 106.680000 74.930000) (uuid "4a56ee91-5004-412e-8909-01a9249bf883") (color 0 0 0 0))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

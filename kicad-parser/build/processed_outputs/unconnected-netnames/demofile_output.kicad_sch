@@ -1,0 +1,195 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20231120
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "cfc6d250-9e5a-468d-b657-8add217d4593"
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"b198df71-7d13-4632-9ab4-7f217c917f8e" }
+  <property> at=(93.980,58.928,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,61.468,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(91.440,63.500,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/cfc6d250-9e5a-468d-b657-8add217d4593" path_reference:"TP1" path_unit:1 value:"unconnected-netnames" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"b198df71-7d13-4632-9ab4-7f217c917f8e" }
+  <property> at=(93.980,58.928,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,61.468,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(91.440,63.500,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/cfc6d250-9e5a-468d-b657-8add217d4593" path_reference:"TP1" path_unit:1 value:"unconnected-netnames" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"b198df71-7d13-4632-9ab4-7f217c917f8e" }
+  <property> at=(93.980,58.928,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,61.468,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(91.440,63.500,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/cfc6d250-9e5a-468d-b657-8add217d4593" path_reference:"TP1" path_unit:1 value:"unconnected-netnames" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"b198df71-7d13-4632-9ab4-7f217c917f8e" }
+  <property> at=(93.980,58.928,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,61.468,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(91.440,63.500,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/cfc6d250-9e5a-468d-b657-8add217d4593" path_reference:"TP1" path_unit:1 value:"unconnected-netnames" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"b198df71-7d13-4632-9ab4-7f217c917f8e" }
+  <property> at=(93.980,58.928,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,61.468,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(91.440,63.500,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/cfc6d250-9e5a-468d-b657-8add217d4593" path_reference:"TP1" path_unit:1 value:"unconnected-netnames" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"b198df71-7d13-4632-9ab4-7f217c917f8e" }
+  <property> at=(93.980,58.928,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,61.468,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(96.520,63.500,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(91.440,63.500,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/cfc6d250-9e5a-468d-b657-8add217d4593" path_reference:"TP1" path_unit:1 value:"unconnected-netnames" }
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,27 @@
+
+=== JUNCTION ===
+❌ Missing (1):
+   - (113.029999, 86.360001)
+
+=== WIRE ===
+❌ Missing (9):
+   - [(107.95, 86.36), (113.03, 86.36)]
+   - [(110.49, 71.12), (114.3, 71.12)]
+   - [(113.03, 85.09), (113.03, 86.36)]
+   - [(113.03, 86.36), (113.03, 88.9)]
+   - [(113.03, 88.9), (118.11, 88.9)]
+   - [(118.11, 85.09), (113.03, 85.09)]
+   - [(153.67, 114.3), (146.05, 114.3)]
+   - [(153.67, 57.15), (146.05, 57.15)]
+   - [(153.67, 86.36), (146.05, 86.36)]
+
+=== SYMBOL ===
+❌ Missing (6):
+   - (symbol "TEST_LIB:TEST_DOUBLE" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "TEST_DOUBLE_0_1" (rectangle (start -1.27 -1.27) (end 8.89 -10.16) (stroke (width 0) (type default)) (fill (type background))))
+   - (symbol "TEST_DOUBLE_1_1" (pin input line (at -3.81 -3.81 0) (length 2.54) (name "PIN1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -3.81 -7.62 0) (length 2.54) (name "PIN2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "TEST_LIB:TEST_STACKED" (in_bom yes) (on_board yes) (property "Reference" "U2" (at 0.64 2.54 0) (effects (font (size 1.27 1.27)))) (property "Value" "~" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "TEST_STACKED_0_1" (rectangle (start -2.54 1.27) (end 3.81 -3.81) (stroke (width 0) (type default)) (fill (type background))))
+   - (symbol "TEST_STACKED_1_1" (pin passive line (at -5.08 -1.27 0) (length 2.54) (name "PIN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -1.27 0) (length 2.54) (name "PIN" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 6.35 -2.54 180) (length 2.54) (name "NC" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

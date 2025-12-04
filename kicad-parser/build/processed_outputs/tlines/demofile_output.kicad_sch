@@ -1,0 +1,1935 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20221004
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    f6b1e3a3-6d27-412f-badc-8a952a963985
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20221004) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VPULSE" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VPULSE" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "pulse(0 1 2n 2n 2n 50n 100n)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, pulse" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VPULSE_0_0" (polyline (pts (xy -2.032000 -0.762000) (xy -1.397000 -0.762000) (xy -1.143000 0.762000) (xy -0.127000 0.762000) (xy 0.127000 -0.762000) (xy 1.143000 -0.762000) (xy 1.397000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VPULSE_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VPULSE_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Transmission_Line:TLINE" (in_bom no) (on_board no) (property "Reference" "T" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TLINE" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "lossless transmission line characteristic impedance" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Lossless transmission line, for simulation only" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TLINE_0_1" (circle (center -3.810000 0) (radius 1.270000) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 0) (xy -5.080000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 1.270000) (xy 3.810000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (arc (start 3.877600 -1.270000) (mid 5.081800 0) (end 3.877600 1.270000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TLINE_1_1" (pin passive line (at -7.620000 0 0) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 7.620000 0 180) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0bb52765-586c-4bf2-a0f2-cc8769dedeec }
+  <property> at=(127.000,92.710,0.000) attrs{name:"#PWR0106" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0106" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:232c811f-1246-4b76-86b4-d8721684bd11 }
+  <property> at=(151.130,123.190,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0104" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:27aefe2b-7fc4-496d-8a9d-7c135474145a }
+  <property> at=(146.051,109.220,0.000) attrs{name:"TLINE2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,111.760,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,114.300,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,109.220,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"RLGC" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"len=1 r=0 l=1.25m g=0 c=500n" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:56fc236a-df5f-49ef-9b92-3227f86197b4 }
+  <property> at=(86.360,78.740,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,81.280,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,85.090,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:59dbe783-3723-4dcc-a641-a603ab67a5a4 }
+  <property> at=(140.970,85.090,0.000) attrs{name:"#PWR0107" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0107" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5b460e62-196b-4585-8ed3-c8e3325f6a48 }
+  <property> at=(165.100,92.710,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0101" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5f9f7595-cc0b-4628-ae7b-35d307a4eb99 }
+  <property> at=(127.000,130.810,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0102" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:80.010000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9eecf3ec-d266-4199-973b-6e10e301b41b }
+  <property> at=(167.640,79.375,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,81.915,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,80.010,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0fd7eaf-a224-48f5-80b6-b4c9a3988f57 }
+  <property> at=(140.970,123.190,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0103" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b320600b-eef1-4883-916c-38700f3f43d4 }
+  <property> at=(146.051,71.120,0.000) attrs{name:"TLINE1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,73.660,0.000) attrs{name:"${Sim.Device}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,71.120,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"z0=50 td=25u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:118.110000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c89e9e2f-1e5f-45ee-9942-af42fb5cfaf4 }
+  <property> at=(167.640,117.475,0.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,120.015,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,118.110,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fc8afb4b-228e-4b15-8225-7bdabc7f37d5 }
+  <property> at=(151.130,85.090,0.000) attrs{name:"#PWR0108" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0108" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:fcc0dfa9-c624-4a32-a3d3-4c36ee7b0fe6 }
+  <property> at=(86.360,115.570,0.000) attrs{name:"V2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,118.110,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,121.920,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ff04fe94-7180-4f4a-b4d1-f6aca630b6d1 }
+  <property> at=(165.100,130.810,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0105" path_unit:1 value:"tlines" }
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221004) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VPULSE" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VPULSE" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "pulse(0 1 2n 2n 2n 50n 100n)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, pulse" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VPULSE_0_0" (polyline (pts (xy -2.032000 -0.762000) (xy -1.397000 -0.762000) (xy -1.143000 0.762000) (xy -0.127000 0.762000) (xy 0.127000 -0.762000) (xy 1.143000 -0.762000) (xy 1.397000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VPULSE_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VPULSE_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Transmission_Line:TLINE" (in_bom no) (on_board no) (property "Reference" "T" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TLINE" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "lossless transmission line characteristic impedance" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Lossless transmission line, for simulation only" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TLINE_0_1" (circle (center -3.810000 0) (radius 1.270000) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 0) (xy -5.080000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 1.270000) (xy 3.810000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (arc (start 3.877600 -1.270000) (mid 5.081800 0) (end 3.877600 1.270000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TLINE_1_1" (pin passive line (at -7.620000 0 0) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 7.620000 0 180) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0bb52765-586c-4bf2-a0f2-cc8769dedeec }
+  <property> at=(127.000,92.710,0.000) attrs{name:"#PWR0106" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0106" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:232c811f-1246-4b76-86b4-d8721684bd11 }
+  <property> at=(151.130,123.190,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0104" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:27aefe2b-7fc4-496d-8a9d-7c135474145a }
+  <property> at=(146.051,109.220,0.000) attrs{name:"TLINE2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,111.760,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,114.300,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,109.220,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"RLGC" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"len=1 r=0 l=1.25m g=0 c=500n" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:56fc236a-df5f-49ef-9b92-3227f86197b4 }
+  <property> at=(86.360,78.740,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,81.280,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,85.090,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:59dbe783-3723-4dcc-a641-a603ab67a5a4 }
+  <property> at=(140.970,85.090,0.000) attrs{name:"#PWR0107" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0107" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5b460e62-196b-4585-8ed3-c8e3325f6a48 }
+  <property> at=(165.100,92.710,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0101" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5f9f7595-cc0b-4628-ae7b-35d307a4eb99 }
+  <property> at=(127.000,130.810,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0102" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:80.010000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9eecf3ec-d266-4199-973b-6e10e301b41b }
+  <property> at=(167.640,79.375,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,81.915,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,80.010,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0fd7eaf-a224-48f5-80b6-b4c9a3988f57 }
+  <property> at=(140.970,123.190,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0103" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b320600b-eef1-4883-916c-38700f3f43d4 }
+  <property> at=(146.051,71.120,0.000) attrs{name:"TLINE1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,73.660,0.000) attrs{name:"${Sim.Device}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,71.120,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"z0=50 td=25u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:118.110000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c89e9e2f-1e5f-45ee-9942-af42fb5cfaf4 }
+  <property> at=(167.640,117.475,0.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,120.015,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,118.110,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fc8afb4b-228e-4b15-8225-7bdabc7f37d5 }
+  <property> at=(151.130,85.090,0.000) attrs{name:"#PWR0108" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0108" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:fcc0dfa9-c624-4a32-a3d3-4c36ee7b0fe6 }
+  <property> at=(86.360,115.570,0.000) attrs{name:"V2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,118.110,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,121.920,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ff04fe94-7180-4f4a-b4d1-f6aca630b6d1 }
+  <property> at=(165.100,130.810,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0105" path_unit:1 value:"tlines" }
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221004) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VPULSE" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VPULSE" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "pulse(0 1 2n 2n 2n 50n 100n)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, pulse" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VPULSE_0_0" (polyline (pts (xy -2.032000 -0.762000) (xy -1.397000 -0.762000) (xy -1.143000 0.762000) (xy -0.127000 0.762000) (xy 0.127000 -0.762000) (xy 1.143000 -0.762000) (xy 1.397000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VPULSE_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VPULSE_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Transmission_Line:TLINE" (in_bom no) (on_board no) (property "Reference" "T" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TLINE" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "lossless transmission line characteristic impedance" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Lossless transmission line, for simulation only" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TLINE_0_1" (circle (center -3.810000 0) (radius 1.270000) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 0) (xy -5.080000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 1.270000) (xy 3.810000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (arc (start 3.877600 -1.270000) (mid 5.081800 0) (end 3.877600 1.270000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TLINE_1_1" (pin passive line (at -7.620000 0 0) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 7.620000 0 180) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0bb52765-586c-4bf2-a0f2-cc8769dedeec }
+  <property> at=(127.000,92.710,0.000) attrs{name:"#PWR0106" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0106" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:232c811f-1246-4b76-86b4-d8721684bd11 }
+  <property> at=(151.130,123.190,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0104" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:27aefe2b-7fc4-496d-8a9d-7c135474145a }
+  <property> at=(146.051,109.220,0.000) attrs{name:"TLINE2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,111.760,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,114.300,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,109.220,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"RLGC" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"len=1 r=0 l=1.25m g=0 c=500n" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:56fc236a-df5f-49ef-9b92-3227f86197b4 }
+  <property> at=(86.360,78.740,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,81.280,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,85.090,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:59dbe783-3723-4dcc-a641-a603ab67a5a4 }
+  <property> at=(140.970,85.090,0.000) attrs{name:"#PWR0107" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0107" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5b460e62-196b-4585-8ed3-c8e3325f6a48 }
+  <property> at=(165.100,92.710,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0101" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5f9f7595-cc0b-4628-ae7b-35d307a4eb99 }
+  <property> at=(127.000,130.810,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0102" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:80.010000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9eecf3ec-d266-4199-973b-6e10e301b41b }
+  <property> at=(167.640,79.375,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,81.915,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,80.010,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0fd7eaf-a224-48f5-80b6-b4c9a3988f57 }
+  <property> at=(140.970,123.190,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0103" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b320600b-eef1-4883-916c-38700f3f43d4 }
+  <property> at=(146.051,71.120,0.000) attrs{name:"TLINE1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,73.660,0.000) attrs{name:"${Sim.Device}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,71.120,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"z0=50 td=25u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:118.110000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c89e9e2f-1e5f-45ee-9942-af42fb5cfaf4 }
+  <property> at=(167.640,117.475,0.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,120.015,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,118.110,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fc8afb4b-228e-4b15-8225-7bdabc7f37d5 }
+  <property> at=(151.130,85.090,0.000) attrs{name:"#PWR0108" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0108" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:fcc0dfa9-c624-4a32-a3d3-4c36ee7b0fe6 }
+  <property> at=(86.360,115.570,0.000) attrs{name:"V2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,118.110,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,121.920,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ff04fe94-7180-4f4a-b4d1-f6aca630b6d1 }
+  <property> at=(165.100,130.810,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0105" path_unit:1 value:"tlines" }
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221004) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VPULSE" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VPULSE" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "pulse(0 1 2n 2n 2n 50n 100n)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, pulse" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VPULSE_0_0" (polyline (pts (xy -2.032000 -0.762000) (xy -1.397000 -0.762000) (xy -1.143000 0.762000) (xy -0.127000 0.762000) (xy 0.127000 -0.762000) (xy 1.143000 -0.762000) (xy 1.397000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VPULSE_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VPULSE_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Transmission_Line:TLINE" (in_bom no) (on_board no) (property "Reference" "T" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TLINE" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "lossless transmission line characteristic impedance" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Lossless transmission line, for simulation only" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TLINE_0_1" (circle (center -3.810000 0) (radius 1.270000) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 0) (xy -5.080000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 1.270000) (xy 3.810000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (arc (start 3.877600 -1.270000) (mid 5.081800 0) (end 3.877600 1.270000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TLINE_1_1" (pin passive line (at -7.620000 0 0) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 7.620000 0 180) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0bb52765-586c-4bf2-a0f2-cc8769dedeec }
+  <property> at=(127.000,92.710,0.000) attrs{name:"#PWR0106" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0106" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:232c811f-1246-4b76-86b4-d8721684bd11 }
+  <property> at=(151.130,123.190,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0104" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:27aefe2b-7fc4-496d-8a9d-7c135474145a }
+  <property> at=(146.051,109.220,0.000) attrs{name:"TLINE2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,111.760,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,114.300,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,109.220,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"RLGC" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"len=1 r=0 l=1.25m g=0 c=500n" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:56fc236a-df5f-49ef-9b92-3227f86197b4 }
+  <property> at=(86.360,78.740,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,81.280,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,85.090,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:59dbe783-3723-4dcc-a641-a603ab67a5a4 }
+  <property> at=(140.970,85.090,0.000) attrs{name:"#PWR0107" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0107" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5b460e62-196b-4585-8ed3-c8e3325f6a48 }
+  <property> at=(165.100,92.710,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0101" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5f9f7595-cc0b-4628-ae7b-35d307a4eb99 }
+  <property> at=(127.000,130.810,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0102" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:80.010000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9eecf3ec-d266-4199-973b-6e10e301b41b }
+  <property> at=(167.640,79.375,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,81.915,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,80.010,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0fd7eaf-a224-48f5-80b6-b4c9a3988f57 }
+  <property> at=(140.970,123.190,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0103" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b320600b-eef1-4883-916c-38700f3f43d4 }
+  <property> at=(146.051,71.120,0.000) attrs{name:"TLINE1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,73.660,0.000) attrs{name:"${Sim.Device}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,71.120,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"z0=50 td=25u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:118.110000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c89e9e2f-1e5f-45ee-9942-af42fb5cfaf4 }
+  <property> at=(167.640,117.475,0.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,120.015,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,118.110,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fc8afb4b-228e-4b15-8225-7bdabc7f37d5 }
+  <property> at=(151.130,85.090,0.000) attrs{name:"#PWR0108" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0108" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:fcc0dfa9-c624-4a32-a3d3-4c36ee7b0fe6 }
+  <property> at=(86.360,115.570,0.000) attrs{name:"V2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,118.110,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,121.920,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ff04fe94-7180-4f4a-b4d1-f6aca630b6d1 }
+  <property> at=(165.100,130.810,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0105" path_unit:1 value:"tlines" }
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221004) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VPULSE" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VPULSE" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "pulse(0 1 2n 2n 2n 50n 100n)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, pulse" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VPULSE_0_0" (polyline (pts (xy -2.032000 -0.762000) (xy -1.397000 -0.762000) (xy -1.143000 0.762000) (xy -0.127000 0.762000) (xy 0.127000 -0.762000) (xy 1.143000 -0.762000) (xy 1.397000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VPULSE_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VPULSE_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Transmission_Line:TLINE" (in_bom no) (on_board no) (property "Reference" "T" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TLINE" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "lossless transmission line characteristic impedance" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Lossless transmission line, for simulation only" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TLINE_0_1" (circle (center -3.810000 0) (radius 1.270000) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 0) (xy -5.080000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 1.270000) (xy 3.810000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (arc (start 3.877600 -1.270000) (mid 5.081800 0) (end 3.877600 1.270000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TLINE_1_1" (pin passive line (at -7.620000 0 0) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 7.620000 0 180) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0bb52765-586c-4bf2-a0f2-cc8769dedeec }
+  <property> at=(127.000,92.710,0.000) attrs{name:"#PWR0106" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0106" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:232c811f-1246-4b76-86b4-d8721684bd11 }
+  <property> at=(151.130,123.190,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0104" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:27aefe2b-7fc4-496d-8a9d-7c135474145a }
+  <property> at=(146.051,109.220,0.000) attrs{name:"TLINE2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,111.760,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,114.300,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,109.220,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"RLGC" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"len=1 r=0 l=1.25m g=0 c=500n" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:56fc236a-df5f-49ef-9b92-3227f86197b4 }
+  <property> at=(86.360,78.740,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,81.280,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,85.090,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:59dbe783-3723-4dcc-a641-a603ab67a5a4 }
+  <property> at=(140.970,85.090,0.000) attrs{name:"#PWR0107" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0107" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5b460e62-196b-4585-8ed3-c8e3325f6a48 }
+  <property> at=(165.100,92.710,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0101" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5f9f7595-cc0b-4628-ae7b-35d307a4eb99 }
+  <property> at=(127.000,130.810,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0102" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:80.010000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9eecf3ec-d266-4199-973b-6e10e301b41b }
+  <property> at=(167.640,79.375,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,81.915,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,80.010,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0fd7eaf-a224-48f5-80b6-b4c9a3988f57 }
+  <property> at=(140.970,123.190,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0103" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b320600b-eef1-4883-916c-38700f3f43d4 }
+  <property> at=(146.051,71.120,0.000) attrs{name:"TLINE1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,73.660,0.000) attrs{name:"${Sim.Device}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,71.120,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"z0=50 td=25u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:118.110000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c89e9e2f-1e5f-45ee-9942-af42fb5cfaf4 }
+  <property> at=(167.640,117.475,0.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,120.015,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,118.110,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fc8afb4b-228e-4b15-8225-7bdabc7f37d5 }
+  <property> at=(151.130,85.090,0.000) attrs{name:"#PWR0108" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0108" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:fcc0dfa9-c624-4a32-a3d3-4c36ee7b0fe6 }
+  <property> at=(86.360,115.570,0.000) attrs{name:"V2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,118.110,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,121.920,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ff04fe94-7180-4f4a-b4d1-f6aca630b6d1 }
+  <property> at=(165.100,130.810,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0105" path_unit:1 value:"tlines" }
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221004) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VPULSE" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VPULSE" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "pulse(0 1 2n 2n 2n 50n 100n)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, pulse" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VPULSE_0_0" (polyline (pts (xy -2.032000 -0.762000) (xy -1.397000 -0.762000) (xy -1.143000 0.762000) (xy -0.127000 0.762000) (xy 0.127000 -0.762000) (xy 1.143000 -0.762000) (xy 1.397000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VPULSE_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VPULSE_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Transmission_Line:TLINE" (in_bom no) (on_board no) (property "Reference" "T" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TLINE" (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "lossless transmission line characteristic impedance" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Lossless transmission line, for simulation only" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TLINE_0_1" (circle (center -3.810000 0) (radius 1.270000) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 0) (xy -5.080000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.810000 1.270000) (xy 3.810000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.080000 -1.270000) (xy 3.810000 -1.270000)) (stroke (width 0) (type default)) (fill (type none))) (arc (start 3.877600 -1.270000) (mid 5.081800 0) (end 3.877600 1.270000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TLINE_1_1" (pin passive line (at -7.620000 0 0) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 7.620000 0 180) (length 2.540000) (name "" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 5.080000 -2.540000 90) (length 1.270000) (name "" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0bb52765-586c-4bf2-a0f2-cc8769dedeec }
+  <property> at=(127.000,92.710,0.000) attrs{name:"#PWR0106" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0106" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:232c811f-1246-4b76-86b4-d8721684bd11 }
+  <property> at=(151.130,123.190,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0104" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:27aefe2b-7fc4-496d-8a9d-7c135474145a }
+  <property> at=(146.051,109.220,0.000) attrs{name:"TLINE2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,111.760,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,114.300,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,109.220,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"RLGC" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,114.300,0.000) attrs{name:"len=1 r=0 l=1.25m g=0 c=500n" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:56fc236a-df5f-49ef-9b92-3227f86197b4 }
+  <property> at=(86.360,78.740,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,81.280,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,81.280,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,85.090,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:59dbe783-3723-4dcc-a641-a603ab67a5a4 }
+  <property> at=(140.970,85.090,0.000) attrs{name:"#PWR0107" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0107" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5b460e62-196b-4585-8ed3-c8e3325f6a48 }
+  <property> at=(165.100,92.710,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,91.440,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0101" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:5f9f7595-cc0b-4628-ae7b-35d307a4eb99 }
+  <property> at=(127.000,130.810,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0102" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:80.010000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9eecf3ec-d266-4199-973b-6e10e301b41b }
+  <property> at=(167.640,79.375,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,81.915,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,80.010,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,80.010,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:140.970000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0fd7eaf-a224-48f5-80b6-b4c9a3988f57 }
+  <property> at=(140.970,123.190,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(140.970,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0103" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:76.200000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:no }
+  <on_board> attrs{value:no }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b320600b-eef1-4883-916c-38700f3f43d4 }
+  <property> at=(146.051,71.120,0.000) attrs{name:"TLINE1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.051,73.660,0.000) attrs{name:"${Sim.Device}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,76.200,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,71.120,0.000) attrs{name:"http://ngspice.sourceforge.net/docs/ngspice-36-manual.pdf#7f" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"TLINE" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,76.200,0.000) attrs{name:"z0=50 td=25u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"TLINE1" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:118.110000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c89e9e2f-1e5f-45ee-9942-af42fb5cfaf4 }
+  <property> at=(167.640,117.475,0.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(167.640,120.015,0.000) attrs{name:"50" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(163.322,118.110,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,118.110,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"R2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:151.130000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fc8afb4b-228e-4b15-8225-7bdabc7f37d5 }
+  <property> at=(151.130,85.090,0.000) attrs{name:"#PWR0108" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,83.820,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(151.130,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0108" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:127 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:fcc0dfa9-c624-4a32-a3d3-4c36ee7b0fe6 }
+  <property> at=(86.360,115.570,0.000) attrs{name:"V2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(86.360,118.110,0.000) attrs{name:"${Sim.Device} ${Sim.Type}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(127.000,119.380,0.000) attrs{name:"PULSE" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(104.140,121.920,0.000) attrs{name:"y2=1 tr=1u tf=1u tw=50u per=100u" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"V2" path_unit:1 value:"tlines" }
+  <symbol>
+  <at> attrs{misc:0 name:124.460000 value:165.100000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ff04fe94-7180-4f4a-b4d1-f6aca630b6d1 }
+  <property> at=(165.100,130.810,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,129.540,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(165.100,124.460,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/f74aa792-5ddc-4342-b3b1-f3d782106d77" path_reference:"#PWR0105" path_unit:1 value:"tlines" }
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+  (wire (start 165.1 83.82) (end 165.1 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 76.2) (end 165.1 76.2) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 165.1 114.3) (angle 0) (thickness 0.25))
+  (wire (start 127 76.2) (end 138.43 76.2) (angle 0) (thickness 0.25))
+  (wire (start 127 114.3) (end 138.43 114.3) (angle 0) (thickness 0.25))
+  (wire (start 165.1 121.92) (end 165.1 124.46) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

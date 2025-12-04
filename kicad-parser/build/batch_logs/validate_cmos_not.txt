@@ -1,0 +1,58 @@
+
+=== JUNCTION ===
+❌ Missing (4):
+   - (139.699997, 101.599998)
+   - (152.399994, 101.599998)
+   - (152.399994, 114.300003)
+   - (152.399994, 88.900002)
+
+=== WIRE ===
+❌ Missing (20):
+   - [(114.3, 101.6), (114.3, 102.87)]
+   - [(114.3, 101.6), (139.7, 101.6)]
+   - [(114.3, 113.03), (114.3, 114.3)]
+   - [(139.7, 101.6), (139.7, 107.95)]
+   - [(139.7, 107.95), (144.78, 107.95)]
+   - [(139.7, 95.25), (139.7, 101.6)]
+   - [(144.78, 95.25), (139.7, 95.25)]
+   - [(152.4, 101.6), (152.4, 100.33)]
+   - [(152.4, 101.6), (165.1, 101.6)]
+   - [(152.4, 102.87), (152.4, 101.6)]
+   - [(152.4, 114.3), (152.4, 113.03)]
+   - [(152.4, 114.3), (154.94, 114.3)]
+   - [(152.4, 88.9), (152.4, 90.17)]
+   - [(154.94, 113.03), (154.94, 114.3)]
+   - [(154.94, 88.9), (152.4, 88.9)]
+   - [(154.94, 90.17), (154.94, 88.9)]
+   - [(165.1, 104.14), (165.1, 101.6)]
+   - [(165.1, 111.76), (165.1, 114.3)]
+   - [(88.9, 101.6), (88.9, 102.87)]
+   - [(88.9, 113.03), (88.9, 114.3)]
+
+=== SYMBOL ===
+❌ Missing (23):
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Simulation_SPICE:VDC" (pin_numbers hide) (pin_names (offset 0.03)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "VDC" (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Model" "dc(1)" (at 2.54 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Voltage source, DC" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "VDC_0_0" (polyline (pts (xy -1.27 0.25) (xy 1.27 0.25)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.76 -0.25) (xy -1.27 -0.25)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.25 -0.25) (xy -0.25 -0.25)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -0.25) (xy 0.76 -0.25)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.91 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VDC_0_1" (circle (center 0 0) (radius 2.54) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "VDC_1_1" (pin passive line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.03)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "VSIN" (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Model" "sin(0 1 1k)" (at 2.54 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.64 0.63) (end -1.27 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.64 -0.63) (end 1.27 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.91 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.54) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "VSIN_1_1" (pin passive line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "+5V" (at 0 3.56 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "+5V_0_1" (polyline (pts (xy -0.76 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0.76 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+5V" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "pspice:MNMOS" (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "M" (at 7.62 1.27 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "MNMOS" (at 7.62 -1.27 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at -0.64 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at -0.64 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "mosfet nmos simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "N-channel MOSFET symbol for simulation only" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "MNMOS_0_1" (polyline (pts (xy -1.27 -2.54) (xy -1.27 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.64 -2.54) (xy 2.54 -2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.54 2.54) (xy -0.64 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.08 0) (xy -0.64 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.64 0) (xy 1.27 0.64) (xy 1.27 -0.64) (xy -0.64 0)) (stroke (width 0) (type default)) (fill (type outline))))
+   - (symbol "MNMOS_1_1" (polyline (pts (xy -0.64 -2.54) (xy -0.64 2.54)) (stroke (width 0) (type default)) (fill (type none))) (pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -5.08 0 0) (length 3.81) (name "G" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 -5.08 90) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin input line (at 5.08 -5.08 90) (length 5.08) (name "B" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))))
+   - (symbol "pspice:MPMOS" (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "M" (at 7.62 1.27 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "MPMOS" (at 7.62 -1.27 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "mosfet pmos simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "P-channel MOSFET symbol for simulation only" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "MPMOS_0_1" (polyline (pts (xy -1.27 2.54) (xy -1.27 -2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.64 -2.54) (xy 2.54 -2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.54 2.54) (xy -0.64 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.08 0) (xy -0.64 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.08 0) (xy 3.17 0.64) (xy 3.17 -0.64) (xy 5.08 0)) (stroke (width 0) (type default)) (fill (type outline))))
+   - (symbol "MPMOS_1_1" (polyline (pts (xy -0.64 -2.54) (xy -0.64 2.54)) (stroke (width 0) (type default)) (fill (type none))) (pin passive line (at 2.54 -5.08 90) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -5.08 0 0) (length 3.81) (name "G" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 5.08 270) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin input line (at 5.08 5.08 270) (length 5.08) (name "B" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

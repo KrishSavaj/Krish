@@ -1,0 +1,102 @@
+[DEBUG] Root children: 9
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="uuid"
+  child 4 tag="paper"
+  child 5 tag="lib_symbols"
+  child 6 tag="sheet"
+  child 7 tag="sheet"
+  child 8 tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=1357
+kicad_sch  (children=9)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=20
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=43
+  uuid  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=13
+  lib_symbols  (children=1)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=13
+[BaselineBoard] setLibSymbolsRaw len=13
+[BaselineBoard] appendRawPiece len=13
+AstCleaner: handling lib_symbols at 0x7ffeac7957f0
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=13
+[BaselineBoard] appendRawPiece len=640
+  sheet  (children=11)
+[BaselineBoard] appendRawPiece len=553
+  sheet  (children=10)
+[BaselineBoard] appendRawPiece len=39
+  sheet_instances  (children=2)
+  [UNHANDLED-PCB] tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=21
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+AstCleaner: handling lib_symbols at 0x5cbb03af91f0
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20230121 }
+  <generator> attrs{value:eeschema }
+  <paper> attrs{value:"A4" }
+  <lib_symbols>
+  <sheet> attrs{fill_color:0,0,'...
+[BaselineBoard] appendRawPiece len=1695 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=7
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20230121 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:eeschema }'...
+[BaselineBoard] appendRawPiece len=34 head="generator"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=0
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='sheet' children=9
+[appendRawPieceFromClean] piece_head='<sheet> attrs{fill_color:0,0,0,0.000000 }
+  <at> attrs{name:45.720000 value:121.920000 }
+  <size> attrs{name:17.780000 value:20.320000 }
+  <fields_autoplaced>
+ '...
+[BaselineBoard] appendRawPiece len=810 head="sheet"
+[walkSchematicOnce] child tag='sheet' children=8
+[appendRawPieceFromClean] piece_head='<sheet> attrs{fill_color:0,0,0,0.000000 }
+  <at> attrs{name:43.180000 value:148.590000 }
+  <size> attrs{name:21.590000 value:22.860000 }
+  <fields_autoplaced>
+ '...
+[BaselineBoard] appendRawPiece len=705 head="sheet"
+[walkSchematicOnce] child tag='sheet_instances' children=1
+[appendRawPieceFromClean] piece_head='<sheet_instances>
+  <path> attrs{page:"1" }'...
+[BaselineBoard] appendRawPiece len=43 head="sheet_instances"
+=== SUMMARY === junctionShapes=0 wireShapes=0 symbols=0 rawPieces=20
+=== DUMP wires: count=0 ===
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

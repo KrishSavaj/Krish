@@ -1,0 +1,22 @@
+
+=== JUNCTION ===
+✅ Files match perfectly
+
+=== WIRE ===
+❌ Missing (9):
+   - [(108.585, 63.5), (108.585, 68.58)]
+   - [(65.405, 52.705), (95.885, 52.705)]
+   - [(65.405, 55.245), (72.39, 55.245)]
+   - [(65.405, 57.785), (70.485, 57.785)]
+   - [(70.485, 57.785), (70.485, 68.58)]
+   - [(70.485, 68.58), (108.585, 68.58)]
+   - [(72.39, 55.245), (72.39, 66.04)]
+   - [(72.39, 66.04), (99.695, 66.04)]
+   - [(99.695, 63.5), (99.695, 66.04)]
+
+=== SYMBOL ===
+❌ Missing (2):
+   - (symbol "~ Connector_Generic:Conn_01x03" (pin_names (offset 1.02) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 5.08 0) (effects (font (size 1.27 1.27)))) (property "Value" "Conn_01x03" (at 0 -5.08 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "Conn_01x03_1_1" (rectangle (start -1.27 -2.41) (end 0 -2.67) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 0.13) (end 0 -0.13) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 2.67) (end 0 2.41) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 3.81) (end 1.27 -3.81) (stroke (width 0.25) (type default)) (fill (type background))) (pin passive line (at -5.08 2.54 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

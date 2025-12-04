@@ -1,0 +1,19 @@
+
+=== JUNCTION ===
+✅ Files match perfectly
+
+=== WIRE ===
+❌ Missing (5):
+   - [(100.33, 64.77), (121.92, 64.77)]
+   - [(100.33, 88.9), (100.33, 64.77)]
+   - [(121.92, 64.77), (121.92, 74.93)]
+   - [(121.92, 82.55), (121.92, 88.9)]
+   - [(121.92, 88.9), (100.33, 88.9)]
+
+=== SYMBOL ===
+❌ Missing (3):
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at -1.78 0 90) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

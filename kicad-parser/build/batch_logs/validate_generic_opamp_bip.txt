@@ -1,0 +1,86 @@
+
+=== JUNCTION ===
+❌ Missing (7):
+   - (157.479996, 92.709999)
+   - (182.880005, 90.169998)
+   - (204.470001, 92.709999)
+   - (233.679993, 92.709999)
+   - (252.729996, 76.199997)
+   - (252.729996, 86.360001)
+   - (270.51001, 86.360001)
+
+=== WIRE ===
+❌ Missing (39):
+   - [(135.89, 113.03), (135.89, 114.3)]
+   - [(135.89, 92.71), (135.89, 102.87)]
+   - [(135.89, 92.71), (143.51, 92.71)]
+   - [(151.13, 92.71), (157.48, 92.71)]
+   - [(156.21, 86.36), (156.21, 87.63)]
+   - [(156.21, 87.63), (161.29, 87.63)]
+   - [(157.48, 106.68), (171.45, 106.68)]
+   - [(157.48, 92.71), (157.48, 106.68)]
+   - [(157.48, 92.71), (161.29, 92.71)]
+   - [(166.37, 82.55), (166.37, 81.28)]
+   - [(166.37, 97.79), (166.37, 99.06)]
+   - [(176.53, 90.17), (182.88, 90.17)]
+   - [(179.07, 106.68), (182.88, 106.68)]
+   - [(182.88, 106.68), (182.88, 90.17)]
+   - [(182.88, 90.17), (187.96, 90.17)]
+   - [(198.12, 92.71), (198.12, 95.25)]
+   - [(204.47, 104.14), (204.47, 105.41)]
+   - [(204.47, 80.01), (204.47, 81.28)]
+   - [(204.47, 91.44), (204.47, 92.71)]
+   - [(204.47, 92.71), (198.12, 92.71)]
+   - [(204.47, 92.71), (204.47, 93.98)]
+   - [(217.17, 92.71), (222.25, 92.71)]
+   - [(229.87, 92.71), (233.68, 92.71)]
+   - [(233.68, 104.14), (233.68, 110.49)]
+   - [(233.68, 76.2), (252.73, 76.2)]
+   - [(233.68, 82.55), (233.68, 76.2)]
+   - [(233.68, 90.17), (233.68, 92.71)]
+   - [(233.68, 92.71), (233.68, 96.52)]
+   - [(233.68, 92.71), (245.11, 92.71)]
+   - [(252.73, 107.95), (252.73, 110.49)]
+   - [(252.73, 76.2), (252.73, 77.47)]
+   - [(252.73, 85.09), (252.73, 86.36)]
+   - [(252.73, 86.36), (252.73, 87.63)]
+   - [(252.73, 86.36), (259.08, 86.36)]
+   - [(252.73, 97.79), (252.73, 100.33)]
+   - [(266.7, 86.36), (270.51, 86.36)]
+   - [(270.51, 86.36), (270.51, 90.17)]
+   - [(270.51, 86.36), (274.32, 86.36)]
+   - [(270.51, 97.79), (270.51, 110.49)]
+
+=== SYMBOL ===
+❌ Missing (29):
+   - (symbol "Device:C" (pin_numbers (hide yes)) (pin_names (offset 0.25)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C" (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0.97 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Unpolarized capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "cap capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "C_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "C_0_1" (polyline (pts (xy -2.03 0.76) (xy 2.03 0.76)) (stroke (width 0.51) (type default)) (fill (type none))) (polyline (pts (xy -2.03 -0.76) (xy 2.03 -0.76)) (stroke (width 0.51) (type default)) (fill (type none))))
+   - (symbol "C_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "Device:R" (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "Simulation_SPICE:0" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#GND" (at 0 -2.54 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "0" (at 0 -1.78 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "0V reference potential for simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "0_0_1" (polyline (pts (xy -1.27 0) (xy 0 -1.27) (xy 1.27 0) (xy -1.27 0)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) (hide yes) (name "0" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02)))))) (embedded_fonts no))
+   - (symbol "Simulation_SPICE:NPN" (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "Q" (at -2.54 7.62 0) (effects (font (size 1.27 1.27)))) (property "Value" "NPN" (at -2.54 5.08 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 63.5 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 63.5 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Device" "NPN" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Type" "GUMMELPOON" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Pins" "1=C 2=B 3=E" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "NPN_0_1" (polyline (pts (xy -2.54 0) (xy 0.64 0)) (stroke (width 0.15) (type default)) (fill (type none))) (polyline (pts (xy 0.64 1.91) (xy 0.64 -1.91) (xy 0.64 -1.91)) (stroke (width 0.51) (type default)) (fill (type none))) (polyline (pts (xy 0.64 0.64) (xy 2.54 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.64 -0.64) (xy 2.54 -2.54) (xy 2.54 -2.54)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 1.27 0) (radius 2.82) (stroke (width 0.25) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -1.78) (xy 1.78 -1.27) (xy 2.29 -2.29) (xy 1.27 -1.78) (xy 1.27 -1.78)) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 2.79 -1.27) (xy 2.79 -1.27)) (stroke (width 0.15) (type default)) (fill (type none))) (polyline (pts (xy 2.79 -1.27) (xy 2.79 -1.27)) (stroke (width 0.15) (type default)) (fill (type none))))
+   - (symbol "NPN_1_1" (pin input line (at -5.08 0 0) (length 2.54) (name "B" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin open_collector line (at 2.54 5.08 270) (length 2.54) (name "C" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin open_emitter line (at 2.54 -5.08 90) (length 2.54) (name "E" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "Simulation_SPICE:OPAMP" (pin_names (offset 0.25)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 3.17 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "${SIM.PARAMS}" (at 3.81 -3.17 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Operational amplifier, single, node sequence=1:+ 2:- 3:OUT 4:V+ 5:V-" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Pins" "1=in+ 2=in- 3=vcc 4=vee 5=out" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Device" "SUBCKT" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes))) (property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Name" "kicad_builtin_opamp" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "OPAMP_0_1" (polyline (pts (xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "OPAMP_1_1" (pin input line (at -7.62 2.54 0) (length 2.54) (name "+" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 -2.54 0) (length 2.54) (name "-" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 7.62 270) (length 3.81) (name "V+" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 -7.62 90) (length 3.81) (name "V-" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin output line (at 7.62 0 180) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "Simulation_SPICE:VDC" (pin_numbers (hide yes)) (pin_names (offset 0.03)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1" (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Voltage source, DC" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Type" "DC" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Device" "V" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "VDC_0_0" (polyline (pts (xy -1.27 0.25) (xy 1.27 0.25)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.76 -0.25) (xy -1.27 -0.25)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.25 -0.25) (xy -0.25 -0.25)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -0.25) (xy 0.76 -0.25)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.91 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VDC_0_1" (circle (center 0 0) (radius 2.54) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "VDC_1_1" (pin passive line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "Simulation_SPICE:VSIN" (pin_numbers (hide yes)) (pin_names (offset 0.03)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "VSIN" (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Params" "dc=0 ampl=1 f=1k ac=1" (at 2.54 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Sim.Type" "SIN" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Sim.Device" "V" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes))) (property "ki_keywords" "simulation ac vac" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "VSIN_0_0" (arc (start -1.27 0) (mid -0.64 0.63) (end 0 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 1.27 0) (mid 0.64 -0.63) (end 0 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.91 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.54) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "VSIN_1_1" (pin passive line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "power:+5V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+5V" (at 0 3.56 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "+5V_0_1" (polyline (pts (xy -0.76 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0.76 1.27)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) (hide yes) (name "+5V" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+   - (symbol "power:-5V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 2.54 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "-5V" (at 0 3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"-5V\"" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "-5V_0_0" (pin power_in line (at 0 0 90) (length 0) (hide yes) (name "-5V" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+   - (symbol "-5V_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy 0.76 1.27) (xy 0 2.54) (xy -0.76 1.27) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type outline)))) (embedded_fonts no)))
+
+Some cleaned files differ from originals ❌

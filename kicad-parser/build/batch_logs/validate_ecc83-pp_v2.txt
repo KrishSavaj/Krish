@@ -1,0 +1,89 @@
+
+=== JUNCTION ===
+❌ Missing (9):
+   - (104.139999, 45.720001)
+   - (104.139999, 60.959999)
+   - (152.399994, 106.68)
+   - (165.100006, 73.660004)
+   - (165.100006, 91.440002)
+   - (193.039993, 73.660004)
+   - (93.980003, 45.720001)
+   - (93.980003, 60.959999)
+   - (96.519997, 91.440002)
+
+=== WIRE ===
+❌ Missing (41):
+   - [(101.6, 91.44), (101.6, 88.9)]
+   - [(104.14, 45.72), (167.64, 45.72)]
+   - [(104.14, 49.53), (104.14, 45.72)]
+   - [(104.14, 57.15), (104.14, 60.96)]
+   - [(104.14, 60.96), (104.14, 63.5)]
+   - [(144.78, 106.68), (152.4, 106.68)]
+   - [(147.32, 111.76), (144.78, 111.76)]
+   - [(147.32, 115.57), (147.32, 111.76)]
+   - [(152.4, 106.68), (157.48, 106.68)]
+   - [(152.4, 130.81), (152.4, 106.68)]
+   - [(152.4, 138.43), (152.4, 139.7)]
+   - [(154.94, 58.42), (160.02, 58.42)]
+   - [(154.94, 91.44), (154.94, 58.42)]
+   - [(162.56, 116.84), (162.56, 130.81)]
+   - [(162.56, 138.43), (162.56, 139.7)]
+   - [(165.1, 68.58), (165.1, 73.66)]
+   - [(165.1, 73.66), (165.1, 78.74)]
+   - [(165.1, 73.66), (181.61, 73.66)]
+   - [(165.1, 86.36), (165.1, 91.44)]
+   - [(165.1, 91.44), (154.94, 91.44)]
+   - [(165.1, 91.44), (165.1, 96.52)]
+   - [(167.64, 45.72), (167.64, 48.26)]
+   - [(189.23, 73.66), (193.04, 73.66)]
+   - [(193.04, 73.66), (203.2, 73.66)]
+   - [(193.04, 86.36), (193.04, 73.66)]
+   - [(193.04, 93.98), (193.04, 96.52)]
+   - [(199.39, 78.74), (199.39, 82.55)]
+   - [(203.2, 78.74), (199.39, 78.74)]
+   - [(86.36, 45.72), (93.98, 45.72)]
+   - [(86.36, 50.8), (88.9, 50.8)]
+   - [(86.36, 91.44), (96.52, 91.44)]
+   - [(86.36, 96.52), (99.06, 96.52)]
+   - [(88.9, 50.8), (88.9, 60.96)]
+   - [(88.9, 60.96), (93.98, 60.96)]
+   - [(93.98, 43.18), (93.98, 45.72)]
+   - [(93.98, 45.72), (104.14, 45.72)]
+   - [(93.98, 60.96), (104.14, 60.96)]
+   - [(93.98, 60.96), (93.98, 55.88)]
+   - [(96.52, 91.44), (101.6, 91.44)]
+   - [(96.52, 91.44), (96.52, 88.9)]
+   - [(99.06, 96.52), (99.06, 88.9)]
+
+=== SYMBOL ===
+❌ Missing (28):
+   - (symbol "ecc83_schlib:C" (pin_numbers hide) (pin_names (offset 0.25)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C" (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0.97 -3.81 0) (effects (font (size 0.76 0.76)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "C_0_1" (polyline (pts (xy -2.03 -0.76) (xy 2.03 -0.76)) (stroke (width 0.51) (type default)) (fill (type none))) (polyline (pts (xy -2.03 0.76) (xy 2.03 0.76)) (stroke (width 0.51) (type default)) (fill (type none))))
+   - (symbol "C_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "~" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "~" (effects (font (size 1.02 1.02)))) (number "2" (effects (font (size 1.02 1.02)))))))
+   - (symbol "ecc83_schlib:CONN_1" (pin_numbers hide) (pin_names (offset 0.76) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "P" (at 2.03 0 0) (effects (font (size 1.02 1.02)) (justify left))) (property "Value" "CONN_1" (at 0 1.4 0) (effects (font (size 0.76 0.76)) (hide yes))) (property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" (at 0 -1.27 0) (effects (font (size 0.25 0.25)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "CONN_1_0_1" (polyline (pts (xy -0.76 0) (xy -1.27 0)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 0 0) (radius 0.79) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "CONN_1_1_1" (pin passive line (at -3.81 0 0) (length 2.54) (name "1" (effects (font (size 1.52 1.52)))) (number "1" (effects (font (size 1.52 1.52)))))))
+   - (symbol "ecc83_schlib:CONN_2" (pin_names (offset 1.02) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "P" (at -1.27 0 90) (effects (font (size 1.02 1.02)))) (property "Value" "CONN_2" (at 1.27 0 90) (effects (font (size 1.02 1.02)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "CONN_2_0_1" (rectangle (start -2.54 3.81) (end 2.54 -3.81) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "CONN_2_1_1" (pin passive inverted (at -8.89 2.54 0) (length 6.35) (name "P1" (effects (font (size 1.52 1.52)))) (number "1" (effects (font (size 1.52 1.52))))) (pin passive inverted (at -8.89 -2.54 0) (length 6.35) (name "PM" (effects (font (size 1.52 1.52)))) (number "2" (effects (font (size 1.52 1.52)))))))
+   - (symbol "ecc83_schlib:CP" (pin_numbers hide) (pin_names (offset 0.25)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "CP" (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0.97 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Polarised capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "cap capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "CP_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "CP_0_1" (rectangle (start -2.29 0.51) (end -2.29 1.02) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -2.29 0.51) (end 2.29 0.51) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.78 2.29) (xy -0.76 2.29)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.27 2.79) (xy -1.27 1.78)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 2.29 -0.51) (end -2.29 -1.02) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start 2.29 1.02) (end -2.29 1.02) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 2.29 1.02) (end 2.29 0.51) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "CP_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "ecc83_schlib:ECC83" (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.3 7.87 0) (effects (font (size 1.27 1.27)))) (property "Value" "ECC83" (at 8.89 -7.62 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "VALVE-NOVAL_P" (at 10.16 -8.89 0) (effects (font (size 0.76 0.76)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+   - (symbol "ECC83_0_1" (arc (start -5.08 -2.54) (mid 0 -7.6) (end 5.08 -2.54) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.08 2.54) (xy 5.08 -2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -5.08 2.54) (xy -5.08 -2.54) (xy -5.08 -2.54)) (stroke (width 0) (type default)) (fill (type none))) (arc (start 5.08 2.54) (mid 0 7.6) (end -5.08 2.54) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "ECC83_1_0" (polyline (pts (xy -2.54 -5.08) (xy -2.54 -7.62)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 5.08) (xy 0 7.62)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "ECC83_1_1" (polyline (pts (xy -5.08 0) (xy -3.17 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.91 0) (xy -3.17 0)) (stroke (width 0.15) (type default)) (fill (type none))) (polyline (pts (xy -0.64 0) (xy 0.64 0)) (stroke (width 0.15) (type default)) (fill (type none))) (polyline (pts (xy 1.91 0) (xy 3.17 0)) (stroke (width 0.15) (type default)) (fill (type none))) (polyline (pts (xy -2.54 5.08) (xy 2.79 5.08) (xy 2.79 5.08)) (stroke (width 0.25) (type default)) (fill (type none))) (arc (start 2.54 -5.08) (mid 0 -3.1) (end -2.54 -5.08) (stroke (width 0.25) (type default)) (fill (type none))) (pin passive line (at 0 10.16 270) (length 2.54) (name "A" (effects (font (size 1.02 1.02)))) (number "6" (effects (font (size 1.02 1.02))))) (pin input line (at -7.62 0 0) (length 2.54) (name "G" (effects (font (size 1.02 1.02)))) (number "7" (effects (font (size 1.02 1.02))))) (pin passive line (at -2.54 -10.16 90) (length 2.54) (name "K" (effects (font (size 1.02 1.02)))) (number "8" (effects (font (size 1.02 1.02))))))
+   - (symbol "ECC83_2_0" (polyline (pts (xy -2.54 -5.08) (xy -2.54 -7.62)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 5.08) (xy 0 7.62)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "ECC83_2_1" (polyline (pts (xy -5.08 0) (xy -3.17 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.91 0) (xy -3.17 0)) (stroke (width 0.15) (type default)) (fill (type none))) (polyline (pts (xy -0.64 0) (xy 0.64 0)) (stroke (width 0.15) (type default)) (fill (type none))) (polyline (pts (xy 1.91 0) (xy 3.17 0)) (stroke (width 0.15) (type default)) (fill (type none))) (polyline (pts (xy -2.54 5.08) (xy 2.79 5.08) (xy 2.79 5.08)) (stroke (width 0.25) (type default)) (fill (type none))) (arc (start 2.54 -5.08) (mid 0 -3.1) (end -2.54 -5.08) (stroke (width 0.25) (type default)) (fill (type none))) (pin passive line (at 0 10.16 270) (length 2.54) (name "A" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02))))) (pin input line (at -7.62 0 0) (length 2.54) (name "G" (effects (font (size 1.02 1.02)))) (number "2" (effects (font (size 1.02 1.02))))) (pin passive line (at -2.54 -10.16 90) (length 2.54) (name "K" (effects (font (size 1.02 1.02)))) (number "3" (effects (font (size 1.02 1.02))))))
+   - (symbol "ECC83_3_1" (arc (start 0 -6.35) (mid -1.27 -5.57) (end -2.54 -6.35) (stroke (width 0) (type default)) (fill (type none))) (arc (start 2.54 -6.35) (mid 1.27 -5.57) (end 0 -6.35) (stroke (width 0) (type default)) (fill (type none))) (pin input line (at -2.54 -11.43 90) (length 5.08) (name "F1" (effects (font (size 1.02 1.02)))) (number "4" (effects (font (size 1.02 1.02))))) (pin input line (at 2.54 -11.43 90) (length 5.08) (name "F1" (effects (font (size 1.02 1.02)))) (number "5" (effects (font (size 1.02 1.02))))) (pin input line (at 0 -11.43 90) (length 5.08) (name "F2" (effects (font (size 1.02 1.02)))) (number "9" (effects (font (size 1.02 1.02)))))))
+   - (symbol "ecc83_schlib:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "ecc83_schlib:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 2.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "PWR_FLAG" (at 0 4.57 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))))
+   - (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy -1.91 2.54) (xy 0 3.81) (xy 1.91 2.54) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none)))))
+   - (symbol "ecc83_schlib:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 0.76 0.76)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 0.76 0.76)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "R_* Resistor_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.52 1.52)))) (number "1" (effects (font (size 1.52 1.52))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.52 1.52)))) (number "2" (effects (font (size 1.52 1.52))))))))
+
+Some cleaned files differ from originals ❌

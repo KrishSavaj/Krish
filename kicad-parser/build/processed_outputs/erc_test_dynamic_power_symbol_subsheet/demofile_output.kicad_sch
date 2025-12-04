@@ -1,0 +1,573 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20230819
+Generator:    eeschema
+Paper size:   "A5"
+Root UUID:    ef9b8d67-23ec-4755-83d2-bd1af884a0c6
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol ".Project_Library:REF${#}" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "REF${#}" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "local power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "REF${#}_1_1" (polyline (pts (xy 0 0) (xy 0 -1.905000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.905000)) (stroke (width 0) (type default)) (fill (type outline))) (pin power_in line (at 0 0 270) (length 0) hide (name "REF${#}" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))))
+  <symbol>
+  <at> attrs{misc:0 name:51.435000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6059cea7-e82b-44fb-ad00-7e6582d903eb }
+  <property> at=(76.200,49.530,0.000) attrs{name:"#FLG0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,47.302,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#FLG0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:62.230000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b2b6c513-6b49-4516-9750-e44a26481ea2 }
+  <property> at=(76.200,68.580,0.000) attrs{name:"#PWR0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,66.363,0.000) attrs{name:"REF${#}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#PWR0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:90 name:56.515000 value:60.960000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fbe14eb8-65ef-4b4b-9471-e98e2dbc2edc }
+  <property> at=(60.960,51.355,90.000) attrs{name:"R201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,53.779,90.000) attrs{name:"0R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,58.293,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"R401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (junction (at 52.070000 56.514999))
+  (junction (at 76.199997 56.514999))
+  (junction (at 52.070000 56.514999) (uuid 4d7ab109-3052-4d81-8202-b1562ac838f1) (color 0 0 0 0))
+  (junction (at 76.199997 56.514999) (uuid bc9460a4-99cc-4bdb-8e43-a384bbfc72aa) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol ".Project_Library:REF${#}" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "REF${#}" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "local power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "REF${#}_1_1" (polyline (pts (xy 0 0) (xy 0 -1.905000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.905000)) (stroke (width 0) (type default)) (fill (type outline))) (pin power_in line (at 0 0 270) (length 0) hide (name "REF${#}" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))))
+  <symbol>
+  <at> attrs{misc:0 name:51.435000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6059cea7-e82b-44fb-ad00-7e6582d903eb }
+  <property> at=(76.200,49.530,0.000) attrs{name:"#FLG0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,47.302,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#FLG0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:62.230000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b2b6c513-6b49-4516-9750-e44a26481ea2 }
+  <property> at=(76.200,68.580,0.000) attrs{name:"#PWR0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,66.363,0.000) attrs{name:"REF${#}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#PWR0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:90 name:56.515000 value:60.960000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fbe14eb8-65ef-4b4b-9471-e98e2dbc2edc }
+  <property> at=(60.960,51.355,90.000) attrs{name:"R201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,53.779,90.000) attrs{name:"0R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,58.293,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"R401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (junction (at 52.070000 56.514999))
+  (junction (at 76.199997 56.514999))
+  (junction (at 52.070000 56.514999) (uuid 4d7ab109-3052-4d81-8202-b1562ac838f1) (color 0 0 0 0))
+  (junction (at 76.199997 56.514999) (uuid bc9460a4-99cc-4bdb-8e43-a384bbfc72aa) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol ".Project_Library:REF${#}" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "REF${#}" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "local power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "REF${#}_1_1" (polyline (pts (xy 0 0) (xy 0 -1.905000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.905000)) (stroke (width 0) (type default)) (fill (type outline))) (pin power_in line (at 0 0 270) (length 0) hide (name "REF${#}" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))))
+  <symbol>
+  <at> attrs{misc:0 name:51.435000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6059cea7-e82b-44fb-ad00-7e6582d903eb }
+  <property> at=(76.200,49.530,0.000) attrs{name:"#FLG0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,47.302,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#FLG0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:62.230000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b2b6c513-6b49-4516-9750-e44a26481ea2 }
+  <property> at=(76.200,68.580,0.000) attrs{name:"#PWR0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,66.363,0.000) attrs{name:"REF${#}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#PWR0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:90 name:56.515000 value:60.960000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fbe14eb8-65ef-4b4b-9471-e98e2dbc2edc }
+  <property> at=(60.960,51.355,90.000) attrs{name:"R201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,53.779,90.000) attrs{name:"0R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,58.293,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"R401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (junction (at 52.070000 56.514999))
+  (junction (at 76.199997 56.514999))
+  (junction (at 52.070000 56.514999) (uuid 4d7ab109-3052-4d81-8202-b1562ac838f1) (color 0 0 0 0))
+  (junction (at 76.199997 56.514999) (uuid bc9460a4-99cc-4bdb-8e43-a384bbfc72aa) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol ".Project_Library:REF${#}" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "REF${#}" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "local power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "REF${#}_1_1" (polyline (pts (xy 0 0) (xy 0 -1.905000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.905000)) (stroke (width 0) (type default)) (fill (type outline))) (pin power_in line (at 0 0 270) (length 0) hide (name "REF${#}" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))))
+  <symbol>
+  <at> attrs{misc:0 name:51.435000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6059cea7-e82b-44fb-ad00-7e6582d903eb }
+  <property> at=(76.200,49.530,0.000) attrs{name:"#FLG0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,47.302,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#FLG0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:62.230000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b2b6c513-6b49-4516-9750-e44a26481ea2 }
+  <property> at=(76.200,68.580,0.000) attrs{name:"#PWR0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,66.363,0.000) attrs{name:"REF${#}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#PWR0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:90 name:56.515000 value:60.960000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fbe14eb8-65ef-4b4b-9471-e98e2dbc2edc }
+  <property> at=(60.960,51.355,90.000) attrs{name:"R201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,53.779,90.000) attrs{name:"0R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,58.293,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"R401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (junction (at 52.070000 56.514999))
+  (junction (at 76.199997 56.514999))
+  (junction (at 52.070000 56.514999) (uuid 4d7ab109-3052-4d81-8202-b1562ac838f1) (color 0 0 0 0))
+  (junction (at 76.199997 56.514999) (uuid bc9460a4-99cc-4bdb-8e43-a384bbfc72aa) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol ".Project_Library:REF${#}" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "REF${#}" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "local power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "REF${#}_1_1" (polyline (pts (xy 0 0) (xy 0 -1.905000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.905000)) (stroke (width 0) (type default)) (fill (type outline))) (pin power_in line (at 0 0 270) (length 0) hide (name "REF${#}" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))))
+  <symbol>
+  <at> attrs{misc:0 name:51.435000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6059cea7-e82b-44fb-ad00-7e6582d903eb }
+  <property> at=(76.200,49.530,0.000) attrs{name:"#FLG0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,47.302,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#FLG0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:62.230000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b2b6c513-6b49-4516-9750-e44a26481ea2 }
+  <property> at=(76.200,68.580,0.000) attrs{name:"#PWR0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,66.363,0.000) attrs{name:"REF${#}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#PWR0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:90 name:56.515000 value:60.960000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fbe14eb8-65ef-4b4b-9471-e98e2dbc2edc }
+  <property> at=(60.960,51.355,90.000) attrs{name:"R201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,53.779,90.000) attrs{name:"0R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,58.293,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"R401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (junction (at 52.070000 56.514999))
+  (junction (at 76.199997 56.514999))
+  (junction (at 52.070000 56.514999) (uuid 4d7ab109-3052-4d81-8202-b1562ac838f1) (color 0 0 0 0))
+  (junction (at 76.199997 56.514999) (uuid bc9460a4-99cc-4bdb-8e43-a384bbfc72aa) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol ".Project_Library:REF${#}" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "REF${#}" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "local power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "REF${#}_1_1" (polyline (pts (xy 0 0) (xy 0 -1.905000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.905000)) (stroke (width 0) (type default)) (fill (type outline))) (pin power_in line (at 0 0 270) (length 0) hide (name "REF${#}" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))))
+  <symbol>
+  <at> attrs{misc:0 name:51.435000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6059cea7-e82b-44fb-ad00-7e6582d903eb }
+  <property> at=(76.200,49.530,0.000) attrs{name:"#FLG0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,47.302,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,51.435,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#FLG0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:62.230000 value:76.200000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b2b6c513-6b49-4516-9750-e44a26481ea2 }
+  <property> at=(76.200,68.580,0.000) attrs{name:"#PWR0201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,66.363,0.000) attrs{name:"REF${#}" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(76.200,62.230,0.000) attrs{name:"Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"#PWR0401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:90 name:56.515000 value:60.960000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:fbe14eb8-65ef-4b4b-9471-e98e2dbc2edc }
+  <property> at=(60.960,51.355,90.000) attrs{name:"R201" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,53.779,90.000) attrs{name:"0R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.960,58.293,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.960,56.515,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d/356ec2aa-e896-4e5b-96d5-f383f5c93ff2" path_reference:"R401" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 57.15 56.515) (angle 0) (thickness 0.25))
+  (wire (start 52.07 72.39) (end 46.355 72.39) (angle 0) (thickness 0.25))
+  (wire (start 46.355 56.515) (end 52.07 56.515) (angle 0) (thickness 0.25))
+  (wire (start 64.77 56.515) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (wire (start 76.2 56.515) (end 76.2 62.23) (angle 0) (thickness 0.25))
+  (wire (start 52.07 56.515) (end 52.07 72.39) (angle 0) (thickness 0.25))
+  (wire (start 76.2 51.435) (end 76.2 56.515) (angle 0) (thickness 0.25))
+  (junction (at 52.070000 56.514999))
+  (junction (at 76.199997 56.514999))
+  (junction (at 52.070000 56.514999) (uuid 4d7ab109-3052-4d81-8202-b1562ac838f1) (color 0 0 0 0))
+  (junction (at 76.199997 56.514999) (uuid bc9460a4-99cc-4bdb-8e43-a384bbfc72aa) (color 0 0 0 0))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

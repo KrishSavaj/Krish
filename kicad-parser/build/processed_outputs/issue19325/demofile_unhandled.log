@@ -1,0 +1,82 @@
+[DEBUG] Root children: 7
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="generator_version"
+  child 4 tag="paper"
+  child 5 tag="lib_symbols"
+  child 6 tag="symbol_instances"
+[BaselineBoard] appendRawPiece len=125
+kicad_sch  (children=7)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=22
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=25
+  generator_version  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=13
+  lib_symbols  (children=1)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=13
+[BaselineBoard] setLibSymbolsRaw len=13
+[BaselineBoard] appendRawPiece len=13
+AstCleaner: handling lib_symbols at 0x7ffe60367330
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=13
+[BaselineBoard] appendRawPiece len=18
+  symbol_instances  (children=1)
+  [UNHANDLED-PCB] tag="symbol_instances"
+[UNHANDLED] cleanInner:generator_version addr=0x5bcdcfce6a60 -> (generator_version "8.0" )
+  children details (child_index: addr type extra):
+    [0] addr=0x5bcdcfce6c90 atom="generator_version"
+    [1] addr=0x5bcdcfce6cd0 atom=""8.0""
+AstCleaner: handling lib_symbols at 0x5bcdcfce6ae0
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20231120 }
+  <generator> attrs{value:"eeschema" }
+  <generator_version> attrs{value:"8.0" }
+  <paper> attrs{value:"A4" }
+  <'...
+[BaselineBoard] appendRawPiece len=193 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=6
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20231120 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:"eeschema" }'...
+[BaselineBoard] appendRawPiece len=36 head="generator"
+[walkSchematicOnce] child tag='generator_version' children=0
+[appendRawPieceFromClean] piece_head='<generator_version> attrs{value:"8.0" }'...
+[BaselineBoard] appendRawPiece len=39 head="generator_version"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=0
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='symbol_instances' children=0
+[appendRawPieceFromClean] piece_head='<symbol_instances>'...
+[BaselineBoard] appendRawPiece len=18 head="symbol_instances"
+=== SUMMARY === junctionShapes=0 wireShapes=0 symbols=0 rawPieces=14
+=== DUMP wires: count=0 ===
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

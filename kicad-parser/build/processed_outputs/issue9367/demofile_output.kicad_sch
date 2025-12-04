@@ -1,0 +1,562 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+Parsed GlobalLabel: (unnamed)
+Parsed GlobalLabel: (unnamed)
+Parsed GlobalLabel: (unnamed)
+Parsed GlobalLabel: (unnamed)
+Parsed GlobalLabel: (unnamed)
+Parsed GlobalLabel: (unnamed)
+Parsed GlobalLabel: (unnamed)
+
+=== Schematic Metadata ===
+Version:      20221206
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    f8b5dc92-b396-4f6f-8c6d-0cef84d50e1f
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:19f41c33-5324-4ee4-ac8a-8893be6f0727 }
+  <property> at=(93.980,113.665,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(89.662,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R1" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:238.760000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:28d3eb4f-83aa-4d39-b01b-9438757c72eb }
+  <property> at=(241.300,113.665,0.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(241.300,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(236.982,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(238.760,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R4" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:241.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a354c55f-796d-441f-bbf9-83f0447fcf25 }
+  <property> at=(243.840,88.265,0.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(243.840,90.805,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(239.522,88.900,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(241.300,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R3" path_unit:1 value:"issue9367" }
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:19f41c33-5324-4ee4-ac8a-8893be6f0727 }
+  <property> at=(93.980,113.665,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(89.662,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R1" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:238.760000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:28d3eb4f-83aa-4d39-b01b-9438757c72eb }
+  <property> at=(241.300,113.665,0.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(241.300,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(236.982,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(238.760,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R4" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:241.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a354c55f-796d-441f-bbf9-83f0447fcf25 }
+  <property> at=(243.840,88.265,0.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(243.840,90.805,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(239.522,88.900,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(241.300,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R3" path_unit:1 value:"issue9367" }
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:19f41c33-5324-4ee4-ac8a-8893be6f0727 }
+  <property> at=(93.980,113.665,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(89.662,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R1" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:238.760000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:28d3eb4f-83aa-4d39-b01b-9438757c72eb }
+  <property> at=(241.300,113.665,0.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(241.300,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(236.982,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(238.760,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R4" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:241.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a354c55f-796d-441f-bbf9-83f0447fcf25 }
+  <property> at=(243.840,88.265,0.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(243.840,90.805,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(239.522,88.900,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(241.300,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R3" path_unit:1 value:"issue9367" }
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:19f41c33-5324-4ee4-ac8a-8893be6f0727 }
+  <property> at=(93.980,113.665,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(89.662,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R1" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:238.760000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:28d3eb4f-83aa-4d39-b01b-9438757c72eb }
+  <property> at=(241.300,113.665,0.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(241.300,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(236.982,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(238.760,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R4" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:241.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a354c55f-796d-441f-bbf9-83f0447fcf25 }
+  <property> at=(243.840,88.265,0.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(243.840,90.805,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(239.522,88.900,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(241.300,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R3" path_unit:1 value:"issue9367" }
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:19f41c33-5324-4ee4-ac8a-8893be6f0727 }
+  <property> at=(93.980,113.665,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(89.662,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R1" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:238.760000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:28d3eb4f-83aa-4d39-b01b-9438757c72eb }
+  <property> at=(241.300,113.665,0.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(241.300,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(236.982,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(238.760,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R4" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:241.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a354c55f-796d-441f-bbf9-83f0447fcf25 }
+  <property> at=(243.840,88.265,0.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(243.840,90.805,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(239.522,88.900,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(241.300,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R3" path_unit:1 value:"issue9367" }
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:19f41c33-5324-4ee4-ac8a-8893be6f0727 }
+  <property> at=(93.980,113.665,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(93.980,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(89.662,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R1" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:114.300000 value:238.760000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:28d3eb4f-83aa-4d39-b01b-9438757c72eb }
+  <property> at=(241.300,113.665,0.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(241.300,116.205,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(236.982,114.300,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(238.760,114.300,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R4" path_unit:1 value:"issue9367" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:241.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a354c55f-796d-441f-bbf9-83f0447fcf25 }
+  <property> at=(243.840,88.265,0.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(243.840,90.805,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(239.522,88.900,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(241.300,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/42cb452b-0025-41f3-ae52-70902384e6c1" path_reference:"R3" path_unit:1 value:"issue9367" }
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 238.76 109.22) (end 240.03 109.22) (angle 0) (thickness 0.25))
+  (wire (start 238.76 119.38) (end 238.76 118.11) (angle 0) (thickness 0.25))
+  (wire (start 121.92 78.74) (end 138.43 78.74) (angle 0) (thickness 0.25))
+  (wire (start 238.76 110.49) (end 238.76 109.22) (angle 0) (thickness 0.25))
+  (wire (start 87.63 124.46) (end 91.44 124.46) (angle 0) (thickness 0.25))
+  (wire (start 121.92 71.12) (end 138.43 71.12) (angle 0) (thickness 0.25))
+  (wire (start 237.49 85.09) (end 241.3 85.09) (angle 0) (thickness 0.25))
+  (wire (start 124.46 97.79) (end 135.89 97.79) (angle 0) (thickness 0.25))
+  (wire (start 240.03 119.38) (end 238.76 119.38) (angle 0) (thickness 0.25))
+  (wire (start 87.63 118.11) (end 91.44 118.11) (angle 0) (thickness 0.25))
+  (wire (start 237.49 92.71) (end 241.3 92.71) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

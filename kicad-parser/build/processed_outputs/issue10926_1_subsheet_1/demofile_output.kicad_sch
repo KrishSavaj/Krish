@@ -1,0 +1,219 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20221206
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    15845972-e785-4b64-b81a-c5b6b9aa406c
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Test-Library:TEST" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_0_1" (rectangle (start -3.810000 0) (end 5.080000 -5.080000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_1_1" (pin input line (at -6.350000 -2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 -2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6f4fe901-859a-4888-8767-d39c882b4837 }
+  <property> at=(136.525,66.040,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/30037e9f-fb8a-4b65-9af4-98689a2fae61/48e5c29d-dae7-410f-a801-6c402cc42990" path_reference:"U2" path_unit:1 value:"issue10926_1" }
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Test-Library:TEST" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_0_1" (rectangle (start -3.810000 0) (end 5.080000 -5.080000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_1_1" (pin input line (at -6.350000 -2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 -2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6f4fe901-859a-4888-8767-d39c882b4837 }
+  <property> at=(136.525,66.040,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/30037e9f-fb8a-4b65-9af4-98689a2fae61/48e5c29d-dae7-410f-a801-6c402cc42990" path_reference:"U2" path_unit:1 value:"issue10926_1" }
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Test-Library:TEST" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_0_1" (rectangle (start -3.810000 0) (end 5.080000 -5.080000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_1_1" (pin input line (at -6.350000 -2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 -2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6f4fe901-859a-4888-8767-d39c882b4837 }
+  <property> at=(136.525,66.040,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/30037e9f-fb8a-4b65-9af4-98689a2fae61/48e5c29d-dae7-410f-a801-6c402cc42990" path_reference:"U2" path_unit:1 value:"issue10926_1" }
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Test-Library:TEST" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_0_1" (rectangle (start -3.810000 0) (end 5.080000 -5.080000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_1_1" (pin input line (at -6.350000 -2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 -2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6f4fe901-859a-4888-8767-d39c882b4837 }
+  <property> at=(136.525,66.040,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/30037e9f-fb8a-4b65-9af4-98689a2fae61/48e5c29d-dae7-410f-a801-6c402cc42990" path_reference:"U2" path_unit:1 value:"issue10926_1" }
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Test-Library:TEST" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_0_1" (rectangle (start -3.810000 0) (end 5.080000 -5.080000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_1_1" (pin input line (at -6.350000 -2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 -2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6f4fe901-859a-4888-8767-d39c882b4837 }
+  <property> at=(136.525,66.040,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/30037e9f-fb8a-4b65-9af4-98689a2fae61/48e5c29d-dae7-410f-a801-6c402cc42990" path_reference:"U2" path_unit:1 value:"issue10926_1" }
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20221206) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Test-Library:TEST" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_0_1" (rectangle (start -3.810000 0) (end 5.080000 -5.080000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_1_1" (pin input line (at -6.350000 -2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 -2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6f4fe901-859a-4888-8767-d39c882b4837 }
+  <property> at=(136.525,66.040,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(135.890,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/30037e9f-fb8a-4b65-9af4-98689a2fae61/48e5c29d-dae7-410f-a801-6c402cc42990" path_reference:"U2" path_unit:1 value:"issue10926_1" }
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+  (wire (start 143.51 69.85) (end 146.05 69.85) (angle 0) (thickness 0.25))
+  (wire (start 113.03 38.1) (end 121.92 38.1) (angle 0) (thickness 0.25))
+  (wire (start 127 69.85) (end 129.54 69.85) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

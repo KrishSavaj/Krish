@@ -1,0 +1,14 @@
+
+=== JUNCTION ===
+✅ Files match perfectly
+
+=== WIRE ===
+✅ Files match perfectly
+
+=== SYMBOL ===
+❌ Missing (3):
+   - (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.76) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (id 0) (at 0 6.86 0) (effects (font (size 1.27 1.27)))) (property "Value" "TestPoint" (id 1) (at 0 5.08 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at 5.08 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 5.08 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "test point tp" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "test point" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "TestPoint_0_1" (circle (center 0 3.3) (radius 0.76) (stroke (width 0)) (fill (type none))))
+   - (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.54) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

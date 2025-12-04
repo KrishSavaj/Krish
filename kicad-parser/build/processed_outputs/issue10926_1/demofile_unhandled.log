@@ -1,0 +1,161 @@
+[DEBUG] Root children: 12
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="uuid"
+  child 4 tag="paper"
+  child 5 tag="lib_symbols"
+  child 6 tag="no_connect"
+  child 7 tag="no_connect"
+  child 8 tag="wire"
+  child 9 tag="sheet"
+  child 10 tag="sheet"
+  child 11 tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=2191
+kicad_sch  (children=12)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=20
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=43
+  uuid  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=13
+  lib_symbols  (children=1)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=13
+[BaselineBoard] setLibSymbolsRaw len=13
+[BaselineBoard] appendRawPiece len=13
+AstCleaner: handling lib_symbols at 0x7ffe904326a0
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=13
+[BaselineBoard] appendRawPiece len=82
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=82
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=142
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=142
+[BaselineBoard] appendRawPiece len=142
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 165.100006,62.230000->194.309998,62.230000 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=1
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=43
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=859
+  sheet  (children=12)
+[BaselineBoard] appendRawPiece len=859
+  sheet  (children=12)
+[BaselineBoard] appendRawPiece len=39
+  sheet_instances  (children=2)
+  [UNHANDLED-PCB] tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=21
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+AstCleaner: handling lib_symbols at 0x62da8bc108c0
+[UNHANDLED] cleanInner:no_connect addr=0x62da8bc10900 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62da8bc11760 atom="no_connect"
+    [1] addr=0x62da8bc117a0 list_size=3 head="at"
+    [2] addr=0x62da8bc117e0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x62da8bc10940 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x62da8bc11690 atom="no_connect"
+    [1] addr=0x62da8bc116d0 list_size=3 head="at"
+    [2] addr=0x62da8bc11710 list_size=2 head="uuid"
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20221206 }
+  <generator> attrs{value:eeschema }
+  <paper> attrs{value:"A4" }
+  <lib_symbols>
+  <no_connect> at=(218.440,62.2'...
+[BaselineBoard] appendRawPiece len=2471 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=10
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20221206 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:eeschema }'...
+[BaselineBoard] appendRawPiece len=34 head="generator"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=0
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(218.440,62.230,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(140.970,62.230,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='sheet' children=10
+[appendRawPieceFromClean] piece_head='<sheet> attrs{fill_color:0,0,0,0.000000 }
+  <at> attrs{name:59.690000 value:140.970000 }
+  <size> attrs{name:5.080000 value:24.130000 }
+  <fields_autoplaced>
+  '...
+[BaselineBoard] appendRawPiece len=1021 head="sheet"
+[walkSchematicOnce] child tag='sheet' children=10
+[appendRawPieceFromClean] piece_head='<sheet> attrs{fill_color:0,0,0,0.000000 }
+  <at> attrs{name:59.690000 value:194.310000 }
+  <size> attrs{name:5.080000 value:24.130000 }
+  <fields_autoplaced>
+  '...
+[BaselineBoard] appendRawPiece len=1021 head="sheet"
+[walkSchematicOnce] child tag='sheet_instances' children=1
+[appendRawPieceFromClean] piece_head='<sheet_instances>
+  <path> attrs{page:"1" }'...
+[BaselineBoard] appendRawPiece len=43 head="sheet_instances"
+=== SUMMARY === junctionShapes=0 wireShapes=2 symbols=0 rawPieces=39
+=== DUMP wires: count=2 ===
+ wire[0] start=(165.10,62.23) end=(194.31,62.23)
+ wire[1] start=(165.10,62.23) end=(194.31,62.23)
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

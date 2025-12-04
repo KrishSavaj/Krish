@@ -1,0 +1,240 @@
+[DEBUG] Root children: 17
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="uuid"
+  child 4 tag="paper"
+  child 5 tag="lib_symbols"
+  child 6 tag="no_connect"
+  child 7 tag="no_connect"
+  child 8 tag="polyline"
+  child 9 tag="polyline"
+  child 10 tag="text"
+  child 11 tag="text"
+  child 12 tag="symbol"
+  child 13 tag="symbol"
+  child 14 tag="symbol"
+  child 15 tag="sheet_instances"
+  child 16 tag="symbol_instances"
+[BaselineBoard] appendRawPiece len=5392
+kicad_sch  (children=17)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=20
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=43
+  uuid  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=1487
+  lib_symbols  (children=2)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=1487
+[BaselineBoard] setLibSymbolsRaw len=1487
+[BaselineBoard] appendRawPiece len=1487
+AstCleaner: handling lib_symbols at 0x7ffd0867bc80
+[handleLibSymbolsCleanNode] called, children=1
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=1487
+[BaselineBoard] appendRawPiece len=1473
+    symbol  (children=15)
+[BaselineBoard] appendRawPiece len=82
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=82
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=145
+  polyline  (children=4)
+[BaselineBoard] appendRawPiece len=146
+  polyline  (children=4)
+[BaselineBoard] appendRawPiece len=228
+  text  (children=5)
+[BaselineBoard] appendRawPiece len=231
+  text  (children=5)
+[BaselineBoard] appendRawPiece len=838
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=838
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=838
+  symbol  (children=16)
+[BaselineBoard] appendRawPiece len=39
+  sheet_instances  (children=2)
+  [UNHANDLED-PCB] tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=21
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+[BaselineBoard] appendRawPiece len=318
+  symbol_instances  (children=4)
+  [UNHANDLED-PCB] tag="symbol_instances"
+[BaselineBoard] appendRawPiece len=99
+    path  (children=6)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=39
+[BaselineBoard] appendRawPiece len=16
+      reference  (children=2)
+      [UNHANDLED-PCB] tag="reference"
+[BaselineBoard] appendRawPiece len=4
+[BaselineBoard] appendRawPiece len=8
+      unit  (children=2)
+      [UNHANDLED-PCB] tag="unit"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=11
+      value  (children=2)
+      [UNHANDLED-PCB] tag="value"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=14
+      footprint  (children=2)
+      [UNHANDLED-PCB] tag="footprint"
+[BaselineBoard] appendRawPiece len=2
+[BaselineBoard] appendRawPiece len=99
+    path  (children=6)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=39
+[BaselineBoard] appendRawPiece len=16
+      reference  (children=2)
+      [UNHANDLED-PCB] tag="reference"
+[BaselineBoard] appendRawPiece len=4
+[BaselineBoard] appendRawPiece len=8
+      unit  (children=2)
+      [UNHANDLED-PCB] tag="unit"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=11
+      value  (children=2)
+      [UNHANDLED-PCB] tag="value"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=14
+      footprint  (children=2)
+      [UNHANDLED-PCB] tag="footprint"
+[BaselineBoard] appendRawPiece len=2
+[BaselineBoard] appendRawPiece len=99
+    path  (children=6)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=39
+[BaselineBoard] appendRawPiece len=16
+      reference  (children=2)
+      [UNHANDLED-PCB] tag="reference"
+[BaselineBoard] appendRawPiece len=4
+[BaselineBoard] appendRawPiece len=8
+      unit  (children=2)
+      [UNHANDLED-PCB] tag="unit"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=11
+      value  (children=2)
+      [UNHANDLED-PCB] tag="value"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=14
+      footprint  (children=2)
+      [UNHANDLED-PCB] tag="footprint"
+[BaselineBoard] appendRawPiece len=2
+AstCleaner: handling lib_symbols at 0x60b4c6374130
+[UNHANDLED] cleanInner:no_connect addr=0x60b4c6374170 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x60b4c6377640 atom="no_connect"
+    [1] addr=0x60b4c6377680 list_size=3 head="at"
+    [2] addr=0x60b4c63776c0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x60b4c63741b0 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x60b4c6377870 atom="no_connect"
+    [1] addr=0x60b4c63778b0 list_size=3 head="at"
+    [2] addr=0x60b4c63778f0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:value addr=0x60b4c637c250 -> (value "" )
+  children details (child_index: addr type extra):
+    [0] addr=0x60b4c637c400 atom="value"
+    [1] addr=0x60b4c637c440 atom=""""
+[UNHANDLED] cleanInner:value addr=0x60b4c637e890 -> (value "" )
+  children details (child_index: addr type extra):
+    [0] addr=0x60b4c637ea40 atom="value"
+    [1] addr=0x60b4c637ea80 atom=""""
+[UNHANDLED] cleanInner:value addr=0x60b4c6380ed0 -> (value "" )
+  children details (child_index: addr type extra):
+    [0] addr=0x60b4c6381080 atom="value"
+    [1] addr=0x60b4c63810c0 atom=""""
+[UNHANDLED] cleanInner:value addr=0x60b4c6383090 -> (value "R" )
+  children details (child_index: addr type extra):
+    [0] addr=0x60b4c6383270 atom="value"
+    [1] addr=0x60b4c63832b0 atom=""R""
+[UNHANDLED] cleanInner:value addr=0x60b4c6383490 -> (value "R" )
+  children details (child_index: addr type extra):
+    [0] addr=0x60b4c6383670 atom="value"
+    [1] addr=0x60b4c63836b0 atom=""R""
+[UNHANDLED] cleanInner:value addr=0x60b4c6383890 -> (value "R" )
+  children details (child_index: addr type extra):
+    [0] addr=0x60b4c6383a70 atom="value"
+    [1] addr=0x60b4c6383ab0 atom=""R""
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20220904 }
+  <generator> attrs{value:eeschema }
+  <paper> attrs{value:"A4" }
+  <lib_symbols>
+  <symbol> property{"Reference"'...
+[BaselineBoard] appendRawPiece len=6304 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=15
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20220904 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:eeschema }'...
+[BaselineBoard] appendRawPiece len=34 head="generator"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=1
+[handleLibSymbolsCleanNode] called, children=1
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(106.680,58.420,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(106.680,73.660,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='polyline' children=0
+[appendRawPieceFromClean] piece_head='<polyline> attrs{stroke:(stroke <list> <list>) }'...
+[BaselineBoard] appendRawPiece len=48 head="polyline"
+[walkSchematicOnce] child tag='polyline' children=0
+[appendRawPieceFromClean] piece_head='<polyline> attrs{stroke:(stroke <list> <list>) }'...
+[BaselineBoard] appendRawPiece len=48 head="polyline"
+[walkSchematicOnce] child tag='text' children=3
+[handleTextFromClean] called for tag='text'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='text' children=3
+[handleTextFromClean] called for tag='text'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='symbol' children=14
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=14
+[walkSchematicOnce] child tag='sheet_instances' children=1
+[appendRawPieceFromClean] piece_head='<sheet_instances>
+  <path> attrs{page:"1" }'...
+[BaselineBoard] appendRawPiece len=43 head="sheet_instances"
+[walkSchematicOnce] child tag='symbol_instances' children=3
+[appendRawPieceFromClean] piece_head='<symbol_instances>
+  <path> attrs{value:"/5dcb91f5-7e4e-4dfa-bc34-9f673c6f5a92" }
+  <reference> attrs{value:"R1" }
+  <unit> attrs{value:1 }
+  <value> attrs{valu'...
+[BaselineBoard] appendRawPiece len=507 head="symbol_instances"
+=== SUMMARY === junctionShapes=0 wireShapes=0 symbols=3 rawPieces=64
+=== DUMP wires: count=0 ===
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

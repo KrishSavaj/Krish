@@ -1,0 +1,8 @@
+INPUT: demofile.kicad_sch
+PARSER: ./kicadParser
+Running parser: ./kicadParser -> demofile_output.kicad_sch (stderr -> demofile_unhandled.log)
+Wrote orig_wires.txt -> 128 lines
+Wrote orig_junctions.txt -> 35 unique junctions
+Wrote orig_symbols.txt -> 1 lines
+Running normalize_wires_for_a2.py
+No out_wires.txt found; nothing to do.

@@ -1,0 +1,291 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20210123
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20210123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x02_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 1.270000) (end 1.270000 -3.810000) (stroke (width 0.254000)) (fill (type background))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:93.980000 value:125.730000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"8e574303-eef9-471f-8bf9-dbda319f7a68" }
+  <property> at=(127.508,92.831,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.508,95.129,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(123.952,93.980,90.000) attrs{name:"Resistor_SMD:R_1206_3216Metric" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(125.730,93.980,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:147.320000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"ebd12d3c-779b-42b9-beee-e5481760d2bb" }
+  <property> at=(149.352,92.881,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(149.352,95.180,0.000) attrs{name:"Conn_01x02" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.320,92.710,0.000) attrs{name:"Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"myvalue" value:"myfield" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20210123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x02_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 1.270000) (end 1.270000 -3.810000) (stroke (width 0.254000)) (fill (type background))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:93.980000 value:125.730000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"8e574303-eef9-471f-8bf9-dbda319f7a68" }
+  <property> at=(127.508,92.831,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.508,95.129,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(123.952,93.980,90.000) attrs{name:"Resistor_SMD:R_1206_3216Metric" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(125.730,93.980,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:147.320000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"ebd12d3c-779b-42b9-beee-e5481760d2bb" }
+  <property> at=(149.352,92.881,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(149.352,95.180,0.000) attrs{name:"Conn_01x02" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.320,92.710,0.000) attrs{name:"Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"myvalue" value:"myfield" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20210123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x02_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 1.270000) (end 1.270000 -3.810000) (stroke (width 0.254000)) (fill (type background))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:93.980000 value:125.730000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"8e574303-eef9-471f-8bf9-dbda319f7a68" }
+  <property> at=(127.508,92.831,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.508,95.129,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(123.952,93.980,90.000) attrs{name:"Resistor_SMD:R_1206_3216Metric" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(125.730,93.980,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:147.320000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"ebd12d3c-779b-42b9-beee-e5481760d2bb" }
+  <property> at=(149.352,92.881,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(149.352,95.180,0.000) attrs{name:"Conn_01x02" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.320,92.710,0.000) attrs{name:"Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"myvalue" value:"myfield" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20210123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x02_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 1.270000) (end 1.270000 -3.810000) (stroke (width 0.254000)) (fill (type background))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:93.980000 value:125.730000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"8e574303-eef9-471f-8bf9-dbda319f7a68" }
+  <property> at=(127.508,92.831,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.508,95.129,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(123.952,93.980,90.000) attrs{name:"Resistor_SMD:R_1206_3216Metric" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(125.730,93.980,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:147.320000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"ebd12d3c-779b-42b9-beee-e5481760d2bb" }
+  <property> at=(149.352,92.881,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(149.352,95.180,0.000) attrs{name:"Conn_01x02" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.320,92.710,0.000) attrs{name:"Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"myvalue" value:"myfield" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20210123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x02_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 1.270000) (end 1.270000 -3.810000) (stroke (width 0.254000)) (fill (type background))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:93.980000 value:125.730000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"8e574303-eef9-471f-8bf9-dbda319f7a68" }
+  <property> at=(127.508,92.831,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.508,95.129,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(123.952,93.980,90.000) attrs{name:"Resistor_SMD:R_1206_3216Metric" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(125.730,93.980,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:147.320000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"ebd12d3c-779b-42b9-beee-e5481760d2bb" }
+  <property> at=(149.352,92.881,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(149.352,95.180,0.000) attrs{name:"Conn_01x02" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.320,92.710,0.000) attrs{name:"Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"myvalue" value:"myfield" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20210123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (id 0) (at 0 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x02" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x02_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400)) (fill (type none))) (rectangle (start -1.270000 1.270000) (end 1.270000 -3.810000) (stroke (width 0.254000)) (fill (type background))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:93.980000 value:125.730000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"8e574303-eef9-471f-8bf9-dbda319f7a68" }
+  <property> at=(127.508,92.831,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.508,95.129,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(123.952,93.980,90.000) attrs{name:"Resistor_SMD:R_1206_3216Metric" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(125.730,93.980,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:147.320000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"ebd12d3c-779b-42b9-beee-e5481760d2bb" }
+  <property> at=(149.352,92.881,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(149.352,95.180,0.000) attrs{name:"Conn_01x02" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.320,92.710,0.000) attrs{name:"Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(147.320,92.710,0.000) attrs{name:"myvalue" value:"myfield" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+  (wire (start 125.73 90.17) (end 142.24 90.17) (angle 0) (thickness 0.25))
+  (wire (start 142.24 90.17) (end 142.24 92.71) (angle 0) (thickness 0.25))
+  (wire (start 142.24 95.25) (end 142.24 97.79) (angle 0) (thickness 0.25))
+  (wire (start 142.24 97.79) (end 125.73 97.79) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

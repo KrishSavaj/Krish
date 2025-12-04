@@ -1,0 +1,393 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20231120
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "e70b6168-f98e-4322-bc55-500948ef7b77"
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Edgeberry:Edgeberry_Cartridge_Connector" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "H" (at 8.382000 -24.130000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Value" "Edgeberry Cartridge Connector" (at -0.254000 21.844000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" (at -0.508000 -27.178000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Edgeberry_Cartridge_Connector_0_1" (polyline (pts (xy -11.430000 20.320000) (xy 11.430000 20.320000) (xy 11.430000 -22.860000) (xy -11.430000 -22.860000) (xy -11.430000 20.320000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "Edgeberry_Cartridge_Connector_1_1" (pin output line (at -13.970000 17.780000 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 7.620000 180) (length 2.540000) (name "SPI_CS1" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -13.970000 5.080000 0) (length 2.540000) (name "SPI_MISO" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 5.080000 180) (length 2.540000) (name "SPI_CS0" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 2.540000 0) (length 2.540000) (name "SPI_MOSI" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 2.540000 180) (length 2.540000) (name "GPIO_25" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 0 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 0 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -2.540000 0) (length 2.540000) (name "GPIO_22" (effects (font (size 1.270000 1.270000)))) (number "17" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -2.540000 180) (length 2.540000) (name "GPIO_24" (effects (font (size 1.270000 1.270000)))) (number "18" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -5.080000 0) (length 2.540000) (name "GPIO_27" (effects (font (size 1.270000 1.270000)))) (number "19" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 17.780000 180) (length 2.540000) (name "GPIO_21" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -5.080000 180) (length 2.540000) (name "GPIO_23" (effects (font (size 1.270000 1.270000)))) (number "20" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -7.620000 0) (length 2.540000) (name "GPIO_17" (effects (font (size 1.270000 1.270000)))) (number "21" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -7.620000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "22" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "23" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -10.160000 180) (length 2.540000) (name "GPIO_18" (effects (font (size 1.270000 1.270000)))) (number "24" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -12.700000 0) (length 2.540000) (name "GPIO_4" (effects (font (size 1.270000 1.270000)))) (number "25" (effects (font (size 1.270000 1.270000))))) (pin input line (at 13.970000 -12.700000 180) (length 2.540000) (name "UART_Rx" (effects (font (size 1.270000 1.270000)))) (number "26" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -15.240000 0) (length 2.540000) (name "I2C_SCL" (effects (font (size 1.270000 1.270000)))) (number "27" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -15.240000 180) (length 2.540000) (name "UART_Tx" (effects (font (size 1.270000 1.270000)))) (number "28" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -17.780000 0) (length 2.540000) (name "I2C_SDA" (effects (font (size 1.270000 1.270000)))) (number "29" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 15.240000 0) (length 2.540000) (name "GPIO_20" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -17.780000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "30" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -20.320000 0) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "31" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -20.320000 180) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "32" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 15.240000 180) (length 2.540000) (name "GPIO_16" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 12.700000 0) (length 2.540000) (name "GPIO_13" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 12.700000 180) (length 2.540000) (name "GPIO_12" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 10.160000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 7.620000 0) (length 2.540000) (name "SPI_SCLK" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:85.090000 value:101.600000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"3f3e20f8-4c6e-49f1-99fe-f7c68e867109" }
+  <property> at=(109.982,109.220,0.000) attrs{name:"H1" value:"Reference" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.346,63.246,0.000) attrs{name:"PinHeader_2x16_P2.54mm_Horizontal" value:"Value" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.092,112.268,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"30" }
+  <pin> attrs{value:"28" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"19" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"25" }
+  <pin> attrs{value:"17" }
+  <pin> attrs{value:"31" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"29" }
+  <pin> attrs{value:"18" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"21" }
+  <pin> attrs{value:"20" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"22" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"23" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"32" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"26" }
+  <pin> attrs{value:"24" }
+  <pin> attrs{value:"27" }
+  <instances>
+  <project> attrs{path:"/e70b6168-f98e-4322-bc55-500948ef7b77" path_reference:"H1" path_unit:1 value:"Edgeberry_cartridge_template" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Edgeberry:Edgeberry_Cartridge_Connector" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "H" (at 8.382000 -24.130000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Value" "Edgeberry Cartridge Connector" (at -0.254000 21.844000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" (at -0.508000 -27.178000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Edgeberry_Cartridge_Connector_0_1" (polyline (pts (xy -11.430000 20.320000) (xy 11.430000 20.320000) (xy 11.430000 -22.860000) (xy -11.430000 -22.860000) (xy -11.430000 20.320000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "Edgeberry_Cartridge_Connector_1_1" (pin output line (at -13.970000 17.780000 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 7.620000 180) (length 2.540000) (name "SPI_CS1" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -13.970000 5.080000 0) (length 2.540000) (name "SPI_MISO" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 5.080000 180) (length 2.540000) (name "SPI_CS0" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 2.540000 0) (length 2.540000) (name "SPI_MOSI" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 2.540000 180) (length 2.540000) (name "GPIO_25" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 0 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 0 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -2.540000 0) (length 2.540000) (name "GPIO_22" (effects (font (size 1.270000 1.270000)))) (number "17" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -2.540000 180) (length 2.540000) (name "GPIO_24" (effects (font (size 1.270000 1.270000)))) (number "18" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -5.080000 0) (length 2.540000) (name "GPIO_27" (effects (font (size 1.270000 1.270000)))) (number "19" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 17.780000 180) (length 2.540000) (name "GPIO_21" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -5.080000 180) (length 2.540000) (name "GPIO_23" (effects (font (size 1.270000 1.270000)))) (number "20" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -7.620000 0) (length 2.540000) (name "GPIO_17" (effects (font (size 1.270000 1.270000)))) (number "21" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -7.620000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "22" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "23" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -10.160000 180) (length 2.540000) (name "GPIO_18" (effects (font (size 1.270000 1.270000)))) (number "24" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -12.700000 0) (length 2.540000) (name "GPIO_4" (effects (font (size 1.270000 1.270000)))) (number "25" (effects (font (size 1.270000 1.270000))))) (pin input line (at 13.970000 -12.700000 180) (length 2.540000) (name "UART_Rx" (effects (font (size 1.270000 1.270000)))) (number "26" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -15.240000 0) (length 2.540000) (name "I2C_SCL" (effects (font (size 1.270000 1.270000)))) (number "27" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -15.240000 180) (length 2.540000) (name "UART_Tx" (effects (font (size 1.270000 1.270000)))) (number "28" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -17.780000 0) (length 2.540000) (name "I2C_SDA" (effects (font (size 1.270000 1.270000)))) (number "29" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 15.240000 0) (length 2.540000) (name "GPIO_20" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -17.780000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "30" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -20.320000 0) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "31" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -20.320000 180) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "32" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 15.240000 180) (length 2.540000) (name "GPIO_16" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 12.700000 0) (length 2.540000) (name "GPIO_13" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 12.700000 180) (length 2.540000) (name "GPIO_12" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 10.160000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 7.620000 0) (length 2.540000) (name "SPI_SCLK" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:85.090000 value:101.600000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"3f3e20f8-4c6e-49f1-99fe-f7c68e867109" }
+  <property> at=(109.982,109.220,0.000) attrs{name:"H1" value:"Reference" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.346,63.246,0.000) attrs{name:"PinHeader_2x16_P2.54mm_Horizontal" value:"Value" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.092,112.268,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"30" }
+  <pin> attrs{value:"28" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"19" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"25" }
+  <pin> attrs{value:"17" }
+  <pin> attrs{value:"31" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"29" }
+  <pin> attrs{value:"18" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"21" }
+  <pin> attrs{value:"20" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"22" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"23" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"32" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"26" }
+  <pin> attrs{value:"24" }
+  <pin> attrs{value:"27" }
+  <instances>
+  <project> attrs{path:"/e70b6168-f98e-4322-bc55-500948ef7b77" path_reference:"H1" path_unit:1 value:"Edgeberry_cartridge_template" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Edgeberry:Edgeberry_Cartridge_Connector" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "H" (at 8.382000 -24.130000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Value" "Edgeberry Cartridge Connector" (at -0.254000 21.844000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" (at -0.508000 -27.178000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Edgeberry_Cartridge_Connector_0_1" (polyline (pts (xy -11.430000 20.320000) (xy 11.430000 20.320000) (xy 11.430000 -22.860000) (xy -11.430000 -22.860000) (xy -11.430000 20.320000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "Edgeberry_Cartridge_Connector_1_1" (pin output line (at -13.970000 17.780000 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 7.620000 180) (length 2.540000) (name "SPI_CS1" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -13.970000 5.080000 0) (length 2.540000) (name "SPI_MISO" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 5.080000 180) (length 2.540000) (name "SPI_CS0" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 2.540000 0) (length 2.540000) (name "SPI_MOSI" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 2.540000 180) (length 2.540000) (name "GPIO_25" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 0 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 0 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -2.540000 0) (length 2.540000) (name "GPIO_22" (effects (font (size 1.270000 1.270000)))) (number "17" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -2.540000 180) (length 2.540000) (name "GPIO_24" (effects (font (size 1.270000 1.270000)))) (number "18" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -5.080000 0) (length 2.540000) (name "GPIO_27" (effects (font (size 1.270000 1.270000)))) (number "19" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 17.780000 180) (length 2.540000) (name "GPIO_21" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -5.080000 180) (length 2.540000) (name "GPIO_23" (effects (font (size 1.270000 1.270000)))) (number "20" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -7.620000 0) (length 2.540000) (name "GPIO_17" (effects (font (size 1.270000 1.270000)))) (number "21" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -7.620000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "22" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "23" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -10.160000 180) (length 2.540000) (name "GPIO_18" (effects (font (size 1.270000 1.270000)))) (number "24" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -12.700000 0) (length 2.540000) (name "GPIO_4" (effects (font (size 1.270000 1.270000)))) (number "25" (effects (font (size 1.270000 1.270000))))) (pin input line (at 13.970000 -12.700000 180) (length 2.540000) (name "UART_Rx" (effects (font (size 1.270000 1.270000)))) (number "26" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -15.240000 0) (length 2.540000) (name "I2C_SCL" (effects (font (size 1.270000 1.270000)))) (number "27" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -15.240000 180) (length 2.540000) (name "UART_Tx" (effects (font (size 1.270000 1.270000)))) (number "28" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -17.780000 0) (length 2.540000) (name "I2C_SDA" (effects (font (size 1.270000 1.270000)))) (number "29" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 15.240000 0) (length 2.540000) (name "GPIO_20" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -17.780000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "30" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -20.320000 0) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "31" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -20.320000 180) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "32" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 15.240000 180) (length 2.540000) (name "GPIO_16" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 12.700000 0) (length 2.540000) (name "GPIO_13" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 12.700000 180) (length 2.540000) (name "GPIO_12" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 10.160000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 7.620000 0) (length 2.540000) (name "SPI_SCLK" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:85.090000 value:101.600000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"3f3e20f8-4c6e-49f1-99fe-f7c68e867109" }
+  <property> at=(109.982,109.220,0.000) attrs{name:"H1" value:"Reference" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.346,63.246,0.000) attrs{name:"PinHeader_2x16_P2.54mm_Horizontal" value:"Value" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.092,112.268,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"30" }
+  <pin> attrs{value:"28" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"19" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"25" }
+  <pin> attrs{value:"17" }
+  <pin> attrs{value:"31" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"29" }
+  <pin> attrs{value:"18" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"21" }
+  <pin> attrs{value:"20" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"22" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"23" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"32" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"26" }
+  <pin> attrs{value:"24" }
+  <pin> attrs{value:"27" }
+  <instances>
+  <project> attrs{path:"/e70b6168-f98e-4322-bc55-500948ef7b77" path_reference:"H1" path_unit:1 value:"Edgeberry_cartridge_template" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Edgeberry:Edgeberry_Cartridge_Connector" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "H" (at 8.382000 -24.130000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Value" "Edgeberry Cartridge Connector" (at -0.254000 21.844000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" (at -0.508000 -27.178000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Edgeberry_Cartridge_Connector_0_1" (polyline (pts (xy -11.430000 20.320000) (xy 11.430000 20.320000) (xy 11.430000 -22.860000) (xy -11.430000 -22.860000) (xy -11.430000 20.320000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "Edgeberry_Cartridge_Connector_1_1" (pin output line (at -13.970000 17.780000 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 7.620000 180) (length 2.540000) (name "SPI_CS1" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -13.970000 5.080000 0) (length 2.540000) (name "SPI_MISO" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 5.080000 180) (length 2.540000) (name "SPI_CS0" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 2.540000 0) (length 2.540000) (name "SPI_MOSI" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 2.540000 180) (length 2.540000) (name "GPIO_25" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 0 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 0 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -2.540000 0) (length 2.540000) (name "GPIO_22" (effects (font (size 1.270000 1.270000)))) (number "17" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -2.540000 180) (length 2.540000) (name "GPIO_24" (effects (font (size 1.270000 1.270000)))) (number "18" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -5.080000 0) (length 2.540000) (name "GPIO_27" (effects (font (size 1.270000 1.270000)))) (number "19" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 17.780000 180) (length 2.540000) (name "GPIO_21" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -5.080000 180) (length 2.540000) (name "GPIO_23" (effects (font (size 1.270000 1.270000)))) (number "20" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -7.620000 0) (length 2.540000) (name "GPIO_17" (effects (font (size 1.270000 1.270000)))) (number "21" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -7.620000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "22" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "23" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -10.160000 180) (length 2.540000) (name "GPIO_18" (effects (font (size 1.270000 1.270000)))) (number "24" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -12.700000 0) (length 2.540000) (name "GPIO_4" (effects (font (size 1.270000 1.270000)))) (number "25" (effects (font (size 1.270000 1.270000))))) (pin input line (at 13.970000 -12.700000 180) (length 2.540000) (name "UART_Rx" (effects (font (size 1.270000 1.270000)))) (number "26" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -15.240000 0) (length 2.540000) (name "I2C_SCL" (effects (font (size 1.270000 1.270000)))) (number "27" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -15.240000 180) (length 2.540000) (name "UART_Tx" (effects (font (size 1.270000 1.270000)))) (number "28" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -17.780000 0) (length 2.540000) (name "I2C_SDA" (effects (font (size 1.270000 1.270000)))) (number "29" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 15.240000 0) (length 2.540000) (name "GPIO_20" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -17.780000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "30" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -20.320000 0) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "31" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -20.320000 180) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "32" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 15.240000 180) (length 2.540000) (name "GPIO_16" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 12.700000 0) (length 2.540000) (name "GPIO_13" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 12.700000 180) (length 2.540000) (name "GPIO_12" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 10.160000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 7.620000 0) (length 2.540000) (name "SPI_SCLK" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:85.090000 value:101.600000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"3f3e20f8-4c6e-49f1-99fe-f7c68e867109" }
+  <property> at=(109.982,109.220,0.000) attrs{name:"H1" value:"Reference" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.346,63.246,0.000) attrs{name:"PinHeader_2x16_P2.54mm_Horizontal" value:"Value" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.092,112.268,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"30" }
+  <pin> attrs{value:"28" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"19" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"25" }
+  <pin> attrs{value:"17" }
+  <pin> attrs{value:"31" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"29" }
+  <pin> attrs{value:"18" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"21" }
+  <pin> attrs{value:"20" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"22" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"23" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"32" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"26" }
+  <pin> attrs{value:"24" }
+  <pin> attrs{value:"27" }
+  <instances>
+  <project> attrs{path:"/e70b6168-f98e-4322-bc55-500948ef7b77" path_reference:"H1" path_unit:1 value:"Edgeberry_cartridge_template" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Edgeberry:Edgeberry_Cartridge_Connector" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "H" (at 8.382000 -24.130000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Value" "Edgeberry Cartridge Connector" (at -0.254000 21.844000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" (at -0.508000 -27.178000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Edgeberry_Cartridge_Connector_0_1" (polyline (pts (xy -11.430000 20.320000) (xy 11.430000 20.320000) (xy 11.430000 -22.860000) (xy -11.430000 -22.860000) (xy -11.430000 20.320000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "Edgeberry_Cartridge_Connector_1_1" (pin output line (at -13.970000 17.780000 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 7.620000 180) (length 2.540000) (name "SPI_CS1" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -13.970000 5.080000 0) (length 2.540000) (name "SPI_MISO" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 5.080000 180) (length 2.540000) (name "SPI_CS0" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 2.540000 0) (length 2.540000) (name "SPI_MOSI" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 2.540000 180) (length 2.540000) (name "GPIO_25" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 0 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 0 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -2.540000 0) (length 2.540000) (name "GPIO_22" (effects (font (size 1.270000 1.270000)))) (number "17" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -2.540000 180) (length 2.540000) (name "GPIO_24" (effects (font (size 1.270000 1.270000)))) (number "18" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -5.080000 0) (length 2.540000) (name "GPIO_27" (effects (font (size 1.270000 1.270000)))) (number "19" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 17.780000 180) (length 2.540000) (name "GPIO_21" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -5.080000 180) (length 2.540000) (name "GPIO_23" (effects (font (size 1.270000 1.270000)))) (number "20" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -7.620000 0) (length 2.540000) (name "GPIO_17" (effects (font (size 1.270000 1.270000)))) (number "21" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -7.620000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "22" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "23" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -10.160000 180) (length 2.540000) (name "GPIO_18" (effects (font (size 1.270000 1.270000)))) (number "24" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -12.700000 0) (length 2.540000) (name "GPIO_4" (effects (font (size 1.270000 1.270000)))) (number "25" (effects (font (size 1.270000 1.270000))))) (pin input line (at 13.970000 -12.700000 180) (length 2.540000) (name "UART_Rx" (effects (font (size 1.270000 1.270000)))) (number "26" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -15.240000 0) (length 2.540000) (name "I2C_SCL" (effects (font (size 1.270000 1.270000)))) (number "27" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -15.240000 180) (length 2.540000) (name "UART_Tx" (effects (font (size 1.270000 1.270000)))) (number "28" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -17.780000 0) (length 2.540000) (name "I2C_SDA" (effects (font (size 1.270000 1.270000)))) (number "29" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 15.240000 0) (length 2.540000) (name "GPIO_20" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -17.780000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "30" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -20.320000 0) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "31" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -20.320000 180) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "32" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 15.240000 180) (length 2.540000) (name "GPIO_16" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 12.700000 0) (length 2.540000) (name "GPIO_13" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 12.700000 180) (length 2.540000) (name "GPIO_12" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 10.160000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 7.620000 0) (length 2.540000) (name "SPI_SCLK" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:85.090000 value:101.600000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"3f3e20f8-4c6e-49f1-99fe-f7c68e867109" }
+  <property> at=(109.982,109.220,0.000) attrs{name:"H1" value:"Reference" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.346,63.246,0.000) attrs{name:"PinHeader_2x16_P2.54mm_Horizontal" value:"Value" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.092,112.268,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"30" }
+  <pin> attrs{value:"28" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"19" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"25" }
+  <pin> attrs{value:"17" }
+  <pin> attrs{value:"31" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"29" }
+  <pin> attrs{value:"18" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"21" }
+  <pin> attrs{value:"20" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"22" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"23" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"32" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"26" }
+  <pin> attrs{value:"24" }
+  <pin> attrs{value:"27" }
+  <instances>
+  <project> attrs{path:"/e70b6168-f98e-4322-bc55-500948ef7b77" path_reference:"H1" path_unit:1 value:"Edgeberry_cartridge_template" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Edgeberry:Edgeberry_Cartridge_Connector" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "H" (at 8.382000 -24.130000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Value" "Edgeberry Cartridge Connector" (at -0.254000 21.844000 0) (do_not_autoplace) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" (at -0.508000 -27.178000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "" (at 0 21.590000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Edgeberry_Cartridge_Connector_0_1" (polyline (pts (xy -11.430000 20.320000) (xy 11.430000 20.320000) (xy 11.430000 -22.860000) (xy -11.430000 -22.860000) (xy -11.430000 20.320000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "Edgeberry_Cartridge_Connector_1_1" (pin output line (at -13.970000 17.780000 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 7.620000 180) (length 2.540000) (name "SPI_CS1" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -13.970000 5.080000 0) (length 2.540000) (name "SPI_MISO" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 5.080000 180) (length 2.540000) (name "SPI_CS0" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 2.540000 0) (length 2.540000) (name "SPI_MOSI" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 2.540000 180) (length 2.540000) (name "GPIO_25" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 0 0) (length 2.540000) (name "3V3_Power" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 0 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -2.540000 0) (length 2.540000) (name "GPIO_22" (effects (font (size 1.270000 1.270000)))) (number "17" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -2.540000 180) (length 2.540000) (name "GPIO_24" (effects (font (size 1.270000 1.270000)))) (number "18" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -5.080000 0) (length 2.540000) (name "GPIO_27" (effects (font (size 1.270000 1.270000)))) (number "19" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 17.780000 180) (length 2.540000) (name "GPIO_21" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -5.080000 180) (length 2.540000) (name "GPIO_23" (effects (font (size 1.270000 1.270000)))) (number "20" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -7.620000 0) (length 2.540000) (name "GPIO_17" (effects (font (size 1.270000 1.270000)))) (number "21" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -7.620000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "22" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "23" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 -10.160000 180) (length 2.540000) (name "GPIO_18" (effects (font (size 1.270000 1.270000)))) (number "24" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -12.700000 0) (length 2.540000) (name "GPIO_4" (effects (font (size 1.270000 1.270000)))) (number "25" (effects (font (size 1.270000 1.270000))))) (pin input line (at 13.970000 -12.700000 180) (length 2.540000) (name "UART_Rx" (effects (font (size 1.270000 1.270000)))) (number "26" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -15.240000 0) (length 2.540000) (name "I2C_SCL" (effects (font (size 1.270000 1.270000)))) (number "27" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -15.240000 180) (length 2.540000) (name "UART_Tx" (effects (font (size 1.270000 1.270000)))) (number "28" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 -17.780000 0) (length 2.540000) (name "I2C_SDA" (effects (font (size 1.270000 1.270000)))) (number "29" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 15.240000 0) (length 2.540000) (name "GPIO_20" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -17.780000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "30" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 -20.320000 0) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "31" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 -20.320000 180) (length 2.540000) (name "5V_Power" (effects (font (size 1.270000 1.270000)))) (number "32" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 15.240000 180) (length 2.540000) (name "GPIO_16" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at -13.970000 12.700000 0) (length 2.540000) (name "GPIO_13" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin bidirectional line (at 13.970000 12.700000 180) (length 2.540000) (name "GPIO_12" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 10.160000 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin output line (at 13.970000 10.160000 180) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output line (at -13.970000 7.620000 0) (length 2.540000) (name "SPI_SCLK" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:85.090000 value:101.600000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"3f3e20f8-4c6e-49f1-99fe-f7c68e867109" }
+  <property> at=(109.982,109.220,0.000) attrs{name:"H1" value:"Reference" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.346,63.246,0.000) attrs{name:"PinHeader_2x16_P2.54mm_Horizontal" value:"Value" }
+  <do_not_autoplace> attrs{value:yes }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(101.092,112.268,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(101.600,63.500,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"30" }
+  <pin> attrs{value:"28" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"19" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"25" }
+  <pin> attrs{value:"17" }
+  <pin> attrs{value:"31" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"29" }
+  <pin> attrs{value:"18" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"21" }
+  <pin> attrs{value:"20" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"22" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"23" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"32" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"26" }
+  <pin> attrs{value:"24" }
+  <pin> attrs{value:"27" }
+  <instances>
+  <project> attrs{path:"/e70b6168-f98e-4322-bc55-500948ef7b77" path_reference:"H1" path_unit:1 value:"Edgeberry_cartridge_template" }
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

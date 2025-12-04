@@ -1,0 +1,51 @@
+
+=== JUNCTION ===
+❌ Missing (4):
+   - (111.760002, 109.220001)
+   - (123.190002, 109.220001)
+   - (137.160004, 109.220001)
+   - (137.160004, 93.980003)
+
+=== WIRE ===
+❌ Missing (15):
+   - [(111.76, 109.22), (111.76, 107.95)]
+   - [(111.76, 109.22), (123.19, 109.22)]
+   - [(111.76, 110.49), (111.76, 109.22)]
+   - [(111.76, 93.98), (114.3, 93.98)]
+   - [(111.76, 97.79), (111.76, 93.98)]
+   - [(121.92, 93.98), (125.73, 93.98)]
+   - [(123.19, 109.22), (123.19, 110.49)]
+   - [(123.19, 109.22), (137.16, 109.22)]
+   - [(133.35, 93.98), (137.16, 93.98)]
+   - [(137.16, 109.22), (137.16, 105.41)]
+   - [(137.16, 109.22), (146.05, 109.22)]
+   - [(137.16, 93.98), (146.05, 93.98)]
+   - [(137.16, 97.79), (137.16, 93.98)]
+   - [(146.05, 109.22), (146.05, 105.41)]
+   - [(146.05, 93.98), (146.05, 97.79)]
+
+=== SYMBOL ===
+❌ Missing (21):
+   - (symbol "R_1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R_1" (id 1) (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at -1.78 0 90) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "ki_fp_filters" "R_* Resistor_*" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_1_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "1" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "2" (effects (font (size 0.51 0.51)))) (number "2" (effects (font (size 0.51 0.51)))))))
+   - (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (id 0) (at 0 1.91 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "PWR_FLAG" (id 1) (at 0 3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "power-flag" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Special symbol for telling ERC where power comes from" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+   - (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy -1.02 1.91) (xy 0 2.54) (xy 1.02 1.91) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none)))))
+   - (symbol "rectifier_schlib:C" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C" (id 0) (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C" (id 1) (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (id 2) (at 0.97 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor* Capacitors_ThroughHole:C_Radial_D10_L13_P5 Capacitors_SMD:C_0805 Capacitors_SMD:C_1206" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "C_0_1" (polyline (pts (xy -2.03 -0.76) (xy 2.03 -0.76)) (stroke (width 0.51) (type default)) (fill (type none))) (polyline (pts (xy -2.03 0.76) (xy 2.03 0.76)) (stroke (width 0.51) (type default)) (fill (type none))))
+   - (symbol "C_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "2" (effects (font (size 0.51 0.51)))) (number "2" (effects (font (size 0.51 0.51)))))))
+   - (symbol "rectifier_schlib:D" (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "D" (id 0) (at 0 2.54 0) (effects (font (size 1.27 1.27)))) (property "Value" "D" (id 1) (at 0 -2.54 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "ki_fp_filters" "Diode_* D-Pak_TO252AA *SingleDiode *_Diode_* *SingleDiode*" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "D_0_1" (polyline (pts (xy -1.27 1.27) (xy -1.27 -1.27)) (stroke (width 0.15) (type default)) (fill (type none))) (polyline (pts (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)) (stroke (width 0) (type default)) (fill (type outline))))
+   - (symbol "D_1_1" (pin passive line (at -3.81 0 0) (length 2.54) (name "K" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))) (pin passive line (at 3.81 0 180) (length 2.54) (name "A" (effects (font (size 0.51 0.51)))) (number "2" (effects (font (size 0.51 0.51)))))))
+   - (symbol "rectifier_schlib:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "GND" (id 1) (at 0 -3.12 0) (effects (font (size 0.76 0.76)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.52 1.52))))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 0.76 0.76)))) (number "1" (effects (font (size 0.51 0.51)))))))
+   - (symbol "rectifier_schlib:R" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at -1.78 0 90) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "ki_fp_filters" "R_* Resistor_*" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "1" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "2" (effects (font (size 0.51 0.51)))) (number "2" (effects (font (size 0.51 0.51)))))))
+   - (symbol "rectifier_schlib:VSOURCE" (pin_names (offset 1.02)) (in_bom yes) (on_board yes) (property "Reference" "V" (id 0) (at 5.08 5.08 0) (effects (font (size 1.27 1.27)))) (property "Value" "VSOURCE" (id 1) (at 6.35 2.54 0) (effects (font (size 1.27 1.27)) hide)) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Fieldname" "Value" (id 4) (at 0 0 0) (effects (font (size 1.52 1.52)) hide)) (property "Spice_Primitive" "V" (id 5) (at 0 0 0) (effects (font (size 1.52 1.52)) hide)) (property "Spice_Node_Sequence" "1 2" (id 6) (at -7.62 5.08 0) (effects (font (size 1.52 1.52)) hide))
+   - (symbol "VSOURCE_0_1" (polyline (pts (xy 0 -1.91) (xy 0 1.91)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 1.91) (xy -0.64 0.64) (xy 0.64 0.64) (xy 0 1.91)) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 0 0) (radius 2.54) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "VSOURCE_1_1" (pin input line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

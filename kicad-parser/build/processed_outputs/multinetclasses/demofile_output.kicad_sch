@@ -1,0 +1,1863 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20240716
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "fa97e3ae-a582-4153-9370-96eed751d7f6"
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20240716) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"013297c8-cfd7-409f-b81d-c1d8f671a82f" }
+  <property> at=(81.280,115.570,90.000) attrs{name:"R7" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R7" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"16ce1cd1-068c-44c7-bad3-3830596ae37d" }
+  <property> at=(135.890,157.480,90.000) attrs{name:"R12" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R12" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"17b6ce67-6699-41d5-a096-6714796adaa3" }
+  <property> at=(135.890,133.350,90.000) attrs{name:"R10" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R10" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"1bad0c73-7972-4d84-814d-f9d67f2ba084" }
+  <property> at=(135.890,101.600,90.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R4" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"2b597e45-5af9-4ec4-9ed0-8151143d9e97" }
+  <property> at=(81.280,101.600,90.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R3" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:53.340000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"692791d4-470e-4233-9e70-bfe645704f32" }
+  <property> at=(139.700,46.990,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,49.530,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,55.118,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R2" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:41.910000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"84ebbe6f-4f16-4b6e-882a-6dc4a67152da" }
+  <property> at=(139.700,35.560,90.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,38.100,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,43.688,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"8598689f-ce4f-414f-a720-b8fa4ecb6b41" }
+  <property> at=(81.280,133.350,90.000) attrs{name:"R9" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R9" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e238dcde-8495-47bf-bfca-aceb29a93079" }
+  <property> at=(81.280,157.480,90.000) attrs{name:"R11" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R11" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:66.040000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e49cddf9-077d-4aa7-bdff-e73daae9738c" }
+  <property> at=(139.700,59.690,90.000) attrs{name:"R5" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,62.230,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,67.818,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R5" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"f90a3215-ad26-41e7-bf2f-ac1d56dee10c" }
+  <property> at=(135.890,115.570,90.000) attrs{name:"R8" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R8" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:77.470000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"fdcc8b6a-a00d-4f52-864b-51f063eb922e" }
+  <property> at=(139.700,71.120,90.000) attrs{name:"R6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,73.660,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,79.248,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R6" path_unit:1 value:"MultiNetclasses" }
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20240716) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"013297c8-cfd7-409f-b81d-c1d8f671a82f" }
+  <property> at=(81.280,115.570,90.000) attrs{name:"R7" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R7" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"16ce1cd1-068c-44c7-bad3-3830596ae37d" }
+  <property> at=(135.890,157.480,90.000) attrs{name:"R12" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R12" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"17b6ce67-6699-41d5-a096-6714796adaa3" }
+  <property> at=(135.890,133.350,90.000) attrs{name:"R10" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R10" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"1bad0c73-7972-4d84-814d-f9d67f2ba084" }
+  <property> at=(135.890,101.600,90.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R4" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"2b597e45-5af9-4ec4-9ed0-8151143d9e97" }
+  <property> at=(81.280,101.600,90.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R3" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:53.340000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"692791d4-470e-4233-9e70-bfe645704f32" }
+  <property> at=(139.700,46.990,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,49.530,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,55.118,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R2" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:41.910000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"84ebbe6f-4f16-4b6e-882a-6dc4a67152da" }
+  <property> at=(139.700,35.560,90.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,38.100,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,43.688,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"8598689f-ce4f-414f-a720-b8fa4ecb6b41" }
+  <property> at=(81.280,133.350,90.000) attrs{name:"R9" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R9" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e238dcde-8495-47bf-bfca-aceb29a93079" }
+  <property> at=(81.280,157.480,90.000) attrs{name:"R11" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R11" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:66.040000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e49cddf9-077d-4aa7-bdff-e73daae9738c" }
+  <property> at=(139.700,59.690,90.000) attrs{name:"R5" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,62.230,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,67.818,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R5" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"f90a3215-ad26-41e7-bf2f-ac1d56dee10c" }
+  <property> at=(135.890,115.570,90.000) attrs{name:"R8" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R8" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:77.470000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"fdcc8b6a-a00d-4f52-864b-51f063eb922e" }
+  <property> at=(139.700,71.120,90.000) attrs{name:"R6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,73.660,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,79.248,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R6" path_unit:1 value:"MultiNetclasses" }
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20240716) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"013297c8-cfd7-409f-b81d-c1d8f671a82f" }
+  <property> at=(81.280,115.570,90.000) attrs{name:"R7" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R7" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"16ce1cd1-068c-44c7-bad3-3830596ae37d" }
+  <property> at=(135.890,157.480,90.000) attrs{name:"R12" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R12" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"17b6ce67-6699-41d5-a096-6714796adaa3" }
+  <property> at=(135.890,133.350,90.000) attrs{name:"R10" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R10" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"1bad0c73-7972-4d84-814d-f9d67f2ba084" }
+  <property> at=(135.890,101.600,90.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R4" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"2b597e45-5af9-4ec4-9ed0-8151143d9e97" }
+  <property> at=(81.280,101.600,90.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R3" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:53.340000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"692791d4-470e-4233-9e70-bfe645704f32" }
+  <property> at=(139.700,46.990,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,49.530,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,55.118,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R2" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:41.910000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"84ebbe6f-4f16-4b6e-882a-6dc4a67152da" }
+  <property> at=(139.700,35.560,90.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,38.100,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,43.688,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"8598689f-ce4f-414f-a720-b8fa4ecb6b41" }
+  <property> at=(81.280,133.350,90.000) attrs{name:"R9" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R9" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e238dcde-8495-47bf-bfca-aceb29a93079" }
+  <property> at=(81.280,157.480,90.000) attrs{name:"R11" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R11" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:66.040000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e49cddf9-077d-4aa7-bdff-e73daae9738c" }
+  <property> at=(139.700,59.690,90.000) attrs{name:"R5" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,62.230,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,67.818,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R5" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"f90a3215-ad26-41e7-bf2f-ac1d56dee10c" }
+  <property> at=(135.890,115.570,90.000) attrs{name:"R8" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R8" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:77.470000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"fdcc8b6a-a00d-4f52-864b-51f063eb922e" }
+  <property> at=(139.700,71.120,90.000) attrs{name:"R6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,73.660,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,79.248,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R6" path_unit:1 value:"MultiNetclasses" }
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20240716) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"013297c8-cfd7-409f-b81d-c1d8f671a82f" }
+  <property> at=(81.280,115.570,90.000) attrs{name:"R7" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R7" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"16ce1cd1-068c-44c7-bad3-3830596ae37d" }
+  <property> at=(135.890,157.480,90.000) attrs{name:"R12" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R12" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"17b6ce67-6699-41d5-a096-6714796adaa3" }
+  <property> at=(135.890,133.350,90.000) attrs{name:"R10" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R10" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"1bad0c73-7972-4d84-814d-f9d67f2ba084" }
+  <property> at=(135.890,101.600,90.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R4" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"2b597e45-5af9-4ec4-9ed0-8151143d9e97" }
+  <property> at=(81.280,101.600,90.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R3" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:53.340000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"692791d4-470e-4233-9e70-bfe645704f32" }
+  <property> at=(139.700,46.990,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,49.530,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,55.118,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R2" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:41.910000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"84ebbe6f-4f16-4b6e-882a-6dc4a67152da" }
+  <property> at=(139.700,35.560,90.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,38.100,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,43.688,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"8598689f-ce4f-414f-a720-b8fa4ecb6b41" }
+  <property> at=(81.280,133.350,90.000) attrs{name:"R9" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R9" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e238dcde-8495-47bf-bfca-aceb29a93079" }
+  <property> at=(81.280,157.480,90.000) attrs{name:"R11" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R11" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:66.040000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e49cddf9-077d-4aa7-bdff-e73daae9738c" }
+  <property> at=(139.700,59.690,90.000) attrs{name:"R5" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,62.230,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,67.818,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R5" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"f90a3215-ad26-41e7-bf2f-ac1d56dee10c" }
+  <property> at=(135.890,115.570,90.000) attrs{name:"R8" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R8" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:77.470000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"fdcc8b6a-a00d-4f52-864b-51f063eb922e" }
+  <property> at=(139.700,71.120,90.000) attrs{name:"R6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,73.660,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,79.248,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R6" path_unit:1 value:"MultiNetclasses" }
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20240716) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"013297c8-cfd7-409f-b81d-c1d8f671a82f" }
+  <property> at=(81.280,115.570,90.000) attrs{name:"R7" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R7" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"16ce1cd1-068c-44c7-bad3-3830596ae37d" }
+  <property> at=(135.890,157.480,90.000) attrs{name:"R12" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R12" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"17b6ce67-6699-41d5-a096-6714796adaa3" }
+  <property> at=(135.890,133.350,90.000) attrs{name:"R10" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R10" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"1bad0c73-7972-4d84-814d-f9d67f2ba084" }
+  <property> at=(135.890,101.600,90.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R4" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"2b597e45-5af9-4ec4-9ed0-8151143d9e97" }
+  <property> at=(81.280,101.600,90.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R3" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:53.340000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"692791d4-470e-4233-9e70-bfe645704f32" }
+  <property> at=(139.700,46.990,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,49.530,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,55.118,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R2" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:41.910000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"84ebbe6f-4f16-4b6e-882a-6dc4a67152da" }
+  <property> at=(139.700,35.560,90.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,38.100,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,43.688,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"8598689f-ce4f-414f-a720-b8fa4ecb6b41" }
+  <property> at=(81.280,133.350,90.000) attrs{name:"R9" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R9" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e238dcde-8495-47bf-bfca-aceb29a93079" }
+  <property> at=(81.280,157.480,90.000) attrs{name:"R11" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R11" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:66.040000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e49cddf9-077d-4aa7-bdff-e73daae9738c" }
+  <property> at=(139.700,59.690,90.000) attrs{name:"R5" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,62.230,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,67.818,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R5" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"f90a3215-ad26-41e7-bf2f-ac1d56dee10c" }
+  <property> at=(135.890,115.570,90.000) attrs{name:"R8" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R8" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:77.470000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"fdcc8b6a-a00d-4f52-864b-51f063eb922e" }
+  <property> at=(139.700,71.120,90.000) attrs{name:"R6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,73.660,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,79.248,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R6" path_unit:1 value:"MultiNetclasses" }
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20240716) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"013297c8-cfd7-409f-b81d-c1d8f671a82f" }
+  <property> at=(81.280,115.570,90.000) attrs{name:"R7" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R7" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"16ce1cd1-068c-44c7-bad3-3830596ae37d" }
+  <property> at=(135.890,157.480,90.000) attrs{name:"R12" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R12" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"17b6ce67-6699-41d5-a096-6714796adaa3" }
+  <property> at=(135.890,133.350,90.000) attrs{name:"R10" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R10" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"1bad0c73-7972-4d84-814d-f9d67f2ba084" }
+  <property> at=(135.890,101.600,90.000) attrs{name:"R4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R4" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:107.950000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"2b597e45-5af9-4ec4-9ed0-8151143d9e97" }
+  <property> at=(81.280,101.600,90.000) attrs{name:"R3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,104.140,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,109.728,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,107.950,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R3" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:53.340000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"692791d4-470e-4233-9e70-bfe645704f32" }
+  <property> at=(139.700,46.990,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,49.530,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,55.118,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,53.340,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R2" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:41.910000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"84ebbe6f-4f16-4b6e-882a-6dc4a67152da" }
+  <property> at=(139.700,35.560,90.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,38.100,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,43.688,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,41.910,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:139.700000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"8598689f-ce4f-414f-a720-b8fa4ecb6b41" }
+  <property> at=(81.280,133.350,90.000) attrs{name:"R9" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,135.890,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,141.478,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,139.700,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R9" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:163.830000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e238dcde-8495-47bf-bfca-aceb29a93079" }
+  <property> at=(81.280,157.480,90.000) attrs{name:"R11" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,160.020,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,165.608,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,163.830,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R11" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:66.040000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"e49cddf9-077d-4aa7-bdff-e73daae9738c" }
+  <property> at=(139.700,59.690,90.000) attrs{name:"R5" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,62.230,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,67.818,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,66.040,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R5" path_unit:1 value:"NetclassERC1" }
+  <symbol>
+  <at> attrs{misc:90 name:121.920000 value:135.890000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"f90a3215-ad26-41e7-bf2f-ac1d56dee10c" }
+  <property> at=(135.890,115.570,90.000) attrs{name:"R8" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,118.110,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(135.890,123.698,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(135.890,121.920,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R8" path_unit:1 value:"MultiNetclasses" }
+  <symbol>
+  <at> attrs{misc:90 name:77.470000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"fdcc8b6a-a00d-4f52-864b-51f063eb922e" }
+  <property> at=(139.700,71.120,90.000) attrs{name:"R6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,73.660,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(139.700,79.248,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(139.700,77.470,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/bc9d1c5e-a887-4e72-af9f-7d5405947d97" path_reference:"R6" path_unit:1 value:"MultiNetclasses" }
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+  (wire (start 88.9 50.8) (end 88.9 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 121.92) (end 132.08 121.92) (angle 0) (thickness 0.25))
+  (wire (start 88.9 77.47) (end 135.89 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 139.7) (end 132.08 139.7) (angle 0) (thickness 0.25))
+  (wire (start 88.9 41.91) (end 135.89 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 66.04) (end 135.89 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 58.42) (end 88.9 66.04) (angle 0) (thickness 0.25))
+  (wire (start 88.9 33.02) (end 88.9 41.91) (angle 0) (thickness 0.25))
+  (wire (start 88.9 53.34) (end 135.89 53.34) (angle 0) (thickness 0.25))
+  (wire (start 85.09 163.83) (end 132.08 163.83) (angle 0) (thickness 0.25))
+  (wire (start 85.09 107.95) (end 132.08 107.95) (angle 0) (thickness 0.25))
+  (wire (start 88.9 71.12) (end 88.9 77.47) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

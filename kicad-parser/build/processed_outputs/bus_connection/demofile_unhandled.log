@@ -1,0 +1,173 @@
+[DEBUG] Root children: 14
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="uuid"
+  child 4 tag="paper"
+  child 5 tag="lib_symbols"
+  child 6 tag="bus_alias"
+  child 7 tag="bus_alias"
+  child 8 tag="bus_alias"
+  child 9 tag="bus"
+  child 10 tag="label"
+  child 11 tag="sheet"
+  child 12 tag="sheet"
+  child 13 tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=1985
+kicad_sch  (children=14)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=20
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=43
+  uuid  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=13
+  lib_symbols  (children=1)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=13
+[BaselineBoard] setLibSymbolsRaw len=13
+[BaselineBoard] appendRawPiece len=13
+AstCleaner: handling lib_symbols at 0x7ffe39781550
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=13
+[BaselineBoard] appendRawPiece len=31
+  bus_alias  (children=3)
+[BaselineBoard] appendRawPiece len=41
+  bus_alias  (children=3)
+[BaselineBoard] appendRawPiece len=36
+  bus_alias  (children=3)
+[BaselineBoard] appendRawPiece len=140
+  bus  (children=4)
+[BaselineBoard] appendRawPiece len=175
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=691
+  sheet  (children=11)
+[BaselineBoard] appendRawPiece len=702
+  sheet  (children=11)
+[BaselineBoard] appendRawPiece len=39
+  sheet_instances  (children=2)
+  [UNHANDLED-PCB] tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=21
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+AstCleaner: handling lib_symbols at 0x6267647e8b00
+[UNHANDLED] cleanInner:bus_alias addr=0x6267647e8b40 -> (bus_alias "b_x" (members) )
+  children details (child_index: addr type extra):
+    [0] addr=0x6267647e3990 atom="bus_alias"
+    [1] addr=0x6267647e39d0 atom=""b_x""
+    [2] addr=0x6267647e3a10 list_size=2 head="members"
+[UNHANDLED] cleanInner:members addr=0x6267647e3a10 -> (members "x" )
+  children details (child_index: addr type extra):
+    [0] addr=0x6267647e8d50 atom="members"
+    [1] addr=0x6267647e8d90 atom=""x""
+[UNHANDLED] cleanInner:bus_alias addr=0x6267647e8b80 -> (bus_alias "a_xyz" (members) )
+  children details (child_index: addr type extra):
+    [0] addr=0x6267647e8de0 atom="bus_alias"
+    [1] addr=0x6267647e8e20 atom=""a_xyz""
+    [2] addr=0x6267647e8e60 list_size=4 head="members"
+[UNHANDLED] cleanInner:members addr=0x6267647e8e60 -> (members "x" "y" "z" )
+  children details (child_index: addr type extra):
+    [0] addr=0x6267647e3490 atom="members"
+    [1] addr=0x6267647e34d0 atom=""x""
+    [2] addr=0x6267647e3510 atom=""y""
+    [3] addr=0x6267647e3550 atom=""z""
+[UNHANDLED] cleanInner:bus_alias addr=0x6267647e8bc0 -> (bus_alias "b_yz" (members) )
+  children details (child_index: addr type extra):
+    [0] addr=0x6267647e8eb0 atom="bus_alias"
+    [1] addr=0x6267647e8ef0 atom=""b_yz""
+    [2] addr=0x6267647e8f30 list_size=3 head="members"
+[UNHANDLED] cleanInner:members addr=0x6267647e8f30 -> (members "y" "z" )
+  children details (child_index: addr type extra):
+    [0] addr=0x6267647e8f80 atom="members"
+    [1] addr=0x6267647e8fc0 atom=""y""
+    [2] addr=0x6267647e9000 atom=""z""
+[UNHANDLED] cleanInner:bus addr=0x6267647e8c00 -> (bus (pts) (stroke) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x6267647e9050 atom="bus"
+    [1] addr=0x6267647e9090 list_size=3 head="pts"
+    [2] addr=0x6267647e90d0 list_size=3 head="stroke"
+    [3] addr=0x6267647e9110 list_size=2 head="uuid"
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20230221 }
+  <generator> attrs{value:eeschema }
+  <paper> attrs{value:"A5" }
+  <lib_symbols>
+  <bus_alias> attrs{value:"b_x"'...
+[BaselineBoard] appendRawPiece len=2482 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=12
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20230221 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:eeschema }'...
+[BaselineBoard] appendRawPiece len=34 head="generator"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A5" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=0
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='bus_alias' children=1
+[appendRawPieceFromClean] piece_head='<bus_alias> attrs{value:"b_x" }
+  <members> attrs{value:"x" }'...
+[BaselineBoard] appendRawPiece len=61 head="bus_alias"
+[walkSchematicOnce] child tag='bus_alias' children=1
+[appendRawPieceFromClean] piece_head='<bus_alias> attrs{value:"a_xyz" }
+  <members> attrs{misc:"z" name:"y" value:"x" }'...
+[BaselineBoard] appendRawPiece len=81 head="bus_alias"
+[walkSchematicOnce] child tag='bus_alias' children=1
+[appendRawPieceFromClean] piece_head='<bus_alias> attrs{value:"b_yz" }
+  <members> attrs{name:"z" value:"y" }'...
+[BaselineBoard] appendRawPiece len=71 head="bus_alias"
+[walkSchematicOnce] child tag='bus' children=2
+[appendRawPieceFromClean] piece_head='<bus>
+  <pts> pts=[(85.725,48.260),(113.665,48.260)]
+  <stroke> attrs{sub_type:default sub_width:0 }'...
+[BaselineBoard] appendRawPiece len=100 head="bus"
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='sheet' children=9
+[appendRawPieceFromClean] piece_head='<sheet> attrs{fill_color:0,0,0,0.000000 }
+  <at> attrs{name:41.275000 value:69.850000 }
+  <size> attrs{name:13.970000 value:15.875000 }
+  <fields_autoplaced>
+  '...
+[BaselineBoard] appendRawPiece len=840 head="sheet"
+[walkSchematicOnce] child tag='sheet' children=9
+[appendRawPieceFromClean] piece_head='<sheet> attrs{fill_color:0,0,0,0.000000 }
+  <at> attrs{name:43.180000 value:113.665000 }
+  <size> attrs{name:13.335000 value:16.510000 }
+  <fields_autoplaced>
+ '...
+[BaselineBoard] appendRawPiece len=852 head="sheet"
+[walkSchematicOnce] child tag='sheet_instances' children=1
+[appendRawPieceFromClean] piece_head='<sheet_instances>
+  <path> attrs{page:"1" }'...
+[BaselineBoard] appendRawPiece len=43 head="sheet_instances"
+=== SUMMARY === junctionShapes=0 wireShapes=0 symbols=0 rawPieces=30
+=== DUMP wires: count=0 ===
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

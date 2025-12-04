@@ -1,0 +1,297 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20230221
+Generator:    eeschema
+Paper size:   "A5"
+Root UUID:    e0d86b2d-3926-41bc-be33-0cb97efda5cb
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20230221) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "~ Connector_Generic:Conn_01x03" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x03" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x03_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 3.810000) (end 1.270000 -3.810000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:55.245000 value:60.325000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7237f2f6-7a70-470a-83e2-356d7d23087b }
+  <property> at=(60.325,50.165,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,60.325,0.000) attrs{name:"Conn_01x03" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,55.245,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.325,55.245,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/3082b26f-b83d-4458-bb0e-9c16987db84d/8e047953-57e8-499d-89c7-aaeb7ad61c51/2866a517-6cac-46c4-af83-6d16fab5045c" path_reference:"J2" path_unit:1 value:"bus_connection" }
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230221) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "~ Connector_Generic:Conn_01x03" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x03" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x03_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 3.810000) (end 1.270000 -3.810000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:55.245000 value:60.325000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7237f2f6-7a70-470a-83e2-356d7d23087b }
+  <property> at=(60.325,50.165,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,60.325,0.000) attrs{name:"Conn_01x03" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,55.245,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.325,55.245,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/3082b26f-b83d-4458-bb0e-9c16987db84d/8e047953-57e8-499d-89c7-aaeb7ad61c51/2866a517-6cac-46c4-af83-6d16fab5045c" path_reference:"J2" path_unit:1 value:"bus_connection" }
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230221) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "~ Connector_Generic:Conn_01x03" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x03" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x03_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 3.810000) (end 1.270000 -3.810000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:55.245000 value:60.325000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7237f2f6-7a70-470a-83e2-356d7d23087b }
+  <property> at=(60.325,50.165,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,60.325,0.000) attrs{name:"Conn_01x03" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,55.245,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.325,55.245,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/3082b26f-b83d-4458-bb0e-9c16987db84d/8e047953-57e8-499d-89c7-aaeb7ad61c51/2866a517-6cac-46c4-af83-6d16fab5045c" path_reference:"J2" path_unit:1 value:"bus_connection" }
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230221) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "~ Connector_Generic:Conn_01x03" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x03" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x03_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 3.810000) (end 1.270000 -3.810000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:55.245000 value:60.325000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7237f2f6-7a70-470a-83e2-356d7d23087b }
+  <property> at=(60.325,50.165,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,60.325,0.000) attrs{name:"Conn_01x03" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,55.245,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.325,55.245,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/3082b26f-b83d-4458-bb0e-9c16987db84d/8e047953-57e8-499d-89c7-aaeb7ad61c51/2866a517-6cac-46c4-af83-6d16fab5045c" path_reference:"J2" path_unit:1 value:"bus_connection" }
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230221) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "~ Connector_Generic:Conn_01x03" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x03" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x03_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 3.810000) (end 1.270000 -3.810000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:55.245000 value:60.325000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7237f2f6-7a70-470a-83e2-356d7d23087b }
+  <property> at=(60.325,50.165,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,60.325,0.000) attrs{name:"Conn_01x03" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,55.245,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.325,55.245,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/3082b26f-b83d-4458-bb0e-9c16987db84d/8e047953-57e8-499d-89c7-aaeb7ad61c51/2866a517-6cac-46c4-af83-6d16fab5045c" path_reference:"J2" path_unit:1 value:"bus_connection" }
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230221) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "~ Connector_Generic:Conn_01x03" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x03" (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Conn_01x03_1_1" (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 3.810000) (end 1.270000 -3.810000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:55.245000 value:60.325000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7237f2f6-7a70-470a-83e2-356d7d23087b }
+  <property> at=(60.325,50.165,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,60.325,0.000) attrs{name:"Conn_01x03" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(60.325,55.245,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(60.325,55.245,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/3082b26f-b83d-4458-bb0e-9c16987db84d/8e047953-57e8-499d-89c7-aaeb7ad61c51/2866a517-6cac-46c4-af83-6d16fab5045c" path_reference:"J2" path_unit:1 value:"bus_connection" }
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+  (wire (start 108.585 63.5) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 70.485 57.785) (end 70.485 68.58) (angle 0) (thickness 0.25))
+  (wire (start 65.405 55.245) (end 72.39 55.245) (angle 0) (thickness 0.25))
+  (wire (start 65.405 57.785) (end 70.485 57.785) (angle 0) (thickness 0.25))
+  (wire (start 65.405 52.705) (end 95.885 52.705) (angle 0) (thickness 0.25))
+  (wire (start 72.39 66.04) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 70.485 68.58) (end 108.585 68.58) (angle 0) (thickness 0.25))
+  (wire (start 99.695 63.5) (end 99.695 66.04) (angle 0) (thickness 0.25))
+  (wire (start 72.39 55.245) (end 72.39 66.04) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,121 @@
+[DEBUG] Root children: 9
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="host"
+  child 3 tag="page"
+  child 4 tag="paper"
+  child 5 tag="lib_symbols"
+  child 6 tag="wire"
+  child 7 tag="label"
+  child 8 tag="global_label"
+[BaselineBoard] appendRawPiece len=410
+kicad_sch  (children=9)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=42
+  host  (children=3)
+[BaselineBoard] appendRawPiece len=10
+  page  (children=3)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=13
+  lib_symbols  (children=1)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=13
+[BaselineBoard] setLibSymbolsRaw len=13
+[BaselineBoard] appendRawPiece len=13
+AstCleaner: handling lib_symbols at 0x7ffdcfd56910
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=13
+[BaselineBoard] appendRawPiece len=63
+  wire  (children=2)
+[traverseAst] WIRE depth=1 raw_len=63
+[BaselineBoard] appendRawPiece len=63
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 102.870003,50.799999->72.389999,50.799999 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=1
+[BaselineBoard] appendRawPiece len=56
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=24
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=107
+  label  (children=4)
+[BaselineBoard] appendRawPiece len=126
+  global_label  (children=5)
+AstCleaner: handling lib_symbols at 0x631a0a842b70
+[UNHANDLED] cleanInner:global_label addr=0x631a0a842c30 -> (global_label "5Vanalog" (shape) (at) (effects) )
+  children details (child_index: addr type extra):
+    [0] addr=0x631a0a843f00 atom="global_label"
+    [1] addr=0x631a0a843f40 atom=""5Vanalog""
+    [2] addr=0x631a0a843f80 list_size=2 head="shape"
+    [3] addr=0x631a0a843fc0 list_size=4 head="at"
+    [4] addr=0x631a0a844000 list_size=3 head="effects"
+[UNHANDLED] cleanInner:shape addr=0x631a0a843f80 -> (shape input )
+  children details (child_index: addr type extra):
+    [0] addr=0x631a0a846550 atom="shape"
+    [1] addr=0x631a0a846590 atom="input"
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20200512 }
+  <host> attrs{value:eeschema }
+  <page> attrs{value:2 }
+  <paper> attrs{value:"A4" }
+  <lib_symbols>
+  <wire> pt'...
+[BaselineBoard] appendRawPiece len=569 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=8
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20200512 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='host' children=0
+[appendRawPieceFromClean] piece_head='<host> attrs{value:eeschema }'...
+[BaselineBoard] appendRawPiece len=29 head="host"
+[walkSchematicOnce] child tag='page' children=0
+[appendRawPieceFromClean] piece_head='<page> attrs{value:2 }'...
+[BaselineBoard] appendRawPiece len=22 head="page"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=0
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='wire' children=0
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='label' children=2
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='global_label' children=2
+[appendRawPieceFromClean] piece_head='<global_label> at=(72.390,50.800,180.000) attrs{value:"5Vanalog" }
+  <shape> attrs{value:input }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justi'...
+[BaselineBoard] appendRawPiece len=171 head="global_label"
+=== SUMMARY === junctionShapes=0 wireShapes=2 symbols=0 rawPieces=25
+=== DUMP wires: count=2 ===
+ wire[0] start=(72.39,50.80) end=(102.87,50.80)
+ wire[1] start=(72.39,50.80) end=(102.87,50.80)
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

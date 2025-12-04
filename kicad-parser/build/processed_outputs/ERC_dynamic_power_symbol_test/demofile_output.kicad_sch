@@ -1,0 +1,531 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20230819
+Generator:    eeschema
+Paper size:   "A5"
+Root UUID:    ea0f7891-d2c5-425b-8e3a-f5dde385e419
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:52.705000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:528bd027-e74e-400a-8ca2-cf0652e9fae7 }
+  <property> at=(81.915,50.800,0.000) attrs{name:"#FLG0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,48.572,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#FLG0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:59.055000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:78a241b3-2465-484a-9234-d60d4e95876e }
+  <property> at=(81.915,65.405,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,63.188,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#PWR0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (junction (at 97.154999 73.025002))
+  (junction (at 97.154999 88.264999))
+  (junction (at 97.154999 69.849998))
+  (junction (at 81.915001 54.610001))
+  (junction (at 97.154999 54.610001))
+  (junction (at 97.154999 73.025002) (uuid 318873ba-93d0-4611-adbd-ab20b3bf8da2) (color 0 0 0 0))
+  (junction (at 97.154999 88.264999) (uuid 7dd8ed2a-e1f6-4007-9d1d-92b533495aee) (color 0 0 0 0))
+  (junction (at 97.154999 69.849998) (uuid 83871bdf-6b08-4ac2-bad8-9ef65b3c79df) (color 0 0 0 0))
+  (junction (at 81.915001 54.610001) (uuid bfb8ab1c-d3b9-4129-9f01-9f99e284c17f) (color 0 0 0 0))
+  (junction (at 97.154999 54.610001) (uuid c95d470c-e721-4ed3-b686-41e6d3e42fc1) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:52.705000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:528bd027-e74e-400a-8ca2-cf0652e9fae7 }
+  <property> at=(81.915,50.800,0.000) attrs{name:"#FLG0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,48.572,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#FLG0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:59.055000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:78a241b3-2465-484a-9234-d60d4e95876e }
+  <property> at=(81.915,65.405,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,63.188,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#PWR0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (junction (at 97.154999 73.025002))
+  (junction (at 97.154999 88.264999))
+  (junction (at 97.154999 69.849998))
+  (junction (at 81.915001 54.610001))
+  (junction (at 97.154999 54.610001))
+  (junction (at 97.154999 73.025002) (uuid 318873ba-93d0-4611-adbd-ab20b3bf8da2) (color 0 0 0 0))
+  (junction (at 97.154999 88.264999) (uuid 7dd8ed2a-e1f6-4007-9d1d-92b533495aee) (color 0 0 0 0))
+  (junction (at 97.154999 69.849998) (uuid 83871bdf-6b08-4ac2-bad8-9ef65b3c79df) (color 0 0 0 0))
+  (junction (at 81.915001 54.610001) (uuid bfb8ab1c-d3b9-4129-9f01-9f99e284c17f) (color 0 0 0 0))
+  (junction (at 97.154999 54.610001) (uuid c95d470c-e721-4ed3-b686-41e6d3e42fc1) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:52.705000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:528bd027-e74e-400a-8ca2-cf0652e9fae7 }
+  <property> at=(81.915,50.800,0.000) attrs{name:"#FLG0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,48.572,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#FLG0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:59.055000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:78a241b3-2465-484a-9234-d60d4e95876e }
+  <property> at=(81.915,65.405,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,63.188,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#PWR0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (junction (at 97.154999 73.025002))
+  (junction (at 97.154999 88.264999))
+  (junction (at 97.154999 69.849998))
+  (junction (at 81.915001 54.610001))
+  (junction (at 97.154999 54.610001))
+  (junction (at 97.154999 73.025002) (uuid 318873ba-93d0-4611-adbd-ab20b3bf8da2) (color 0 0 0 0))
+  (junction (at 97.154999 88.264999) (uuid 7dd8ed2a-e1f6-4007-9d1d-92b533495aee) (color 0 0 0 0))
+  (junction (at 97.154999 69.849998) (uuid 83871bdf-6b08-4ac2-bad8-9ef65b3c79df) (color 0 0 0 0))
+  (junction (at 81.915001 54.610001) (uuid bfb8ab1c-d3b9-4129-9f01-9f99e284c17f) (color 0 0 0 0))
+  (junction (at 97.154999 54.610001) (uuid c95d470c-e721-4ed3-b686-41e6d3e42fc1) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:52.705000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:528bd027-e74e-400a-8ca2-cf0652e9fae7 }
+  <property> at=(81.915,50.800,0.000) attrs{name:"#FLG0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,48.572,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#FLG0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:59.055000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:78a241b3-2465-484a-9234-d60d4e95876e }
+  <property> at=(81.915,65.405,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,63.188,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#PWR0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (junction (at 97.154999 73.025002))
+  (junction (at 97.154999 88.264999))
+  (junction (at 97.154999 69.849998))
+  (junction (at 81.915001 54.610001))
+  (junction (at 97.154999 54.610001))
+  (junction (at 97.154999 73.025002) (uuid 318873ba-93d0-4611-adbd-ab20b3bf8da2) (color 0 0 0 0))
+  (junction (at 97.154999 88.264999) (uuid 7dd8ed2a-e1f6-4007-9d1d-92b533495aee) (color 0 0 0 0))
+  (junction (at 97.154999 69.849998) (uuid 83871bdf-6b08-4ac2-bad8-9ef65b3c79df) (color 0 0 0 0))
+  (junction (at 81.915001 54.610001) (uuid bfb8ab1c-d3b9-4129-9f01-9f99e284c17f) (color 0 0 0 0))
+  (junction (at 97.154999 54.610001) (uuid c95d470c-e721-4ed3-b686-41e6d3e42fc1) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:52.705000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:528bd027-e74e-400a-8ca2-cf0652e9fae7 }
+  <property> at=(81.915,50.800,0.000) attrs{name:"#FLG0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,48.572,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#FLG0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:59.055000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:78a241b3-2465-484a-9234-d60d4e95876e }
+  <property> at=(81.915,65.405,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,63.188,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#PWR0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (junction (at 97.154999 73.025002))
+  (junction (at 97.154999 88.264999))
+  (junction (at 97.154999 69.849998))
+  (junction (at 81.915001 54.610001))
+  (junction (at 97.154999 54.610001))
+  (junction (at 97.154999 73.025002) (uuid 318873ba-93d0-4611-adbd-ab20b3bf8da2) (color 0 0 0 0))
+  (junction (at 97.154999 88.264999) (uuid 7dd8ed2a-e1f6-4007-9d1d-92b533495aee) (color 0 0 0 0))
+  (junction (at 97.154999 69.849998) (uuid 83871bdf-6b08-4ac2-bad8-9ef65b3c79df) (color 0 0 0 0))
+  (junction (at 81.915001 54.610001) (uuid bfb8ab1c-d3b9-4129-9f01-9f99e284c17f) (color 0 0 0 0))
+  (junction (at 97.154999 54.610001) (uuid c95d470c-e721-4ed3-b686-41e6d3e42fc1) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A5")
+  (title_block
+  )
+(lib_symbols (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:52.705000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:528bd027-e74e-400a-8ca2-cf0652e9fae7 }
+  <property> at=(81.915,50.800,0.000) attrs{name:"#FLG0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,48.572,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,52.705,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#FLG0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  <symbol>
+  <at> attrs{misc:0 name:59.055000 value:81.915000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:78a241b3-2465-484a-9234-d60d4e95876e }
+  <property> at=(81.915,65.405,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,63.188,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(81.915,59.055,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/00325d8e-72cb-4ca3-8445-d6b5e061276d" path_reference:"#PWR0101" path_unit:1 value:"ERC_dynamic_power_symbol_test" }
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 54.61) (end 103.505 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 88.265) (end 97.155 88.265) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 73.025) (end 103.505 73.025) (angle 0) (thickness 0.25))
+  (wire (start 97.155 69.85) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 81.915 59.055) (angle 0) (thickness 0.25))
+  (wire (start 81.915 54.61) (end 97.155 54.61) (angle 0) (thickness 0.25))
+  (wire (start 103.505 69.85) (end 97.155 69.85) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 73.025) (angle 0) (thickness 0.25))
+  (wire (start 81.915 52.705) (end 81.915 54.61) (angle 0) (thickness 0.25))
+  (wire (start 97.155 88.265) (end 97.155 91.44) (angle 0) (thickness 0.25))
+  (wire (start 97.155 91.44) (end 103.505 91.44) (angle 0) (thickness 0.25))
+  (junction (at 97.154999 73.025002))
+  (junction (at 97.154999 88.264999))
+  (junction (at 97.154999 69.849998))
+  (junction (at 81.915001 54.610001))
+  (junction (at 97.154999 54.610001))
+  (junction (at 97.154999 73.025002) (uuid 318873ba-93d0-4611-adbd-ab20b3bf8da2) (color 0 0 0 0))
+  (junction (at 97.154999 88.264999) (uuid 7dd8ed2a-e1f6-4007-9d1d-92b533495aee) (color 0 0 0 0))
+  (junction (at 97.154999 69.849998) (uuid 83871bdf-6b08-4ac2-bad8-9ef65b3c79df) (color 0 0 0 0))
+  (junction (at 81.915001 54.610001) (uuid bfb8ab1c-d3b9-4129-9f01-9f99e284c17f) (color 0 0 0 0))
+  (junction (at 97.154999 54.610001) (uuid c95d470c-e721-4ed3-b686-41e6d3e42fc1) (color 0 0 0 0))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,20 @@
+
+=== JUNCTION ===
+❌ Missing (1):
+   - (130.809998, 67.309998)
+
+=== WIRE ===
+❌ Missing (5):
+   - [(127.0, 67.31), (130.81, 67.31)]
+   - [(130.81, 66.04), (130.81, 67.31)]
+   - [(130.81, 67.31), (130.81, 69.85)]
+   - [(130.81, 69.85), (135.89, 69.85)]
+   - [(135.89, 66.04), (130.81, 66.04)]
+
+=== SYMBOL ===
+❌ Missing (3):
+   - (symbol "TEST_LIB:TEST_DOUBLE" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "TEST_DOUBLE_0_1" (rectangle (start -1.27 -1.27) (end 8.89 -10.16) (stroke (width 0) (type default)) (fill (type background))))
+   - (symbol "TEST_DOUBLE_1_1" (pin input line (at -3.81 -3.81 0) (length 2.54) (name "PIN1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -3.81 -7.62 0) (length 2.54) (name "PIN2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

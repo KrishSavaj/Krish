@@ -1,0 +1,20 @@
+
+=== JUNCTION ===
+✅ Files match perfectly
+
+=== WIRE ===
+❌ Missing (4):
+   - [(125.73, 90.17), (142.24, 90.17)]
+   - [(142.24, 90.17), (142.24, 92.71)]
+   - [(142.24, 95.25), (142.24, 97.79)]
+   - [(142.24, 97.79), (125.73, 97.79)]
+
+=== SYMBOL ===
+❌ Missing (5):
+   - (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.02) hide) (in_bom yes) (on_board yes) (property "Reference" "J" (id 0) (at 0 2.54 0) (effects (font (size 1.27 1.27)))) (property "Value" "Conn_01x02" (id 1) (at 0 -5.08 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "connector" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "Conn_01x02_1_1" (rectangle (start -1.27 -2.41) (end 0 -2.67) (stroke (width 0.15)) (fill (type none))) (rectangle (start -1.27 0.13) (end 0 -0.13) (stroke (width 0.15)) (fill (type none))) (rectangle (start -1.27 1.27) (end 1.27 -3.81) (stroke (width 0.25)) (fill (type background))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at -1.78 0 90) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

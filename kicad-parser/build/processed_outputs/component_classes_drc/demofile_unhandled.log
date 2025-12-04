@@ -1,0 +1,446 @@
+[DEBUG] Root children: 31
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="generator_version"
+  child 4 tag="uuid"
+  child 5 tag="paper"
+  child 6 tag="lib_symbols"
+  child 7 tag="no_connect"
+  child 8 tag="no_connect"
+  child 9 tag="no_connect"
+  child 10 tag="no_connect"
+  child 11 tag="no_connect"
+  child 12 tag="no_connect"
+  child 13 tag="no_connect"
+  child 14 tag="no_connect"
+  child 15 tag="rule_area"
+  child 16 tag="rule_area"
+  child 17 tag="rule_area"
+  child 18 tag="rule_area"
+  child 19 tag="netclass_flag"
+  child 20 tag="netclass_flag"
+  child 21 tag="netclass_flag"
+  child 22 tag="netclass_flag"
+  child 23 tag="netclass_flag"
+  child 24 tag="netclass_flag"
+  child 25 tag="symbol"
+  child 26 tag="symbol"
+  child 27 tag="symbol"
+  child 28 tag="symbol"
+  child 29 tag="sheet_instances"
+  child 30 tag="embedded_fonts"
+[BaselineBoard] appendRawPiece len=9557
+kicad_sch  (children=31)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=22
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=26
+  generator_version  (children=2)
+[BaselineBoard] appendRawPiece len=45
+  uuid  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=1297
+  lib_symbols  (children=2)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=1297
+[BaselineBoard] setLibSymbolsRaw len=1297
+[BaselineBoard] appendRawPiece len=1297
+AstCleaner: handling lib_symbols at 0x7fff9ef99a30
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5abc5f9f55a0 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5f9f49b0 atom="exclude_from_sim"
+    [1] addr=0x5abc5f9f49f0 atom="no"
+[UNHANDLED] cleanInner:embedded_fonts addr=0x5abc5f9f58a0 -> (embedded_fonts no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5f9fb920 atom="embedded_fonts"
+    [1] addr=0x5abc5f9fb960 atom="no"
+[handleLibSymbolsCleanNode] called, children=1
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=1297
+[BaselineBoard] appendRawPiece len=1283
+    symbol  (children=17)
+[BaselineBoard] appendRawPiece len=83
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=83
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=77
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=83
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=77
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=83
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=83
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=83
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=228
+  rule_area  (children=2)
+[BaselineBoard] appendRawPiece len=224
+  rule_area  (children=2)
+[BaselineBoard] appendRawPiece len=224
+  rule_area  (children=2)
+[BaselineBoard] appendRawPiece len=226
+  rule_area  (children=2)
+[BaselineBoard] appendRawPiece len=442
+  netclass_flag  (children=10)
+[BaselineBoard] appendRawPiece len=443
+  netclass_flag  (children=10)
+[BaselineBoard] appendRawPiece len=444
+  netclass_flag  (children=10)
+[BaselineBoard] appendRawPiece len=442
+  netclass_flag  (children=10)
+[BaselineBoard] appendRawPiece len=442
+  netclass_flag  (children=10)
+[BaselineBoard] appendRawPiece len=444
+  netclass_flag  (children=10)
+[BaselineBoard] appendRawPiece len=947
+  symbol  (children=18)
+[BaselineBoard] appendRawPiece len=955
+  symbol  (children=18)
+[BaselineBoard] appendRawPiece len=963
+  symbol  (children=18)
+[BaselineBoard] appendRawPiece len=962
+  symbol  (children=18)
+[BaselineBoard] appendRawPiece len=39
+  sheet_instances  (children=2)
+  [UNHANDLED-PCB] tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=21
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+[BaselineBoard] appendRawPiece len=19
+  embedded_fonts  (children=2)
+[UNHANDLED] cleanInner:generator_version addr=0x5abc5f9fa1f0 -> (generator_version "8.99" )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5f9f4890 atom="generator_version"
+    [1] addr=0x5abc5f9f48d0 atom=""8.99""
+AstCleaner: handling lib_symbols at 0x5abc5f9fa2b0
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5abc5f9fe6a0 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5f9f6b90 atom="exclude_from_sim"
+    [1] addr=0x5abc5f9f6bd0 atom="no"
+[UNHANDLED] cleanInner:embedded_fonts addr=0x5abc5f9fe9a0 -> (embedded_fonts no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa00c20 atom="embedded_fonts"
+    [1] addr=0x5abc5fa00c60 atom="no"
+[UNHANDLED] cleanInner:no_connect addr=0x5abc5f9fa2f0 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa00cb0 atom="no_connect"
+    [1] addr=0x5abc5fa00cf0 list_size=3 head="at"
+    [2] addr=0x5abc5fa00d30 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x5abc5f9fa330 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa00ee0 atom="no_connect"
+    [1] addr=0x5abc5fa00f20 list_size=3 head="at"
+    [2] addr=0x5abc5fa00f60 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x5abc5f9fa370 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa01110 atom="no_connect"
+    [1] addr=0x5abc5fa01150 list_size=3 head="at"
+    [2] addr=0x5abc5fa01190 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x5abc5f9fa3b0 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa01340 atom="no_connect"
+    [1] addr=0x5abc5fa01380 list_size=3 head="at"
+    [2] addr=0x5abc5fa013c0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x5abc5f9fa3f0 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa01570 atom="no_connect"
+    [1] addr=0x5abc5fa015b0 list_size=3 head="at"
+    [2] addr=0x5abc5fa015f0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x5abc5f9fa430 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa017a0 atom="no_connect"
+    [1] addr=0x5abc5fa017e0 list_size=3 head="at"
+    [2] addr=0x5abc5fa01820 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x5abc5f9fa470 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa019d0 atom="no_connect"
+    [1] addr=0x5abc5fa01a10 list_size=3 head="at"
+    [2] addr=0x5abc5fa01a50 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x5abc5f9fa4b0 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa01c00 atom="no_connect"
+    [1] addr=0x5abc5fa01c40 list_size=3 head="at"
+    [2] addr=0x5abc5fa01c80 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:rule_area addr=0x5abc5f9fa4f0 -> (rule_area (polyline) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa01e30 atom="rule_area"
+    [1] addr=0x5abc5fa01e70 list_size=5 head="polyline"
+[UNHANDLED] cleanInner:rule_area addr=0x5abc5f9fa530 -> (rule_area (polyline) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa02870 atom="rule_area"
+    [1] addr=0x5abc5fa028b0 list_size=5 head="polyline"
+[UNHANDLED] cleanInner:rule_area addr=0x5abc5f9fa570 -> (rule_area (polyline) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa032b0 atom="rule_area"
+    [1] addr=0x5abc5fa032f0 list_size=5 head="polyline"
+[UNHANDLED] cleanInner:rule_area addr=0x5abc5f9fa5b0 -> (rule_area (polyline) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa03cf0 atom="rule_area"
+    [1] addr=0x5abc5fa03d30 list_size=5 head="polyline"
+[UNHANDLED] cleanInner:netclass_flag addr=0x5abc5f9fa5f0 -> (netclass_flag "" (length) (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5f9f6e80 atom="netclass_flag"
+    [1] addr=0x5abc5f9f6ec0 atom=""""
+    [2] addr=0x5abc5f9f6f00 list_size=2 head="length"
+    [3] addr=0x5abc5f9f6f40 list_size=2 head="shape"
+    [4] addr=0x5abc5f9f6f80 list_size=4 head="at"
+    [5] addr=0x5abc5f9f6fc0 list_size=2 head="fields_autoplaced"
+    [6] addr=0x5abc5f9f7000 list_size=3 head="effects"
+    [7] addr=0x5abc5f9f7040 list_size=2 head="uuid"
+    [8] addr=0x5abc5f9f7080 list_size=5 head="property"
+    [9] addr=0x5abc5f9f70c0 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x5abc5f9f6f40 -> (shape round )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa047c0 atom="shape"
+    [1] addr=0x5abc5fa04800 atom="round"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x5abc5f9f6fc0 -> (fields_autoplaced yes )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa04960 atom="fields_autoplaced"
+    [1] addr=0x5abc5fa049a0 atom="yes"
+[UNHANDLED] cleanInner:netclass_flag addr=0x5abc5f9fa630 -> (netclass_flag "" (length) (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa05850 atom="netclass_flag"
+    [1] addr=0x5abc5fa05890 atom=""""
+    [2] addr=0x5abc5fa058d0 list_size=2 head="length"
+    [3] addr=0x5abc5fa05910 list_size=2 head="shape"
+    [4] addr=0x5abc5fa05950 list_size=4 head="at"
+    [5] addr=0x5abc5fa05990 list_size=2 head="fields_autoplaced"
+    [6] addr=0x5abc5fa059d0 list_size=3 head="effects"
+    [7] addr=0x5abc5fa05a10 list_size=2 head="uuid"
+    [8] addr=0x5abc5fa05a50 list_size=5 head="property"
+    [9] addr=0x5abc5fa05a90 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x5abc5fa05910 -> (shape round )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa05b70 atom="shape"
+    [1] addr=0x5abc5fa05bb0 atom="round"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x5abc5fa05990 -> (fields_autoplaced yes )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa05d10 atom="fields_autoplaced"
+    [1] addr=0x5abc5fa05d50 atom="yes"
+[UNHANDLED] cleanInner:netclass_flag addr=0x5abc5f9fa670 -> (netclass_flag "" (length) (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa06e30 atom="netclass_flag"
+    [1] addr=0x5abc5fa06e70 atom=""""
+    [2] addr=0x5abc5fa06eb0 list_size=2 head="length"
+    [3] addr=0x5abc5fa06ef0 list_size=2 head="shape"
+    [4] addr=0x5abc5fa06f30 list_size=4 head="at"
+    [5] addr=0x5abc5fa06f70 list_size=2 head="fields_autoplaced"
+    [6] addr=0x5abc5fa06fb0 list_size=3 head="effects"
+    [7] addr=0x5abc5fa06ff0 list_size=2 head="uuid"
+    [8] addr=0x5abc5fa07030 list_size=5 head="property"
+    [9] addr=0x5abc5fa07070 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x5abc5fa06ef0 -> (shape round )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa07150 atom="shape"
+    [1] addr=0x5abc5fa07190 atom="round"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x5abc5fa06f70 -> (fields_autoplaced yes )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa072f0 atom="fields_autoplaced"
+    [1] addr=0x5abc5fa07330 atom="yes"
+[UNHANDLED] cleanInner:netclass_flag addr=0x5abc5f9fa6b0 -> (netclass_flag "" (length) (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa08150 atom="netclass_flag"
+    [1] addr=0x5abc5fa08190 atom=""""
+    [2] addr=0x5abc5fa081d0 list_size=2 head="length"
+    [3] addr=0x5abc5fa08210 list_size=2 head="shape"
+    [4] addr=0x5abc5fa08250 list_size=4 head="at"
+    [5] addr=0x5abc5fa08290 list_size=2 head="fields_autoplaced"
+    [6] addr=0x5abc5fa082d0 list_size=3 head="effects"
+    [7] addr=0x5abc5fa08310 list_size=2 head="uuid"
+    [8] addr=0x5abc5fa08350 list_size=5 head="property"
+    [9] addr=0x5abc5fa08390 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x5abc5fa08210 -> (shape round )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa08470 atom="shape"
+    [1] addr=0x5abc5fa084b0 atom="round"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x5abc5fa08290 -> (fields_autoplaced yes )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa08610 atom="fields_autoplaced"
+    [1] addr=0x5abc5fa08650 atom="yes"
+[UNHANDLED] cleanInner:netclass_flag addr=0x5abc5f9fa6f0 -> (netclass_flag "" (length) (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa09470 atom="netclass_flag"
+    [1] addr=0x5abc5fa094b0 atom=""""
+    [2] addr=0x5abc5fa094f0 list_size=2 head="length"
+    [3] addr=0x5abc5fa09530 list_size=2 head="shape"
+    [4] addr=0x5abc5fa09570 list_size=4 head="at"
+    [5] addr=0x5abc5fa095b0 list_size=2 head="fields_autoplaced"
+    [6] addr=0x5abc5fa095f0 list_size=3 head="effects"
+    [7] addr=0x5abc5fa09630 list_size=2 head="uuid"
+    [8] addr=0x5abc5fa09670 list_size=5 head="property"
+    [9] addr=0x5abc5fa096b0 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x5abc5fa09530 -> (shape round )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa09790 atom="shape"
+    [1] addr=0x5abc5fa097d0 atom="round"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x5abc5fa095b0 -> (fields_autoplaced yes )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa09930 atom="fields_autoplaced"
+    [1] addr=0x5abc5fa09970 atom="yes"
+[UNHANDLED] cleanInner:netclass_flag addr=0x5abc5f9fa730 -> (netclass_flag "" (length) (shape) (at) (fields_autoplaced) (effects) (uuid) (property) (property) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa0a790 atom="netclass_flag"
+    [1] addr=0x5abc5fa0a7d0 atom=""""
+    [2] addr=0x5abc5fa0a810 list_size=2 head="length"
+    [3] addr=0x5abc5fa0a850 list_size=2 head="shape"
+    [4] addr=0x5abc5fa0a890 list_size=4 head="at"
+    [5] addr=0x5abc5fa0a8d0 list_size=2 head="fields_autoplaced"
+    [6] addr=0x5abc5fa0a910 list_size=3 head="effects"
+    [7] addr=0x5abc5fa0a950 list_size=2 head="uuid"
+    [8] addr=0x5abc5fa0a990 list_size=5 head="property"
+    [9] addr=0x5abc5fa0a9d0 list_size=5 head="property"
+[UNHANDLED] cleanInner:shape addr=0x5abc5fa0a850 -> (shape round )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa0aab0 atom="shape"
+    [1] addr=0x5abc5fa0aaf0 atom="round"
+[UNHANDLED] cleanInner:fields_autoplaced addr=0x5abc5fa0a8d0 -> (fields_autoplaced yes )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa0ac50 atom="fields_autoplaced"
+    [1] addr=0x5abc5fa0ac90 atom="yes"
+[UNHANDLED] cleanInner:embedded_fonts addr=0x5abc5f9fa8b0 -> (embedded_fonts no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5abc5fa16370 atom="embedded_fonts"
+    [1] addr=0x5abc5fa163b0 atom="no"
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20241004 }
+  <generator> attrs{value:"eeschema" }
+  <generator_version> attrs{value:"8.99" }
+  <paper> attrs{value:"A4" }
+  '...
+[BaselineBoard] appendRawPiece len=10356 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=29
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20241004 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:"eeschema" }'...
+[BaselineBoard] appendRawPiece len=36 head="generator"
+[walkSchematicOnce] child tag='generator_version' children=0
+[appendRawPieceFromClean] piece_head='<generator_version> attrs{value:"8.99" }'...
+[BaselineBoard] appendRawPiece len=40 head="generator_version"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=1
+[handleLibSymbolsCleanNode] called, children=1
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(68.580,41.910,0.000)'...
+[BaselineBoard] appendRawPiece len=37 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(67.310,99.060,0.000)'...
+[BaselineBoard] appendRawPiece len=37 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(67.310,127.000,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(60.960,41.910,0.000)'...
+[BaselineBoard] appendRawPiece len=37 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(59.690,127.000,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(68.580,69.850,0.000)'...
+[BaselineBoard] appendRawPiece len=37 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(60.960,69.850,0.000)'...
+[BaselineBoard] appendRawPiece len=37 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(59.690,99.060,0.000)'...
+[BaselineBoard] appendRawPiece len=37 head="no_connect"
+[walkSchematicOnce] child tag='rule_area' children=1
+[appendRawPieceFromClean] piece_head='<rule_area>
+  <polyline> attrs{fill:(fill <list>) stroke:(stroke <list> <list>) }'...
+[BaselineBoard] appendRawPiece len=81 head="rule_area"
+[walkSchematicOnce] child tag='rule_area' children=1
+[appendRawPieceFromClean] piece_head='<rule_area>
+  <polyline> attrs{fill:(fill <list>) stroke:(stroke <list> <list>) }'...
+[BaselineBoard] appendRawPiece len=81 head="rule_area"
+[walkSchematicOnce] child tag='rule_area' children=1
+[appendRawPieceFromClean] piece_head='<rule_area>
+  <polyline> attrs{fill:(fill <list>) stroke:(stroke <list> <list>) }'...
+[BaselineBoard] appendRawPiece len=81 head="rule_area"
+[walkSchematicOnce] child tag='rule_area' children=1
+[appendRawPieceFromClean] piece_head='<rule_area>
+  <polyline> attrs{fill:(fill <list>) stroke:(stroke <list> <list>) }'...
+[BaselineBoard] appendRawPiece len=81 head="rule_area"
+[walkSchematicOnce] child tag='netclass_flag' children=6
+[appendRawPieceFromClean] piece_head='<netclass_flag> at=(71.120,54.610,0.000) property{"Netclass"=""} attrs{value:"" }
+  <length> attrs{value:2.540000 }
+  <shape> attrs{value:round }
+  <fields_auto'...
+[BaselineBoard] appendRawPiece len=512 head="netclass_flag"
+[walkSchematicOnce] child tag='netclass_flag' children=6
+[appendRawPieceFromClean] piece_head='<netclass_flag> at=(71.120,26.670,0.000) property{"Netclass"=""} attrs{value:"" }
+  <length> attrs{value:2.540000 }
+  <shape> attrs{value:round }
+  <fields_auto'...
+[BaselineBoard] appendRawPiece len=513 head="netclass_flag"
+[walkSchematicOnce] child tag='netclass_flag' children=6
+[appendRawPieceFromClean] piece_head='<netclass_flag> at=(85.090,111.760,0.000) property{"Netclass"=""} attrs{value:"" }
+  <length> attrs{value:2.540000 }
+  <shape> attrs{value:round }
+  <fields_aut'...
+[BaselineBoard] appendRawPiece len=514 head="netclass_flag"
+[walkSchematicOnce] child tag='netclass_flag' children=6
+[appendRawPieceFromClean] piece_head='<netclass_flag> at=(69.850,83.820,0.000) property{"Netclass"=""} attrs{value:"" }
+  <length> attrs{value:2.540000 }
+  <shape> attrs{value:round }
+  <fields_auto'...
+[BaselineBoard] appendRawPiece len=512 head="netclass_flag"
+[walkSchematicOnce] child tag='netclass_flag' children=6
+[appendRawPieceFromClean] piece_head='<netclass_flag> at=(86.360,54.610,0.000) property{"Netclass"=""} attrs{value:"" }
+  <length> attrs{value:2.540000 }
+  <shape> attrs{value:round }
+  <fields_auto'...
+[BaselineBoard] appendRawPiece len=512 head="netclass_flag"
+[walkSchematicOnce] child tag='netclass_flag' children=6
+[appendRawPieceFromClean] piece_head='<netclass_flag> at=(69.850,111.760,0.000) property{"Netclass"=""} attrs{value:"" }
+  <length> attrs{value:2.540000 }
+  <shape> attrs{value:round }
+  <fields_aut'...
+[BaselineBoard] appendRawPiece len=514 head="netclass_flag"
+[walkSchematicOnce] child tag='symbol' children=16
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=16
+[walkSchematicOnce] child tag='symbol' children=16
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=16
+[walkSchematicOnce] child tag='symbol' children=16
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=16
+[walkSchematicOnce] child tag='symbol' children=16
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=16
+[walkSchematicOnce] child tag='sheet_instances' children=1
+[appendRawPieceFromClean] piece_head='<sheet_instances>
+  <path> attrs{page:"1" }'...
+[BaselineBoard] appendRawPiece len=43 head="sheet_instances"
+[walkSchematicOnce] child tag='embedded_fonts' children=0
+[appendRawPieceFromClean] piece_head='<embedded_fonts> attrs{value:no }'...
+[BaselineBoard] appendRawPiece len=33 head="embedded_fonts"
+=== SUMMARY === junctionShapes=0 wireShapes=0 symbols=4 rawPieces=61
+=== DUMP wires: count=0 ===
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

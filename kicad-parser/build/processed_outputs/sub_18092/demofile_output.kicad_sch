@@ -1,0 +1,462 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+Parsed GlobalLabel: (unnamed)
+Parsed GlobalLabel: (unnamed)
+Parsed GlobalLabel: (unnamed)
+
+=== Schematic Metadata ===
+Version:      20231120
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "468691ae-fbea-486a-acab-abdd40c402ea"
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"694a310f-f39f-4032-bf7f-6fee3672a5d3" }
+  <property> at=(53.340,60.198,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP2" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:35.560000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"a86f8f42-2efa-436c-b423-a04b69d9e050" }
+  <property> at=(38.100,60.198,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(35.560,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP1" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:38.100000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c21f5b8c-5d37-4dc9-8550-7b3b9ab0ac8e" }
+  <property> at=(41.910,81.280,0.000) attrs{name:"#PWR0957" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(34.798,81.280,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"#PWR0957" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"694a310f-f39f-4032-bf7f-6fee3672a5d3" }
+  <property> at=(53.340,60.198,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP2" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:35.560000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"a86f8f42-2efa-436c-b423-a04b69d9e050" }
+  <property> at=(38.100,60.198,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(35.560,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP1" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:38.100000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c21f5b8c-5d37-4dc9-8550-7b3b9ab0ac8e" }
+  <property> at=(41.910,81.280,0.000) attrs{name:"#PWR0957" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(34.798,81.280,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"#PWR0957" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"694a310f-f39f-4032-bf7f-6fee3672a5d3" }
+  <property> at=(53.340,60.198,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP2" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:35.560000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"a86f8f42-2efa-436c-b423-a04b69d9e050" }
+  <property> at=(38.100,60.198,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(35.560,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP1" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:38.100000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c21f5b8c-5d37-4dc9-8550-7b3b9ab0ac8e" }
+  <property> at=(41.910,81.280,0.000) attrs{name:"#PWR0957" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(34.798,81.280,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"#PWR0957" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"694a310f-f39f-4032-bf7f-6fee3672a5d3" }
+  <property> at=(53.340,60.198,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP2" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:35.560000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"a86f8f42-2efa-436c-b423-a04b69d9e050" }
+  <property> at=(38.100,60.198,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(35.560,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP1" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:38.100000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c21f5b8c-5d37-4dc9-8550-7b3b9ab0ac8e" }
+  <property> at=(41.910,81.280,0.000) attrs{name:"#PWR0957" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(34.798,81.280,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"#PWR0957" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"694a310f-f39f-4032-bf7f-6fee3672a5d3" }
+  <property> at=(53.340,60.198,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP2" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:35.560000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"a86f8f42-2efa-436c-b423-a04b69d9e050" }
+  <property> at=(38.100,60.198,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(35.560,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP1" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:38.100000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c21f5b8c-5d37-4dc9-8550-7b3b9ab0ac8e" }
+  <property> at=(41.910,81.280,0.000) attrs{name:"#PWR0957" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(34.798,81.280,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"#PWR0957" path_unit:1 value:"UCV6_P_Screen" }
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "0_Power:3V3_MM" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "3V3_MM" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.524000 1.524000)) (hide yes))) (property "Description" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "POWER, PWR" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "3V3_MM_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000)) (stroke (width 0.177800) (type default)) (fill (type none))) (polyline (pts (xy -0.635000 1.270000) (xy 0.635000 1.270000) (xy 0 2.540000) (xy -0.635000 1.270000)) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "3V3_MM_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "3V3_MM" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"694a310f-f39f-4032-bf7f-6fee3672a5d3" }
+  <property> at=(53.340,60.198,0.000) attrs{name:"TP2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(55.880,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP2" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:35.560000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"a86f8f42-2efa-436c-b423-a04b69d9e050" }
+  <property> at=(38.100,60.198,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,62.738,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(35.560,64.770,0.000) attrs{name:"test point" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"TP1" path_unit:1 value:"UCV6_P_Screen" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:38.100000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c21f5b8c-5d37-4dc9-8550-7b3b9ab0ac8e" }
+  <property> at=(41.910,81.280,0.000) attrs{name:"#PWR0957" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(34.798,81.280,90.000) attrs{name:"3V3_MM" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(38.100,81.280,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/617edc57-1dbf-4296-b365-6d76f68a1c0f/a366c673-60aa-4d10-a4e6-ea317da8a798" path_reference:"#PWR0957" path_unit:1 value:"UCV6_P_Screen" }
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,26 @@
+
+=== JUNCTION ===
+✅ Files match perfectly
+
+=== WIRE ===
+❌ Missing (12):
+   - [(85.09, 107.95), (132.08, 107.95)]
+   - [(85.09, 121.92), (132.08, 121.92)]
+   - [(85.09, 139.7), (132.08, 139.7)]
+   - [(85.09, 163.83), (132.08, 163.83)]
+   - [(88.9, 33.02), (88.9, 41.91)]
+   - [(88.9, 41.91), (135.89, 41.91)]
+   - [(88.9, 50.8), (88.9, 53.34)]
+   - [(88.9, 53.34), (135.89, 53.34)]
+   - [(88.9, 58.42), (88.9, 66.04)]
+   - [(88.9, 66.04), (135.89, 66.04)]
+   - [(88.9, 71.12), (88.9, 77.47)]
+   - [(88.9, 77.47), (135.89, 77.47)]
+
+=== SYMBOL ===
+❌ Missing (3):
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)))
+
+Some cleaned files differ from originals ❌

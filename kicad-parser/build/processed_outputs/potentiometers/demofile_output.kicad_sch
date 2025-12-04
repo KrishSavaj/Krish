@@ -1,0 +1,1347 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20230121
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    ea67a019-8241-4451-ad06-3cd3ef842f0e
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R_Potentiometer" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "RV" (at -4.445000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R_Potentiometer" (at -2.540000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "resistor variable" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Potentiometer" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Potentiometer*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_Potentiometer_0_1" (polyline (pts (xy 2.540000 0) (xy 1.524000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.143000 0) (xy 2.286000 0.508000) (xy 2.286000 -0.508000) (xy 1.143000 0)) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start 1.016000 2.540000) (end -1.016000 -2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_Potentiometer_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 1.270000) (name "2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VDC" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VDC" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "dc(1)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, DC" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VDC_0_0" (polyline (pts (xy -1.270000 0.254000) (xy 1.270000 0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.762000 -0.254000) (xy -1.270000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.254000 -0.254000) (xy -0.254000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -0.254000) (xy 0.762000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VDC_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VDC_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:714a5327-723b-4f39-a927-3d5170d8f38b }
+  <property> at=(152.400,69.850,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0102" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:133.350000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7d86509c-cffd-4987-9581-6c934a4e33c5 }
+  <property> at=(149.860,132.715,0.000) attrs{name:"RV3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,135.255,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,133.350,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,137.160,0.000) attrs{name:"pos=0.1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV3" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:858d0f36-c16f-4513-940a-461fc88ba009 }
+  <property> at=(149.860,56.515,0.000) attrs{name:"RV1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,59.055,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV1" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:139.700000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:97c6566f-c80b-4dd7-b07e-c44615310263 }
+  <property> at=(152.400,146.050,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,144.780,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0103" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:b53e13df-0a0c-4917-99d9-00f4258e8f24 }
+  <property> at=(118.110,55.245,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(118.110,57.785,0.000) attrs{name:"1" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(114.300,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"V1" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/819ca68d-3774-4cc3-bc37-7f904ecae47c" path_reference:"V1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d310f44b-5ee6-401e-97cc-5e407654bb6b }
+  <property> at=(114.300,69.850,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0104" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:95.250000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:e2f6f1d9-7fa5-40e4-8062-077093991555 }
+  <property> at=(149.860,94.615,0.000) attrs{name:"RV2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,97.155,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,95.250,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"pos=0.3" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV2" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/c77911d6-6148-44b5-abe9-6b8990dcab43" path_reference:"RV2" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:101.600000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ee756bad-e6db-46d4-99bc-20add3a7dccf }
+  <property> at=(152.400,107.950,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,106.680,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0101" path_unit:1 value:"potentiometers" }
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (junction (at 127.000000 50.799999))
+  (junction (at 127.000000 88.900002))
+  (junction (at 127.000000 50.799999) (uuid 5a7710ba-4170-492d-bc32-90805ba7c000) (color 0 0 0 0))
+  (junction (at 127.000000 88.900002) (uuid f58fe8e4-5110-45ec-ad08-4f65416c307e) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R_Potentiometer" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "RV" (at -4.445000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R_Potentiometer" (at -2.540000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "resistor variable" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Potentiometer" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Potentiometer*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_Potentiometer_0_1" (polyline (pts (xy 2.540000 0) (xy 1.524000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.143000 0) (xy 2.286000 0.508000) (xy 2.286000 -0.508000) (xy 1.143000 0)) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start 1.016000 2.540000) (end -1.016000 -2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_Potentiometer_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 1.270000) (name "2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VDC" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VDC" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "dc(1)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, DC" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VDC_0_0" (polyline (pts (xy -1.270000 0.254000) (xy 1.270000 0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.762000 -0.254000) (xy -1.270000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.254000 -0.254000) (xy -0.254000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -0.254000) (xy 0.762000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VDC_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VDC_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:714a5327-723b-4f39-a927-3d5170d8f38b }
+  <property> at=(152.400,69.850,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0102" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:133.350000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7d86509c-cffd-4987-9581-6c934a4e33c5 }
+  <property> at=(149.860,132.715,0.000) attrs{name:"RV3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,135.255,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,133.350,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,137.160,0.000) attrs{name:"pos=0.1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV3" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:858d0f36-c16f-4513-940a-461fc88ba009 }
+  <property> at=(149.860,56.515,0.000) attrs{name:"RV1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,59.055,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV1" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:139.700000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:97c6566f-c80b-4dd7-b07e-c44615310263 }
+  <property> at=(152.400,146.050,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,144.780,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0103" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:b53e13df-0a0c-4917-99d9-00f4258e8f24 }
+  <property> at=(118.110,55.245,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(118.110,57.785,0.000) attrs{name:"1" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(114.300,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"V1" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/819ca68d-3774-4cc3-bc37-7f904ecae47c" path_reference:"V1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d310f44b-5ee6-401e-97cc-5e407654bb6b }
+  <property> at=(114.300,69.850,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0104" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:95.250000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:e2f6f1d9-7fa5-40e4-8062-077093991555 }
+  <property> at=(149.860,94.615,0.000) attrs{name:"RV2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,97.155,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,95.250,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"pos=0.3" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV2" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/c77911d6-6148-44b5-abe9-6b8990dcab43" path_reference:"RV2" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:101.600000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ee756bad-e6db-46d4-99bc-20add3a7dccf }
+  <property> at=(152.400,107.950,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,106.680,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0101" path_unit:1 value:"potentiometers" }
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (junction (at 127.000000 50.799999))
+  (junction (at 127.000000 88.900002))
+  (junction (at 127.000000 50.799999) (uuid 5a7710ba-4170-492d-bc32-90805ba7c000) (color 0 0 0 0))
+  (junction (at 127.000000 88.900002) (uuid f58fe8e4-5110-45ec-ad08-4f65416c307e) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R_Potentiometer" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "RV" (at -4.445000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R_Potentiometer" (at -2.540000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "resistor variable" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Potentiometer" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Potentiometer*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_Potentiometer_0_1" (polyline (pts (xy 2.540000 0) (xy 1.524000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.143000 0) (xy 2.286000 0.508000) (xy 2.286000 -0.508000) (xy 1.143000 0)) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start 1.016000 2.540000) (end -1.016000 -2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_Potentiometer_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 1.270000) (name "2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VDC" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VDC" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "dc(1)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, DC" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VDC_0_0" (polyline (pts (xy -1.270000 0.254000) (xy 1.270000 0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.762000 -0.254000) (xy -1.270000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.254000 -0.254000) (xy -0.254000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -0.254000) (xy 0.762000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VDC_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VDC_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:714a5327-723b-4f39-a927-3d5170d8f38b }
+  <property> at=(152.400,69.850,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0102" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:133.350000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7d86509c-cffd-4987-9581-6c934a4e33c5 }
+  <property> at=(149.860,132.715,0.000) attrs{name:"RV3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,135.255,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,133.350,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,137.160,0.000) attrs{name:"pos=0.1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV3" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:858d0f36-c16f-4513-940a-461fc88ba009 }
+  <property> at=(149.860,56.515,0.000) attrs{name:"RV1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,59.055,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV1" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:139.700000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:97c6566f-c80b-4dd7-b07e-c44615310263 }
+  <property> at=(152.400,146.050,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,144.780,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0103" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:b53e13df-0a0c-4917-99d9-00f4258e8f24 }
+  <property> at=(118.110,55.245,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(118.110,57.785,0.000) attrs{name:"1" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(114.300,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"V1" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/819ca68d-3774-4cc3-bc37-7f904ecae47c" path_reference:"V1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d310f44b-5ee6-401e-97cc-5e407654bb6b }
+  <property> at=(114.300,69.850,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0104" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:95.250000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:e2f6f1d9-7fa5-40e4-8062-077093991555 }
+  <property> at=(149.860,94.615,0.000) attrs{name:"RV2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,97.155,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,95.250,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"pos=0.3" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV2" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/c77911d6-6148-44b5-abe9-6b8990dcab43" path_reference:"RV2" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:101.600000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ee756bad-e6db-46d4-99bc-20add3a7dccf }
+  <property> at=(152.400,107.950,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,106.680,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0101" path_unit:1 value:"potentiometers" }
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (junction (at 127.000000 50.799999))
+  (junction (at 127.000000 88.900002))
+  (junction (at 127.000000 50.799999) (uuid 5a7710ba-4170-492d-bc32-90805ba7c000) (color 0 0 0 0))
+  (junction (at 127.000000 88.900002) (uuid f58fe8e4-5110-45ec-ad08-4f65416c307e) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R_Potentiometer" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "RV" (at -4.445000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R_Potentiometer" (at -2.540000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "resistor variable" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Potentiometer" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Potentiometer*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_Potentiometer_0_1" (polyline (pts (xy 2.540000 0) (xy 1.524000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.143000 0) (xy 2.286000 0.508000) (xy 2.286000 -0.508000) (xy 1.143000 0)) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start 1.016000 2.540000) (end -1.016000 -2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_Potentiometer_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 1.270000) (name "2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VDC" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VDC" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "dc(1)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, DC" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VDC_0_0" (polyline (pts (xy -1.270000 0.254000) (xy 1.270000 0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.762000 -0.254000) (xy -1.270000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.254000 -0.254000) (xy -0.254000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -0.254000) (xy 0.762000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VDC_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VDC_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:714a5327-723b-4f39-a927-3d5170d8f38b }
+  <property> at=(152.400,69.850,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0102" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:133.350000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7d86509c-cffd-4987-9581-6c934a4e33c5 }
+  <property> at=(149.860,132.715,0.000) attrs{name:"RV3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,135.255,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,133.350,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,137.160,0.000) attrs{name:"pos=0.1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV3" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:858d0f36-c16f-4513-940a-461fc88ba009 }
+  <property> at=(149.860,56.515,0.000) attrs{name:"RV1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,59.055,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV1" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:139.700000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:97c6566f-c80b-4dd7-b07e-c44615310263 }
+  <property> at=(152.400,146.050,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,144.780,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0103" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:b53e13df-0a0c-4917-99d9-00f4258e8f24 }
+  <property> at=(118.110,55.245,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(118.110,57.785,0.000) attrs{name:"1" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(114.300,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"V1" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/819ca68d-3774-4cc3-bc37-7f904ecae47c" path_reference:"V1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d310f44b-5ee6-401e-97cc-5e407654bb6b }
+  <property> at=(114.300,69.850,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0104" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:95.250000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:e2f6f1d9-7fa5-40e4-8062-077093991555 }
+  <property> at=(149.860,94.615,0.000) attrs{name:"RV2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,97.155,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,95.250,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"pos=0.3" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV2" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/c77911d6-6148-44b5-abe9-6b8990dcab43" path_reference:"RV2" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:101.600000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ee756bad-e6db-46d4-99bc-20add3a7dccf }
+  <property> at=(152.400,107.950,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,106.680,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0101" path_unit:1 value:"potentiometers" }
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (junction (at 127.000000 50.799999))
+  (junction (at 127.000000 88.900002))
+  (junction (at 127.000000 50.799999) (uuid 5a7710ba-4170-492d-bc32-90805ba7c000) (color 0 0 0 0))
+  (junction (at 127.000000 88.900002) (uuid f58fe8e4-5110-45ec-ad08-4f65416c307e) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R_Potentiometer" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "RV" (at -4.445000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R_Potentiometer" (at -2.540000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "resistor variable" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Potentiometer" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Potentiometer*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_Potentiometer_0_1" (polyline (pts (xy 2.540000 0) (xy 1.524000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.143000 0) (xy 2.286000 0.508000) (xy 2.286000 -0.508000) (xy 1.143000 0)) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start 1.016000 2.540000) (end -1.016000 -2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_Potentiometer_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 1.270000) (name "2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VDC" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VDC" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "dc(1)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, DC" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VDC_0_0" (polyline (pts (xy -1.270000 0.254000) (xy 1.270000 0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.762000 -0.254000) (xy -1.270000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.254000 -0.254000) (xy -0.254000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -0.254000) (xy 0.762000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VDC_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VDC_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:714a5327-723b-4f39-a927-3d5170d8f38b }
+  <property> at=(152.400,69.850,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0102" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:133.350000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7d86509c-cffd-4987-9581-6c934a4e33c5 }
+  <property> at=(149.860,132.715,0.000) attrs{name:"RV3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,135.255,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,133.350,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,137.160,0.000) attrs{name:"pos=0.1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV3" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:858d0f36-c16f-4513-940a-461fc88ba009 }
+  <property> at=(149.860,56.515,0.000) attrs{name:"RV1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,59.055,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV1" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:139.700000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:97c6566f-c80b-4dd7-b07e-c44615310263 }
+  <property> at=(152.400,146.050,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,144.780,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0103" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:b53e13df-0a0c-4917-99d9-00f4258e8f24 }
+  <property> at=(118.110,55.245,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(118.110,57.785,0.000) attrs{name:"1" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(114.300,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"V1" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/819ca68d-3774-4cc3-bc37-7f904ecae47c" path_reference:"V1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d310f44b-5ee6-401e-97cc-5e407654bb6b }
+  <property> at=(114.300,69.850,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0104" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:95.250000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:e2f6f1d9-7fa5-40e4-8062-077093991555 }
+  <property> at=(149.860,94.615,0.000) attrs{name:"RV2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,97.155,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,95.250,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"pos=0.3" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV2" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/c77911d6-6148-44b5-abe9-6b8990dcab43" path_reference:"RV2" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:101.600000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ee756bad-e6db-46d4-99bc-20add3a7dccf }
+  <property> at=(152.400,107.950,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,106.680,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0101" path_unit:1 value:"potentiometers" }
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (junction (at 127.000000 50.799999))
+  (junction (at 127.000000 88.900002))
+  (junction (at 127.000000 50.799999) (uuid 5a7710ba-4170-492d-bc32-90805ba7c000) (color 0 0 0 0))
+  (junction (at 127.000000 88.900002) (uuid f58fe8e4-5110-45ec-ad08-4f65416c307e) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R_Potentiometer" (pin_names (offset 1.016000) hide) (in_bom yes) (on_board yes) (property "Reference" "RV" (at -4.445000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R_Potentiometer" (at -2.540000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "resistor variable" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Potentiometer" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Potentiometer*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_Potentiometer_0_1" (polyline (pts (xy 2.540000 0) (xy 1.524000 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.143000 0) (xy 2.286000 0.508000) (xy 2.286000 -0.508000) (xy 1.143000 0)) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start 1.016000 2.540000) (end -1.016000 -2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_Potentiometer_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 3.810000 0 180) (length 1.270000) (name "2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:VDC" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VDC" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "Spice_Model" "dc(1)" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, DC" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VDC_0_0" (polyline (pts (xy -1.270000 0.254000) (xy 1.270000 0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.762000 -0.254000) (xy -1.270000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.254000 -0.254000) (xy -0.254000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.270000 -0.254000) (xy 0.762000 -0.254000)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VDC_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VDC_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:714a5327-723b-4f39-a927-3d5170d8f38b }
+  <property> at=(152.400,69.850,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0102" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:133.350000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:7d86509c-cffd-4987-9581-6c934a4e33c5 }
+  <property> at=(149.860,132.715,0.000) attrs{name:"RV3" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,135.255,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,133.350,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,133.350,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,137.160,0.000) attrs{name:"pos=0.1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV3" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:858d0f36-c16f-4513-940a-461fc88ba009 }
+  <property> at=(149.860,56.515,0.000) attrs{name:"RV1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,59.055,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,57.150,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV1" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:139.700000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:97c6566f-c80b-4dd7-b07e-c44615310263 }
+  <property> at=(152.400,146.050,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,144.780,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,139.700,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0103" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:b53e13df-0a0c-4917-99d9-00f4258e8f24 }
+  <property> at=(118.110,55.245,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(118.110,57.785,0.000) attrs{name:"1" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(114.300,57.150,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,57.150,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"V1" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/819ca68d-3774-4cc3-bc37-7f904ecae47c" path_reference:"V1" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:63.500000 value:114.300000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d310f44b-5ee6-401e-97cc-5e407654bb6b }
+  <property> at=(114.300,69.850,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(114.300,63.500,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0104" path_unit:1 value:"potentiometers" }
+  <symbol>
+  <at> attrs{misc:0 name:95.250000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:e2f6f1d9-7fa5-40e4-8062-077093991555 }
+  <property> at=(149.860,94.615,0.000) attrs{name:"RV2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(149.860,97.155,0.000) attrs{name:"1k" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(152.400,95.250,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"R" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,95.250,0.000) attrs{name:"POT" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"pos=0.3" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"RV2" path_unit:1 value:"potentiometers" }
+  <project> attrs{path:"/c77911d6-6148-44b5-abe9-6b8990dcab43" path_reference:"RV2" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:0 name:101.600000 value:152.400000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:ee756bad-e6db-46d4-99bc-20add3a7dccf }
+  <property> at=(152.400,107.950,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,106.680,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,101.600,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/1982c87f-95a1-4a40-9669-f13cd3c28543" path_reference:"#PWR0101" path_unit:1 value:"potentiometers" }
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (wire (start 114.3 62.23) (end 114.3 63.5) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 127 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 88.9) (end 152.4 91.44) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 114.3 52.07) (angle 0) (thickness 0.25))
+  (wire (start 127 127) (end 152.4 127) (angle 0) (thickness 0.25))
+  (wire (start 152.4 127) (end 152.4 129.54) (angle 0) (thickness 0.25))
+  (wire (start 152.4 139.7) (end 152.4 137.16) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 152.4 50.8) (angle 0) (thickness 0.25))
+  (wire (start 152.4 101.6) (end 152.4 99.06) (angle 0) (thickness 0.25))
+  (wire (start 127 50.8) (end 127 88.9) (angle 0) (thickness 0.25))
+  (wire (start 114.3 50.8) (end 127 50.8) (angle 0) (thickness 0.25))
+  (wire (start 127 88.9) (end 152.4 88.9) (angle 0) (thickness 0.25))
+  (wire (start 152.4 63.5) (end 152.4 60.96) (angle 0) (thickness 0.25))
+  (wire (start 156.21 95.25) (end 165.1 95.25) (angle 0) (thickness 0.25))
+  (wire (start 152.4 50.8) (end 152.4 53.34) (angle 0) (thickness 0.25))
+  (wire (start 156.21 133.35) (end 165.1 133.35) (angle 0) (thickness 0.25))
+  (wire (start 156.21 57.15) (end 165.1 57.15) (angle 0) (thickness 0.25))
+  (junction (at 127.000000 50.799999))
+  (junction (at 127.000000 88.900002))
+  (junction (at 127.000000 50.799999) (uuid 5a7710ba-4170-492d-bc32-90805ba7c000) (color 0 0 0 0))
+  (junction (at 127.000000 88.900002) (uuid f58fe8e4-5110-45ec-ad08-4f65416c307e) (color 0 0 0 0))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

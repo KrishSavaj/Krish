@@ -1,0 +1,84 @@
+
+=== JUNCTION ===
+✅ Files match perfectly
+
+=== WIRE ===
+❌ Missing (60):
+   - [(220.98, 15.24), (213.36, 15.24)]
+   - [(220.98, 17.78), (213.36, 17.78)]
+   - [(220.98, 20.32), (213.36, 20.32)]
+   - [(220.98, 22.86), (213.36, 22.86)]
+   - [(220.98, 25.4), (213.36, 25.4)]
+   - [(220.98, 27.94), (213.36, 27.94)]
+   - [(266.7, 101.6), (259.08, 101.6)]
+   - [(266.7, 104.14), (259.08, 104.14)]
+   - [(266.7, 106.68), (259.08, 106.68)]
+   - [(266.7, 109.22), (259.08, 109.22)]
+   - [(266.7, 111.76), (259.08, 111.76)]
+   - [(266.7, 114.3), (259.08, 114.3)]
+   - [(266.7, 116.84), (259.08, 116.84)]
+   - [(266.7, 119.38), (259.08, 119.38)]
+   - [(266.7, 121.92), (259.08, 121.92)]
+   - [(266.7, 124.46), (259.08, 124.46)]
+   - [(266.7, 127.0), (259.08, 127.0)]
+   - [(266.7, 129.54), (259.08, 129.54)]
+   - [(266.7, 132.08), (259.08, 132.08)]
+   - [(266.7, 134.62), (259.08, 134.62)]
+   - [(266.7, 137.16), (259.08, 137.16)]
+   - [(266.7, 139.7), (259.08, 139.7)]
+   - [(266.7, 142.24), (259.08, 142.24)]
+   - [(266.7, 144.78), (259.08, 144.78)]
+   - [(266.7, 147.32), (259.08, 147.32)]
+   - [(266.7, 149.86), (259.08, 149.86)]
+   - [(266.7, 15.24), (264.16, 15.24)]
+   - [(266.7, 152.4), (259.08, 152.4)]
+   - [(266.7, 154.94), (259.08, 154.94)]
+   - [(266.7, 157.48), (259.08, 157.48)]
+   - [(266.7, 20.32), (259.08, 20.32)]
+   - [(266.7, 22.86), (259.08, 22.86)]
+   - [(266.7, 25.4), (259.08, 25.4)]
+   - [(266.7, 27.94), (259.08, 27.94)]
+   - [(266.7, 30.48), (259.08, 30.48)]
+   - [(266.7, 33.02), (259.08, 33.02)]
+   - [(266.7, 35.56), (259.08, 35.56)]
+   - [(266.7, 38.1), (259.08, 38.1)]
+   - [(266.7, 40.64), (259.08, 40.64)]
+   - [(266.7, 43.18), (259.08, 43.18)]
+   - [(266.7, 45.72), (259.08, 45.72)]
+   - [(266.7, 48.26), (259.08, 48.26)]
+   - [(266.7, 50.8), (259.08, 50.8)]
+   - [(266.7, 53.34), (259.08, 53.34)]
+   - [(266.7, 55.88), (259.08, 55.88)]
+   - [(266.7, 58.42), (259.08, 58.42)]
+   - [(266.7, 60.96), (259.08, 60.96)]
+   - [(266.7, 63.5), (259.08, 63.5)]
+   - [(266.7, 66.04), (259.08, 66.04)]
+   - [(266.7, 68.58), (259.08, 68.58)]
+   - [(266.7, 71.12), (259.08, 71.12)]
+   - [(266.7, 73.66), (259.08, 73.66)]
+   - [(266.7, 76.2), (259.08, 76.2)]
+   - [(266.7, 78.74), (259.08, 78.74)]
+   - [(266.7, 81.28), (259.08, 81.28)]
+   - [(266.7, 83.82), (259.08, 83.82)]
+   - [(266.7, 88.9), (259.08, 88.9)]
+   - [(266.7, 93.98), (259.08, 93.98)]
+   - [(266.7, 96.52), (259.08, 96.52)]
+   - [(266.7, 99.06), (259.08, 99.06)]
+
+=== SYMBOL ===
+❌ Missing (13):
+   - (symbol "Connector_Generic:Conn_01x06" (pin_names (offset 1.02) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 7.62 0) (effects (font (size 1.27 1.27)))) (property "Value" "Conn_01x06" (at 0 -10.16 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "Conn_01x06_1_1" (rectangle (start -1.27 -7.49) (end 0 -7.75) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -4.95) (end 0 -5.21) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -2.41) (end 0 -2.67) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 0.13) (end 0 -0.13) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 2.67) (end 0 2.41) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 5.21) (end 0 4.95) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 6.35) (end 1.27 -8.89) (stroke (width 0.25) (type default)) (fill (type background))) (pin passive line (at -5.08 5.08 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 2.54 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -5.08 0) (length 3.81) (name "Pin_5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -7.62 0) (length 3.81) (name "Pin_6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Connector_Generic:Conn_01x28" (pin_names (offset 1.02) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 35.56 0) (effects (font (size 1.27 1.27)))) (property "Value" "Conn_01x28" (at 0 -38.1 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Generic connector, single row, 01x28, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "Conn_01x28_1_1" (rectangle (start -1.27 -35.43) (end 0 -35.69) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -32.89) (end 0 -33.15) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -30.35) (end 0 -30.61) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -27.81) (end 0 -28.07) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -25.27) (end 0 -25.53) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -22.73) (end 0 -22.99) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -20.19) (end 0 -20.45) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -17.65) (end 0 -17.91) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -15.11) (end 0 -15.37) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -12.57) (end 0 -12.83) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -10.03) (end 0 -10.29) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -7.49) (end 0 -7.75) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -4.95) (end 0 -5.21) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -2.41) (end 0 -2.67) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 0.13) (end 0 -0.13) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 2.67) (end 0 2.41) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 5.21) (end 0 4.95) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 7.75) (end 0 7.49) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 10.29) (end 0 10.03) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 12.83) (end 0 12.57) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 15.37) (end 0 15.11) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 17.91) (end 0 17.65) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 20.45) (end 0 20.19) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 22.99) (end 0 22.73) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 25.53) (end 0 25.27) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 28.07) (end 0 27.81) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 30.61) (end 0 30.35) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 33.15) (end 0 32.89) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 34.29) (end 1.27 -36.83) (stroke (width 0.25) (type default)) (fill (type background))) (pin passive line (at -5.08 33.02 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 10.16 0) (length 3.81) (name "Pin_10" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 7.62 0) (length 3.81) (name "Pin_11" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 5.08 0) (length 3.81) (name "Pin_12" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 2.54 0) (length 3.81) (name "Pin_13" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_14" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_15" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -5.08 0) (length 3.81) (name "Pin_16" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -7.62 0) (length 3.81) (name "Pin_17" (effects (font (size 1.27 1.27)))) (number "17" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -10.16 0) (length 3.81) (name "Pin_18" (effects (font (size 1.27 1.27)))) (number "18" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -12.7 0) (length 3.81) (name "Pin_19" (effects (font (size 1.27 1.27)))) (number "19" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 30.48 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -15.24 0) (length 3.81) (name "Pin_20" (effects (font (size 1.27 1.27)))) (number "20" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -17.78 0) (length 3.81) (name "Pin_21" (effects (font (size 1.27 1.27)))) (number "21" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -20.32 0) (length 3.81) (name "Pin_22" (effects (font (size 1.27 1.27)))) (number "22" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -22.86 0) (length 3.81) (name "Pin_23" (effects (font (size 1.27 1.27)))) (number "23" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -25.4 0) (length 3.81) (name "Pin_24" (effects (font (size 1.27 1.27)))) (number "24" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -27.94 0) (length 3.81) (name "Pin_25" (effects (font (size 1.27 1.27)))) (number "25" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -30.48 0) (length 3.81) (name "Pin_26" (effects (font (size 1.27 1.27)))) (number "26" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -33.02 0) (length 3.81) (name "Pin_27" (effects (font (size 1.27 1.27)))) (number "27" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -35.56 0) (length 3.81) (name "Pin_28" (effects (font (size 1.27 1.27)))) (number "28" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 27.94 0) (length 3.81) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 25.4 0) (length 3.81) (name "Pin_4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 22.86 0) (length 3.81) (name "Pin_5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 20.32 0) (length 3.81) (name "Pin_6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 17.78 0) (length 3.81) (name "Pin_7" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 15.24 0) (length 3.81) (name "Pin_8" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 12.7 0) (length 3.81) (name "Pin_9" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3.3V" (at 0 3.56 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "+3.3V_0_1" (polyline (pts (xy -0.76 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0.76 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:+5V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+5V" (at 0 3.56 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "+5V_0_1" (polyline (pts (xy -0.76 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0.76 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+5V" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

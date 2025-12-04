@@ -1,0 +1,21 @@
+
+=== JUNCTION ===
+✅ Files match perfectly
+
+=== WIRE ===
+❌ Missing (4):
+   - [(165.1, 111.76), (190.5, 111.76)]
+   - [(165.1, 127.0), (190.5, 127.0)]
+   - [(190.5, 111.76), (190.5, 115.57)]
+   - [(190.5, 127.0), (190.5, 123.19)]
+
+=== SYMBOL ===
+❌ Missing (6):
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at -1.78 0 90) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "pspice:VSOURCE" (pin_names (offset 1.02)) (in_bom yes) (on_board yes) (property "Reference" "V" (id 0) (at -6.35 7.62 0) (effects (font (size 1.27 1.27)))) (property "Value" "VSOURCE" (id 1) (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "simulation" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Voltage source symbol for simulation only" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "VSOURCE_0_1" (polyline (pts (xy -6.35 -6.35) (xy -6.35 3.81)) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy -7.62 3.81) (xy -6.35 6.35) (xy -5.08 3.81)) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 0 0) (radius 5.08) (stroke (width 0) (type default)) (fill (type none))) (text "V" (at -8.13 -0.25 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VSOURCE_1_1" (pin input line (at 0 7.62 270) (length 2.54) (name "E1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at 0 -7.62 90) (length 2.54) (name "E2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

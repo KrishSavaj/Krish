@@ -1,0 +1,15 @@
+(kicad_symbol_lib (version 20211014) (generator "kicad_symbol_editor")
+  (symbol "C" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
+    (property "Reference" "C" (at 0 2.5 0) (layer "F.SilkS") (effects (font (size 1 1)) (justify top)))
+    (property "Value" "Capacitor" (at 0 -2.5 0) (layer "F.Fab") (effects (font (size 1 1))))
+    (property "Footprint" "" (at 0 0 0) (layer "F.Fab") (effects (font (size 1 1))))
+    (property "Datasheet" "" (at 0 0 0) (layer "F.Fab") (effects (font (size 1 1))))
+    
+    (pin passive line (at -2.54 0 0) (length 1.27) (name "1") (number "1"))
+    (pin passive line (at 2.54 0 0) (length 1.27) (name "2") (number "2"))
+    
+    (line (start -1.27 0) (end 1.27 0) (width 0.2))
+    (line (start -1.27 1.27) (end -1.27 -1.27) (width 0.2))
+    (line (start 1.27 1.27) (end 1.27 -1.27) (width 0.2))
+  )
+)

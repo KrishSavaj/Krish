@@ -1,0 +1,561 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20230121
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    f145de0f-02ed-4631-85ea-7126ccf81633
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:0" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#GND" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "0" (at 0 -1.778000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "0V reference potential for simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "0_0_1" (polyline (pts (xy -1.270000 0) (xy 0 -1.270000) (xy 1.270000 0) (xy -1.270000 0)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) hide (name "0" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))))) (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VSIN" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Params" "dc=0 ampl=1 f=1k ac=1" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Sim.Type" "SIN" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Device" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "ki_keywords" "simulation ac vac" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.635000 0.632300) (end -1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.635000 -0.632300) (end 1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VSIN_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8d070f0b-31df-409a-8ac3-a30f48c45f47 }
+  <property> at=(92.710,79.339,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(92.710,81.879,0.000) attrs{name:"VSIN" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"1=+ 2=-" value:"Sim.Pins" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(92.710,84.419,0.000) attrs{name:"dc=0 ampl={AMPLITUDE} f=50 td=0 theta=0 ac=1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"SIN" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) token_3:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"V1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:73.660000 }
+  <mirror> attrs{value:x }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:bc97be6a-b1c8-49cd-b524-3bc3b0e7eaba }
+  <property> at=(71.120,80.645,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.120,83.185,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.882,81.280,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(73.660,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"R1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:db9187b8-77aa-4b3a-9e92-959a7418c546 }
+  <property> at=(88.900,93.980,0.000) attrs{name:"#GND01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,93.980,0.000) attrs{name:"0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(88.900,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,91.440,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"#GND01" path_unit:1 value:"Spice_value_substitution_regression" }
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (junction (at 88.900002 88.900002))
+  (junction (at 88.900002 88.900002) (uuid 2934c2df-d750-4949-9bb5-2d5234f61386) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:0" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#GND" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "0" (at 0 -1.778000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "0V reference potential for simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "0_0_1" (polyline (pts (xy -1.270000 0) (xy 0 -1.270000) (xy 1.270000 0) (xy -1.270000 0)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) hide (name "0" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))))) (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VSIN" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Params" "dc=0 ampl=1 f=1k ac=1" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Sim.Type" "SIN" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Device" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "ki_keywords" "simulation ac vac" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.635000 0.632300) (end -1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.635000 -0.632300) (end 1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VSIN_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8d070f0b-31df-409a-8ac3-a30f48c45f47 }
+  <property> at=(92.710,79.339,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(92.710,81.879,0.000) attrs{name:"VSIN" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"1=+ 2=-" value:"Sim.Pins" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(92.710,84.419,0.000) attrs{name:"dc=0 ampl={AMPLITUDE} f=50 td=0 theta=0 ac=1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"SIN" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) token_3:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"V1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:73.660000 }
+  <mirror> attrs{value:x }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:bc97be6a-b1c8-49cd-b524-3bc3b0e7eaba }
+  <property> at=(71.120,80.645,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.120,83.185,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.882,81.280,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(73.660,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"R1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:db9187b8-77aa-4b3a-9e92-959a7418c546 }
+  <property> at=(88.900,93.980,0.000) attrs{name:"#GND01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,93.980,0.000) attrs{name:"0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(88.900,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,91.440,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"#GND01" path_unit:1 value:"Spice_value_substitution_regression" }
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (junction (at 88.900002 88.900002))
+  (junction (at 88.900002 88.900002) (uuid 2934c2df-d750-4949-9bb5-2d5234f61386) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:0" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#GND" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "0" (at 0 -1.778000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "0V reference potential for simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "0_0_1" (polyline (pts (xy -1.270000 0) (xy 0 -1.270000) (xy 1.270000 0) (xy -1.270000 0)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) hide (name "0" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))))) (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VSIN" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Params" "dc=0 ampl=1 f=1k ac=1" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Sim.Type" "SIN" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Device" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "ki_keywords" "simulation ac vac" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.635000 0.632300) (end -1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.635000 -0.632300) (end 1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VSIN_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8d070f0b-31df-409a-8ac3-a30f48c45f47 }
+  <property> at=(92.710,79.339,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(92.710,81.879,0.000) attrs{name:"VSIN" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"1=+ 2=-" value:"Sim.Pins" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(92.710,84.419,0.000) attrs{name:"dc=0 ampl={AMPLITUDE} f=50 td=0 theta=0 ac=1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"SIN" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) token_3:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"V1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:73.660000 }
+  <mirror> attrs{value:x }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:bc97be6a-b1c8-49cd-b524-3bc3b0e7eaba }
+  <property> at=(71.120,80.645,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.120,83.185,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.882,81.280,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(73.660,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"R1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:db9187b8-77aa-4b3a-9e92-959a7418c546 }
+  <property> at=(88.900,93.980,0.000) attrs{name:"#GND01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,93.980,0.000) attrs{name:"0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(88.900,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,91.440,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"#GND01" path_unit:1 value:"Spice_value_substitution_regression" }
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (junction (at 88.900002 88.900002))
+  (junction (at 88.900002 88.900002) (uuid 2934c2df-d750-4949-9bb5-2d5234f61386) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:0" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#GND" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "0" (at 0 -1.778000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "0V reference potential for simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "0_0_1" (polyline (pts (xy -1.270000 0) (xy 0 -1.270000) (xy 1.270000 0) (xy -1.270000 0)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) hide (name "0" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))))) (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VSIN" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Params" "dc=0 ampl=1 f=1k ac=1" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Sim.Type" "SIN" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Device" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "ki_keywords" "simulation ac vac" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.635000 0.632300) (end -1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.635000 -0.632300) (end 1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VSIN_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8d070f0b-31df-409a-8ac3-a30f48c45f47 }
+  <property> at=(92.710,79.339,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(92.710,81.879,0.000) attrs{name:"VSIN" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"1=+ 2=-" value:"Sim.Pins" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(92.710,84.419,0.000) attrs{name:"dc=0 ampl={AMPLITUDE} f=50 td=0 theta=0 ac=1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"SIN" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) token_3:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"V1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:73.660000 }
+  <mirror> attrs{value:x }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:bc97be6a-b1c8-49cd-b524-3bc3b0e7eaba }
+  <property> at=(71.120,80.645,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.120,83.185,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.882,81.280,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(73.660,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"R1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:db9187b8-77aa-4b3a-9e92-959a7418c546 }
+  <property> at=(88.900,93.980,0.000) attrs{name:"#GND01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,93.980,0.000) attrs{name:"0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(88.900,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,91.440,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"#GND01" path_unit:1 value:"Spice_value_substitution_regression" }
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (junction (at 88.900002 88.900002))
+  (junction (at 88.900002 88.900002) (uuid 2934c2df-d750-4949-9bb5-2d5234f61386) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:0" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#GND" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "0" (at 0 -1.778000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "0V reference potential for simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "0_0_1" (polyline (pts (xy -1.270000 0) (xy 0 -1.270000) (xy 1.270000 0) (xy -1.270000 0)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) hide (name "0" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))))) (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VSIN" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Params" "dc=0 ampl=1 f=1k ac=1" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Sim.Type" "SIN" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Device" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "ki_keywords" "simulation ac vac" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.635000 0.632300) (end -1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.635000 -0.632300) (end 1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VSIN_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8d070f0b-31df-409a-8ac3-a30f48c45f47 }
+  <property> at=(92.710,79.339,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(92.710,81.879,0.000) attrs{name:"VSIN" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"1=+ 2=-" value:"Sim.Pins" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(92.710,84.419,0.000) attrs{name:"dc=0 ampl={AMPLITUDE} f=50 td=0 theta=0 ac=1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"SIN" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) token_3:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"V1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:73.660000 }
+  <mirror> attrs{value:x }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:bc97be6a-b1c8-49cd-b524-3bc3b0e7eaba }
+  <property> at=(71.120,80.645,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.120,83.185,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.882,81.280,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(73.660,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"R1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:db9187b8-77aa-4b3a-9e92-959a7418c546 }
+  <property> at=(88.900,93.980,0.000) attrs{name:"#GND01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,93.980,0.000) attrs{name:"0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(88.900,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,91.440,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"#GND01" path_unit:1 value:"Spice_value_substitution_regression" }
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (junction (at 88.900002 88.900002))
+  (junction (at 88.900002 88.900002) (uuid 2934c2df-d750-4949-9bb5-2d5234f61386) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "Simulation_SPICE:0" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#GND" (at 0 -2.540000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "0" (at 0 -1.778000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "0V reference potential for simulation" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "0_0_1" (polyline (pts (xy -1.270000 0) (xy 0 -1.270000) (xy 1.270000 0) (xy -1.270000 0)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) hide (name "0" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))))) (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.025400)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.540000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "VSIN" (at 2.540000 0 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Params" "dc=0 ampl=1 f=1k ac=1" (at 2.540000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Sim.Type" "SIN" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Sim.Device" "V" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (justify left) hide)) (property "ki_keywords" "simulation ac vac" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.635000 0.632300) (end -1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.635000 -0.632300) (end 1.270000 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000))))) (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.540000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "VSIN_1_1" (pin passive line (at 0 5.080000 270) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -5.080000 90) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8d070f0b-31df-409a-8ac3-a30f48c45f47 }
+  <property> at=(92.710,79.339,0.000) attrs{name:"V1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(92.710,81.879,0.000) attrs{name:"VSIN" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"1=+ 2=-" value:"Sim.Pins" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(92.710,84.419,0.000) attrs{name:"dc=0 ampl={AMPLITUDE} f=50 td=0 theta=0 ac=1" value:"Sim.Params" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(88.900,81.280,0.000) attrs{name:"SIN" value:"Sim.Type" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,81.280,0.000) attrs{name:"V" value:"Sim.Device" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) token_3:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"V1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:73.660000 }
+  <mirror> attrs{value:x }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:bc97be6a-b1c8-49cd-b524-3bc3b0e7eaba }
+  <property> at=(71.120,80.645,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.120,83.185,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(71.882,81.280,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(73.660,81.280,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"R1" path_unit:1 value:"Spice_value_substitution_regression" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:88.900000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:db9187b8-77aa-4b3a-9e92-959a7418c546 }
+  <property> at=(88.900,93.980,0.000) attrs{name:"#GND01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,93.980,0.000) attrs{name:"0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(88.900,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(88.900,91.440,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a83dad98-6bdf-4131-a8e5-eafd5abfb1e2" path_reference:"#GND01" path_unit:1 value:"Spice_value_substitution_regression" }
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (wire (start 73.66 88.9) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 85.09) (end 73.66 88.9) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 73.66 77.47) (angle 0) (thickness 0.25))
+  (wire (start 73.66 74.93) (end 88.9 74.93) (angle 0) (thickness 0.25))
+  (wire (start 88.9 86.36) (end 88.9 88.9) (angle 0) (thickness 0.25))
+  (wire (start 88.9 74.93) (end 88.9 76.2) (angle 0) (thickness 0.25))
+  (wire (start 88.9 88.9) (end 88.9 91.44) (angle 0) (thickness 0.25))
+  (junction (at 88.900002 88.900002))
+  (junction (at 88.900002 88.900002) (uuid 2934c2df-d750-4949-9bb5-2d5234f61386) (color 0 0 0 0))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

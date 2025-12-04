@@ -1,0 +1,29 @@
+
+=== JUNCTION ===
+❌ Missing (1):
+   - (88.900002, 88.900002)
+
+=== WIRE ===
+❌ Missing (7):
+   - [(73.66, 74.93), (73.66, 77.47)]
+   - [(73.66, 74.93), (88.9, 74.93)]
+   - [(73.66, 85.09), (73.66, 88.9)]
+   - [(73.66, 88.9), (88.9, 88.9)]
+   - [(88.9, 74.93), (88.9, 76.2)]
+   - [(88.9, 86.36), (88.9, 88.9)]
+   - [(88.9, 88.9), (88.9, 91.44)]
+
+=== SYMBOL ===
+❌ Missing (10):
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Simulation_SPICE:0" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#GND" (at 0 -2.54 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "0" (at 0 -1.78 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "0V reference potential for simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "0_0_1" (polyline (pts (xy -1.27 0) (xy 0 -1.27) (xy 1.27 0) (xy -1.27 0)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) hide (name "0" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02)))))))
+   - (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.03)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "VSIN" (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Sim.Pins" "1=+ 2=-" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Sim.Params" "dc=0 ampl=1 f=1k ac=1" (at 2.54 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Sim.Type" "SIN" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Sim.Device" "V" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "ki_keywords" "simulation ac vac" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.64 0.63) (end -1.27 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.64 -0.63) (end 1.27 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.91 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.54) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "VSIN_1_1" (pin passive line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

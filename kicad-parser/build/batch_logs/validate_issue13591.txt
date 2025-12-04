@@ -1,0 +1,34 @@
+
+=== JUNCTION ===
+❌ Missing (1):
+   - (96.519997, 63.5)
+
+=== WIRE ===
+❌ Missing (9):
+   - [(110.49, 63.5), (96.52, 63.5)]
+   - [(110.49, 73.66), (110.49, 63.5)]
+   - [(110.49, 91.44), (110.49, 81.28)]
+   - [(49.53, 63.5), (49.53, 71.12)]
+   - [(49.53, 91.44), (49.53, 81.28)]
+   - [(68.58, 63.5), (49.53, 63.5)]
+   - [(76.2, 63.5), (96.52, 63.5)]
+   - [(96.52, 63.5), (96.52, 73.66)]
+   - [(96.52, 91.44), (96.52, 81.28)]
+
+=== SYMBOL ===
+❌ Missing (13):
+   - (symbol "Device:D" (pin_numbers hide) (pin_names (offset 1.02) hide) (in_bom yes) (on_board yes) (property "Reference" "D" (id 0) (at 0 2.54 0) (effects (font (size 1.27 1.27)))) (property "Value" "D" (id 1) (at 0 -2.54 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "diode" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Diode" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "D_0_1" (polyline (pts (xy -1.27 1.27) (xy -1.27 -1.27)) (stroke (width 0.25) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy -1.27 0)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)) (stroke (width 0.25) (type default) (color 0 0 0 0)) (fill (type none))))
+   - (symbol "D_1_1" (pin passive line (at -3.81 0 0) (length 2.54) (name "K" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 3.81 0 180) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at -1.78 0 90) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default) (color 0 0 0 0)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Simulation_SPICE:VPULSE" (pin_numbers hide) (pin_names (offset 0.03)) (in_bom yes) (on_board yes) (property "Reference" "V" (id 0) (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "VPULSE" (id 1) (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Spice_Netlist_Enabled" "Y" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Primitive" "V" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Model" "pulse(0 1 2n 2n 2n 50n 100n)" (id 6) (at 2.54 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "ki_keywords" "simulation" (id 7) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Voltage source, pulse" (id 8) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "VPULSE_0_0" (polyline (pts (xy -2.03 -0.76) (xy -1.4 -0.76) (xy -1.14 0.76) (xy -0.13 0.76) (xy 0.13 -0.76) (xy 1.14 -0.76) (xy 1.4 0.76) (xy 2.03 0.76)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (text "+" (at 0 1.91 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VPULSE_0_1" (circle (center 0 0) (radius 2.54) (stroke (width 0.25) (type default) (color 0 0 0 0)) (fill (type background))))
+   - (symbol "VPULSE_1_1" (pin passive line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "pspice:0" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#GND" (id 0) (at 0 -2.54 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "0" (id 1) (at 0 -1.78 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "simulation" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "0V reference potential for simulation" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "0_0_1" (polyline (pts (xy -1.27 0) (xy 0 -1.27) (xy 1.27 0) (xy -1.27 0)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))))
+   - (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) hide (name "0" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02))))))))
+
+Some cleaned files differ from originals ❌

@@ -1,0 +1,1515 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20240417
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "fd6125db-7e65-4fad-93a8-33510e8dc060"
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20240417) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "power:+1V0" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+1V0" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+1V0\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+1V0_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+1V0_1_1" (pin power_in line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:180 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"0b4955c6-2210-4635-af2c-58dcfacc27e5" }
+  <property> at=(81.280,77.470,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,86.360,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR01" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"123f99ae-1e0b-4adb-848c-b24372bcdd75" }
+  <property> at=(92.710,63.500,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,54.610,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR03" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:180 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"203f14a0-77b5-4e08-b438-6045362c4b0b" }
+  <property> at=(92.710,55.880,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,64.770,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR04" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"48c04f5a-3281-4438-acfc-4976863ec20f" }
+  <property> at=(85.090,81.280,0.000) attrs{name:"#PWR07" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(77.470,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR07" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"54545e2d-a3d7-4f00-b6e2-656cd0a1ce1d" }
+  <property> at=(81.280,85.090,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,76.200,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR05" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:90 name:72.390000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"854fb4ce-568c-4932-a3a2-ade50bcabe0d" }
+  <property> at=(44.450,72.390,0.000) attrs{name:"#PWR08" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(36.830,72.390,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR08" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:270 name:67.310000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"899a4760-4e95-4677-841d-e02ede39050e" }
+  <property> at=(36.830,67.310,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(44.450,67.310,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR02" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:270 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c487135d-3cca-4c48-bdd3-0bee4e933f93" }
+  <property> at=(77.470,81.280,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(85.090,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR06" path_unit:1 value:"issue17870" }
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (junction (at 172.720001 57.150002))
+  (junction (at 81.279999 81.279999))
+  (junction (at 172.720001 73.660004))
+  (junction (at 40.639999 67.309998))
+  (junction (at 105.410004 59.689999))
+  (junction (at 40.639999 77.470001))
+  (junction (at 40.639999 78.739998))
+  (junction (at 101.599998 59.689999))
+  (junction (at 172.720001 60.959999))
+  (junction (at 40.639999 85.089996))
+  (junction (at 92.709999 59.689999))
+  (junction (at 121.919998 59.689999))
+  (junction (at 172.720001 57.150002) (uuid "02706382-320f-4d0b-8bb0-e4105b2a15f6") (color 0 0 0 0))
+  (junction (at 81.279999 81.279999) (uuid "02804edb-059d-4152-947c-833d221e7780") (color 0 0 0 0))
+  (junction (at 172.720001 73.660004) (uuid "0c03000a-d681-4aac-be3c-3288ebc30684") (color 0 0 0 0))
+  (junction (at 40.639999 67.309998) (uuid "10276f4a-289c-43e8-a7c2-addfbc4a4941") (color 0 0 0 0))
+  (junction (at 105.410004 59.689999) (uuid "5a895b21-b75c-4ceb-a8a9-f223d27001b0") (color 0 0 0 0))
+  (junction (at 40.639999 77.470001) (uuid "7462a859-3a19-48ae-b2f2-dfae9762f970") (color 0 0 0 0))
+  (junction (at 40.639999 78.739998) (uuid "94ef3eff-aabc-49f1-a5fe-ee38539a4d0e") (color 0 0 0 0))
+  (junction (at 101.599998 59.689999) (uuid "9df46e79-0755-4b31-838c-a195b5fa208b") (color 0 0 0 0))
+  (junction (at 172.720001 60.959999) (uuid "aaacc7b4-b538-4f88-8eb3-91dc778c2111") (color 0 0 0 0))
+  (junction (at 40.639999 85.089996) (uuid "d7e4403a-305b-4abd-a5f7-c9882156ebc8") (color 0 0 0 0))
+  (junction (at 92.709999 59.689999) (uuid "e2130da4-3750-47db-bb25-cc3dc778419d") (color 0 0 0 0))
+  (junction (at 121.919998 59.689999) (uuid "f12cb830-b2c2-4caf-a8e0-e1854a9bbd18") (color 0 0 0 0))
+)
+(kicad_sch (version 20240417) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "power:+1V0" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+1V0" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+1V0\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+1V0_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+1V0_1_1" (pin power_in line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:180 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"0b4955c6-2210-4635-af2c-58dcfacc27e5" }
+  <property> at=(81.280,77.470,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,86.360,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR01" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"123f99ae-1e0b-4adb-848c-b24372bcdd75" }
+  <property> at=(92.710,63.500,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,54.610,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR03" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:180 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"203f14a0-77b5-4e08-b438-6045362c4b0b" }
+  <property> at=(92.710,55.880,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,64.770,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR04" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"48c04f5a-3281-4438-acfc-4976863ec20f" }
+  <property> at=(85.090,81.280,0.000) attrs{name:"#PWR07" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(77.470,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR07" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"54545e2d-a3d7-4f00-b6e2-656cd0a1ce1d" }
+  <property> at=(81.280,85.090,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,76.200,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR05" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:90 name:72.390000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"854fb4ce-568c-4932-a3a2-ade50bcabe0d" }
+  <property> at=(44.450,72.390,0.000) attrs{name:"#PWR08" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(36.830,72.390,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR08" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:270 name:67.310000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"899a4760-4e95-4677-841d-e02ede39050e" }
+  <property> at=(36.830,67.310,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(44.450,67.310,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR02" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:270 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c487135d-3cca-4c48-bdd3-0bee4e933f93" }
+  <property> at=(77.470,81.280,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(85.090,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR06" path_unit:1 value:"issue17870" }
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (junction (at 172.720001 57.150002))
+  (junction (at 81.279999 81.279999))
+  (junction (at 172.720001 73.660004))
+  (junction (at 40.639999 67.309998))
+  (junction (at 105.410004 59.689999))
+  (junction (at 40.639999 77.470001))
+  (junction (at 40.639999 78.739998))
+  (junction (at 101.599998 59.689999))
+  (junction (at 172.720001 60.959999))
+  (junction (at 40.639999 85.089996))
+  (junction (at 92.709999 59.689999))
+  (junction (at 121.919998 59.689999))
+  (junction (at 172.720001 57.150002) (uuid "02706382-320f-4d0b-8bb0-e4105b2a15f6") (color 0 0 0 0))
+  (junction (at 81.279999 81.279999) (uuid "02804edb-059d-4152-947c-833d221e7780") (color 0 0 0 0))
+  (junction (at 172.720001 73.660004) (uuid "0c03000a-d681-4aac-be3c-3288ebc30684") (color 0 0 0 0))
+  (junction (at 40.639999 67.309998) (uuid "10276f4a-289c-43e8-a7c2-addfbc4a4941") (color 0 0 0 0))
+  (junction (at 105.410004 59.689999) (uuid "5a895b21-b75c-4ceb-a8a9-f223d27001b0") (color 0 0 0 0))
+  (junction (at 40.639999 77.470001) (uuid "7462a859-3a19-48ae-b2f2-dfae9762f970") (color 0 0 0 0))
+  (junction (at 40.639999 78.739998) (uuid "94ef3eff-aabc-49f1-a5fe-ee38539a4d0e") (color 0 0 0 0))
+  (junction (at 101.599998 59.689999) (uuid "9df46e79-0755-4b31-838c-a195b5fa208b") (color 0 0 0 0))
+  (junction (at 172.720001 60.959999) (uuid "aaacc7b4-b538-4f88-8eb3-91dc778c2111") (color 0 0 0 0))
+  (junction (at 40.639999 85.089996) (uuid "d7e4403a-305b-4abd-a5f7-c9882156ebc8") (color 0 0 0 0))
+  (junction (at 92.709999 59.689999) (uuid "e2130da4-3750-47db-bb25-cc3dc778419d") (color 0 0 0 0))
+  (junction (at 121.919998 59.689999) (uuid "f12cb830-b2c2-4caf-a8e0-e1854a9bbd18") (color 0 0 0 0))
+)
+(kicad_sch (version 20240417) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "power:+1V0" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+1V0" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+1V0\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+1V0_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+1V0_1_1" (pin power_in line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:180 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"0b4955c6-2210-4635-af2c-58dcfacc27e5" }
+  <property> at=(81.280,77.470,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,86.360,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR01" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"123f99ae-1e0b-4adb-848c-b24372bcdd75" }
+  <property> at=(92.710,63.500,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,54.610,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR03" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:180 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"203f14a0-77b5-4e08-b438-6045362c4b0b" }
+  <property> at=(92.710,55.880,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,64.770,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR04" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"48c04f5a-3281-4438-acfc-4976863ec20f" }
+  <property> at=(85.090,81.280,0.000) attrs{name:"#PWR07" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(77.470,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR07" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"54545e2d-a3d7-4f00-b6e2-656cd0a1ce1d" }
+  <property> at=(81.280,85.090,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,76.200,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR05" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:90 name:72.390000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"854fb4ce-568c-4932-a3a2-ade50bcabe0d" }
+  <property> at=(44.450,72.390,0.000) attrs{name:"#PWR08" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(36.830,72.390,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR08" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:270 name:67.310000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"899a4760-4e95-4677-841d-e02ede39050e" }
+  <property> at=(36.830,67.310,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(44.450,67.310,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR02" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:270 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c487135d-3cca-4c48-bdd3-0bee4e933f93" }
+  <property> at=(77.470,81.280,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(85.090,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR06" path_unit:1 value:"issue17870" }
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (junction (at 172.720001 57.150002))
+  (junction (at 81.279999 81.279999))
+  (junction (at 172.720001 73.660004))
+  (junction (at 40.639999 67.309998))
+  (junction (at 105.410004 59.689999))
+  (junction (at 40.639999 77.470001))
+  (junction (at 40.639999 78.739998))
+  (junction (at 101.599998 59.689999))
+  (junction (at 172.720001 60.959999))
+  (junction (at 40.639999 85.089996))
+  (junction (at 92.709999 59.689999))
+  (junction (at 121.919998 59.689999))
+  (junction (at 172.720001 57.150002) (uuid "02706382-320f-4d0b-8bb0-e4105b2a15f6") (color 0 0 0 0))
+  (junction (at 81.279999 81.279999) (uuid "02804edb-059d-4152-947c-833d221e7780") (color 0 0 0 0))
+  (junction (at 172.720001 73.660004) (uuid "0c03000a-d681-4aac-be3c-3288ebc30684") (color 0 0 0 0))
+  (junction (at 40.639999 67.309998) (uuid "10276f4a-289c-43e8-a7c2-addfbc4a4941") (color 0 0 0 0))
+  (junction (at 105.410004 59.689999) (uuid "5a895b21-b75c-4ceb-a8a9-f223d27001b0") (color 0 0 0 0))
+  (junction (at 40.639999 77.470001) (uuid "7462a859-3a19-48ae-b2f2-dfae9762f970") (color 0 0 0 0))
+  (junction (at 40.639999 78.739998) (uuid "94ef3eff-aabc-49f1-a5fe-ee38539a4d0e") (color 0 0 0 0))
+  (junction (at 101.599998 59.689999) (uuid "9df46e79-0755-4b31-838c-a195b5fa208b") (color 0 0 0 0))
+  (junction (at 172.720001 60.959999) (uuid "aaacc7b4-b538-4f88-8eb3-91dc778c2111") (color 0 0 0 0))
+  (junction (at 40.639999 85.089996) (uuid "d7e4403a-305b-4abd-a5f7-c9882156ebc8") (color 0 0 0 0))
+  (junction (at 92.709999 59.689999) (uuid "e2130da4-3750-47db-bb25-cc3dc778419d") (color 0 0 0 0))
+  (junction (at 121.919998 59.689999) (uuid "f12cb830-b2c2-4caf-a8e0-e1854a9bbd18") (color 0 0 0 0))
+)
+(kicad_sch (version 20240417) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "power:+1V0" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+1V0" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+1V0\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+1V0_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+1V0_1_1" (pin power_in line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:180 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"0b4955c6-2210-4635-af2c-58dcfacc27e5" }
+  <property> at=(81.280,77.470,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,86.360,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR01" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"123f99ae-1e0b-4adb-848c-b24372bcdd75" }
+  <property> at=(92.710,63.500,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,54.610,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR03" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:180 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"203f14a0-77b5-4e08-b438-6045362c4b0b" }
+  <property> at=(92.710,55.880,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,64.770,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR04" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"48c04f5a-3281-4438-acfc-4976863ec20f" }
+  <property> at=(85.090,81.280,0.000) attrs{name:"#PWR07" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(77.470,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR07" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"54545e2d-a3d7-4f00-b6e2-656cd0a1ce1d" }
+  <property> at=(81.280,85.090,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,76.200,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR05" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:90 name:72.390000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"854fb4ce-568c-4932-a3a2-ade50bcabe0d" }
+  <property> at=(44.450,72.390,0.000) attrs{name:"#PWR08" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(36.830,72.390,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR08" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:270 name:67.310000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"899a4760-4e95-4677-841d-e02ede39050e" }
+  <property> at=(36.830,67.310,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(44.450,67.310,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR02" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:270 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c487135d-3cca-4c48-bdd3-0bee4e933f93" }
+  <property> at=(77.470,81.280,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(85.090,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR06" path_unit:1 value:"issue17870" }
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (junction (at 172.720001 57.150002))
+  (junction (at 81.279999 81.279999))
+  (junction (at 172.720001 73.660004))
+  (junction (at 40.639999 67.309998))
+  (junction (at 105.410004 59.689999))
+  (junction (at 40.639999 77.470001))
+  (junction (at 40.639999 78.739998))
+  (junction (at 101.599998 59.689999))
+  (junction (at 172.720001 60.959999))
+  (junction (at 40.639999 85.089996))
+  (junction (at 92.709999 59.689999))
+  (junction (at 121.919998 59.689999))
+  (junction (at 172.720001 57.150002) (uuid "02706382-320f-4d0b-8bb0-e4105b2a15f6") (color 0 0 0 0))
+  (junction (at 81.279999 81.279999) (uuid "02804edb-059d-4152-947c-833d221e7780") (color 0 0 0 0))
+  (junction (at 172.720001 73.660004) (uuid "0c03000a-d681-4aac-be3c-3288ebc30684") (color 0 0 0 0))
+  (junction (at 40.639999 67.309998) (uuid "10276f4a-289c-43e8-a7c2-addfbc4a4941") (color 0 0 0 0))
+  (junction (at 105.410004 59.689999) (uuid "5a895b21-b75c-4ceb-a8a9-f223d27001b0") (color 0 0 0 0))
+  (junction (at 40.639999 77.470001) (uuid "7462a859-3a19-48ae-b2f2-dfae9762f970") (color 0 0 0 0))
+  (junction (at 40.639999 78.739998) (uuid "94ef3eff-aabc-49f1-a5fe-ee38539a4d0e") (color 0 0 0 0))
+  (junction (at 101.599998 59.689999) (uuid "9df46e79-0755-4b31-838c-a195b5fa208b") (color 0 0 0 0))
+  (junction (at 172.720001 60.959999) (uuid "aaacc7b4-b538-4f88-8eb3-91dc778c2111") (color 0 0 0 0))
+  (junction (at 40.639999 85.089996) (uuid "d7e4403a-305b-4abd-a5f7-c9882156ebc8") (color 0 0 0 0))
+  (junction (at 92.709999 59.689999) (uuid "e2130da4-3750-47db-bb25-cc3dc778419d") (color 0 0 0 0))
+  (junction (at 121.919998 59.689999) (uuid "f12cb830-b2c2-4caf-a8e0-e1854a9bbd18") (color 0 0 0 0))
+)
+(kicad_sch (version 20240417) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "power:+1V0" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+1V0" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+1V0\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+1V0_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+1V0_1_1" (pin power_in line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:180 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"0b4955c6-2210-4635-af2c-58dcfacc27e5" }
+  <property> at=(81.280,77.470,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,86.360,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR01" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"123f99ae-1e0b-4adb-848c-b24372bcdd75" }
+  <property> at=(92.710,63.500,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,54.610,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR03" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:180 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"203f14a0-77b5-4e08-b438-6045362c4b0b" }
+  <property> at=(92.710,55.880,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,64.770,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR04" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"48c04f5a-3281-4438-acfc-4976863ec20f" }
+  <property> at=(85.090,81.280,0.000) attrs{name:"#PWR07" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(77.470,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR07" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"54545e2d-a3d7-4f00-b6e2-656cd0a1ce1d" }
+  <property> at=(81.280,85.090,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,76.200,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR05" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:90 name:72.390000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"854fb4ce-568c-4932-a3a2-ade50bcabe0d" }
+  <property> at=(44.450,72.390,0.000) attrs{name:"#PWR08" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(36.830,72.390,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR08" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:270 name:67.310000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"899a4760-4e95-4677-841d-e02ede39050e" }
+  <property> at=(36.830,67.310,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(44.450,67.310,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR02" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:270 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c487135d-3cca-4c48-bdd3-0bee4e933f93" }
+  <property> at=(77.470,81.280,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(85.090,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR06" path_unit:1 value:"issue17870" }
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (junction (at 172.720001 57.150002))
+  (junction (at 81.279999 81.279999))
+  (junction (at 172.720001 73.660004))
+  (junction (at 40.639999 67.309998))
+  (junction (at 105.410004 59.689999))
+  (junction (at 40.639999 77.470001))
+  (junction (at 40.639999 78.739998))
+  (junction (at 101.599998 59.689999))
+  (junction (at 172.720001 60.959999))
+  (junction (at 40.639999 85.089996))
+  (junction (at 92.709999 59.689999))
+  (junction (at 121.919998 59.689999))
+  (junction (at 172.720001 57.150002) (uuid "02706382-320f-4d0b-8bb0-e4105b2a15f6") (color 0 0 0 0))
+  (junction (at 81.279999 81.279999) (uuid "02804edb-059d-4152-947c-833d221e7780") (color 0 0 0 0))
+  (junction (at 172.720001 73.660004) (uuid "0c03000a-d681-4aac-be3c-3288ebc30684") (color 0 0 0 0))
+  (junction (at 40.639999 67.309998) (uuid "10276f4a-289c-43e8-a7c2-addfbc4a4941") (color 0 0 0 0))
+  (junction (at 105.410004 59.689999) (uuid "5a895b21-b75c-4ceb-a8a9-f223d27001b0") (color 0 0 0 0))
+  (junction (at 40.639999 77.470001) (uuid "7462a859-3a19-48ae-b2f2-dfae9762f970") (color 0 0 0 0))
+  (junction (at 40.639999 78.739998) (uuid "94ef3eff-aabc-49f1-a5fe-ee38539a4d0e") (color 0 0 0 0))
+  (junction (at 101.599998 59.689999) (uuid "9df46e79-0755-4b31-838c-a195b5fa208b") (color 0 0 0 0))
+  (junction (at 172.720001 60.959999) (uuid "aaacc7b4-b538-4f88-8eb3-91dc778c2111") (color 0 0 0 0))
+  (junction (at 40.639999 85.089996) (uuid "d7e4403a-305b-4abd-a5f7-c9882156ebc8") (color 0 0 0 0))
+  (junction (at 92.709999 59.689999) (uuid "e2130da4-3750-47db-bb25-cc3dc778419d") (color 0 0 0 0))
+  (junction (at 121.919998 59.689999) (uuid "f12cb830-b2c2-4caf-a8e0-e1854a9bbd18") (color 0 0 0 0))
+)
+(kicad_sch (version 20240417) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "power:+1V0" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+1V0" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+1V0\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+1V0_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+1V0_1_1" (pin power_in line (at 0 0 90) (length 0) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:180 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"0b4955c6-2210-4635-af2c-58dcfacc27e5" }
+  <property> at=(81.280,77.470,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,86.360,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR01" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"123f99ae-1e0b-4adb-848c-b24372bcdd75" }
+  <property> at=(92.710,63.500,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,54.610,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR03" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:180 name:59.690000 value:92.710000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"203f14a0-77b5-4e08-b438-6045362c4b0b" }
+  <property> at=(92.710,55.880,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,64.770,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(92.710,59.690,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR04" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:90 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"48c04f5a-3281-4438-acfc-4976863ec20f" }
+  <property> at=(85.090,81.280,0.000) attrs{name:"#PWR07" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(77.470,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR07" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"54545e2d-a3d7-4f00-b6e2-656cd0a1ce1d" }
+  <property> at=(81.280,85.090,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,76.200,0.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR05" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:90 name:72.390000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"854fb4ce-568c-4932-a3a2-ade50bcabe0d" }
+  <property> at=(44.450,72.390,0.000) attrs{name:"#PWR08" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(36.830,72.390,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,72.390,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR08" path_unit:1 value:"issue17870" }
+  <symbol>
+  <at> attrs{misc:270 name:67.310000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"899a4760-4e95-4677-841d-e02ede39050e" }
+  <property> at=(36.830,67.310,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(44.450,67.310,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,67.310,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR02" path_unit:1 value:"" }
+  <symbol>
+  <at> attrs{misc:270 name:81.280000 value:81.280000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"c487135d-3cca-4c48-bdd3-0bee4e933f93" }
+  <property> at=(77.470,81.280,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(85.090,81.280,90.000) attrs{name:"+1V0" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify right) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(81.280,81.280,0.000) attrs{name:"Power symbol creates a global label with name \"+1V0\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/a4f588d9-323f-46fc-95f7-994f02f42cf2" path_reference:"#PWR06" path_unit:1 value:"issue17870" }
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (wire (start 166.37 73.66) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 105.41 59.69) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 88.9 59.69) (end 92.71 59.69) (angle 0) (thickness 0.25))
+  (wire (start 40.64 72.39) (end 48.26 72.39) (angle 0) (thickness 0.25))
+  (wire (start 165.1 67.31) (end 181.61 67.31) (angle 0) (thickness 0.25))
+  (wire (start 121.92 55.88) (end 121.92 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 179.07 60.96) (angle 0) (thickness 0.25))
+  (wire (start 96.52 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 166.37 57.15) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 172.72 57.15) (end 172.72 60.96) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 179.07 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 101.6 64.77) (angle 0) (thickness 0.25))
+  (wire (start 115.57 54.61) (end 115.57 64.77) (angle 0) (thickness 0.25))
+  (wire (start 172.72 60.96) (end 172.72 73.66) (angle 0) (thickness 0.25))
+  (wire (start 101.6 59.69) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 73.66) (end 172.72 82.55) (angle 0) (thickness 0.25))
+  (wire (start 105.41 55.88) (end 105.41 59.69) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 128.27 59.69) (angle 0) (thickness 0.25))
+  (wire (start 92.71 59.69) (end 101.6 59.69) (angle 0) (thickness 0.25))
+  (wire (start 172.72 48.26) (end 172.72 57.15) (angle 0) (thickness 0.25))
+  (wire (start 121.92 59.69) (end 121.92 64.77) (angle 0) (thickness 0.25))
+  (junction (at 172.720001 57.150002))
+  (junction (at 81.279999 81.279999))
+  (junction (at 172.720001 73.660004))
+  (junction (at 40.639999 67.309998))
+  (junction (at 105.410004 59.689999))
+  (junction (at 40.639999 77.470001))
+  (junction (at 40.639999 78.739998))
+  (junction (at 101.599998 59.689999))
+  (junction (at 172.720001 60.959999))
+  (junction (at 40.639999 85.089996))
+  (junction (at 92.709999 59.689999))
+  (junction (at 121.919998 59.689999))
+  (junction (at 172.720001 57.150002) (uuid "02706382-320f-4d0b-8bb0-e4105b2a15f6") (color 0 0 0 0))
+  (junction (at 81.279999 81.279999) (uuid "02804edb-059d-4152-947c-833d221e7780") (color 0 0 0 0))
+  (junction (at 172.720001 73.660004) (uuid "0c03000a-d681-4aac-be3c-3288ebc30684") (color 0 0 0 0))
+  (junction (at 40.639999 67.309998) (uuid "10276f4a-289c-43e8-a7c2-addfbc4a4941") (color 0 0 0 0))
+  (junction (at 105.410004 59.689999) (uuid "5a895b21-b75c-4ceb-a8a9-f223d27001b0") (color 0 0 0 0))
+  (junction (at 40.639999 77.470001) (uuid "7462a859-3a19-48ae-b2f2-dfae9762f970") (color 0 0 0 0))
+  (junction (at 40.639999 78.739998) (uuid "94ef3eff-aabc-49f1-a5fe-ee38539a4d0e") (color 0 0 0 0))
+  (junction (at 101.599998 59.689999) (uuid "9df46e79-0755-4b31-838c-a195b5fa208b") (color 0 0 0 0))
+  (junction (at 172.720001 60.959999) (uuid "aaacc7b4-b538-4f88-8eb3-91dc778c2111") (color 0 0 0 0))
+  (junction (at 40.639999 85.089996) (uuid "d7e4403a-305b-4abd-a5f7-c9882156ebc8") (color 0 0 0 0))
+  (junction (at 92.709999 59.689999) (uuid "e2130da4-3750-47db-bb25-cc3dc778419d") (color 0 0 0 0))
+  (junction (at 121.919998 59.689999) (uuid "f12cb830-b2c2-4caf-a8e0-e1854a9bbd18") (color 0 0 0 0))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

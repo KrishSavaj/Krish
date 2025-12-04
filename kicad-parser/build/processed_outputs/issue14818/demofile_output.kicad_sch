@@ -1,0 +1,363 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20230121
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    7e6059c0-7d3a-4472-ac0a-8e90f65dee0c
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:163.830000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:01911e18-8ac4-41c0-aab8-927296bbf562 }
+  <property> at=(163.830,88.900,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,87.630,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"#PWR01" path_unit:1 value:"issue14818" }
+  <symbol>
+  <at> attrs{misc:0 name:73.660000 value:52.070000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d6ec637f-094b-4766-99e5-8085aeaefe06 }
+  <property> at=(54.610,69.088,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(54.610,71.628,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(57.150,73.660,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(57.150,73.660,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"TP1" path_unit:1 value:"issue14818" }
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:163.830000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:01911e18-8ac4-41c0-aab8-927296bbf562 }
+  <property> at=(163.830,88.900,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,87.630,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"#PWR01" path_unit:1 value:"issue14818" }
+  <symbol>
+  <at> attrs{misc:0 name:73.660000 value:52.070000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d6ec637f-094b-4766-99e5-8085aeaefe06 }
+  <property> at=(54.610,69.088,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(54.610,71.628,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(57.150,73.660,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(57.150,73.660,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"TP1" path_unit:1 value:"issue14818" }
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:163.830000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:01911e18-8ac4-41c0-aab8-927296bbf562 }
+  <property> at=(163.830,88.900,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,87.630,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"#PWR01" path_unit:1 value:"issue14818" }
+  <symbol>
+  <at> attrs{misc:0 name:73.660000 value:52.070000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d6ec637f-094b-4766-99e5-8085aeaefe06 }
+  <property> at=(54.610,69.088,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(54.610,71.628,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(57.150,73.660,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(57.150,73.660,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"TP1" path_unit:1 value:"issue14818" }
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:163.830000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:01911e18-8ac4-41c0-aab8-927296bbf562 }
+  <property> at=(163.830,88.900,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,87.630,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"#PWR01" path_unit:1 value:"issue14818" }
+  <symbol>
+  <at> attrs{misc:0 name:73.660000 value:52.070000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d6ec637f-094b-4766-99e5-8085aeaefe06 }
+  <property> at=(54.610,69.088,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(54.610,71.628,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(57.150,73.660,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(57.150,73.660,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"TP1" path_unit:1 value:"issue14818" }
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:163.830000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:01911e18-8ac4-41c0-aab8-927296bbf562 }
+  <property> at=(163.830,88.900,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,87.630,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"#PWR01" path_unit:1 value:"issue14818" }
+  <symbol>
+  <at> attrs{misc:0 name:73.660000 value:52.070000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d6ec637f-094b-4766-99e5-8085aeaefe06 }
+  <property> at=(54.610,69.088,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(54.610,71.628,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(57.150,73.660,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(57.150,73.660,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"TP1" path_unit:1 value:"issue14818" }
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762000) hide) (in_bom yes) (on_board yes) (property "Reference" "TP" (at 0 6.858000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "TestPoint" (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 5.080000 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "test point tp" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "test point" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Pin* Test*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TestPoint_0_1" (circle (center 0 3.302000) (radius 0.762000) (stroke (width 0) (type default)) (fill (type none)))) (symbol "TestPoint_1_1" (pin passive line (at 0 0 90) (length 2.540000) (name "1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:163.830000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:01911e18-8ac4-41c0-aab8-927296bbf562 }
+  <property> at=(163.830,88.900,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,87.630,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(163.830,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"#PWR01" path_unit:1 value:"issue14818" }
+  <symbol>
+  <at> attrs{misc:0 name:73.660000 value:52.070000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d6ec637f-094b-4766-99e5-8085aeaefe06 }
+  <property> at=(54.610,69.088,0.000) attrs{name:"TP1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(54.610,71.628,0.000) attrs{name:"TestPoint" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(57.150,73.660,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(57.150,73.660,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/11dcf1dc-4b8a-4487-8b76-ed0a16ad6b81" path_reference:"TP1" path_unit:1 value:"issue14818" }
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 85.09 77.47) (end 96.52 77.47) (angle 0) (thickness 0.25))
+  (wire (start 120.65 77.47) (end 129.54 77.47) (angle 0) (thickness 0.25))
+  (wire (start 163.83 77.47) (end 163.83 82.55) (angle 0) (thickness 0.25))
+  (wire (start 153.67 77.47) (end 163.83 77.47) (angle 0) (thickness 0.25))
+  (wire (start 52.07 73.66) (end 52.07 77.47) (angle 0) (thickness 0.25))
+  (wire (start 60.96 77.47) (end 52.07 77.47) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

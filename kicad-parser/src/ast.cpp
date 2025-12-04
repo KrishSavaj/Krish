@@ -1,0 +1,4465 @@
+#include <unordered_set>
+#include "ast.hpp"
+#include "shapes.hpp"
+#include "Geomclass.h"
+#include "Pin.h" 
+#include <ostream> 
+#include "sexpr.hpp"
+#include <fstream>
+#include "BaselineBoard.h"
+#include "ast_cleaner.hpp"
+#include"Wire.h"
+#include"PCBComponent.h"
+#include <type_traits>
+#include <functional>
+#include <unordered_map>
+#include <iomanip>
+
+
+using ast_cleaner::sexprNodeToSExpr;
+// Create a short alias for convenience inside this .cpp only:
+
+using namespace sexpr;       // now Node and NodeVector are visible
+
+using namespace ast_cleaner;
+namespace PCBDesign {
+    ShapePtr convertCleanNodeToShape(const ast_cleaner::CleanNode &node) {
+        // TODO: real implementation
+        return nullptr;
+    }
+}
+// tags to quietly preserve when seen while parsing PCBs
+static bool preserveCleanTag(const std::string &t) {
+    static const std::unordered_set<std::string> s = {
+        "stroke","width","type","uuid","diameter","color",
+        "at","xy","pts","page","path","reference","unit",
+        "sheet_instances","symbol_instances","project",
+        "generator","paper","title","date","rev","in_bom","on_board"
+    };
+    return s.find(t) != s.end();
+}
+namespace PD = PCBDesign;
+static std::string safeGetString(const sexpr::Node* node) {
+    if (!node)
+        return "[null]";
+
+    if (node->IsList()) {
+        const auto* children = node->GetChildren();
+        if (!children || children->empty()) return "()";
+
+        std::string result = "(";
+        for (size_t i = 0; i < children->size(); ++i) {
+            if (i > 0) result += " ";
+            result += safeGetString((*children)[i]);  // recursive!
+        }
+        result += ")";
+        return result;
+    }
+
+    if (node->IsInteger())
+        return std::to_string(node->GetLongInteger());
+
+    if (node->IsDouble()) {
+        char buf[64];
+        snprintf(buf, sizeof(buf), "%g", node->GetDouble());
+        return std::string(buf);
+    }
+
+    if (node->IsString())
+        return "\"" + node->GetString() + "\"";
+
+    if (node->IsSymbol())
+        return node->GetSymbol();
+
+    return node->AsString(0);  // fallback
+}
+
+static int safeGetInteger(const sexpr::Node* node) {
+    if (!node || !node->IsInteger()) 
+        return -1;
+    return node->GetInteger();
+}
+// Helper function to extract a double from an S-expression node
+static double safeGetDouble(sexpr::Node* n) {
+    if (!n) return -1.0; // or NaN
+    if (n->IsDouble()) return n->GetDouble();
+    if (n->IsInteger()) return static_cast<double>(n->GetInteger());
+    
+    try {
+        return std::stod(n->AsString());
+    } catch (...) {
+        return -1.0;  // or std::numeric_limits<double>::quiet_NaN()
+    }
+}
+
+// ---- tiny helpers -----------------------------------------------------------
+static inline bool isTag(sexpr::Node* n, std::string_view tag) {
+    if (!n || !n->IsList()) return false;
+    auto* h = n->GetChild(0);
+    return h && h->IsSymbol() && h->AsString() == tag;
+}
+
+static inline sexpr::Node* firstChildWith(sexpr::Node* list, std::string_view tag) {
+    if (!list || !list->IsList()) return nullptr;
+    for (int i = 1; i < list->GetNumberOfChildren(); ++i) {
+        auto* ch = list->GetChild(i);
+        if (isTag(ch, tag)) return ch;
+    }
+    return nullptr;
+}
+
+static inline std::vector<sexpr::Node*> allChildrenWith(sexpr::Node* list, std::string_view tag) {
+    std::vector<sexpr::Node*> out;
+    if (!list || !list->IsList()) return out;
+    for (int i = 1; i < list->GetNumberOfChildren(); ++i) {
+        auto* ch = list->GetChild(i);
+        if (isTag(ch, tag)) out.push_back(ch);
+    }
+    return out;
+}
+
+// Convert a Node to double (accepts numeric node or string containing a number)
+static inline bool asNumber(sexpr::Node* n, double& out) {
+    if (!n) return false;
+
+    // Get textual representation (your Node class already exposes AsString())
+    std::string s = n->AsString();
+
+    // Strip surrounding quotes if present (e.g. "\"123.4\"" -> "123.4")
+    if (s.size() >= 2 && s.front() == '"' && s.back() == '"') {
+        s = s.substr(1, s.size() - 2);
+    }
+
+    // Use strtod to parse; check that at least one char was consumed
+    char* endptr = nullptr;
+    out = std::strtod(s.c_str(), &endptr);
+    if (endptr == s.c_str()) {
+        // nothing parsed
+        return false;
+    }
+    return true;
+}
+
+// (at x y [rotDeg])
+static inline bool parseAt(sexpr::Node* parent, double& x, double& y, double& rotDeg) {
+    auto* at = firstChildWith(parent, "at");
+    if (!at || !at->IsList() || at->GetNumberOfChildren() < 3) return false;
+    if (!asNumber(at->GetChild(1), x)) return false;
+    if (!asNumber(at->GetChild(2), y)) return false;
+    rotDeg = 0.0;
+    if (at->GetNumberOfChildren() >= 4) asNumber(at->GetChild(3), rotDeg);
+    return true;
+}
+
+// (pts (xy x y) (xy x y) ...)
+static inline std::vector<std::pair<double,double>> parsePts(sexpr::Node* node) {
+    std::vector<std::pair<double,double>> pts_out;
+    auto* pts = firstChildWith(node, "pts");
+    if (!pts) return pts_out;
+    for (int i = 1; i < pts->GetNumberOfChildren(); ++i) {
+        auto* xy = pts->GetChild(i);
+        if (!isTag(xy, "xy") || xy->GetNumberOfChildren() < 3) continue;
+        double x=0, y=0;
+        asNumber(xy->GetChild(1), x);
+        asNumber(xy->GetChild(2), y);
+        pts_out.emplace_back(x,y);
+    }
+    return pts_out;
+}
+
+// ---- global guard to prevent duplicate traversal ----
+// prevent accidental duplicate traversals
+static bool g_walked_once = false;
+void walkSchematicOnce(sexpr::Node* root,
+                       std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+                       std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes,
+                       PCBDesign::BaselineBoard* board /* = nullptr */) {
+    // Convert the raw SExpr::Node tree into unified ast_cleaner::SExpr
+    ast_cleaner::SExpr sexprRoot = sexprNodeToSExpr(root);
+
+    // Dispatch into the cleaner / structured processor
+    ast_cleaner::CleanNode cleanedRoot = ast_cleaner::cleanNode(sexprRoot);
+
+   // --- after ast_cleaner::CleanNode cleanedRoot = ast_cleaner::cleanNode(sexprRoot);
+if (board) {
+    // store debug copy
+    board->appendRawPieceFromClean(cleanedRoot);
+
+    fprintf(stderr, "[walkSchematicOnce] cleanedRoot children=%zu\n",
+            cleanedRoot.children.size());
+for (auto &child : cleanedRoot.children) {
+    const std::string &ctag = child.tag;
+    fprintf(stderr, "[walkSchematicOnce] child tag='%s' children=%zu\n",
+            ctag.c_str(), child.children.size());
+
+    if (ctag == "lib_symbols") {
+        board->handleLibSymbolsCleanNode(child);
+    } else if (ctag == "symbol") {
+        board->handleSymbolFromClean(child);
+    } else if (ctag == "wire") {
+        board->handleWireFromClean(child);  // <- handle the wire
+    } else if (ctag == "junction") {
+        board->handleJunctionFromClean(child);
+    } else if (ctag == "text") {
+        board->handleTextFromClean(child);
+    } else if (ctag == "label" || ctag == "hierarchical_label") {
+        board->handleTextFromClean(child);
+    } else if (ctag == "sheet") {
+        // keep raw for now
+        board->appendRawPieceFromClean(child);
+    } else {
+        // fallback: keep a raw copy so nothing is lost silently
+        board->appendRawPieceFromClean(child);
+    }
+}
+
+    // done with board path
+    return;
+}
+
+
+                       }
+//static std::unordered_set<std::string> g_seenUnhandled;
+// keep your global set
+static std::set<std::string> g_seenUnhandled;
+
+// tag-only version
+void reportUnhandled(const std::string& context,
+                     const std::string& tag,
+                     int depth) {
+    std::string indent(depth * 2, ' ');
+    std::string message = indent + "[UNHANDLED-" + context + "] tag=\"" + tag + "\"";
+
+    std::cerr << message << "\n";
+
+    static const std::string logFile = "ampli_unhandled.log";
+    std::ofstream ofs(logFile, std::ios::app);
+    if (ofs.is_open()) {
+        ofs << message << "\n";
+    }
+}
+
+// key+val version
+void reportUnhandled(const std::string& context,
+                     const std::string& key,
+                     const std::string& val,
+                     int depth) {
+    std::string indent(depth * 2, ' ');
+    std::string message = indent + "[UNHANDLED-" + context + "] key=\"" + key + "\" val=\"" + val + "\"";
+
+    std::cerr << message << "\n";
+
+    static const std::string logFile = "ampli_unhandled.log";
+    std::ofstream ofs(logFile, std::ios::app);
+    if (ofs.is_open()) {
+        ofs << message << "\n";
+    }
+}
+namespace ast_cleaner {
+    SExpr sexprNodeToSExpr(sexpr::Node* n) {
+        SExpr out;
+        if (!n) return out;
+        if (!n->IsList()) {
+            out.is_atom = true;
+            out.atom = n->AsString();
+            return out;
+        }
+        out.is_atom = false;
+        int count = n->GetNumberOfChildren();
+        out.list.reserve(count);
+        for (int i = 0; i < count; ++i) {
+            sexpr::Node* child = n->GetChild(i);
+            out.list.push_back(sexprNodeToSExpr(child));  // recursive call, same namespace
+        }
+        return out;
+    }
+}
+
+
+// Process the AST recursively and call BaselineBoard handlers
+// improved processAst that handles more tags and always appends the cleaned debug copy
+void processAst(const ast_cleaner::SExpr &root, PCBDesign::BaselineBoard &baselineBoard) {
+
+  
+
+
+
+    if (root.is_atom) return;
+
+    for (const ast_cleaner::SExpr &raw_child : root.list) {
+        // clean the raw node
+        ast_cleaner::CleanNode clean = ast_cleaner::cleanNode(raw_child);
+    fprintf(stderr, "[processAst] seeing tag='%s'\n", clean.tag.c_str());
+        
+
+        // Always store a debug/serialized copy first (so you have record even if not handled)
+        baselineBoard.appendRawPieceFromClean(clean);
+
+        // Dispatch common tags to BaselineBoard handlers
+        const std::string &tag = clean.tag;
+
+        if (clean.tag == "lib_symbols") {
+            baselineBoard.handleLibSymbolsCleanNode(clean);
+        }
+        else if (clean.tag == "kicad_sch") {
+            baselineBoard.handleKicadSchFromClean(clean);
+        }
+        else if (clean.tag == "symbol") {
+            baselineBoard.handleSymbolFromClean(clean);
+        }
+        else if (clean.tag == "wire") {
+            baselineBoard.handleWireFromClean(clean);
+        }
+        else if (clean.tag == "junction") {
+             fprintf(stderr, "[processAst] dispatching junction\n");
+            baselineBoard.handleJunctionFromClean(clean);
+           
+        }
+      else if (clean.tag == "text") {
+            baselineBoard.handleTextFromClean(clean);
+        }
+        else if (clean.tag == "label" || clean.tag == "hierarchical_label") {
+            // labels/hierarchical labels are textual shapes — reuse text handler for now
+            baselineBoard.handleTextFromClean(clean);
+            // Optionally: call a parseLabelFromClean(clean, ...) if you want to create Shape objects
+        }
+        else if (clean.tag == "sheet") {
+            // store it and optionally parse properties/instances from the CleanNode
+            // baselineBoard.appendRawPieceFromClean(clean); // already appended above
+            // TODO: implement parseSheetFromClean(clean, ...) to extract properties/instances
+        }
+        
+        else if (clean.tag == "sheet_instances") {
+            // either implement parseSheetInstancesFromClean to extract paths,
+            // or keep raw for later inspection (we've appended it above).
+        }
+        else if (clean.tag == "property") {
+            // if needed, record into baselineBoard properties map
+            if (clean.property) {
+                baselineBoard.addProperty(clean.property->key, clean.property->value);
+            }
+        }
+        else {
+            // fallback: already appended; nothing more to do
+        }
+
+        // Recurse into raw children (so nested structures get processed)
+        if (!raw_child.is_atom && !raw_child.list.empty()) {
+            processAst(raw_child, baselineBoard);
+        }
+    }
+}
+
+using namespace PCBDesign;
+static std::vector<std::shared_ptr<Shape>> shapes;
+namespace PCBDesign {
+// Define global vector once
+std::vector<ParsedShape> allShapes;
+}
+// Definitions of globals used by dfsDebugAST, etc.
+int insideComp     = 0;
+int numComponents  = 0;
+int subComp        = 0;
+
+
+using PCBDesign::PCBObj;
+// Helper at top of file:
+static sexpr::Node* findListNode(sexpr::Node* parent, const std::string &tag) {
+    for (size_t i = 0; i < parent->GetNumberOfChildren(); ++i) {
+        auto *c = parent->GetChild(i);
+        if (c && c->IsList()) {
+            auto *first = c->GetChild(0);
+            if (first && first->IsSymbol() && first->AsString() == tag)
+                return c;
+        }
+    }
+    return nullptr;
+}
+struct NoConnect {
+    float x, y;
+    int net;
+};
+std::vector<NoConnect> noConnects;
+
+int generateID()
+{
+	static int count=1;
+	return count++;
+}
+void handleProperty(sexpr::Node* propNode,
+                    std::shared_ptr<PCBDesign::PCBObj> objRaw,
+                    int depth)
+{
+    // 1) Downcast to PCBComponent
+    auto comp = std::dynamic_pointer_cast<PCBDesign::PCBComponent>(objRaw);
+    if (!comp) return;
+
+    PCBDesign::PCBComponent::Property p;
+
+    // 2) Key & value (strip quotes)
+    auto rawKey = propNode->GetChild(1)->AsString();
+    p.key   = rawKey.substr(1, rawKey.size()-2);
+    auto rawVal = propNode->GetChild(2)->AsString();
+    p.value = rawVal.substr(1, rawVal.size()-2);
+
+    // 3) Scan all children for id / at / layer / effects / justify
+    for (int i = 3; i < propNode->GetNumberOfChildren(); ++i) {
+        auto* c = propNode->GetChild(i);
+        if (!c || !c->IsList()) continue;
+        auto tag = c->GetChild(0)->AsString();
+
+        if (tag == "id") {
+            p.id = std::stoi(c->GetChild(1)->AsString());
+        }
+        else if (tag == "at") {
+            p.atX   = std::stof(c->GetChild(1)->AsString());
+            p.atY   = std::stof(c->GetChild(2)->AsString());
+            p.angle = std::stof(c->GetChild(3)->AsString());
+        }
+        else if (tag == "layer") {
+            auto rawLayer = c->GetChild(1)->AsString();
+            p.layer = rawLayer.substr(1, rawLayer.size()-2);
+        }
+        else if (tag == "effects") {
+            // look inside (font (size x y)) and (justify pos)
+            for (int j = 1; j < c->GetNumberOfChildren(); ++j) {
+                auto* e = c->GetChild(j);
+                if (!e->IsList()) continue;
+                auto etag = e->GetChild(0)->AsString();
+                if (etag == "font") {
+                    auto* sz = e->GetChild(1); // list (size x y)
+                    p.fontSizeX = std::stof(sz->GetChild(1)->AsString());
+                    p.fontSizeY = std::stof(sz->GetChild(2)->AsString());
+                }
+                else if (etag == "justify") {
+                    p.justify = e->GetChild(1)->AsString();
+                }
+            }
+        }
+    }
+
+    comp->addProperty(p);
+    std::cout << "[handleProperty] "
+              << p.key << " = " << p.value
+              << "  (id="  << p.id
+              << ", at="  << p.atX << "," << p.atY << "," << p.angle
+              << ", layer="   << p.layer
+              << ", font="    << p.fontSizeX << "x" << p.fontSizeY
+              << ", justify=" << p.justify
+              << ")\n";
+}
+// ------------------ detection helpers (SFINAE) ------------------
+// ---- Minimal, safe converter and wrapper for sexpr::Node -> ast_cleaner::CleanNode ----
+// This version ONLY relies on sexpr::Node::GetChildren() (the compiler hinted that exists).
+// It purposely does NOT access n->tag, n->attrs, n->at, or n->children because your
+// sexpr::Node type doesn't expose them. Once you paste the sexpr::Node definition we can
+// expand this to copy tag/attrs/at properly.
+// --- detection helper: method IsList() ---
+template<typename T, typename = void>
+struct has_method_IsList : std::false_type {};
+template<typename T>
+struct has_method_IsList<T, std::void_t<decltype(std::declval<const T>().IsList())>> : std::true_type {};
+// Convert raw S-expression into a cleaned node tree
+
+
+CleanNode convertSexprToCleanNode(const Node* node) {
+    CleanNode cn;
+
+    if (!node) return cn;
+
+    // --- Handle atoms ---
+    if (node->IsSymbol()) {
+        cn.tag = node->GetSymbol();
+        return cn;
+    } else if (node->IsString()) {
+        cn.tag = node->GetString();
+        return cn;
+    } else if (node->IsInteger()) {
+        cn.tag = std::to_string(node->GetLongInteger());
+        return cn;
+    } else if (node->IsDouble()) {
+        cn.tag = std::to_string(node->GetDouble());
+        return cn;
+    }
+
+    // --- Handle lists ---
+    if (node->IsList()) {
+        const NodeVector* children = node->GetChildren();
+        if (!children || children->empty()) return cn;
+
+        const Node* headNode = children->at(0);
+        if (headNode && headNode->IsSymbol()) {
+            cn.tag = headNode->GetSymbol();
+        }
+
+        for (size_t i = 1; i < children->size(); ++i) {
+            cn.children.push_back(convertSexprToCleanNode(children->at(i)));
+        }
+    }
+
+    return cn;
+}
+
+// convertCleanNodeToShape: keep using PCBDesign types and your previous logic.
+// It will usually return nullptr until convertSexprToCleanNode starts filling tag/attrs/at.
+// ShapePtr BaselineBoard::convertCleanNodeToShape(const ast_cleaner::CleanNode &clean) {
+//     fprintf(stderr, "[convertCleanNodeToShape] tag='%s'\n", clean.tag.c_str());
+
+//     // --- Junction ---
+//     if (clean.tag == "junction") {
+//         try {
+//             float x = std::stof(clean.attrs.at("x"));
+//             float y = std::stof(clean.attrs.at("y"));
+//             auto j = std::make_shared<Junction>(Coordinate{x, y});
+
+//             // Extra attributes
+//             if (clean.attrs.count("uuid"))    j->setUUID(clean.attrs.at("uuid"));
+//             if (clean.attrs.count("color"))   j->setColor(clean.attrs.at("color"));
+//             if (clean.attrs.count("diameter")) {
+//                 try { j->setDiameter(std::stod(clean.attrs.at("diameter"))); }
+//                 catch(...) {}
+//             }
+//             if (clean.attrs.count("at_x_raw") && clean.attrs.count("at_y_raw"))
+//                 j->setRawAt(clean.attrs.at("at_x_raw"), clean.attrs.at("at_y_raw"));
+
+//             return j;
+//         } catch (...) {
+//             fprintf(stderr, "[convertCleanNodeToShape] failed junction parse\n");
+//             return nullptr;
+//         }
+//     }
+
+//     // --- Wire ---
+//     if (clean.tag == "wire") {
+//         float x1=0.f, y1=0.f, x2=0.f, y2=0.f;
+//         try {
+//             x1 = std::stof(clean.attrs.at("x1"));
+//             y1 = std::stof(clean.attrs.at("y1"));
+//             x2 = std::stof(clean.attrs.at("x2"));
+//             y2 = std::stof(clean.attrs.at("y2"));
+//         } catch (...) {
+//             fprintf(stderr, "[convertCleanNodeToShape] wire coords missing/invalid\n");
+//             return nullptr;
+//         }
+
+//         // Angle
+//         AngleWire angle = AngleWire::DEG_0;
+//         if (clean.attrs.count("angle")) {
+//             std::string ang = clean.attrs.at("angle");
+//             if (ang == "45") angle = AngleWire::DEG_45;
+//             else if (ang == "90") angle = AngleWire::DEG_90;
+//             else if (ang == "135") angle = AngleWire::DEG_135;
+//             else if (ang == "180") angle = AngleWire::DEG_180;
+//             else if (ang == "225") angle = AngleWire::DEG_225;
+//             else if (ang == "270") angle = AngleWire::DEG_270;
+//             else if (ang == "315") angle = AngleWire::DEG_315;
+//         }
+
+//         float thickness = 0.25f;
+//         if (clean.attrs.count("thickness")) {
+//             try { thickness = std::stof(clean.attrs.at("thickness")); } catch (...) {}
+//         }
+
+//         std::string layer;
+//         if (clean.attrs.count("layer")) layer = clean.attrs.at("layer");
+
+//         ViaType svia = ViaType::NONE, evia = ViaType::NONE;
+//         if (clean.attrs.count("via_start")) svia = stringToViaType(clean.attrs.at("via_start"));
+//         if (clean.attrs.count("via_end"))   evia = stringToViaType(clean.attrs.at("via_end"));
+
+//         return std::make_shared<Wire>(Coordinate{x1,y1}, Coordinate{x2,y2}, angle, thickness, layer, svia, evia);
+//     }
+
+//     // --- Text ---
+//     if (clean.tag == "text") {
+//         try {
+//             float x = std::stof(clean.attrs.at("x"));
+//             float y = std::stof(clean.attrs.at("y"));
+//             std::string value = clean.attrs.count("value") ? clean.attrs.at("value") : "";
+//             return std::make_shared<Text>(Coordinate{x,y}, value);
+//         } catch (...) {
+//             fprintf(stderr, "[convertCleanNodeToShape] failed text parse\n");
+//             return nullptr;
+//         }
+//     }
+
+//     // --- Unhandled ---
+//     return nullptr;
+// }
+
+// std::shared_ptr<PCBDesign::Shape> convertCleanNodeToShape(const ast_cleaner::CleanNode &node) {
+//     using namespace PCBDesign;
+
+//     if (node.tag.empty()) return nullptr;
+
+//     // ---- Junction ----
+//     if (node.tag == "junction" || node.tag == "junctions") {
+//         float x = 0.f, y = 0.f;
+//         if (node.at) {
+//             x = static_cast<float>(node.at->x);
+//             y = static_cast<float>(node.at->y);
+//         } else if (!node.pts.empty()) {
+//             x = static_cast<float>(node.pts[0].x);
+//             y = static_cast<float>(node.pts[0].y);
+//         } else if (node.attrs.count("x") && node.attrs.count("y")) {
+//             try { x = std::stof(node.attrs.at("x")); y = std::stof(node.attrs.at("y")); }
+//             catch(...) {}
+//         } else {
+//             std::cerr << "[convert] junction without position\n";
+//             return nullptr;
+//         }
+
+//         auto j = std::make_shared<Junction>(x, y);
+//         if (node.attrs.count("uuid"))    j->setUUID(node.attrs.at("uuid"));
+//         if (node.attrs.count("color"))   j->setColor(node.attrs.at("color"));
+//         if (node.attrs.count("diameter")) {
+//             try { j->setDiameter(std::stod(node.attrs.at("diameter"))); }
+//             catch(...) {}
+//         }
+//         if (node.attrs.count("at_x_raw") && node.attrs.count("at_y_raw"))
+//             j->setRawAt(node.attrs.at("at_x_raw"), node.attrs.at("at_y_raw"));
+
+//         return j;
+//     }
+
+//     // wire/polyline/text branches unchanged from your earlier logic, keep here if desired.
+//     return nullptr;
+// }
+
+// Public wrapper: convert sexpr::Node -> CleanNode and call CleanNode handler.
+void handleSymbol(sexpr::Node* symbolNode,
+                  std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+                  int depth)
+{
+    using namespace PCBDesign;
+
+    if (!symbolNode) return;
+
+    ast_cleaner::CleanNode cleaned = convertSexprToCleanNode(symbolNode);
+
+    // Extract PCBComponent* from parse_stack top if present
+    PCBComponent* comp_ptr = nullptr;
+    if (!parse_stack.empty()) {
+        auto top = parse_stack.top();
+        comp_ptr = dynamic_cast<PCBComponent*>(top.get());
+    }
+
+    // Call the CleanNode-based handler
+    handleSymbol(cleaned, comp_ptr, depth);
+}
+
+void handleSymbol(const ast_cleaner::CleanNode &node, PD::PCBComponent* comp, int depth) {
+    using namespace ast_cleaner;
+    if (!comp) return;
+
+    // 1) position/rotation
+    if (node.at) {
+        comp->setPosition(static_cast<float>(node.at->x),
+                          static_cast<float>(node.at->y));
+        comp->setRotation(static_cast<float>(node.at->rot));
+    }
+
+    // 2) properties
+    for (const auto &child : node.children) {
+        if (child.tag == "property") {
+            std::string key = child.attrs.count("key") ? child.attrs.at("key") : "";
+            std::string val = child.attrs.count("value") ? child.attrs.at("value") : "";
+
+            if (key == "Reference") {
+                comp->setReference(val);
+            } else if (key == "Value") {
+                comp->setValue(val);
+            }
+        }
+    }
+
+    // 3) optional uuid
+    if (node.attrs.count("uuid")) {
+        // comp->setUUID(node.attrs.at("uuid"));
+    }
+
+    // 4) shapes
+    for (const auto &child : node.children) {
+        if (child.tag == "line" || child.tag == "rectangle" ||
+            child.tag == "arc"  || child.tag == "polygon"  ||
+            child.tag == "circle"|| child.tag == "text" ||
+            child.tag == "wire"  || child.tag == "junction" ||
+            child.tag == "fp_line" || child.tag == "fp_circle" ||
+            child.tag == "fp_arc"  || child.tag == "fp_text")
+        {
+            auto shape = convertCleanNodeToShape(child);
+            if (shape) comp->addShape(shape);
+        }
+    }
+
+    // 5) 🔹 pins
+    for (const auto &child : node.children) {
+    if (child.tag == "pin") {
+        handlePin(child, comp, depth + 1);  // ✅ now works
+    }
+}
+
+    // 6) instances
+    for (const auto &child : node.children) {
+        if (child.tag == "instance" || child.tag == "instances" || child.tag == "sheet_instance") {
+            float x = 0.f, y = 0.f;
+            if (child.at) { x = static_cast<float>(child.at->x); y = static_cast<float>(child.at->y); }
+            comp->addInstancePosition(x, y);
+        }
+    }
+
+    // 7) nested symbols/subsymbols
+    for (const auto &child : node.children) {
+        if (child.tag == "symbol" || child.tag == "subsymbol") {
+            auto subComp = std::make_shared<PD::PCBComponent>();
+            handleSymbol(child, subComp.get(), depth + 1);
+            comp->addSubcomponent(subComp);
+        }
+    }
+
+    // 8) layer
+    if (node.attrs.count("layer")) {
+        comp->setLayer(node.attrs.at("layer"));
+    }
+
+    #ifdef DEBUG_SYMBOL
+    std::cout << std::string(depth*2, ' ')
+              << "Processed symbol: "
+              << (comp->getReference().empty() ? "<anon>" : comp->getReference())
+              << "\n";
+    #endif
+}
+
+// void handleSymbol(
+//     sexpr::Node* sym,
+//     std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+//     int depth
+// ) {
+//     using namespace PCBDesign;
+
+//     if (!sym || !sym->IsList() || sym->GetNumberOfChildren() < 2) {
+//         std::cerr << "[handleSymbol] invalid symbol node\n";
+//         return;
+//     }
+
+//     // 1) Extract name (child 1 commonly) and push a new component instance.
+//     auto rawNameNode = sym->GetChild(1);
+//     std::string rawName = rawNameNode ? rawNameNode->AsString() : std::string("symbol");
+//     std::string name = rawName;
+//     if (rawName.size() >= 2 && rawName.front() == '"' && rawName.back() == '"')
+//         name = rawName.substr(1, rawName.size()-2);
+
+//     auto comp = std::make_shared<PCBComponent>(generateID(), name);
+//     parse_stack.push(comp);
+//     std::cout << std::string(depth*2, ' ') << "[handleSymbol] Pushed component: \"" << name << "\"\n";
+
+//     // Local accumulation for Reference/Value/Instance placement etc.
+//     std::string ref, value, lib_id;
+//     double posx = 0.0, posy = 0.0, angle = 0.0;
+
+//     // Keep track of unknown tags encountered (to report once)
+//     std::set<std::string> unknown_tags;
+
+//     // 2) Walk children (start at 2 in older code; but be tolerant and iterate from 1)
+//     for (int i = 1; i < sym->GetNumberOfChildren(); ++i) {
+//         auto *c = sym->GetChild(i);
+//         if (!c) continue;
+
+//         // allow non-list children (rare): treat as possible string metadata
+//         if (!c->IsList()) {
+//             // nothing to do for bare atoms here
+//             continue;
+//         }
+
+//         if (c->GetNumberOfChildren() == 0) continue;
+//         auto *h = c->GetChild(0);
+//         if (!h || !h->IsSymbol()) continue;
+//         std::string tag = h->AsString();
+
+//         // ------------ simple flags / booleans -------------
+//         if (tag == "pin_numbers")      { comp->setHidePinNumbers(true); continue; }
+//         if (tag == "pin_names")        { comp->setHidePinNames(true); continue; }
+//         if (tag == "in_bom" && c->GetNumberOfChildren() > 1)
+//             { comp->setInBom(c->GetChild(1)->AsString()=="yes"); continue; }
+//         if (tag == "on_board" && c->GetNumberOfChildren() > 1)
+//             { comp->setOnBoard(c->GetChild(1)->AsString()=="yes"); continue; }
+//         if (tag == "exclude_from_sim" && c->GetNumberOfChildren() > 1)
+//             { comp->setExcludeFromSim(c->GetChild(1)->AsString()=="yes"); continue; }
+//         if (tag == "mirror")           { comp->setMirrored(true); continue; }
+//         if (tag == "dnp")              { comp->setDoNotPopulate(true); continue; }
+//         if (tag == "unit" && c->GetNumberOfChildren()>1)
+//             { comp->setUnit(std::stoi(c->GetChild(1)->AsString())); continue; }
+//         if (tag == "uuid" && c->GetNumberOfChildren()>1)
+//             { comp->setUUID(c->GetChild(1)->AsString()); continue; }
+
+//         // --------------- position / transform ----------------
+//         if (tag == "at") {
+//             double rx=0, ry=0, rrot=0;
+//             if (parseAt(c, rx, ry, rrot)) {
+//                 posx = rx; posy = ry; angle = rrot;
+//                 comp->setPosition(static_cast<float>(posx), static_cast<float>(posy));
+//                 comp->setRotation(static_cast<float>(angle));
+//             }
+//             continue;
+//         }
+
+//         // ---------------- textual meta & properties ----------------
+//         if (tag == "property") {
+//             // keep original handler (it may set Reference/Value too)
+//             handleProperty(c, comp, depth+1);
+//             // additionally try to capture Reference/Value quickly:
+//             if (c->GetNumberOfChildren() >= 3) {
+//                 std::string key = c->GetChild(1)->AsString();
+//                 std::string val = c->GetChild(2)->AsString();
+//                 if (val.size()>=2 && val.front()=='"' && val.back()=='"') val = val.substr(1, val.size()-2);
+//                 if (key == "Reference") ref = val;
+//                 else if (key == "Value") value = val;
+//             }
+//             continue;
+//         }
+//         if (tag == "text") { handleText(c, parse_stack.top(), depth+1); continue; }
+//         if (tag == "embedded_fonts") { handleEmbeddedFonts(c, depth+1); continue; }
+//         if (tag == "fields_autoplaced") { /* intentionally ignored */ continue; }
+//         if (tag == "effects") { /* style hints, ignore for now */ continue; }
+
+//         // ---------------- shapes: unwrapped -------------------
+//         if (tag == "line")      { handleLine(c, comp, 1); continue; }
+//         if (tag == "rectangle") { handleRectangle(c, comp, 1); continue; }
+//         if (tag == "arc")       { if (auto s = getArc(c,1))      { comp->addShape(s); s->dump(std::cout); } continue; }
+//         if (tag == "circle")    { if (auto s = getCircle(c,1))   { comp->addShape(s); s->dump(std::cout); } continue; }
+//         if (tag == "bezier")    { if (auto s = getBezier(c,1))   { comp->addShape(s); s->dump(std::cout); } continue; }
+//         if (tag == "polyline")  { if (auto s = getPolyline(c,1)) { comp->addShape(s); s->dump(std::cout); } continue; }
+//         if (tag == "wire")      { if (auto s = getPolyline(c,1)) { comp->addShape(s); s->dump(std::cout); } continue; }
+
+//         // ---------------- wrapped graphics -------------------
+//         if (tag == "graphic" && c->GetNumberOfChildren() > 1) {
+//             auto *sub = c->GetChild(1);
+//             if (sub && sub->IsList() && sub->GetNumberOfChildren()>0) {
+//                 std::string nm = sub->GetChild(0)->AsString();
+//                 std::shared_ptr<Shape> s;
+//                 if (nm == "polyline" || nm == "wire") s = getPolyline(sub, 1);
+//                 else if (nm == "line")    s = getLine(sub,1);
+//                 else if (nm == "rectangle") s = getRectangle(sub,1);
+//                 else if (nm == "circle")  s = getCircle(sub,1);
+//                 else if (nm == "arc")     s = getArc(sub,1);
+//                 else if (nm == "bezier")  s = getBezier(sub,1);
+//                 if (s) { comp->addShape(s); s->dump(std::cout); }
+//             }
+//             continue;
+//         }
+
+//         // --------------- pins & power blocks -----------------
+//         if (tag == "pin")   { handlePin(c, comp, depth+1); continue; }
+//         if (tag == "power") { handlePower(c, comp, depth+1); continue; }
+
+//         // ---------------- instances block --------------------
+//         if (tag == "instances") {
+//             for (int j = 1; j < c->GetNumberOfChildren(); ++j) {
+//                 auto *inst = c->GetChild(j);
+//                 if (!inst || !inst->IsList() || inst->GetNumberOfChildren()==0) continue;
+//                 if (inst->GetChild(0)->AsString() != std::string("instance")) continue;
+//                 for (int k = 1; k < inst->GetNumberOfChildren(); ++k) {
+//                     auto *meta = inst->GetChild(k);
+//                     if (!meta || !meta->IsList() || meta->GetNumberOfChildren()==0) continue;
+//                     std::string subTag = meta->GetChild(0)->AsString();
+//                     if (subTag == "at" && meta->GetNumberOfChildren()>=3) {
+//                         double ix=0, iy=0, irot=0;
+//                         if (parseAt(meta, ix, iy, irot)) comp->addInstancePosition((float)ix, (float)iy);
+//                     } else if (subTag == "uuid" && meta->GetNumberOfChildren()>1) {
+//                         comp->addInstanceUUID(meta->GetChild(1)->AsString());
+//                     }
+//                 }
+//             }
+//             continue;
+//         }
+
+//         // ---------------- nested symbol / extends / lib_id -----------
+//         if (tag == "symbol") {
+//             // nested symbol definition — recurse (push/pop happens inside)
+//             handleSymbol(c, parse_stack, depth+1);
+//             continue;
+//         }
+
+//         if (tag == "extends" && c->GetNumberOfChildren()>1) {
+//             std::string ext = c->GetChild(1)->AsString();
+//             if (ext.size()>=2 && ext.front()=='"' && ext.back()=='"') ext = ext.substr(1, ext.size()-2);
+//             comp->setExtends(ext);
+//             continue;
+//         }
+
+//         if (tag == "default_instance") {
+//             // we don't need to model this now — ignore
+//             continue;
+//         }
+
+//         if (tag == "lib_id" && c->GetNumberOfChildren()>1) {
+//             std::string raw = c->GetChild(1)->AsString();
+//             if (raw.size()>=2 && raw.front()=='"' && raw.back()=='"') raw = raw.substr(1, raw.size()-2);
+//             lib_id = raw;
+//             comp->setLibID(lib_id);
+//             continue;
+//         }
+
+//         // --------------- other commonly nested tags --------------
+//         if (tag == "name" && c->GetNumberOfChildren()>1) {
+//             // sometimes names/numbers are stored in dedicated nodes; try to capture them
+//             std::string nm = c->GetChild(1)->AsString();
+//             if (nm.size()>=2 && nm.front()=='"' && nm.back()=='"') nm = nm.substr(1, nm.size()-2);
+//             // store as component property if meaningful
+//             comp->setName(nm);
+//             continue;
+//         }
+//         if (tag == "number" && c->GetNumberOfChildren()>1) {
+//             // numeric label for pins etc: ignore here or capture if needed
+//             continue;
+//         }
+//         if (tag == "length") { continue; }        // visual hint for pins
+//         if (tag == "fill")   { /* shape fill info; ignore for now */ continue; }
+
+//         // If we reach here: unknown tag for this symbol child
+//         unknown_tags.insert(tag);
+//     }
+
+//     // finalize: set reference and value if we captured them from properties.
+//        // finalize: we captured Reference/Value from property nodes above,
+//     // but PCBComponent does not provide setReference/setValue methods.
+//     // `handleProperty` was already invoked and should have stored properties.
+//     // For debug, print what we captured:
+// // --- REPLACE the existing logging block with this -----------------------
+// // set properties if present
+// if (!ref.empty()) {
+//     comp->setReference(ref);
+// }
+// if (!value.empty()) {
+//     comp->setValue(value);
+// }
+
+// // debug log (keeps your indentation behavior)
+// std::cerr << std::string(depth*2, ' ')
+//           << "[handleSymbol] created component \"" << comp->getName() << "\"";
+// if (!ref.empty())   std::cerr << " Reference=\"" << ref << "\"";
+// if (!value.empty()) std::cerr << " Value=\"" << value << "\"";
+// std::cerr << "\n";
+
+// // NOTE: Do NOT attempt to attach using a variable named `stack` here.
+// // This function uses `parse_stack` and will pop & attach the component
+// // to its parent later in this same function (see the pop + addComponent/addSubcomponent).
+
+
+//     // if any unknown tags were found, report them once (with indent)
+//     if (!unknown_tags.empty()) {
+//         std::cerr << std::string(depth*2, ' ')
+//                   << "[handleSymbol] Unknown tags for \"" << comp->getName() << "\": ";
+//         bool first=true;
+//         for (auto &t : unknown_tags) {
+//             if (!first) std::cerr << ", ";
+//             std::cerr << t;
+//             first = false;
+//         }
+//         std::cerr << "\n";
+//     }
+
+//     // 3) Pop *this* component off the stack and attach it to its parent
+//     if (parse_stack.empty()) {
+//         std::cerr << "[handleSymbol] parse_stack empty at pop time\n";
+//         return;
+//     }
+//     auto me = parse_stack.top(); parse_stack.pop();
+
+//     if (parse_stack.empty()) {
+//         std::cerr << "[handleSymbol] no parent on parse_stack to attach component\n";
+//         return;
+//     }
+//     auto parent = parse_stack.top();
+
+//     if (auto b = std::dynamic_pointer_cast<BaselineBoard>(parent))
+//         b->addComponent(std::dynamic_pointer_cast<PCBComponent>(me));
+//     else if (auto pc = std::dynamic_pointer_cast<PCBComponent>(parent))
+//         pc->addSubcomponent(std::dynamic_pointer_cast<PCBComponent>(me));
+// }
+
+
+std::string stripQuotes(const std::string& s) {
+    if (s.size() >= 2 && s.front() == '"' && s.back() == '"')
+        return s.substr(1, s.size() - 2);
+    return s;
+}
+static void parseGeneratorVersion(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& stk,
+    int /*depth*/,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& /*shapes*/
+) {
+    if (stk.empty() || !node) return;
+
+    auto b = std::dynamic_pointer_cast<PCBDesign::BaselineBoard>(stk.top());
+    if (!b) return;
+
+    if (node->GetNumberOfChildren() >= 2) {
+        auto* versionNode = node->GetChild(1);
+        if (versionNode) {
+            b->setGeneratorVersion(versionNode->AsString());
+        }
+    }
+}
+
+static void parseRuleArea(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& stk,
+    int /*depth*/,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& /*shapes*/
+) {
+    if (stk.empty() || !node) return;
+
+    auto b = std::dynamic_pointer_cast<PCBDesign::BaselineBoard>(stk.top());
+    if (!b) return;
+
+    if (node->GetNumberOfChildren() == 3) {
+        auto *a = node->GetChild(1);
+        auto *c = node->GetChild(2);
+
+        if (a && c && a->IsList() && c->IsList() &&
+            a->GetNumberOfChildren() >= 3 && c->GetNumberOfChildren() >= 3) {
+
+            try {
+                float x1 = std::stof(a->GetChild(1)->AsString());
+                float y1 = std::stof(a->GetChild(2)->AsString());
+                float x2 = std::stof(c->GetChild(1)->AsString());
+                float y2 = std::stof(c->GetChild(2)->AsString());
+                b->setRuleArea(x1, y1, x2, y2);
+            } catch (const std::exception& e) {
+                std::cerr << "[parseRuleArea] Invalid float conversion: " << e.what() << "\n";
+            }
+        }
+    }
+}
+
+
+static void parseNetclassFlag(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& stk,
+    int /*depth*/,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& /*shapes*/
+) {
+    // format: (netclass_flag "FLAGNAME")
+	if (stk.empty()) return;
+    auto b = std::dynamic_pointer_cast<PCBDesign::BaselineBoard>(stk.top());
+    if (!b) return;
+    if (node->GetNumberOfChildren() >= 2){
+		 auto* valNode = node->GetChild(1);
+        if (valNode && valNode->IsList() && valNode->GetNumberOfChildren() >= 1) {
+            std::string val = valNode->GetChild(0)->AsString();
+			 b->addNetclassFlag(node->GetChild(1)->AsString());
+	}
+       
+}
+}
+static void parseEmbeddedFonts(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& stk,
+    int /*depth*/,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& /*shapes*/
+) {
+    if (stk.empty()) return;
+    auto b = std::dynamic_pointer_cast<PCBDesign::BaselineBoard>(stk.top());
+    if (!b) return;
+
+    if (node->GetNumberOfChildren() >= 2) {
+        auto* valNode = node->GetChild(1);
+        if (valNode && valNode->IsList() && valNode->GetNumberOfChildren() >= 1) {
+            std::string val = valNode->GetChild(0)->AsString();
+            b->setEmbeddedFonts(val == "on");
+        }
+    }
+}
+
+
+void handleEmbeddedFonts(sexpr::Node* node, int depth) {
+    std::cout << "[handleEmbeddedFonts] Found embedded_fonts with "
+              << (node->GetNumberOfChildren() - 1) << " children at depth "
+              << depth << "\n";
+
+    // Optional: list the font names if any
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto* font = node->GetChild(i);
+        if (!font || !font->IsList()) continue;
+
+        auto tag = font->GetChild(0)->AsString();
+        if (tag == "font") {
+            std::string fontName = font->GetChild(1)->AsString();
+            std::cout << "  [font] " << fontName << "\n";
+        }
+    }
+}
+
+void parseImage(sexpr::Node* node,
+                std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+                int depth,
+                std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes)
+{
+    // node is (image (at x y angle?) (data "...base64..."))
+    float x=0, y=0, angle=0;
+    std::string b64;
+
+    if (auto children = node->GetChildren()) {
+        for (auto *c : *children) {
+            if (!c->IsList()) continue;
+            auto tag = c->GetChild(0)->AsString();
+            if (tag == "at" && c->GetNumberOfChildren() >= 3) {
+                x     = std::stof(c->GetChild(1)->AsString());
+                y     = std::stof(c->GetChild(2)->AsString());
+                if (c->GetNumberOfChildren() > 3)
+                    angle = std::stof(c->GetChild(3)->AsString());
+            }
+            else if (tag == "data" && c->GetNumberOfChildren() > 1) {
+                b64 = c->GetChild(1)->AsString();
+                // strip quotes if present
+                if (b64.size() >= 2 && b64.front()=='"' && b64.back()=='"')
+                    b64 = b64.substr(1, b64.size()-2);
+            }
+        }
+    }
+
+    // For now, just log it:
+    std::cout << "[parseImage] x=" << x << " y=" << y 
+              << " angle=" << angle 
+              << " data(" << b64.size() << " bytes of base64)\n";
+
+    // If you have an ImageShape subclass, you could do:
+    // auto img = std::make_shared<ImageShape>(/*id=*/generateID(), x,y,angle,b64);
+    // shapes.push_back(img);
+
+    // consume everything—no recursion
+}
+void handleText(sexpr::Node* textNode,
+                std::shared_ptr<PCBDesign::PCBObj> obj,
+                int depth)
+{
+    auto comp = std::dynamic_pointer_cast<PCBDesign::PCBComponent>(obj);
+    if (!comp) return;
+
+    // 1) Extract and clean text string
+    std::string raw = textNode->GetChild(1)->AsString();
+    std::string body = raw.size() > 1 && raw.front() == '"' && raw.back() == '"' 
+                     ? raw.substr(1, raw.size() - 2) 
+                     : raw;
+
+    // 2) Initialize text parameters
+    float x = 0, y = 0, angle = 0;
+    float fsx = 1, fsy = 1;
+    std::string layer;
+    std::string justification;
+    float thickness = 0;
+    bool isHidden = false, isItalic = false, isBold = false;
+
+    // 3) Parse children
+    for (size_t i = 2; i < textNode->GetNumberOfChildren(); ++i) {
+        auto* c = textNode->GetChild(i);
+        if (!c || !c->IsList()) continue;
+
+        auto tag = c->GetChild(0)->AsString();
+
+        if (tag == "at") {
+            if (c->GetNumberOfChildren() >= 3) {
+                x = std::stof(c->GetChild(1)->AsString());
+                y = std::stof(c->GetChild(2)->AsString());
+            }
+            if (c->GetNumberOfChildren() >= 4) {
+                angle = std::stof(c->GetChild(3)->AsString());
+            }
+        } 
+        else if (tag == "layer" && c->GetNumberOfChildren() > 1) {
+            layer = c->GetChild(1)->AsString();
+            if (layer.size() > 1 && layer.front() == '"' && layer.back() == '"')
+                layer = layer.substr(1, layer.size() - 2);
+        } 
+        else if (tag == "effects") {
+            for (size_t j = 1; j < c->GetNumberOfChildren(); ++j) {
+                auto* e = c->GetChild(j);
+                if (!e || !e->IsList()) continue;
+
+                std::string effTag = e->GetChild(0)->AsString();
+
+                if (effTag == "font") {
+                    for (size_t k = 1; k < e->GetNumberOfChildren(); ++k) {
+                        auto* f = e->GetChild(k);
+                        if (!f || !f->IsList()) continue;
+
+                        std::string fontTag = f->GetChild(0)->AsString();
+
+                        if (fontTag == "size" && f->GetNumberOfChildren() >= 3) {
+                            fsx = std::stof(f->GetChild(1)->AsString());
+                            fsy = std::stof(f->GetChild(2)->AsString());
+                        }
+                        else if (fontTag == "thickness" && f->GetNumberOfChildren() >= 2) {
+                            thickness = std::stof(f->GetChild(1)->AsString());
+                        }
+                        else if (fontTag == "italic") {
+                            isItalic = true;
+                        }
+                        else if (fontTag == "bold") {
+                            isBold = true;
+                        }
+                    }
+                }
+                else if (effTag == "justify") {
+                    for (size_t k = 1; k < e->GetNumberOfChildren(); ++k) {
+                        auto* jtag = e->GetChild(k);
+						if (!jtag->IsList()) {
+   					 	std::string val = jtag->AsString();
+    					if (!justification.empty()) justification += " ";
+    					justification += val;
+}
+
+                    }
+                }
+                else if (effTag == "hide") {
+                    isHidden = true;
+                }
+            }
+        }
+    }
+
+    // 4) Create and attach the shape
+  auto txt = std::make_shared<Text>(body, x, y);
+
+
+    // You could subclass TextShape and store justify/thickness/etc., or log for now:
+    std::cout << std::string(depth * 2, ' ') << "Parsed TextShape:\n";
+    txt->dump(std::cout);
+    std::cout << std::string(depth * 2, ' ')
+              << "[handleText] Added text"
+              << " justify=\"" << justification << "\""
+              << " thickness=" << thickness
+              << " italic=" << isItalic
+              << " bold=" << isBold
+              << " hidden=" << isHidden
+              << "\n";
+
+    comp->addShape(txt);
+}
+
+
+
+void handlePower(sexpr::Node* powerNode,
+                 std::shared_ptr<PCBDesign::PCBObj> obj,
+                 int depth)
+{
+    // powerNode looks like: (power (pin …) (pin …) …)
+    for (int i = 1; i < powerNode->GetNumberOfChildren(); ++i) {
+        auto* pinNode = powerNode->GetChild(i);
+        if (!pinNode || !pinNode->IsList()) continue;
+        // reuse exactly the same pin logic as a normal pin:
+        handlePin(pinNode, obj, depth+1);
+    }
+}
+void handlePin(const ast_cleaner::CleanNode &pinNode,
+               PCBDesign::PCBComponent* comp,
+               int depth)
+{
+    if (!comp) return;
+
+    int pinNumber = 0;
+    std::string pinName;
+    PCBDesign::PinType type = PCBDesign::PinType::PASSIVE;
+    float x = 0.f, y = 0.f, angle = 0.f;
+
+    if (pinNode.attrs.count("number")) {
+        pinNumber = std::stoi(pinNode.attrs.at("number"));
+    }
+    if (pinNode.attrs.count("name")) {
+        pinName = pinNode.attrs.at("name");
+    }
+    if (pinNode.attrs.count("type")) {
+        std::string t = pinNode.attrs.at("type");
+        if (t == "INPUT") type = PCBDesign::PinType::INPUT;
+        else if (t == "OUTPUT") type = PCBDesign::PinType::OUTPUT;
+        else if (t == "IN_OUT") type = PCBDesign::PinType::IN_OUT;
+        else if (t == "POWER") type = PCBDesign::PinType::POWER;
+        else if (t == "GROUND") type = PCBDesign::PinType::GROUND;
+        else if (t == "CLOCK") type = PCBDesign::PinType::CLOCK;
+    }
+
+    if (pinNode.at) {
+        x = static_cast<float>(pinNode.at->x);
+        y = static_cast<float>(pinNode.at->y);
+        angle = static_cast<float>(pinNode.at->rot);
+    }
+
+    PCBDesign::Pin pin(pinNumber, type, x, y, angle);
+    pin.setName(pinName);
+    pin.setNumber(std::to_string(pinNumber));
+
+    comp->addPin(pin);
+}
+
+void handlePin(sexpr::Node* pinNode,
+               std::shared_ptr<PCBDesign::PCBObj> obj,
+               int /*depth*/)
+{
+    using namespace PCBDesign;
+    auto comp = std::dynamic_pointer_cast<PCBComponent>(obj);
+    if (!comp) return;
+
+    // ─── 0) Defaults ────────────────────────────────────────────
+    PinType type       = PinType::PASSIVE;
+    int     number     = 0;
+    float   x = 0, y = 0, angle = 0, length = 0;
+    std::string pinName, pinNumberStr;
+    std::pair<float,float> nameFont{0,0}, numFont{0,0};
+
+    // ─── 1) Detect “new‑style” number‑first pins: (pin "3" (uuid …)) ───
+    if (pinNode->GetNumberOfChildren() > 1) {
+        auto maybe = pinNode->GetChild(1)->AsString();
+        if (maybe.size() >= 2 && maybe.front()=='"' && maybe.back()=='"') {
+            // strip quotes & try parse as an integer
+            try {
+                pinNumberStr = maybe.substr(1, maybe.size()-2);
+                number = std::stoi(pinNumberStr);
+
+                // scan for a uuid child, and if found, build & add the pin
+                for (size_t i = 2; i < pinNode->GetNumberOfChildren(); ++i) {
+                    auto *c = pinNode->GetChild(i);
+                    if (!c->IsList()) continue;
+                    if (c->GetChild(0)->AsString() == "uuid"
+                     && c->GetNumberOfChildren() >= 2)
+                    {
+                        // 1) construct a local Pin
+                        Pin p(number, type, x, y, angle);
+                        // 2) set its fields
+                        p.setNumber(pinNumberStr);
+                        // p.setUUID(c->GetChild(1)->AsString());
+                        // 3) attach
+                        comp->addPin(p);
+                    }
+                }
+                return;  // done handling new‑style pin
+            }
+            catch (...) {
+                // not numeric → fall back to old‑style below
+            }
+        }
+    }
+
+    // ─── 2) Old‑style pins: (pin <direction> <graphic> …) ───────────
+    if (pinNode->GetNumberOfChildren() > 1) {
+        auto dir = pinNode->GetChild(1)->AsString();
+        std::transform(dir.begin(), dir.end(), dir.begin(), ::toupper);
+        if      (dir.rfind("POWER",0) == 0)             type = PinType::POWER;
+        else if (auto e = magic_enum::enum_cast<PinType>(dir); e) type = *e;
+        else    std::cout << "[debug] Failed to map direction: " << dir << "\n";
+    }
+
+    // scan the rest of the children for length, at, name, number, etc.
+    for (size_t i = 3; i < pinNode->GetNumberOfChildren(); ++i) {
+        auto *c = pinNode->GetChild(i);
+        if (!c->IsList()) continue;
+        auto tag = c->GetChild(0)->AsString();
+
+        if (tag == "length" && c->GetNumberOfChildren() > 1) {
+            length = std::stof(c->GetChild(1)->AsString());
+        }
+        else if (tag == "at" && c->GetNumberOfChildren() >= 3) {
+            x = std::stof(c->GetChild(1)->AsString());
+            y = std::stof(c->GetChild(2)->AsString());
+            if (c->GetNumberOfChildren() > 3)
+                angle = std::stof(c->GetChild(3)->AsString());
+        }
+        else if (tag == "name" && c->GetNumberOfChildren() > 1) {
+            pinName = c->GetChild(1)->AsString();
+            if (pinName.size()>=2 && pinName.front()=='"' && pinName.back()=='"')
+                pinName = pinName.substr(1, pinName.size()-2);
+            // extract font size (if any)...
+            for (size_t j = 2; j < c->GetNumberOfChildren(); ++j) {
+                auto *eff = c->GetChild(j);
+                if (!eff->IsList() || eff->GetChild(0)->AsString()!="effects") continue;
+                for (size_t k = 1; k < eff->GetNumberOfChildren(); ++k) {
+                    auto *f = eff->GetChild(k);
+                    if (!f->IsList() || f->GetChild(0)->AsString()!="font") continue;
+                    for (size_t m = 1; m < f->GetNumberOfChildren(); ++m) {
+                        auto *sz = f->GetChild(m);
+                        if (!sz->IsList() || sz->GetChild(0)->AsString()!="size") continue;
+                        nameFont.first  = std::stof(sz->GetChild(1)->AsString());
+                        nameFont.second = std::stof(sz->GetChild(2)->AsString());
+                    }
+                }
+            }
+        }
+        else if (tag == "number" && c->GetNumberOfChildren() > 1) {
+            pinNumberStr = c->GetChild(1)->AsString();
+            if (pinNumberStr.size()>=2 && pinNumberStr.front()=='"' && pinNumberStr.back()=='"')
+                pinNumberStr = pinNumberStr.substr(1, pinNumberStr.size()-2);
+            try { number = std::stoi(pinNumberStr); } catch(...) {}
+
+            // extract number‐font size...
+            for (size_t j = 2; j < c->GetNumberOfChildren(); ++j) {
+                auto *eff = c->GetChild(j);
+                if (!eff->IsList() || eff->GetChild(0)->AsString()!="effects") continue;
+                for (size_t k = 1; k < eff->GetNumberOfChildren(); ++k) {
+                    auto *f = eff->GetChild(k);
+                    if (!f->IsList() || f->GetChild(0)->AsString()!="font") continue;
+                    for (size_t m = 1; m < f->GetNumberOfChildren(); ++m) {
+                        auto *sz = f->GetChild(m);
+                        if (!sz->IsList() || sz->GetChild(0)->AsString()!="size") continue;
+                        numFont.first  = std::stof(sz->GetChild(1)->AsString());
+                        numFont.second = std::stof(sz->GetChild(2)->AsString());
+                    }
+                }
+            }
+        }
+    }
+
+    // ─── 3) Construct & attach the old‑style pin ─────────────────────
+    {
+        Pin p(number, type, x, y, angle);
+        p.setName(pinName);
+        p.setNumber(pinNumberStr);
+        p.setLength(length);
+        comp->addPin(p);
+    }
+
+    // ─── 4) Log ────────────────────────────────────────────────────
+    std::cout << "Pin: number="   << number
+              << " name="        << pinName
+              << " direction="   << magic_enum::enum_name(type)
+              << " length="      << length
+              << " at=("        << x << "," << y << "," << angle << ")"
+              << " nameFont=("  << nameFont.first  << "," << nameFont.second << ")"
+              << " numFont=("   << numFont.first   << "," << numFont.second  << ")"
+              << "\n";
+}
+
+void handleRectangle(sexpr::Node* rectNode,
+                     std::shared_ptr<PCBDesign::PCBObj> obj,
+                     int depth) {
+    auto comp = std::dynamic_pointer_cast<PCBDesign::PCBComponent>(obj);
+    if (!comp) return;
+
+    auto shape = PCBDesign::getRectangle(rectNode, depth);
+    if (shape) {
+        comp->addShape(shape);
+        std::cout << "[handleRectangle] Added rectangle\n";
+    }
+}
+
+
+// Parse a “(line (start x1 y1) (end x2 y2) (width w))” into a LineSegment
+void handleLine(sexpr::Node* lineNode,
+                std::shared_ptr<PCBDesign::PCBObj> obj,
+                int depth)
+{
+    auto comp = std::dynamic_pointer_cast<PCBDesign::PCBComponent>(obj);
+    if (!comp) return;
+
+    // delegate to your shapes.cpp helper
+    auto shape = PCBDesign::getLine(lineNode, depth);
+    comp->addShape(shape);
+
+    std::cout << "[handleLine] Added line\n";
+}
+
+void parseCircle(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& /*stk*/,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    // build a Circle from the AST and append it
+    auto circ = getCircle(node, depth);
+    shapes.push_back(circ);
+}
+
+void parseRectangle(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& /*stk*/,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    // build a Rectangle from the AST and append it
+    auto rect = getRectangle(node, depth);
+    shapes.push_back(rect);
+}
+
+void printAllShapes() {
+    std::cout << "\n=== Parsed Shapes ===\n";
+    for (const auto& shp : shapes) {
+        shp->dump(std::cout);
+    }
+}
+std::shared_ptr<BaselineBoard> generateComponents(sexpr::Node* ast) {
+    using namespace sexpr;
+
+    auto board = std::make_shared<BaselineBoard>();
+    if (!ast || !ast->IsList()) return nullptr;
+
+    const auto* children = ast->GetChildren();
+    if (!children || children->empty()) return nullptr;
+
+    // First node should be symbol "kicad_sch"
+    auto* rootSymbol = (*children)[0];
+    if (!rootSymbol || !rootSymbol->IsSymbol()) return nullptr;
+    const std::string& rootType = static_cast<NodeSymbol*>(rootSymbol)->GetValue();
+    if (rootType != "kicad_sch") return nullptr;
+
+    // Prepare parse stack & shapes vector
+    std::stack<std::shared_ptr<PCBObj>> parse_stack;
+    parse_stack.push(board);
+    std::vector<std::shared_ptr<Shape>> shapes;
+
+    // Parse each top-level child
+    for (size_t i = 1; i < children->size(); ++i) {
+        Node* child = (*children)[i];
+        if (!child || !child->IsList()) continue;
+
+        const NodeVector* sub = child->GetChildren();
+        if (!sub || sub->empty()) continue;
+
+        Node* keyNode = (*sub)[0];
+        if (!keyNode || !keyNode->IsSymbol()) continue;
+
+        const std::string& key = static_cast<NodeSymbol*>(keyNode)->GetValue();
+
+        if (key == "version" && sub->size() > 1 && (*sub)[1]->IsString()) {
+            board->setVersion(static_cast<NodeString*>((*sub)[1])->GetValue());
+        } else if (key == "generator" && sub->size() > 1 && (*sub)[1]->IsString()) {
+            board->setGenerator(static_cast<NodeString*>((*sub)[1])->GetValue());
+        } else if (key == "paper" && sub->size() > 1 && (*sub)[1]->IsString()) {
+            board->setPaperSize(static_cast<NodeString*>((*sub)[1])->GetValue());
+        } else if (key == "property") {
+            if (sub->size() >= 3 && (*sub)[1]->IsSymbol() && (*sub)[2]->IsString()) {
+                const std::string& propKey = static_cast<NodeSymbol*>((*sub)[1])->GetValue();
+                const std::string& propVal = static_cast<NodeString*>((*sub)[2])->GetValue();
+                board->addProperty(propKey, propVal);
+            }
+        } 
+        // Call your existing parsing functions with shapes vector & parse_stack
+       
+    }
+
+    // After parsing all nodes, add shapes to board
+  
+
+    // Call recursive AST traversal if needed
+    traverseAst(ast, parse_stack, /*depth=*/0, shapes, board.get());
+
+    return board;
+}
+
+// std::shared_ptr<BaselineBoard> generateComponents(sexpr::Node* ast) {
+//     using namespace sexpr;
+
+//     auto board = std::make_shared<BaselineBoard>();
+//     if (!ast || !ast->IsList()) return nullptr;
+
+//     const auto* children = ast->GetChildren();
+//     if (!children || children->empty()) return nullptr;
+
+//     // First node should be symbol "kicad_sch"
+//     auto* rootSymbol = (*children)[0];
+//     if (!rootSymbol || !rootSymbol->IsSymbol()) return nullptr;
+//     const std::string& rootType = static_cast<NodeSymbol*>(rootSymbol)->GetValue();
+//     if (rootType != "kicad_sch") return nullptr;
+
+//     // Prepare the parse stack & push the board
+//     std::stack<std::shared_ptr<PCBObj>> parse_stack;
+//     parse_stack.push(board);
+
+//     // Create vector for shapes
+//     std::vector<std::shared_ptr<Shape>> shapes;
+
+//     // Parse each top-level child
+//     for (size_t i = 1; i < children->size(); ++i) {
+//         Node* child = (*children)[i];
+//         if (!child || !child->IsList()) continue;
+
+//         const NodeVector* sub = child->GetChildren();
+//         if (!sub || sub->empty()) continue;
+
+//         Node* keyNode = (*sub)[0];
+//         if (!keyNode || !keyNode->IsSymbol()) continue;
+
+//         const std::string& key = static_cast<NodeSymbol*>(keyNode)->GetValue();
+
+//         if (key == "version" && sub->size() > 1 && (*sub)[1]->IsString()) {
+//             board->setVersion(static_cast<NodeString*>((*sub)[1])->GetValue());
+//         } else if (key == "generator" && sub->size() > 1 && (*sub)[1]->IsString()) {
+//             board->setGenerator(static_cast<NodeString*>((*sub)[1])->GetValue());
+//         } else if (key == "paper" && sub->size() > 1 && (*sub)[1]->IsString()) {
+//             board->setPaperSize(static_cast<NodeString*>((*sub)[1])->GetValue());
+//         } else if (key == "property") {
+//             // Handle custom properties
+//             if (sub->size() >= 3 && (*sub)[1]->IsSymbol() && (*sub)[2]->IsString()) {
+//                 const std::string& propKey = static_cast<NodeSymbol*>((*sub)[1])->GetValue();
+//                 const std::string& propVal = static_cast<NodeString*>((*sub)[2])->GetValue();
+//                 board->addProperty(propKey, propVal);
+//             }
+//         } else if (key == "wire") {
+//     Node* wireData = (*sub)[1]; // this will usually be a list
+//     board->addWire(parseWire(wireData)); // implement parseWire()
+// } 
+// else if (key == "junction") {
+//     Node* junctionData = (*sub)[1];
+//     board->addJunction(parseJunction(junctionData)); // implement parseJunction()
+// } 
+// else if (key == "symbol") {
+//     Node* symbolData = (*sub)[1]; // this could be a list
+//     board->addSymbol(parseSymbol(symbolData)); // implement parseSymbol()
+// }
+
+//         // You can extend more parsing logic here as needed.
+//     }
+
+//     // Pass AST to recursive parser
+//     traverseAst(ast, parse_stack, /*depth=*/0, shapes,board.get());
+
+//     return board;
+// }
+
+
+//Debugging the AST 
+void dfsDebugAST(sexpr::Node* node, int depth, int child_index)
+{    if (!node) return;
+	if (node == nullptr) {
+		return;  // FIXME: Shouldn't this be an error. Never to be expected 
+	}
+	// std::cout << "D:" << depth << " " << node->AsString() << "\n";
+	std::string node_str = node->AsString();
+
+	if(node->AsString()=="symbol")
+	{
+		if(!insideComp) numComponents++;
+		else subComp++;
+		insideComp++;
+	}
+	
+	if(isGraphic(node_str) && child_index==0)
+	{
+		std::cout<<std::endl;
+		getShape(node->GetParent(), depth);
+	}
+
+	if(node->AsString()=="pin")
+	{std::cout << "=== Dumping pin node from parent ===\n";
+	printNodeRecursive(node->GetParent(), 0);
+		std::cout<<std::endl;
+		getPin(node->GetParent(), depth);
+	}
+ if (node->IsList()) { 
+    for (size_t i = 0; i < node->GetNumberOfChildren(); ++i) {
+        sexpr::Node* child = node->GetChild(i);
+        if (!child) {
+            std::cerr << "[dfsDebugAST] Warning: null child at index " << i << "\n";
+            continue;
+        }
+
+        if (!child->IsList() && !child->IsSymbol() && !child->IsString()) {
+            std::cerr << "[dfsDebugAST] Invalid type in list at index " << i << "\n";
+            continue;
+        }
+
+        dfsDebugAST(child, depth + 1, i);
+    }
+}
+
+if (node->AsString() == "symbol") {
+    insideComp--;
+}
+}
+
+void traverseSubtree(sexpr::Node* node, std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack, int depth, PCBDesign::BaselineBoard* board /* = nullptr */) {
+    if (!node) return;
+
+    if (node->IsList()) {
+        for (size_t i = 0; i < node->GetNumberOfChildren(); ++i) {
+            sexpr::Node* child = node->GetChild(i);
+            if (!child) {
+                std::cerr << "[traverseSubtree] Warning: null child at index " << i << "\n";
+                continue;
+            }
+
+            if (!child->IsList() && !child->IsSymbol() && !child->IsString()) {
+                std::cerr << "[traverseSubtree] Invalid type in list at index " << i << "\n";
+                continue;
+            }
+
+            traverseAst(child, parse_stack, depth, shapes,board);
+        }
+    } else {
+        std::cerr << "[traverseSubtree] Warning: node at depth " << depth << " is not a list.\n";
+    }
+}
+// in ast.cpp
+void parseBusEntry(
+    sexpr::Node* node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    using namespace PCBDesign;
+
+    if (!node) return;
+    auto entry = std::make_shared<BusEntry>();
+
+    int nc = node->GetNumberOfChildren();
+    for (int i = 1; i < nc; ++i) {
+        auto* child = node->GetChild(i);
+        if (!child) continue;
+
+        // Expect a list like (at X Y) ; if child is symbol/string skip
+        if (!child->IsList()) {
+            // some files may have direct symbols/values - skip safely
+            continue;
+        }
+        // first element of child should be a symbol tag
+        auto* tagNode = child->GetChild(0);
+        if (!tagNode || !tagNode->IsSymbol()) {
+            continue;
+        }
+        std::string tag = tagNode->AsString();
+
+        if (tag == "at") {
+            if (child->GetNumberOfChildren() >= 3) {
+                double x = atof(child->GetChild(1)->AsString().c_str());
+                double y = atof(child->GetChild(2)->AsString().c_str());
+                entry->setPosition((float)x, (float)y);
+            }
+        } else if (tag == "size") {
+            if (child->GetNumberOfChildren() >= 3) {
+                double x = atof(child->GetChild(1)->AsString().c_str());
+                double y = atof(child->GetChild(2)->AsString().c_str());
+                entry->setSize((float)x, (float)y);
+            }
+        } else if (tag == "uuid") {
+            if (child->GetNumberOfChildren() >= 2)
+                entry->setUUID(child->GetChild(1)->AsString());
+        } else if (tag == "pts") {
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* pt = child->GetChild(j);
+                if (!pt || !pt->IsList()) continue;
+                auto* xy = pt->GetChild(0);
+                if (!xy || !xy->IsSymbol()) continue;
+                if (xy->AsString() == "xy" && pt->GetNumberOfChildren() >= 3) {
+                    float x = atof(pt->GetChild(1)->AsString().c_str());
+                    float y = atof(pt->GetChild(2)->AsString().c_str());
+                    entry->addPoint(x, y);
+                }
+            }
+        } else if (tag == "stroke") {
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* attr = child->GetChild(j);
+                if (!attr || !attr->IsList()) continue;
+                auto* keyn = attr->GetChild(0);
+                if (!keyn || !keyn->IsSymbol()) continue;
+                std::string key = keyn->AsString();
+                if (key == "width" && attr->GetNumberOfChildren() >= 2) {
+                    float w = atof(attr->GetChild(1)->AsString().c_str());
+                    entry->setWidth(w);
+                } else if (key == "type" && attr->GetNumberOfChildren() >= 2) {
+                    entry->setStrokeType(attr->GetChild(1)->AsString());
+                }
+            }
+        } else if (tag == "fill") {
+            // (fill (color R G B A))
+            if (child->GetNumberOfChildren() >= 2) {
+                auto* col = child->GetChild(1);
+                if (col && col->IsList() && col->GetChild(0)->AsString() == "color"
+                    && col->GetNumberOfChildren() >= 5)
+                {
+                    std::ostringstream oss;
+                    oss << "rgba("
+                        << col->GetChild(1)->AsString() << ","
+                        << col->GetChild(2)->AsString() << ","
+                        << col->GetChild(3)->AsString() << ","
+                        << col->GetChild(4)->AsString()
+                        << ")";
+                    entry->setFillType(oss.str());
+                }
+            }
+        } else {
+            std::cerr << "[UNHANDLED bus_entry tag] \"" << tag << "\"\n";
+        }
+    }
+
+    shapes.push_back(entry);
+}
+
+void parseBus(
+    sexpr::Node* node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    using namespace PCBDesign;
+
+    auto bus = std::make_shared<BusEntry>();  // ✅ reuse BusEntry
+
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto* child = node->GetChild(i);
+        if (!child || !child->IsList()) continue;
+
+        std::string tag = child->GetChild(0)->AsString();
+
+        if (tag == "pts") {
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* pt = child->GetChild(j);
+                if (pt->IsList() && pt->GetChild(0)->AsString() == "xy") {
+                    float x = std::stof(pt->GetChild(1)->AsString());
+                    float y = std::stof(pt->GetChild(2)->AsString());
+                    bus->addPoint(x, y);
+                }
+            }
+        } else if (tag == "stroke") {
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* attr = child->GetChild(j);
+                if (!attr || !attr->IsList()) continue;
+                std::string key = attr->GetChild(0)->AsString();
+
+                if (key == "width") {
+                    float w = std::stof(attr->GetChild(1)->AsString());
+                    bus->setWidth(w);
+                } else if (key == "type") {
+                    bus->setStrokeType(attr->GetChild(1)->AsString());
+                } 
+            }
+        } else if (tag == "fill") {
+      // child looks like: (fill (color R G B A))
+      auto * col = child->GetChild(1);
+      if (col && col->IsList() && col->GetChild(0)->AsString()=="color"
+          && col->GetNumberOfChildren() >= 5)
+      {
+        std::ostringstream oss;
+        oss << "rgba("
+            << col->GetChild(1)->AsString() << ","
+            << col->GetChild(2)->AsString() << ","
+            << col->GetChild(3)->AsString() << ","
+            << col->GetChild(4)->AsString()
+            << ")";
+        bus->setFillType(oss.str());
+      }
+    }
+		else if (tag == "uuid") {
+            bus->setUUID(child->GetChild(1)->AsString());
+        } else {
+            std::cerr << "[UNHANDLED] tag=\"" << tag << "\"\n";
+        }
+    }
+
+    shapes.push_back(bus);
+}
+// ast.cpp
+void parsePolyline(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    using namespace PCBDesign;
+    if (!node || !node->IsList()) return;
+
+    auto pline = std::make_shared<Polyline>();
+
+    int nc = node->GetNumberOfChildren();
+    for (int i = 1; i < nc; ++i) {
+        auto* child = node->GetChild(i);
+        if (!child) continue;
+
+        // child should usually be a list whose first element is the tag
+        if (!child->IsList()) continue;
+        auto* tnode = child->GetChild(0);
+        if (!tnode || !tnode->IsSymbol()) continue;
+        std::string tag = tnode->AsString();
+
+        if (tag == "pts") {
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* xy = child->GetChild(j);
+                if (!xy || !xy->IsList()) continue;
+                auto* xy0 = xy->GetChild(0);
+                if (!xy0 || !xy0->IsSymbol()) continue;
+                if (xy0->AsString() == "xy" && xy->GetNumberOfChildren() >= 3) {
+                    float x = std::stof(xy->GetChild(1)->AsString());
+                    float y = std::stof(xy->GetChild(2)->AsString());
+                    pline->addPoint(x, y);
+                }
+            }
+        }
+        else if (tag == "stroke") {
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* s = child->GetChild(j);
+                if (!s || !s->IsList()) continue;
+                auto* s0 = s->GetChild(0);
+                if (!s0 || !s0->IsSymbol()) continue;
+                std::string strokeTag = s0->AsString();
+                if (strokeTag == "width" && s->GetNumberOfChildren() >= 2) {
+                    float w = std::stof(s->GetChild(1)->AsString());
+                    pline->setWidth(w);
+                } else if (strokeTag == "type" && s->GetNumberOfChildren() >= 2) {
+                    pline->setStrokeType(s->GetChild(1)->AsString());
+                }
+            }
+        }
+        else if (tag == "fill") {
+            // Accept both (fill (type background)) and (fill (color R G B A))
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* sub = child->GetChild(j);
+                if (!sub || !sub->IsList()) continue;
+                auto* s0 = sub->GetChild(0);
+                if (!s0 || !s0->IsSymbol()) continue;
+                std::string st = s0->AsString();
+                if (st == "type" && sub->GetNumberOfChildren() >= 2) {
+                    pline->setFillType(sub->GetChild(1)->AsString());
+                } else if (st == "color" && sub->GetNumberOfChildren() >= 5) {
+                    std::ostringstream oss;
+                    oss << "rgba(" 
+                        << sub->GetChild(1)->AsString() << ","
+                        << sub->GetChild(2)->AsString() << ","
+                        << sub->GetChild(3)->AsString() << ","
+                        << sub->GetChild(4)->AsString() << ")";
+                    pline->setFillType(oss.str());
+                }
+            }
+        }
+        else if (tag == "uuid") {
+            if (child->GetNumberOfChildren() >= 2)
+                pline->setUUID(child->GetChild(1)->AsString());
+        }
+        // else: other tags (e.g. effects) — ignore or log later
+    }
+
+    // Only push if it has at least 2 points (matches getPolyline behavior)
+    // but if you want 1-point polylines too, remove the check.
+    shapes.push_back(pline);
+}
+
+void parseWire(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    using namespace PCBDesign;
+
+    auto wire = std::make_shared<Polyline>();
+    // No need for wire->setIsWire(true);
+
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto* child = node->GetChild(i);
+        if (!child || !child->IsList()) continue;
+        std::string tag = child->GetChild(0)->AsString();
+
+        if (tag == "pts") {
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* xy = child->GetChild(j);
+                if (!xy || !xy->IsList()) continue;
+                if (xy->GetChild(0)->AsString() == "xy") {
+                    float x = std::stof(xy->GetChild(1)->AsString());
+                    float y = std::stof(xy->GetChild(2)->AsString());
+                    wire->addPoint(x, y);
+                }
+            }
+        }
+        else if (tag == "stroke") {
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* s = child->GetChild(j);
+                if (!s || !s->IsList()) continue;
+                if (s->GetChild(0)->AsString() == "width") {
+                    float w = std::stof(s->GetChild(1)->AsString());
+                    wire->setWidth(w);
+                }
+            }
+        }
+		else if (tag == "fill") {
+      // child looks like: (fill (color R G B A))
+      auto * col = child->GetChild(1);
+      if (col && col->IsList() && col->GetChild(0)->AsString()=="color"
+          && col->GetNumberOfChildren() >= 5)
+      {
+        std::ostringstream oss;
+        oss << "rgba("
+            << col->GetChild(1)->AsString() << ","
+            << col->GetChild(2)->AsString() << ","
+            << col->GetChild(3)->AsString() << ","
+            << col->GetChild(4)->AsString()
+            << ")";
+        wire->setFillType(oss.str());
+      }
+    }
+        else if (tag == "uuid") {
+            wire->setUUID(child->GetChild(1)->AsString());
+        }
+    }
+
+    shapes.push_back(wire);
+}
+static std::string toSExprString(const sexpr::Node* n) {
+    if (!n) return {};
+    if (!n->IsList()) {
+        // raw atom (quoted strings should already come quoted from AsString if needed)
+        return n->AsString();
+    }
+    std::string s = "(";
+    for (int i = 0; i < n->GetNumberOfChildren(); ++i) {
+        if (i) s += ' ';
+        s += toSExprString(n->GetChild(i));
+    }
+    s += ')';
+    return s;
+}
+void parseLabel(
+    sexpr::Node* node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    using namespace PCBDesign;
+
+    // ensure board exists on stack (handlers expect a board)
+    std::shared_ptr<BaselineBoard> board;
+    if (!parse_stack.empty()) {
+        board = std::dynamic_pointer_cast<BaselineBoard>(parse_stack.top());
+    }
+    if (!board) {
+        std::cerr << "[parseLabel] no BaselineBoard on parse_stack, returning\n";
+        return;
+    }
+
+    auto label = std::make_shared<Label>();
+
+    // Child[1] might be the raw string like "PIEZO_IN"
+    if (node->GetNumberOfChildren() > 1 && node->GetChild(1)->IsString()) {
+        label->setText(node->GetChild(1)->AsString());
+    }
+
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto* child = node->GetChild(i);
+        if (!child || !child->IsList()) continue;
+
+        std::string tag = child->GetChild(0)->AsString();
+
+        if (tag == "at") {
+            float x = std::stof(child->GetChild(1)->AsString());
+            float y = std::stof(child->GetChild(2)->AsString());
+            label->setPosition(x, y);
+            if (child->GetNumberOfChildren() > 3) {
+                float angle = std::stof(child->GetChild(3)->AsString());
+                label->setAngle(angle);
+            }
+        } else if (tag == "uuid") {
+            label->setUUID(child->GetChild(1)->AsString());
+        } else {
+            // preserve everything unknown (like font, size, thickness, justify, effects)
+            label->addExtraRaw(toSExprString(child));
+        }
+    }
+
+    // Add to shapes collection
+    shapes.push_back(label);
+
+    // Optionally attach to board
+    // if (board) board->addShape(label);
+}
+
+void parseSheet(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    using namespace PCBDesign;
+
+    auto sheet = std::make_shared<Sheet>();
+
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto* child = node->GetChild(i);
+        if (!child || !child->IsList()) continue;
+
+        std::string tag = child->GetChild(0)->AsString();
+        if (tag == "property") {
+            std::string key = child->GetChild(1)->AsString();
+            std::string value = child->GetChild(2)->AsString();
+            sheet->addProperty(key, value);
+        } else if (tag == "pin") {
+            sheet->addPin(child->GetChild(1)->AsString());
+        } else if (tag == "instances") {
+            for (int j = 1; j < child->GetNumberOfChildren(); ++j) {
+                auto* inst = child->GetChild(j);
+                if (!inst || !inst->IsList()) continue;
+                std::string path = inst->GetChild(1)->AsString();
+                sheet->addInstance(path);
+            }
+        }
+		else if (tag == "fill") {
+    // The child list might look like: (fill (color 0 0 0 0.0000))
+    auto *colNode = child->GetChild(1);
+    if (colNode && colNode->IsList() && colNode->GetChild(0)->AsString() == "color") {
+        std::ostringstream oss;
+        oss << "rgba("
+            << colNode->GetChild(1)->AsString() << ","
+            << colNode->GetChild(2)->AsString() << ","
+            << colNode->GetChild(3)->AsString() << ","
+            << colNode->GetChild(4)->AsString() << ")";
+        sheet->setFillColor(oss.str());
+    }
+}
+    }
+
+    shapes.push_back(sheet);
+}
+
+void parseVersion(
+    sexpr::Node*                                    n,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    auto board = std::dynamic_pointer_cast<BaselineBoard>(parse_stack.top());
+    if (board) {
+        std::string v = n->GetChild(1)->AsString();
+        board->setVersion(v);
+    }
+}
+
+void parseGenerator(
+    sexpr::Node*                                    n,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    auto board = std::dynamic_pointer_cast<BaselineBoard>(parse_stack.top());
+    if (board) {
+        board->setGenerator(n->GetChild(1)->AsString());
+    }
+}
+
+void parseRootUUID(
+    sexpr::Node*                                    n,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    auto board = std::dynamic_pointer_cast<BaselineBoard>(parse_stack.top());
+    if (board) {
+        board->setRootUUID(n->GetChild(1)->AsString());
+    }
+}
+
+void parsePaper(
+    sexpr::Node*                                    n,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    auto board = std::dynamic_pointer_cast<BaselineBoard>(parse_stack.top());
+    if (board) {
+        board->setPaperSize(n->GetChild(1)->AsString());
+    }
+}
+void parseLibSymbols(
+    sexpr::Node* n,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    auto board = std::dynamic_pointer_cast<BaselineBoard>(parse_stack.top());
+    if (!board) return;
+
+    // store the entire raw block
+    board->setLibSymbolsRaw(toSExprString(n));
+
+    for (int i = 1; i < n->GetNumberOfChildren(); ++i) {
+        auto* sym = n->GetChild(i);
+        if (!sym || !sym->IsList()) continue;
+
+        if (sym->GetChild(0)->AsString() == "symbol") {
+            for (int j = 1; j < sym->GetNumberOfChildren(); ++j) {
+                auto* sub = sym->GetChild(j);
+                if (!sub || !sub->IsList()) continue;
+                if (sub->GetChild(0)->AsString() == "lib_id") {
+                    board->addLibSymbol(sub->GetChild(1)->AsString());
+                }
+            }
+        }
+    }
+}
+
+void parseTitleBlock(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    using namespace PCBDesign;
+    // peek at the board on top of the stack:
+    auto top = parse_stack.top();
+    auto b   = std::dynamic_pointer_cast<BaselineBoard>(top);
+    if (!b) return;
+
+    // child[0] is "title_block", so start at i=1
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto *c = node->GetChild(i);
+        if (!c || !c->IsList()) continue;
+        auto tag = c->GetChild(0)->AsString();
+
+        if      (tag == "host")  b->setHost    (c->GetChild(1)->AsString());
+        else if (tag == "page")  b->setPage    (c->GetChild(1)->AsString());
+        else if (tag == "title") b->setTitle   (c->GetChild(1)->AsString());
+        else if (tag == "date")  b->setDate    (c->GetChild(1)->AsString());
+        else if (tag == "rev")   b->setRevision(c->GetChild(1)->AsString());
+		else if (tag == "company") b->setCompany (c->GetChild(1)->AsString());
+		 else if (tag == "comment") {
+            // strip quotes just like labels:
+            auto raw = c->GetChild(1)->AsString();
+            if (raw.size()>1 && raw.front()=='"' && raw.back()=='"')
+                raw = raw.substr(1, raw.size()-2);
+            b->addComment(raw);
+        }
+        else {
+            std::cerr << "[UNHANDLED title_block child] tag=\"" << tag << "\"\n";
+        }
+    }
+}
+void parseJunction(
+    sexpr::Node* node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    float x = 0.0f, y = 0.0f;
+    std::string at_x_raw, at_y_raw;
+    std::string uuid, color;
+    double diameter = 0.0;
+
+    // Loop through cleaned children
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto* child = node->GetChild(i);
+        if (!child || !child->IsList() || child->GetNumberOfChildren() < 2) continue;
+
+        const std::string tag = child->GetChild(0)->AsString();
+
+        if (tag == "at" && child->GetNumberOfChildren() >= 3) {
+            at_x_raw = child->GetChild(1)->AsString();
+            at_y_raw = child->GetChild(2)->AsString();
+            x = static_cast<float>(std::stod(at_x_raw));
+            y = static_cast<float>(std::stod(at_y_raw));
+        } 
+        else if (tag == "uuid") {
+            uuid = child->GetChild(1)->AsString();
+        } 
+        else if (tag == "color") {
+            color = child->GetChild(1)->AsString();
+        } 
+        else if (tag == "diameter") {
+            diameter = std::stod(child->GetChild(1)->AsString());
+        }
+    }
+
+    // Create junction with coordinates
+    auto junction = std::make_shared<PCBDesign::Junction>(x, y);
+    junction->setRawAt(at_x_raw, at_y_raw);
+
+    if (!uuid.empty()) junction->setUUID(uuid);
+    if (!color.empty()) junction->setColor(color);
+    if (diameter > 0.0) junction->setDiameter(diameter);
+
+    // Add to shapes vector
+    shapes.push_back(junction);
+}
+
+
+void parseSymbolInstances(sexpr::Node* node) {
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto* inst = node->GetChild(i);
+        if (!inst->IsList()) continue;
+
+        SymbolInstance si;
+
+        for (int j = 1; j < inst->GetNumberOfChildren(); ++j) {
+            auto* field = inst->GetChild(j);
+            if (!field->IsList()) continue;
+
+            std::string tag = field->GetChild(0)->AsString();
+            if (tag == "path") si.path = field->GetChild(1)->AsString();
+            else if (tag == "reference") si.reference = field->GetChild(1)->AsString();
+            else if (tag == "unit") si.unit = field->GetChild(1)->AsString();
+            else if (tag == "value") si.value = field->GetChild(1)->AsString();
+            else if (tag == "footprint") si.footprint = field->GetChild(1)->AsString();
+            else if (tag == "tstamp") si.tstamp = field->GetChild(1)->AsString();
+            else if (tag == "uuid") si.uuid = field->GetChild(1)->AsString();
+            else if (tag == "datasheet") si.datasheet = field->GetChild(1)->AsString();
+
+            else std::cerr << "[UNHANDLED symbol_instance field] tag=\"" << tag << "\"\n";
+        }
+
+        si.dump(std::cout);
+    }
+}
+void parseSheetInstances(sexpr::Node* node) {
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto* child = node->GetChild(i);
+        if (!child->IsList()) continue;
+
+        std::string path;
+        std::string page;
+
+        if (child->GetChild(0)->AsString() == "path") {
+            if (child->GetNumberOfChildren() >= 2) {
+                path = child->GetChild(1)->AsString();
+                if (child->GetNumberOfChildren() >= 3 && child->GetChild(2)->IsList()) {
+                    auto* pageList = child->GetChild(2);
+                    if (pageList->GetChild(0)->AsString() == "page") {
+                        page = pageList->GetChild(1)->AsString();
+                    }
+                }
+            }
+
+            SheetInstance si{path, page};
+            si.dump(std::cout);
+        } else {
+            std::cerr << "[UNHANDLED sheet_instance child] tag=\"" << child->GetChild(0)->AsString() << "\"\n";
+        }
+    }
+}
+//------------------------------------------------------------------------------
+// bus_alias handler: record alias→member list on the BaselineBoard
+//------------------------------------------------------------------------------
+void parseBusAlias(
+    sexpr::Node*                                    node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int                                             depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    using namespace PCBDesign;
+    // get the board at the bottom of the stack
+    auto top = parse_stack.top();
+    auto b   = std::dynamic_pointer_cast<BaselineBoard>(top);
+    if (!b) return;
+
+    // alias name is child[1]
+    std::string alias = node->GetChild(1)->AsString();
+
+    // find the (members …) sublist
+    std::vector<std::string> members;
+    for (int i = 2; i < node->GetNumberOfChildren(); ++i) {
+        auto *c = node->GetChild(i);
+        if (!c || !c->IsList()) continue;
+        if (c->GetChild(0)->AsString() == "members") {
+            for (int j = 1; j < c->GetNumberOfChildren(); ++j) {
+                members.push_back(c->GetChild(j)->AsString());
+            }
+        }
+    }
+
+    // store it
+    b->addBusAlias(alias, members);
+}
+void parseGlobalLabel(
+    sexpr::Node* node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& stack,
+    int depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes
+) {
+    using namespace PCBDesign;
+
+    if (!node->IsList() || node->GetNumberOfChildren() < 2) return;
+
+    auto label = std::make_shared<Label>();
+    std::string labelName;
+
+    for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+        auto* child = node->GetChild(i);
+        if (!child || !child->IsList()) continue;
+
+        std::string key = child->GetChild(0)->AsString();
+
+        if (key == "name" && child->GetNumberOfChildren() >= 2) {
+            labelName = child->GetChild(1)->AsString();
+            label->setText(labelName);
+        } 
+        else if (key == "at" && child->GetNumberOfChildren() >= 3) {
+            float x = std::stof(child->GetChild(1)->AsString());
+            float y = std::stof(child->GetChild(2)->AsString());
+            label->setPosition(x, y);
+            if (child->GetNumberOfChildren() > 3) {
+                float angle = std::stof(child->GetChild(3)->AsString());
+                label->setAngle(angle);
+            }
+        } 
+        else if (key == "uuid" && child->GetNumberOfChildren() >= 2) {
+            label->setUUID(child->GetChild(1)->AsString());
+        } 
+        else {
+            // Store all other data as raw S-expr (including effects)
+            label->addExtraRaw(toSExprString(child));
+        }
+    }
+
+    shapes.push_back(label);
+
+    std::cout << "Parsed GlobalLabel: " 
+              << (labelName.empty() ? "(unnamed)" : labelName) 
+              << "\n";
+}
+
+
+void parseGeneral(sexpr::Node* node, int depth) {
+    if (!node) { std::cerr<<"parseGeneral: null node\n"; return; }
+    std::string indent(depth*2, ' ');
+    std::cout<<indent<<"=== PCB: general ===\n";
+
+    auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) { std::cerr<<indent<<"parseGeneral: no children\n"; return; }
+
+    // keys we care about:
+    static const std::set<std::string> handled = {
+        "links","no_connects","area","thickness",
+        "drawings","tracks","zones","modules","nets", "legacy_teardrops"
+    };
+
+    for (size_t i = 1; i < kids->size(); ++i) {
+        auto* item = (*kids)[i];
+        if (!item || !item->IsList()) continue;
+
+        auto* sub = item->GetChildren();
+        if (!sub || sub->empty()) continue;
+
+        std::string key = safeGetString(sub->at(0));
+        if (handled.count(key)) {
+            std::cout<<indent<<"  "<<key<<" =";
+            for (size_t j = 1; j < sub->size(); ++j)
+                std::cout<<" "<<safeGetString(sub->at(j));
+            std::cout<<"\n";
+        }
+        else {
+            std::cerr<<indent<<"  [general] unhandled key="<<key
+                     <<" (";
+            for (size_t j = 1; j < sub->size(); ++j)
+                std::cout<<" "<<safeGetString(sub->at(j));
+            std::cout<<" )\n";
+        }
+    }
+}
+
+void parseLayers(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseLayers: null node\n";
+        return;
+    }
+
+    std::string indent(depth * 2, ' ');
+    std::cout << indent << "=== PCB: layers ===\n";
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->size() < 2) {
+        std::cerr << indent << "parseLayers: no layers\n";
+        return;
+    }
+
+    // Each layer entry is a list: ( idx name type )
+    for (size_t i = 1; i < kids->size(); ++i) {
+        const sexpr::Node* layerNode = (*kids)[i];
+        if (!layerNode || !layerNode->IsList()) {
+            std::cerr << indent << "  parseLayers: skipping non-list at index " << i << "\n";
+            continue;
+        }
+
+        const auto* elems = layerNode->GetChildren();
+        if (!elems || elems->size() < 3) {
+            std::cerr << indent << "  parseLayers: malformed layer at index " << i << "\n";
+            continue;
+        }
+
+        // Pull out the first three fields
+        int    id   = safeGetInteger(elems->at(0));
+        std::string name = safeGetString(elems->at(1));
+        std::string type = safeGetString(elems->at(2));
+
+        // Print the core three
+        std::cout << indent
+                  << "  Layer: id="   << id
+                  << ", name=\""    << name << "\""
+                  << ", type=\""    << type << "\"";
+
+        // If there are any extra atoms beyond the first three, dump them too:
+        if (elems->size() > 3) {
+            std::cout << ", extra=[";
+            for (size_t j = 3; j < elems->size(); ++j) {
+                if (j>3) std::cout << " ";
+                std::cout << safeGetString(elems->at(j));
+            }
+            std::cout << "]";
+        }
+
+        std::cout << "\n";
+    }
+}
+void SetupSettings::print(std::ostream& os) const {
+    os << "(setup\n";
+    if (last_trace_width)
+        os << "  (last_trace_width " << *last_trace_width << ")\n";
+    if (trace_width)
+        os << "  (trace_width " << *trace_width << ")\n";
+    if (trace_clearance)
+        os << "  (trace_clearance " << *trace_clearance << ")\n";
+    if (zone_45_only)
+        os << "  (zone_45_only " << (*zone_45_only ? "yes" : "no") << ")\n";
+    if (zone_clearance)
+        os << "  (zone_clearance " << *zone_clearance << ")\n";
+    if (trace_min)
+        os << "  (trace_min " << *trace_min << ")\n";
+    if (segment_width)
+        os << "  (segment_width " << *segment_width << ")\n";
+    if (edge_width)
+        os << "  (edge_width " << *edge_width << ")\n";
+    if (via_size)
+        os << "  (via_size " << *via_size << ")\n";
+    if (via_drill)
+        os << "  (via_drill " << *via_drill << ")\n";
+    if (via_min_size)
+        os << "  (via_min_size " << *via_min_size << ")\n";
+    if (via_min_drill)
+        os << "  (via_min_drill " << *via_min_drill << ")\n";
+    if (uvia_size)
+        os << "  (uvia_size " << *uvia_size << ")\n";
+    if (uvia_drill)
+        os << "  (uvia_drill " << *uvia_drill << ")\n";
+    if (uvias_allowed)
+        os << "  (uvias_allowed " << (*uvias_allowed ? "yes" : "no") << ")\n";
+    if (uvia_min_size)
+        os << "  (uvia_min_size " << *uvia_min_size << ")\n";
+    if (uvia_min_drill)
+        os << "  (uvia_min_drill " << *uvia_min_drill << ")\n";
+    if (pad_size)
+        os << "  (pad_size " << pad_size->first << " " << pad_size->second << ")\n";
+    if (pad_drill)
+        os << "  (pad_drill " << *pad_drill << ")\n";
+    if (pad_to_mask_clearance)
+        os << "  (pad_to_mask_clearance " << *pad_to_mask_clearance << ")\n";
+    if (aux_axis_origin)
+        os << "  (aux_axis_origin " << aux_axis_origin->first << " " << aux_axis_origin->second << ")\n";
+    if (visible_elements)
+        os << "  (visible_elements " << *visible_elements << ")\n";
+    if (pcb_text_width)
+        os << "  (pcb_text_width " << *pcb_text_width << ")\n";
+    if (pcb_text_size)
+        os << "  (pcb_text_size " << pcb_text_size->first << " " << pcb_text_size->second << ")\n";
+    if (mod_text_size)
+        os << "  (mod_text_size " << mod_text_size->first << " " << mod_text_size->second << ")\n";
+    if (mod_text_width)
+        os << "  (mod_text_width " << *mod_text_width << ")\n";
+    if (mod_edge_width)
+        os << "  (mod_edge_width " << *mod_edge_width << ")\n";
+    if (pcbplotparams_raw)
+        os << "  " << *pcbplotparams_raw << "\n";
+    if (allow_soldermask_bridges)
+        os << "  (allow_soldermask_bridges_in_footprints " << (*allow_soldermask_bridges ? "yes" : "no") << ")\n";
+    if (tenting)
+        os << "  (tenting " << *tenting << ")\n";
+     if (stackup_raw)
+        os << "  (stackup " << *stackup_raw << ")\n";
+    if (grid_origin)
+        os << "  (grid_origin " << grid_origin->first
+           << " " << grid_origin->second << ")\n";
+    if (solder_mask_min_width)
+        os << "  (solder_mask_min_width " << *solder_mask_min_width << ")\n";
+    if (user_trace_width)
+        os << "  (user_trace_width " << *user_trace_width << ")\n";
+    if (pad_to_paste_clearance)
+        os << "  (pad_to_paste_clearance " << *pad_to_paste_clearance << ")\n";
+     if (max_error)
+        os << "  (max_error " << *max_error << ")\n";
+    if (defaults_raw)
+        os << "  " << *defaults_raw << "\n";
+     if (clearance_min)
+        os << "  (clearance_min " << *clearance_min << ")\n";
+    if (via_min_annulus)
+        os << "  (via_min_annulus " << *via_min_annulus << ")\n";
+    if (through_hole_min)
+        os << "  (through_hole_min " << *through_hole_min << ")\n";
+
+
+    os << ")\n";
+}
+
+void parseSetup(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseSetup: null node\n";
+        return;
+    }
+
+    std::string indent(depth * 2, ' ');
+    std::cout << indent << "=== PCB: setup ===\n";
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->size() < 2) {
+        std::cerr << indent << "parseSetup: no children\n";
+        return;
+    }
+
+    Setup setup;           // <-- accumulate into this
+
+    for (size_t i = 1; i < kids->size(); ++i) {
+        auto* entry = (*kids)[i];
+        if (!entry || !entry->IsList()) continue;
+
+        const auto* elems = entry->GetChildren();
+        if (!elems || elems->empty()) continue;
+
+        std::string key = safeGetString(elems->at(0));
+
+        // build a space‑separated string of the rest of the atoms
+        std::ostringstream vals;
+        for (size_t j = 1; j < elems->size(); ++j) {
+            if (j > 1) vals << " ";
+            vals << safeGetString(elems->at(j));
+        }
+        std::string valueStr = vals.str();
+
+        // --- now handle every known key ---
+        if (key == "last_trace_width") {
+            setup.settings.last_trace_width = std::stod(valueStr);
+        }
+        else if (key == "trace_width") {
+            setup.settings.trace_width = std::stod(valueStr);
+        }
+        else if (key == "trace_clearance") {
+            setup.settings.trace_clearance = std::stod(valueStr);
+        }
+        else if (key == "zone_45_only") {
+            setup.settings.zone_45_only = (valueStr == "yes");
+        }
+        else if (key == "zone_clearance") {
+            setup.settings.zone_clearance = std::stod(valueStr);
+        }
+        else if (key == "trace_min") {
+            setup.settings.trace_min = std::stod(valueStr);
+        }
+        else if (key == "segment_width") {
+            setup.settings.segment_width = std::stod(valueStr);
+        }
+        else if (key == "edge_width") {
+            setup.settings.edge_width = std::stod(valueStr);
+        }
+        else if (key == "via_size") {
+            setup.settings.via_size = std::stod(valueStr);
+        }
+        else if (key == "via_drill") {
+            setup.settings.via_drill = std::stod(valueStr);
+        }
+        else if (key == "via_min_size") {
+            setup.settings.via_min_size = std::stod(valueStr);
+        }
+        else if (key == "via_min_drill") {
+            setup.settings.via_min_drill = std::stod(valueStr);
+        }
+        else if (key == "uvia_size") {
+            setup.settings.uvia_size = std::stod(valueStr);
+        }
+        else if (key == "uvia_drill") {
+            setup.settings.uvia_drill = std::stod(valueStr);
+        }
+        else if (key == "uvias_allowed") {
+            setup.settings.uvias_allowed = (valueStr == "yes");
+        }
+        else if (key == "uvia_min_size") {
+            setup.settings.uvia_min_size = std::stod(valueStr);
+        }
+        else if (key == "uvia_min_drill") {
+            setup.settings.uvia_min_drill = std::stod(valueStr);
+        }
+        else if (key == "pad_size") {
+            std::istringstream iss(valueStr);
+            double x,y; iss >> x >> y;
+            setup.settings.pad_size = {x,y};
+        }
+        else if (key == "pad_drill") {
+            setup.settings.pad_drill = std::stod(valueStr);
+        }
+        else if (key == "pad_to_mask_clearance") {
+            setup.settings.pad_to_mask_clearance = std::stod(valueStr);
+        }
+        else if (key == "aux_axis_origin") {
+            std::istringstream iss(valueStr);
+            double x,y; iss >> x >> y;
+            setup.settings.aux_axis_origin = {x,y};
+        }
+        else if (key == "visible_elements") {
+            setup.settings.visible_elements = valueStr;
+        }
+        else if (key == "pcb_text_width") {
+            setup.settings.pcb_text_width = std::stod(valueStr);
+        }
+        else if (key == "pcb_text_size") {
+            std::istringstream iss(valueStr);
+            double x,y; iss >> x >> y;
+            setup.settings.pcb_text_size = {x,y};
+        }
+        else if (key == "mod_text_size") {
+            std::istringstream iss(valueStr);
+            double x,y; iss >> x >> y;
+            setup.settings.mod_text_size = {x,y};
+        }
+        else if (key == "mod_text_width") {
+            setup.settings.mod_text_width = std::stod(valueStr);
+        }
+        else if (key == "mod_edge_width") {
+            setup.settings.mod_edge_width = std::stod(valueStr);
+        }
+        else if (key == "pcbplotparams") {
+            // capture the entire sub‑S‑expr as raw text
+            setup.settings.pcbplotparams_raw = entry->AsString();
+        }
+        else if (key == "allow_soldermask_bridges_in_footprints") {
+            setup.settings.allow_soldermask_bridges = (valueStr == "yes");
+        }
+        else if (key == "tenting") {
+            setup.settings.tenting = valueStr;  // store as string, e.g. "front back"
+        }
+        else if (key == "stackup") {
+            setup.settings.stackup_raw = valueStr;
+        }
+        else if (key == "grid_origin") {
+            std::istringstream iss(valueStr);
+            double x, y; iss >> x >> y;
+            setup.settings.grid_origin = std::make_pair(x, y);
+        }
+        else if (key == "solder_mask_min_width") {
+            setup.settings.solder_mask_min_width = std::stod(valueStr);
+         }
+        else if (key == "user_trace_width") {
+            setup.settings.user_trace_width = std::stod(valueStr);
+         }
+         else if (key == "pad_to_paste_clearance") {
+            setup.settings.pad_to_paste_clearance = std::stod(valueStr);
+            }
+            else if (key == "max_error") {
+    setup.settings.max_error = std::stod(valueStr);
+}
+else if (key == "defaults") {
+    // capture the whole sub-expression as raw text
+    setup.settings.defaults_raw = entry->AsString(0);
+} else if (key == "clearance_min") {
+            setup.settings.clearance_min = std::stod(valueStr);
+        }
+        else if (key == "via_min_annulus") {
+            setup.settings.via_min_annulus = std::stod(valueStr);
+        }
+        else if (key == "through_hole_min") {
+            setup.settings.through_hole_min = std::stod(valueStr);
+        }
+        else {
+            reportUnhandled("setup", key, valueStr);
+        }
+    }
+
+    // finally, print the reconstructed (setup …) block:
+    std::cout << indent;
+    setup.settings.print(std::cout);
+}
+void parseNet(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseNet: null node\n";
+        return;
+    }
+
+    std::string indent(depth * 2, ' ');
+    std::cout << indent << "=== PCB: net ===\n";
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->size() < 2) {
+        std::cerr << indent << "parseNet: no children\n";
+        return;
+    }
+
+    // Keys we specially highlight
+    static const std::set<std::string> knownKeys = {
+        "code", "name", "zone_connect", "class", "fill"
+    };
+
+    // Start at 1 to skip the leading "net" symbol
+    for (size_t i = 1; i < kids->size(); ++i) {
+        sexpr::Node* child = (*kids)[i];
+
+        if (child->IsList()) {
+            // (key value…)
+            const auto* sub = child->GetChildren();
+            if (!sub || sub->empty()) {
+                std::cerr << indent << "  parseNet: empty sublist at index " << i << "\n";
+                continue;
+            }
+
+            std::string key = safeGetString(sub->at(0));
+
+            // Flatten all the rest
+            std::ostringstream vs;
+            for (size_t j = 1; j < sub->size(); ++j) {
+                if (j > 1) vs << " ";
+                vs << safeGetString(sub->at(j));
+            }
+            std::string val = vs.str();
+
+            if (knownKeys.count(key)) {
+                std::cout << indent << "  " << key << " = " << val << "\n";
+            } else {
+                reportUnhandled("setup", key, val);
+
+            }
+
+        } else {
+            // Bare atom—print it in a generic slot
+            std::string atom = safeGetString(child);
+            std::cout << indent << "  [net] atom = \"" << atom << "\"\n";
+        }
+    }
+}
+
+
+void parseNetClass(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseNetClass: null node\n";
+        return;
+    }
+
+    std::string indent(depth * 2, ' ');
+    std::cout << indent << "=== PCB: net_class ===\n";
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->size() < 2) {
+        std::cerr << indent << "parseNetClass: no children\n";
+        return;
+    }
+
+    static const std::set<std::string> knownKeys = {
+        "clearance", "trace_width", "via_dia",
+        "via_drill", "uvia_dia", "uvia_drill", "add_net"
+    };
+
+    // Skip the leading "net_class" symbol
+    for (size_t i = 1; i < kids->size(); ++i) {
+        sexpr::Node* item = (*kids)[i];
+
+        if (item->IsList()) {
+            // (key value…)
+            const auto* sub = item->GetChildren();
+            if (!sub || sub->empty()) {
+                std::cerr << indent << "  parseNetClass: empty sublist at index " << i << "\n";
+                continue;
+            }
+
+            std::string key = safeGetString(sub->at(0));
+            std::ostringstream vs;
+            for (size_t j = 1; j < sub->size(); ++j) {
+                if (j > 1) vs << " ";
+                vs << safeGetString(sub->at(j));
+            }
+            std::string val = vs.str();
+
+            if (knownKeys.count(key)) {
+                std::cout << indent << "  " << key << " = " << val << "\n";
+            } else {
+                std::cerr << indent << "  [net_class] unhandled key=" << key
+                          << " val=" << val << "\n";
+            }
+
+        } else {
+            // Bare symbol/string (e.g. default class name, description…)
+            std::string atom = safeGetString(item);
+            std::cout << indent
+                      << "  [net_class] implicit value = \"" << atom << "\"\n";
+        }
+    }
+}
+
+
+void parseGrText(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseGrText: null node\n";
+        return;
+    }
+
+    std::string indent(depth * 2, ' ');
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << indent << "parseGrText: no children\n";
+        return;
+    }
+
+    // Header
+    std::cout << indent << "=== PCB: gr_text ===\n";
+
+    // First element is the symbol, second is the text string
+    if (kids->size() > 1 && (*kids)[1]) {
+        std::cout << indent << "  text = \"" 
+                  << safeGetString((*kids)[1]) 
+                  << "\"\n";
+    }
+
+    // Remaining entries are (at ...), (layer ...), (effects ...)
+    for (size_t i = 2; i < kids->size(); ++i) {
+        sexpr::Node* item = (*kids)[i];
+        if (!item || !item->IsList()) continue;
+
+        const auto* sub = item->GetChildren();
+        if (!sub || sub->empty()) {
+            std::cerr << indent << "  parseGrText: empty sublist\n";
+            continue;
+        }
+
+        std::string key = safeGetString(sub->at(0));
+
+        if (key == "at") {
+            if (sub->size() >= 3) {
+                std::cout << indent << "  at = ("
+                          << safeGetString(sub->at(1)) << ", "
+                          << safeGetString(sub->at(2)) << ")\n";
+            } else {
+                std::cerr << indent << "  parseGrText: malformed 'at'\n";
+            }
+
+        } else if (key == "layer") {
+            if (sub->size() >= 2) {
+                std::cout << indent << "  layer = \"" 
+                          << safeGetString(sub->at(1)) 
+                          << "\"\n";
+            } else {
+                std::cerr << indent << "  parseGrText: malformed 'layer'\n";
+            }
+
+        } else if (key == "effects") {
+            // effects contains a list of effect descriptors
+            if (sub->size() < 2 || !sub->at(1)->IsList()) {
+                std::cerr << indent << "  parseGrText: bad 'effects'\n";
+                continue;
+            }
+            std::cout << indent << "  effects:\n";
+
+            const auto& effects = *sub->at(1)->GetChildren();
+            for (size_t j = 1; j < effects.size(); ++j) {
+                sexpr::Node* eff = effects[j];
+                if (!eff || !eff->IsList()) continue;
+
+                const auto* effKids = eff->GetChildren();
+                if (!effKids || effKids->empty()) {
+                    std::cerr << indent << "    parseGrText: empty effects sublist\n";
+                    continue;
+                }
+
+                // Only handle (font …) blocks here
+                if (safeGetString(effKids->at(0)) != "font") 
+                    continue;
+
+                std::cout << indent << "    font:\n";
+                if (effKids->size() < 2 || !effKids->at(1)->IsList()) {
+                    std::cerr << indent << "      parseGrText: bad font block\n";
+                    continue;
+                }
+
+                const auto& props = *effKids->at(1)->GetChildren();
+                for (size_t k = 1; k < props.size(); ++k) {
+                    sexpr::Node* prop = props[k];
+                    if (!prop || !prop->IsList()) continue;
+
+                    const auto* pk = prop->GetChildren();
+                    if (!pk || pk->empty()) {
+                        std::cerr << indent << "      parseGrText: empty font property\n";
+                        continue;
+                    }
+
+                    std::cout << indent << "      " 
+                              << safeGetString(pk->at(0)) 
+                              << " =";
+                    for (size_t m = 1; m < pk->size(); ++m) {
+                        std::cout << " " << safeGetString(pk->at(m));
+                    }
+                    std::cout << "\n";
+                }
+            }
+
+        } 
+        else if (key == "uuid") {
+            if (sub->size() >= 2) {
+                std::cout << indent << "  uuid = \"" 
+                          << safeGetString(sub->at(1)) 
+                          << "\"\n";
+            } else {
+                std::cerr << indent << "  parseGrText: malformed 'uuid'\n";
+            }
+        }else if (key == "tstamp") {
+            // timestamp field
+            if (sub->size() >= 2) {
+                std::cout << indent << "  tstamp = " 
+                          << safeGetString(sub->at(1)) 
+                          << "\n";
+            }
+            else {
+                std::cerr << indent << "  parseGrText: malformed 'tstamp'\n";
+            }
+}
+        
+        else if (key == "render_cache") {
+        // capture the full raster cache blob as a string
+        std::string blob = item->AsString(0);
+        std::cout << indent << "  render_cache = " << blob << "\n";
+    } else {
+            // Unrecognized sublist
+            std::cerr << indent << "  [gr_text] unhandled child = " << key << "\n";
+        }
+    }
+}
+
+void parseNoConnects(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseNoConnects: null node\n";
+        return;
+    }
+    std::string indent(depth * 2, ' ');
+    std::cout << indent << "=== PCB: no_connects ===\n";
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << indent << "parseNoConnects: no children\n";
+        return;
+    }
+
+    for (size_t i = 1; i < kids->size(); ++i) {
+        sexpr::Node* noConn = (*kids)[i];
+        if (!noConn || !noConn->IsList()) 
+            continue;
+
+        const auto* tokens = noConn->GetChildren();
+        if (!tokens || tokens->empty())
+            continue;
+
+     
+        float x = 0.0f, y = 0.0f;
+        int net = -1;
+
+        for (sexpr::Node* item : *tokens) {
+            if (!item || !item->IsList()) 
+                continue;
+            const auto* sub = item->GetChildren();
+            if (!sub || sub->size() < 2) 
+                continue;
+
+            std::string tag = safeGetString(sub->at(0));
+            if (tag == "at" && sub->size() >= 3) {
+                // parse two coordinates
+                try {
+                    x = std::stof(safeGetString(sub->at(1)));
+                    y = std::stof(safeGetString(sub->at(2)));
+                }
+                catch (const std::exception& e) {
+                    std::cerr << indent << "  parseNoConnects: bad at‑coords ("
+                              << e.what() << ")\n";
+                }
+            }
+            else if (tag == "net" && sub->size() >= 2) {
+                try {
+                    net = std::stoi(safeGetString(sub->at(1)));
+                }
+                catch (const std::exception& e) {
+                    std::cerr << indent << "  parseNoConnects: bad net‑id ("
+                              << e.what() << ")\n";
+                }
+            }
+        }
+
+        std::cout << indent
+                  << "  → no_connect at (" << x << ", " << y
+                  << "), net=" << net << "\n";
+    }
+}
+
+void parseArea(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseArea: null node\n";
+        return;
+    }
+    std::string indent(depth * 2, ' ');
+    std::cout << indent << "=== PCB: area ===\n";
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << indent << "parseArea: no children\n";
+        return;
+    }
+
+    for (sexpr::Node* listNode : *kids) {
+        if (!listNode || !listNode->IsList())
+            continue;
+        const auto* items = listNode->GetChildren();
+        if (!items || items->empty())
+            continue;
+
+        std::string head = safeGetString(items->at(0));
+        if (head == "name") {
+            std::string name = safeGetString(items->at(1));
+            std::cout << indent << "  area name = " << name << "\n";
+        }
+        else if (head == "layers") {
+            for (size_t i = 1; i < items->size(); ++i) {
+                std::cout << indent << "  layer = " 
+                          << safeGetString(items->at(i)) << "\n";
+            }
+        }
+        else if (head == "pts") {
+            for (size_t i = 1; i < items->size(); ++i) {
+                sexpr::Node* ptNode = items->at(i);
+                if (!ptNode || !ptNode->IsList())
+                    continue;
+                const auto* ptItems = ptNode->GetChildren();
+                if (!ptItems || ptItems->size() != 3)
+                    continue;
+                if (safeGetString(ptItems->at(0)) != "xy")
+                    continue;
+                try {
+                    double x = std::stod(safeGetString(ptItems->at(1)));
+                    double y = std::stod(safeGetString(ptItems->at(2)));
+                    std::cout << indent 
+                              << "  point = (" << x << ", " << y << ")\n";
+                } catch (const std::exception& e) {
+                    std::cerr << indent 
+                              << "  parseArea: coord conversion error ("
+                              << e.what() << ")\n";
+                }
+            }
+        }
+        else {
+            std::cerr << indent << "  [area] unhandled head=" << head << "\n";
+        }
+    }
+}
+
+void parseDrawings(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseDrawings: null node\n";
+        return;
+    }
+    std::string indent(depth * 2, ' ');
+    std::string childIndent((depth + 1) * 2, ' ');
+    std::string subIndent((depth + 2) * 2, ' ');
+    std::cout << indent << "=== PCB: drawings ===\n";
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << indent << "parseDrawings: no children\n";
+        return;
+    }
+
+    for (sexpr::Node* child : *kids) {
+        if (!child || !child->IsList())
+            continue;
+        const auto* list = child->GetChildren();
+        if (!list || list->empty())
+            continue;
+
+        std::string head = safeGetString(list->at(0));
+        std::cout << childIndent << "draw tag = " << head << "\n";
+
+        for (size_t i = 1; i < list->size(); ++i) {
+            sexpr::Node* item = list->at(i);
+            if (!item || !item->IsList())
+                continue;
+            const auto* sublist = item->GetChildren();
+            if (!sublist || sublist->empty())
+                continue;
+
+            std::string tag = safeGetString(sublist->at(0));
+            std::cout << subIndent << tag << "\n";
+        }
+    }
+}
+void parseThickness(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseThickness: null node\n";
+        return;
+    }
+    std::string indent(depth * 2, ' ');
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << indent << "parseThickness: no children\n";
+        return;
+    }
+
+    for (sexpr::Node* child : *kids) {
+        if (!child || !child->IsList())
+            continue;
+
+        const auto* items = child->GetChildren();
+        if (!items || items->size() != 2)
+            continue;
+
+        std::string tag = safeGetString(items->at(0));
+        if (tag != "thickness")
+            continue;
+
+        // Always grab the raw token text
+        std::string value = safeGetString(items->at(1));
+        std::cout << indent << "thickness = " << value << "\n";
+    }
+}
+
+void parseTracks(sexpr::Node* node, int depth) {
+    if (!node) {
+        std::cerr << "parseTracks: null node\n";
+        return;
+    }
+    std::string indent(depth * 2, ' ');
+    std::string childIndent((depth + 1) * 2, ' ');
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << indent << "parseTracks: no children\n";
+        return;
+    }
+
+    for (sexpr::Node* child : *kids) {
+        if (!child || !child->IsList())
+            continue;
+
+        const auto* items = child->GetChildren();
+        if (!items || items->empty())
+            continue;
+
+        std::string head = safeGetString(items->at(0));
+        if (head != "segment")
+            continue;
+
+        std::cout << indent << "=== segment ===\n";
+
+        for (size_t i = 1; i < items->size(); ++i) {
+            sexpr::Node* prop = items->at(i);
+            if (!prop || !prop->IsList())
+                continue;
+
+            const auto* segItems = prop->GetChildren();
+            if (!segItems || segItems->empty())
+                continue;
+
+            std::string key = safeGetString(segItems->at(0));
+
+            if ((key == "start" || key == "end") && segItems->size() == 3) {
+                std::string x = safeGetString(segItems->at(1));
+                std::string y = safeGetString(segItems->at(2));
+                std::cout << childIndent
+                          << key << " = (" << x << ", " << y << ")\n";
+            }
+            else if ((key == "width" || key == "layer" || key == "net") && segItems->size() == 2) {
+                std::string val = safeGetString(segItems->at(1));
+                std::cout << childIndent
+                          << key << " = " << val << "\n";
+            }
+            else {
+                std::cerr << childIndent
+                          << "[track] unhandled key=" << key << "\n";
+            }
+        }
+    }
+}
+
+
+void parseZones(sexpr::Node* node, int depth) {
+    // 1) Null and list guard
+    if (!node || !node->IsList()) {
+        std::cerr << "parseZones: invalid node\n";
+        return;
+    }
+
+    auto indent = std::string(depth * 2, ' ');
+
+    // 2) Children guard
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << indent << "parseZones: no children\n";
+        return;
+    }
+
+    // 3) Head must be "zone"
+    std::string head = safeGetString(kids->at(0));
+    if (head != "zone") {
+        return;
+    }
+
+    std::cout << indent << "=== PCB: zone ===\n";
+
+    // 4) Iterate each sub‑element of the zone
+    for (sexpr::Node* child : *kids) {
+        if (!child || !child->IsList())
+            continue;
+
+        const auto* subKids = child->GetChildren();
+        if (!subKids || subKids->empty())
+            continue;
+
+        std::string tag = safeGetString(subKids->at(0));
+        std::cout << std::string((depth + 1) * 2, ' ')
+                  << "zone tag = " << tag << "\n";
+    }
+}
+
+void parseModules(sexpr::Node* node, int depth) {
+    // 1) Null and list guard
+    if (!node || !node->IsList()) {
+        std::cerr << "parseModules: invalid node\n";
+        return;
+    }
+
+    auto indent = std::string(depth * 2, ' ');
+
+    // 2) Children guard
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << indent << "parseModules: no children\n";
+        return;
+    }
+
+    // 3) Head must be "module"
+    std::string head = safeGetString(kids->at(0));
+    if (head != "module") {
+        return;
+    }
+
+    std::cout << indent << "=== PCB: module ===\n";
+
+    // 4) Iterate module children
+    for (size_t i = 1; i < kids->size(); ++i) {
+        sexpr::Node* child = kids->at(i);
+        if (!child || !child->IsList())
+            continue;
+
+        const auto* subKids = child->GetChildren();
+        if (!subKids || subKids->empty())
+            continue;
+
+        std::string tag = safeGetString(subKids->at(0));
+        std::cout << std::string((depth + 1) * 2, ' ')
+                  << "module tag = " << tag << "\n";
+
+        // 5) Recurse on nested module blocks
+        if (tag == "module") {
+            parseModules(child, depth + 2);
+        }
+    }
+}
+
+void parseNets(sexpr::Node* node, int depth) {
+    // 1) Null‑pointer and list guard
+    if (!node || !node->IsList()) {
+        std::cerr << "parseNets: invalid node\n";
+        return;
+    }
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << std::string(depth*2, ' ')
+                  << "parseNets: no children\n";
+        return;
+    }
+
+    // 2) Head must be "nets"
+    std::string head = safeGetString(kids->at(0));
+    if (head != "nets") {
+        return;
+    }
+
+    std::cout << std::string(depth*2, ' ')
+              << "=== PCB: nets ===\n";
+
+    // 3) Iterate each <net> entry
+    for (size_t i = 1; i < kids->size(); ++i) {
+        sexpr::Node* netNode = kids->at(i);
+        if (!netNode || !netNode->IsList())
+            continue;
+
+        const auto* netKids = netNode->GetChildren();
+        if (!netKids || netKids->empty())
+            continue;
+
+        // first element must be "net"
+        if (safeGetString(netKids->at(0)) != "net")
+            continue;
+
+        // 4) Find any atom as the net name
+        std::string netName;
+        for (size_t j = 1; j < netKids->size(); ++j) {
+            sexpr::Node* item = netKids->at(j);
+            // accept any atom (symbol, string, number, etc.)
+            if (item && !item->IsList()) {
+                netName = safeGetString(item);
+                break;
+            }
+        }
+
+        std::cout << std::string((depth+1)*2, ' ')
+                  << "net = " << netName << "\n";
+    }
+}
+
+void parsePage(sexpr::Node* node, int depth) {
+    // 1) Null‑pointer and list guard
+    if (!node || !node->IsList()) {
+        std::cerr << "parsePage: invalid node\n";
+        return;
+    }
+
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << std::string(depth*2, ' ')
+                  << "parsePage: no children\n";
+        return;
+    }
+
+    // 2) Head must be "page"
+    if (safeGetString(kids->at(0)) != "page") {
+        return;
+    }
+
+    auto indent = [&](int d){
+        return std::string(d*2, ' ');
+    };
+
+    std::cout << indent(depth) << "=== PCB: page ===\n";
+
+    // 3) Optional page size in position 1
+    if (kids->size() >= 2) {
+        std::cout << indent(depth+1)
+                  << "size = " << safeGetString(kids->at(1)) << "\n";
+    }
+
+    // 4) Any further atoms are additional attributes
+    for (size_t i = 2; i < kids->size(); ++i) {
+        sexpr::Node* attr = kids->at(i);
+        std::string val = safeGetString(attr);
+        std::cout << indent(depth+1)
+                  << "attr = " << val << "\n";
+    }
+}
+void parseGrTextBox(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "gr_text_box");
+}
+void parseGenerator(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "generator");
+}
+
+void parseGeneratorVersion(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "generator_version");
+}
+
+void parsePaper(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "paper");
+}
+
+// void parseFootprint(sexpr::Node* node, int depth) {
+//     parseSimpleShape(node, depth, "footprint");
+// }
+
+void parseGrArc(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "gr_arc");
+}
+
+void parseGrPoly(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "gr_poly");
+}
+
+void parseGrCircle(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "gr_circle");
+}
+
+void parseGrRect(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "gr_rect");
+}
+
+void parseGrLine(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "gr_line");
+}
+
+
+void parseDimension(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "dimension");
+}
+
+void parseSegment(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "segment");
+}
+
+void parseZone(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "zone");
+}
+
+void parseEmbeddedFonts(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "embedded_fonts");
+}
+void parseVia(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "via");
+}
+void parseArc(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "arc");
+}
+
+void parseGroup(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "group");
+}
+
+void parseGenerated(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "generated");
+}
+
+// property lines—e.g. (property "Name" "Value" ...)
+void parseProperty(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "property");
+}
+
+// curved edges in footprint/shapes
+void parseGrCurve(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "gr_curve");
+}
+void parseModule(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "module");
+}
+void parseImage(sexpr::Node* node, int depth) {
+    parseSimpleShape(node, depth, "image");
+}
+void parseSimpleShape(sexpr::Node* node, int depth, const std::string& label) {
+    if (!node || !node->IsList()) return;
+
+    PCBDesign::ParsedShape shape(label);  // create shape with type=label
+
+    auto* kids = node->GetChildren();
+    for (size_t i = 1; i < kids->size(); ++i) {
+        auto* sub = (*kids)[i];
+        if (!sub || !sub->IsList()) continue;
+
+        auto* inner = sub->GetChildren();
+        if (!inner || inner->empty()) continue;
+
+        std::string key = safeGetString((*inner)[0]);
+        std::vector<std::string> values;
+
+        for (size_t j = 1; j < inner->size(); ++j)
+            values.push_back(safeGetString((*inner)[j]));
+
+        if (key == "stroke") {
+    parseStroke(sub, depth + 1, shape);
+}
+ else {
+            shape.addProperty(key, values);
+        }
+    }
+
+    // Store and print
+    allShapes.push_back(shape);
+    shape.print(depth);
+}
+
+
+void parseFootprint(sexpr::Node* node, int depth) {
+  using namespace PCBDesign;
+  Footprint fp;
+
+  const auto* kids = node->GetChildren();
+
+  // (module NAME ...)
+  if (kids->size() > 1 && kids->at(1)->IsString())
+    fp.setName(kids->at(1)->AsString());
+
+  // process children of module
+  for (size_t i = 2; i < kids->size(); ++i) {
+    auto* child = kids->at(i);
+    if (!child || !child->IsList()) continue;
+    auto* inner = child->GetChildren();
+    std::string tag = safeGetString(inner->at(0));
+
+    if (tag == "layer") {
+      fp.setLayer(safeGetString(inner->at(1)));
+    }
+    else if (tag == "descr") {
+      fp.setDescription(safeGetString(inner->at(1)));
+    }
+    else if (tag == "at") {
+     PCBDesign::Point p { safeGetDouble(inner->at(1)), safeGetDouble(inner->at(2)) };
+fp.setPosition(p);}
+    else if (tag == "pad") {
+      parsePad(*inner, fp);
+    }
+    else if (tag == "fp_line") {
+      parseOutlineLine(*inner, fp);
+    }
+    else {
+      std::cerr << std::string(depth*2, ' ')
+                << "[MOD] UNHANDLED module tag=\"" << tag << "\"\n";
+    }
+  }
+
+  fp.dump(depth);
+  allFootprints.push_back(std::make_unique<PCBDesign::Footprint>(std::move(fp)));  // ✅ wrap in smart pointer
+
+}
+void parsePad(const std::vector<sexpr::Node*>& inner, PCBDesign::Footprint& fp) {
+  using namespace PCBDesign;
+  Pad pad;
+  pad.number = safeGetString(inner.at(1));
+  pad.shape  = safeGetString(inner.at(2));
+
+  // Optional params
+  for (size_t j = 3; j < inner.size(); ++j) {
+    auto* p = inner.at(j);
+    if (!p->IsList()) continue;
+    auto* pp = p->GetChildren();
+    std::string key = safeGetString(pp->at(0));
+
+    if (key == "at") {
+      pad.position = { safeGetDouble(pp->at(1)), safeGetDouble(pp->at(2)) };
+    }
+    else if (key == "layers") {
+      for (size_t k = 1; k < pp->size(); ++k)
+        pad.layers.push_back(safeGetString(pp->at(k)));
+    }
+    else if (key == "solder_mask_margin") {
+      pad.solderMaskMargin = safeGetDouble(pp->at(1));
+    }
+    else if (key == "thermal_bridge_angle") {
+      pad.thermalBridgeAngle = safeGetDouble(pp->at(1));
+    }
+    // …other pad params…
+  }
+
+  fp.addPad(pad);
+}
+void parseOutlineLine(const std::vector<sexpr::Node*>& inner,
+                      PCBDesign::Footprint& fp) {
+  using namespace PCBDesign;
+  OutlineLine L;
+
+  // find sub-lists by key
+  for (size_t j = 1; j < inner.size(); ++j) {
+    auto* p = inner.at(j);
+    if (!p->IsList()) continue;
+    auto* pp = p->GetChildren();
+    std::string key = safeGetString(pp->at(0));
+
+    if (key == "start") {
+      L.start = { safeGetDouble(pp->at(1)), safeGetDouble(pp->at(2)) };
+    }
+    else if (key == "end") {
+      L.end   = { safeGetDouble(pp->at(1)), safeGetDouble(pp->at(2)) };
+    }
+    else if (key == "width") {
+      L.width = safeGetDouble(pp->at(1));
+    }
+    // maybe stroke/type if you want…
+  }
+
+  fp.addOutline(L);
+}
+void parseStroke(sexpr::Node* node, int depth, PCBDesign::ParsedShape& shape) {
+    if (!node || !node->IsList()) return;
+
+    auto* kids = node->GetChildren();
+    if (!kids || kids->size() < 2) return;
+
+    // stroke has children like (width 0.15) (type solid)
+    for (size_t i = 1; i < kids->size(); ++i) {
+        auto* sub = (*kids)[i];
+        if (!sub || !sub->IsList()) continue;
+
+        auto* inner = sub->GetChildren();
+        if (!inner || inner->empty()) continue;
+
+        std::string key = safeGetString((*inner)[0]);
+        std::vector<std::string> values;
+        for (size_t j = 1; j < inner->size(); ++j)
+            values.push_back(safeGetString((*inner)[j]));
+
+        // Add stroke attributes as "stroke.width", "stroke.type", etc.
+        shape.addProperty("stroke." + key, values);
+    }
+
+    // Debug print
+    std::cout << std::string(depth * 2, ' ')
+              << "Parsed stroke for shape: " << shape.type << std::endl;
+}
+
+void parseKicadPcb(
+    sexpr::Node* node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& stack,
+    int depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes)
+{
+    // 1) Null‑pointer and list guard
+    if (!node || !node->IsList()) {
+        std::cerr << "parseKicadPcb: invalid node\n";
+        return;
+    }
+
+    // 2) Children guard
+    const auto* kids = node->GetChildren();
+    if (!kids || kids->empty()) {
+        std::cerr << std::string(depth * 2, ' ')
+                  << "parseKicadPcb: no children\n";
+        return;
+    }
+
+    // 3) Iterate skipping the first element ("kicad_pcb")
+    for (size_t i = 1; i < kids->size(); ++i) {
+        sexpr::Node* child = kids->at(i);
+        if (!child || !child->IsList())
+            continue;
+
+        const auto* subkids = child->GetChildren();
+        if (!subkids || subkids->empty())
+            continue;
+
+        // Always fetch the tag via safeGetString()
+        std::string tag = safeGetString(subkids->at(0));
+        int nextDepth = depth + 1;
+        std::string ind(depth * 2, ' ');
+
+        // 4) Dispatch based on tag
+        if      (tag == "general")      parseGeneral(child,    nextDepth);
+        else if (tag == "layers")       parseLayers(child,     nextDepth);
+        else if (tag == "setup")        parseSetup(child,      nextDepth);
+        else if (tag == "net")          parseNet(child,        nextDepth);
+        else if (tag == "net_class")    parseNetClass(child,   nextDepth);
+        else if (tag == "no_connects")  parseNoConnects(child, nextDepth);
+        else if (tag == "area")         parseArea(child,       nextDepth);
+        else if (tag == "drawings")     parseDrawings(child,   nextDepth);
+        else if (tag == "tracks")       parseTracks(child,     nextDepth);
+        else if (tag == "zones")        parseZones(child,      nextDepth);
+        else if (tag == "modules")      parseModules(child,    nextDepth);
+        else if (tag == "gr_text")      parseGrText(child,     nextDepth);
+        else if (tag == "gr_text_box")      parseGrTextBox(child,     nextDepth);
+        else if (tag == "nets")         parseNets(child,       nextDepth);
+        else if (tag == "thickness")    parseThickness(child,  nextDepth);
+        else if (tag == "page")         parsePage(child,       nextDepth);
+        else if (tag == "generator")         parseGenerator(child, nextDepth);
+        else if (tag == "generator_version") parseGeneratorVersion(child, nextDepth);
+        else if (tag == "paper")            parsePaper(child, nextDepth);
+        else if (tag == "footprint")        parseFootprint(child, nextDepth);
+        else if (tag == "gr_arc")           parseGrArc(child, nextDepth);
+        else if (tag == "gr_poly")          parseGrPoly(child, nextDepth);
+        else if (tag == "gr_circle")        parseGrCircle(child, nextDepth);
+        else if (tag == "gr_rect")          parseGrRect(child, nextDepth);
+        else if (tag == "gr_line")          parseGrLine(child, nextDepth);
+        else if (tag == "dimension")        parseDimension(child, nextDepth);
+        else if (tag == "segment")          parseSegment(child, nextDepth);
+        else if (tag == "zone")             parseZone(child, nextDepth);
+        else if (tag == "embedded_fonts")   parseEmbeddedFonts(child, nextDepth);
+        else if (tag == "via")          parseVia(child,     nextDepth);
+        else if (tag == "arc")            parseArc(child,       nextDepth);
+        else if (tag == "group")          parseGroup(child,     nextDepth);
+        else if (tag == "generated")      parseGenerated(child, nextDepth);
+        else if (tag == "property")         parseProperty(child,      nextDepth);
+        else if (tag == "gr_curve")         parseGrCurve(child,       nextDepth);
+        //else if (tag == "module")         parseModule(child,     nextDepth);
+        else if (tag == "image")            parseImage(child,        nextDepth);
+       
+   
+
+        else if (tag == "kicad_pcb") {
+            // nested top‑level; skip
+        }
+         // 4) Dispatch based on tag
+        else if      (tag == "version") {
+            // (version 4)
+            int ver = safeGetInteger(subkids->at(1));
+            std::cout << ind << "[PCB] version = " << ver << "\n";
+        }
+        else if (tag == "host") {
+            // (host pcbnew "...-product")
+            std::string h = safeGetString(subkids->at(1));
+            std::cout << ind << "[PCB] host = " << h << "\n";
+        }
+    else if (tag == "title_block") {
+    // Delegate entirely to your parseTitleBlock that stores in the BaselineBoard
+    parseTitleBlock(child, stack, nextDepth, shapes);
+    continue;
+}
+
+
+         else if (tag == "target") {
+            // (target "<something>")
+            // Join all the values after “target” into one string
+            std::ostringstream vs;
+            for (size_t j = 1; j < subkids->size(); ++j) {
+                if (j > 1) vs << " ";
+                vs << safeGetString(subkids->at(j));
+            }
+            std::cout << ind << "[PCB] target = " << vs.str() << "\n";
+        }
+              else {
+            // If this tag is one we want to preserve quietly, don't spam UNHANDLED.
+            // BaselineBoard later will still append raw pieces for fidelity.
+            if (preserveCleanTag(tag)) {
+                // quietly skip logging for known-preserve tags
+                continue;
+            }
+
+            // otherwise keep the old behavior (report unhandled)
+            std::cerr << ind
+                      << "[PCB] UNHANDLED tag=\"" << tag << "\"\n";
+        }
+
+    }
+}
+void traverseAst(
+    sexpr::Node* node,
+    std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+    int depth,
+    std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes,
+    PCBDesign::BaselineBoard* board /*= nullptr*/
+) {
+    if (!node) return;
+
+    if (board) board->appendRawPiece(toSExprString(node));
+    if (!node->IsList()) return;
+
+    auto* head = node->GetChild(0);
+    std::string tag = (head && head->IsSymbol()) ? head->AsString() : "";
+
+    // Debug: print current node
+    std::cerr << std::string(depth * 2, ' ')
+              << (tag.empty() ? "(no-symbol)" : tag)
+              << "  (children=" << node->GetNumberOfChildren() << ")\n";
+
+    using Handler = std::function<void(sexpr::Node*, std::stack<std::shared_ptr<PCBDesign::PCBObj>>&, int, std::vector<std::shared_ptr<PCBDesign::Shape>>&, PCBDesign::BaselineBoard*)>;
+
+    static const std::unordered_map<std::string, Handler> handlerMap = {
+        {"symbol", [](auto* n, auto& s, int d, auto& sh, auto*) { handleSymbol(n, s, d); }},
+        {"polyline", [](auto* n, auto& s, int d, auto& sh, auto*) { parsePolyline(n, s, d + 1, sh); }},
+// Wire
+// WIRE
+{"wire", [](auto* n, auto& s, int d, auto& sh, auto* b) {
+    if (!n) return;
+    std::string raw = toSExprString(n);
+    fprintf(stderr, "[traverseAst] WIRE depth=%d raw_len=%zu\n", d, raw.size());
+
+    // parse local shapes vector if you still want that
+    parseWire(n, s, d + 1, sh);
+
+    // store/handle on board if provided
+    if (b) {
+        b->appendRawPiece(raw);                       // keep raw text
+        try {
+            ast_cleaner::SExpr sx = ast_cleaner::sexprNodeToSExpr(n);
+            ast_cleaner::CleanNode clean = ast_cleaner::cleanNode(sx);
+            b->handleWireFromClean(clean);
+            fprintf(stderr, "[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=%zu\n", b->getWireCount());
+        } catch (...) {
+            fprintf(stderr, "[traverseAst] WIRE -> conversion to CleanNode failed\n");
+        }
+    }
+
+    // recurse children to ensure nested nodes processed
+    for (int i = 1; i < n->GetNumberOfChildren(); ++i) {
+        traverseAst(n->GetChild(i), s, d + 1, sh, b);
+    }
+}},
+
+// JUNCTION
+{"junction", [](auto* n, auto& s, int d, auto& sh, auto* b) {
+    if (!n) return;
+    std::string raw = toSExprString(n);
+    fprintf(stderr, "[traverseAst] JUNCTION depth=%d raw_len=%zu\n", d, raw.size());
+
+    parseJunction(n, s, d + 1, sh);
+
+    if (b) {
+        b->appendRawPiece(raw);
+        try {
+            ast_cleaner::SExpr sx = ast_cleaner::sexprNodeToSExpr(n);
+            ast_cleaner::CleanNode clean = ast_cleaner::cleanNode(sx);
+            b->handleJunctionFromClean(clean);
+            fprintf(stderr, "[traverseAst] JUNCTION -> handleJunctionFromClean() called; board junctionCount=%zu\n", b->getJunctionCount());
+        } catch (...) {
+            fprintf(stderr, "[traverseAst] JUNCTION -> conversion to CleanNode failed\n");
+        }
+    }
+
+    for (int i = 1; i < n->GetNumberOfChildren(); ++i) {
+        traverseAst(n->GetChild(i), s, d + 1, sh, b);
+    }
+}},
+
+{"lib_symbols",
+[](auto* n,
+   auto& parse_stack,    // <-- name the param so we can reuse it
+   int d,
+   auto& shapes,         // <-- name the shapes vector param too
+   auto* b)
+{
+    if (!n) return;
+    std::string raw = toSExprString(n);
+    fprintf(stderr, "[traverseAst] LIB_SYMBOLS depth=%d raw_len=%zu\n", d, raw.size());
+
+    if (!b) return;
+    b->setLibSymbolsRaw(raw);   // keep raw block
+    b->appendRawPiece(raw);
+
+    try {
+        ast_cleaner::SExpr sx = ast_cleaner::sexprNodeToSExpr(n);
+        ast_cleaner::CleanNode clean = ast_cleaner::cleanNode(sx);
+        b->handleLibSymbolsCleanNode(clean);
+        fprintf(stderr, "[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=%zu\n",
+                b->getLibSymbolsRaw().size());
+    } catch (...) {
+        fprintf(stderr, "[traverseAst] LIB_SYMBOLS -> conversion to CleanNode failed\n");
+    }
+
+    // Recurse into children using the *real* parse_stack and shapes
+    for (int i = 1; i < n->GetNumberOfChildren(); ++i) {
+        auto* child = n->GetChild(i);
+        if (!child) continue;
+        traverseAst(child, parse_stack, d + 1, shapes, b);
+    }
+}},
+
+
+        {"bus_entry", [](auto* n, auto& s, int d, auto& sh, auto*) { parseBusEntry(n, s, d + 1, sh); }},
+        {"bus", [](auto* n, auto& s, int d, auto& sh, auto*) { parseBus(n, s, d + 1, sh); }},
+        {"label", [](auto* n, auto& s, int d, auto& sh, auto*) { parseLabel(n, s, d + 1, sh); }},
+        {"hierarchical_label", [](auto* n, auto& s, int d, auto& sh, auto*) { parseLabel(n, s, d + 1, sh); }},
+        {"sheet", [](auto* n, auto& s, int d, auto& sh, auto*) { parseSheet(n, s, d + 1, sh); }},
+        {"version", [](auto* n, auto& s, int d, auto& sh, auto*) { parseVersion(n, s, d, sh); }},
+        {"generator", [](auto* n, auto& s, int d, auto& sh, auto*) { parseGenerator(n, s, d, sh); }},
+        {"uuid", [](auto* n, auto& s, int d, auto& sh, auto*) { parseRootUUID(n, s, d, sh); }},
+        {"paper", [](auto* n, auto& s, int d, auto& sh, auto*) { parsePaper(n, s, d, sh); }},
+       {"text", [](auto*, auto&, int, auto&, auto*) {}},
+{"effects", [](auto*, auto&, int, auto&, auto*) {}},
+{"font", [](auto*, auto&, int, auto&, auto*) {}},
+{"justify", [](auto*, auto&, int, auto&, auto*) {}},
+{"version", [](auto*, auto&, int, auto&, auto*) {}},
+
+        {"circle", [](auto* n, auto& s, int d, auto& sh, auto*) { parseCircle(n, s, d + 1, sh); }},
+        {"rectangle", [](auto* n, auto& s, int d, auto& sh, auto*) { parseRectangle(n, s, d + 1, sh); }},
+        {"bus_alias", [](auto* n, auto& s, int d, auto& sh, auto*) { parseBusAlias(n, s, d, sh); }},
+        {"global_label", [](auto* n, auto& s, int d, auto& sh, auto*) { parseGlobalLabel(n, s, d + 1, sh); }},
+        {"generator_version", [](auto* n, auto& s, int d, auto& sh, auto*) { parseGeneratorVersion(n, s, d, sh); }},
+        {"rule_area", [](auto* n, auto& s, int d, auto& sh, auto*) { parseRuleArea(n, s, d, sh); }},
+        {"netclass_flag", [](auto* n, auto& s, int d, auto& sh, auto*) { parseNetclassFlag(n, s, d, sh); }},
+        {"embedded_fonts", [](auto* n, auto& s, int d, auto& sh, auto*) { parseEmbeddedFonts(n, s, d, sh); }},
+        {"image", [](auto* n, auto& s, int d, auto& sh, auto*) { parseImage(n, s, d + 1, sh); }},
+        {"kicad_pcb", [](auto* n, auto& s, int d, auto& sh, auto*) { parseKicadPcb(n, s, d, sh); }},
+        {"title_block", [](auto* n, auto& s, int d, auto& sh, auto*) { parseTitleBlock(n, s, d + 1, sh); }},
+        {"comment", [](auto*, auto&, int, auto&, auto*) {}},
+        {"no_connect", [](auto*, auto&, int, auto&, auto*) {}},
+        {"text_box", [](auto*, auto&, int, auto&, auto*) {}},
+        {"fields_autoplaced", [](auto*, auto&, int, auto&, auto*) {}},
+        {"host", [](auto* n, auto& s, int, auto&, auto*) { 
+            if (!s.empty()) if (auto b = std::dynamic_pointer_cast<PCBDesign::BaselineBoard>(s.top()))
+                if (n->GetNumberOfChildren() > 1) b->setHost(n->GetChild(1)->AsString());
+        }},
+        {"page", [](auto* n, auto& s, int, auto&, auto*) { 
+            if (!s.empty()) if (auto b = std::dynamic_pointer_cast<PCBDesign::BaselineBoard>(s.top()))
+                if (n->GetNumberOfChildren() > 1) b->setPage(n->GetChild(1)->AsString());
+        }},
+     
+
+        // Fallback → recurse children
+        {"__default__", [](auto* n, auto& s, int d, auto& sh, auto* b){
+    std::string tag = (n->GetChild(0) && n->GetChild(0)->IsSymbol())
+                        ? n->GetChild(0)->AsString()
+                        : "(no-symbol)";
+
+    // Skip "noise" tags that are already handled elsewhere
+    if (tag == "pts" || tag == "xy") {
+        for (int i = 1; i < n->GetNumberOfChildren(); ++i) {
+            auto* child = n->GetChild(i);
+            if (child) traverseAst(child, s, d + 1, sh, b);
+        }
+        return;
+    }
+
+    reportUnhandled("PCB", tag, d);
+
+    // Recurse as usual
+    for (int i = 1; i < n->GetNumberOfChildren(); ++i) {
+        auto* child = n->GetChild(i);
+        if (child) traverseAst(child, s, d + 1, sh, b);
+    }
+}}
+
+    };
+
+    auto it = handlerMap.find(tag);
+    if (it != handlerMap.end()) it->second(node, parse_stack, depth, shapes, board);
+    else handlerMap.at("__default__")(node, parse_stack, depth, shapes, board);
+}
+
+
+// void traverseAst(
+//     sexpr::Node*                                    node,
+//     std::stack<std::shared_ptr<PCBDesign::PCBObj>>& parse_stack,
+//     int                                             depth,
+//     std::vector<std::shared_ptr<PCBDesign::Shape>>& shapes,
+//     PCBDesign::BaselineBoard*                       board /* = nullptr */ 
+// ) {
+//        if (!node) return;
+
+//     // optionally preserve raw S-expr ordering for every node
+//     if (board) {
+//         board->appendRawPiece(toSExprString(node));
+//     }
+//       if (!node->IsList()) return;
+
+//       auto *head = node->GetChild(0);
+//     std::string tag;
+//     if (head && head->IsSymbol()) {
+//         tag = head->AsString();
+//         std::cerr << std::string(depth*2, ' ')
+//                   << "traverseAst tag: " << tag << "\n";
+//     }
+//   // --- Debug printing with indentation ---
+//     std::cerr << std::string(depth * 2, ' ');  // indent
+//     if (head && head->IsSymbol()) {
+//         std::cerr << head->AsString();
+//     } else {
+//         std::cerr << "(no-symbol)";
+//     }
+//     std::cerr << "  (children=" << node->GetNumberOfChildren() << ")\n";
+//     // ---------------------------------------
+//     if (!head || !head->IsSymbol()) {
+//         // still recurse into children even if head is not a symbol
+//         for (int i = 0; i < node->GetNumberOfChildren(); ++i) {
+//             auto* child = node->GetChild(i);
+//             if (child && child->IsList())
+//                 traverseAst(child, parse_stack, depth + 1, shapes,board);
+//         }
+//         return;
+//     }
+//     std::string tag0 = head->AsString();
+
+//     if (tag0 == "symbol") {
+//         handleSymbol(node, parse_stack, depth);
+//     } else if (tag0 == "kicad_sch") {
+//         // process root but still recurse into children
+//         for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+//             auto* child = node->GetChild(i);
+//             if (child && child->IsList())
+//                 traverseAst(child, parse_stack, depth + 1, shapes,board);
+//         }
+//         return;
+//     } else if (tag0 == "polyline") {
+//         // parsePolyline(node);                    // <— here!
+// 		parsePolyline(node, parse_stack, depth + 1, shapes);
+        
+//     }
+//     else if (tag0 == "wire") {
+//         // parseWire(node);                        // <— here!
+// 		parseWire(node,     parse_stack, depth + 1, shapes);
+        
+//     }
+// 	 else if (tag0 == "bus_entry") {
+//         parseBusEntry(node, parse_stack, depth + 1, shapes);
+//     }
+// 	else if (tag0 == "bus") {
+//     parseBus(node, parse_stack, depth + 1, shapes);  // ✅ New function
+// }
+
+// 	else if (tag0 == "label") {
+//     // parseLabel(node);
+// 	parseLabel(node,    parse_stack, depth + 1, shapes);
+// }
+// else if (tag0 == "hierarchical_label") {
+//     // parseLabel(node);  // same logic, or a separate parseHierLabel()
+// 		parseLabel(node,    parse_stack, depth + 1, shapes);
+// }
+// else if (tag0 == "sheet") {
+//     // parseSheet(node);
+// 	parseSheet(node,    parse_stack, depth + 1, shapes);
+// }
+// else if (tag0 == "version"){
+//     parseVersion(node, parse_stack, depth, shapes);}
+// else if (tag0 == "generator"){ parseGenerator(node, parse_stack, depth, shapes);}
+   
+// else if (tag0 == "uuid"){ parseRootUUID(node, parse_stack, depth, shapes);}
+   
+// else if (tag0 == "paper"){parsePaper(node, parse_stack, depth, shapes);}
+    
+// //else if (tag0 == "lib_symbols"){parseLibSymbols(node, parse_stack, depth, shapes);}
+
+//     // ─── NEW: descend into the library block ───────────────────────
+//           else if (tag == "lib_symbols") {
+//             if (board) {
+//             board->setLibSymbolsRaw(toSExprString(node)); // store raw whole lib_symbols
+//             board->appendRawPiece(toSExprString(node));   // optional duplicate if you want ordering
+//         }
+//             // continue traversal if you still parse the children into structures
+//         }
+// else if (tag0 == "host") {
+//     auto top = parse_stack.top();
+//     auto b = std::dynamic_pointer_cast<PCBDesign::BaselineBoard>(top);
+//     if (b && node->GetNumberOfChildren() > 1)
+//         b->setHost(node->GetChild(1)->AsString());
+//     return;
+// }
+// else if (tag0 == "junction") {
+//     parseJunction(node, parse_stack, depth + 1, shapes);
+//     return;
+// }
+
+// else if (tag0 == "page") {
+//     auto top = parse_stack.top();
+//     auto b = std::dynamic_pointer_cast<PCBDesign::BaselineBoard>(top);
+//     if (b && node->GetNumberOfChildren() > 1)
+//         b->setPage(node->GetChild(1)->AsString());
+//     return;
+// }
+
+// else if (tag0 == "comment") {
+//   return;
+// }
+// else if (tag0 == "no_connect") {
+//     // swallow it entirely—no log, no recursion
+//     return;
+// }
+// else if (tag0 == "title_block") {
+//     parseTitleBlock(node, parse_stack, depth+1, shapes);
+// 	return;
+// }
+// else if (tag0 == "text") {
+//     if (!parse_stack.empty()) {
+//         handleText(node, parse_stack.top(), depth);
+//     }
+//     return;
+// }
+// else if (tag0 == "symbol_instances") {
+//     parseSymbolInstances(node);
+//     return;
+// }
+// else if (tag0 == "sheet_instances") {
+//     parseSheetInstances(node);
+//     return;
+// }
+// else if (tag0 == "circle")    {parseCircle(node,    parse_stack, depth+1, shapes);
+// 							   return;}
+// else if (tag0 == "rectangle") {parseRectangle(node, parse_stack, depth+1, shapes);
+// 								return;}
+//  else if (tag0 == "text_box") {
+//         // swallow KiCad text-box outline (or uncomment to push as a rectangle)
+//         return;
+//     }
+//     else if (tag0 == "fields_autoplaced") {
+//         // KiCad placement hint, no actual shape
+//         return;
+//     }
+	
+// 	else if (tag0 == "bus_alias") {
+//         parseBusAlias(node, parse_stack, depth, shapes);
+//         return;
+//     }
+// 	else if (tag0 == "global_label") {
+//     parseGlobalLabel(node, parse_stack, depth + 1, shapes);
+//     return;
+// }
+
+// 	else if      (tag0 == "generator_version")  { parseGeneratorVersion(node, parse_stack, depth, shapes); return; }
+// else if (tag0 == "rule_area")          { parseRuleArea       (node, parse_stack, depth, shapes); return; }
+// else if (tag0 == "netclass_flag")      { parseNetclassFlag   (node, parse_stack, depth, shapes); return; }
+// else if (tag0 == "embedded_fonts")     { parseEmbeddedFonts  (node, parse_stack, depth, shapes); return; }
+// else if (tag0 == "image") {
+//     parseImage(node, parse_stack, depth+1, shapes);
+//     return;
+// }
+// else if (tag0 == "kicad_pcb") {
+//     parseKicadPcb(node, parse_stack, depth, shapes);
+//     return;
+// }
+
+//     // … you can add more tags e.g. "label", "sheet", "pin", etc.
+//      else {
+//         // *only* unhandled tags get recursion
+//         // std::cerr << "[UNHANDLED] tag=\"" << tag0 << "\"\n";
+//         reportUnhandled("PCB", tag0, depth);
+
+
+//         for (int i = 1; i < node->GetNumberOfChildren(); ++i) {
+//             auto *c = node->GetChild(i);
+//             if (c && c->IsList())
+//                 traverseAst(c, parse_stack, depth+1, shapes,board);
+//         }
+//     }
+    
+// }
+
+
+void extractFloatsFromNode(sexpr::Node* node, std::vector<float> &output)
+{
+    if (!node) {
+        std::cerr << "[extractFloatsFromNode] Invalid node (nullptr)\n";
+        return;
+    }
+
+    if (node->GetNumberOfChildren() == 0 || !node->GetChild(0)->IsSymbol()) {
+        std::cerr << "[extractFloatsFromNode] No symbol description for the coordinates\n";
+        return;
+    }
+
+    for (size_t i = 1; i < node->GetNumberOfChildren(); ++i) {
+        sexpr::Node* child = node->GetChild(i);
+        if (!child) {
+            std::cerr << "[extractFloatsFromNode] Null child at index " << i << "\n";
+            continue;
+        }
+
+        if (child->IsDouble()) {
+            output.push_back(child->GetDouble());
+        } else if (child->IsInteger()) {
+            output.push_back(static_cast<float>(child->GetLongInteger()));
+        } else {
+            std::cerr << "[extractFloatsFromNode] Skipping unsupported child type at index " << i << "\n";
+        }
+    }
+}
+
+// === Helper function to print the full tree recursively ===
+void printNodeRecursive(sexpr::Node* node, int depth) {
+    if (!node) return;
+
+    for (int i = 0; i < depth; ++i) std::cout << "  ";
+
+    if (node->IsSymbol() || node->IsString()) {
+    std::cout << node->AsString() << "\n";
+} else if (node->IsInteger()) {
+    std::cout << node->GetLongInteger() << "\n";
+} else if (node->IsDouble()) {
+    std::cout << node->GetDouble() << "\n";
+} else if (node->IsList()) {
+        std::cout << "(\n";
+        for (int i = 0; i < node->GetNumberOfChildren(); ++i) {
+            sexpr::Node* child = node->GetChild(i);
+            if (!child) {
+                std::cerr << "[printNodeRecursive] Warning: null child at index " << i << "\n";
+                continue;
+            }
+            printNodeRecursive(child, depth + 1);
+        }
+        for (int i = 0; i < depth; ++i) std::cout << "  ";
+        std::cout << ")\n";
+    } else {
+        std::cerr << "[printNodeRecursive] Unknown node type at depth " << depth << "\n";
+    }
+}
+
+PCBDesign::Pin getPin(sexpr::Node* siblings, int depth) {
+    std::cout << "Found pin\n";
+
+    if (!siblings) {
+        std::cerr << "Null pointer for the pin\n";
+        return PCBDesign::Pin(0, PCBDesign::PinType::INPUT, 0, 0);
+    }
+
+    // --- Default pin type ---
+    PCBDesign::PinType pinType = PCBDesign::PinType::IN_OUT;
+
+    // --- Coordinate handling ---
+    float x = 0.0f, y = 0.0f;
+    bool coords_found = false;
+
+    for (int i = 0; i < siblings->GetNumberOfChildren(); ++i) {
+        auto* child = siblings->GetChild(i);
+        if (child && child->IsList() && child->GetNumberOfChildren() >= 2) {
+            auto* keyNode = child->GetChild(0);
+            if (!keyNode || !keyNode->IsSymbol()) continue;
+
+            std::string key = keyNode->AsString();
+
+            if (key == "at") {
+                std::vector<float> coords;
+                bool coords_exist = false;
+                PCBDesign::getCoordinates(child, coords_exist, coords);
+                if (coords_exist && coords.size() >= 2) {
+                    x = coords[0];
+                    y = coords[1];
+                    coords_found = true;
+                    std::cout << "  Coordinates parsed: " << x << ", " << y << "\n";
+                } else {
+                    std::cerr << "Warning: Invalid or missing coordinates in (at ...) at depth " << depth << "\n";
+                }
+            } else if (key == "type") {
+                std::string typeStr = child->GetChild(1)->AsString();
+                if (typeStr == "input") pinType = PCBDesign::PinType::INPUT;
+                else if (typeStr == "output") pinType = PCBDesign::PinType::OUTPUT;
+                else if (typeStr == "passive") pinType = PCBDesign::PinType::IN_OUT;
+                else std::cerr << "  Unknown pin type: " << typeStr << "\n";
+            }
+        }
+    }
+
+    if (!coords_found) {
+        std::cerr << "Warning: No (at ...) block found in pin at depth " << depth << ", using default (0, 0)\n";
+    }
+
+    // --- Create the pin object ---
+    PCBDesign::Pin pin(generateID(), pinType, x, y);
+
+    // --- Parse name and number fields ---
+    for (int i = 0; i < siblings->GetNumberOfChildren(); ++i) {
+        auto* child = siblings->GetChild(i);
+        if (child && child->IsList() && child->GetNumberOfChildren() >= 2) {
+            auto* head = child->GetChild(0);
+            auto* val  = child->GetChild(1);
+            if (!head || !head->IsSymbol()) continue;
+
+            std::string key = head->AsString();
+            if (key == "name") {
+                std::string nm = val->AsString();
+                pin.setName(nm);
+                std::cout << "  Pin name parsed: " << nm << "\n";
+            } else if (key == "number") {
+                std::string num = val->AsString();
+                pin.setNumber(num);
+                std::cout << "  Pin number parsed: " << num << "\n";
+            }
+        }
+    }
+
+    return pin;
+}
+
+// put near top of ast.cpp, include headers: <sstream>
+static std::string escapeString(const std::string &s) {
+    std::string out;
+    out.reserve(s.size());
+    for (char c : s) {
+        if (c == '\\' || c == '"') out.push_back('\\');
+        out.push_back(c);
+    }
+    return out;
+}
+
+// helper: strip surrounding quotes if present
+static std::string stripSurroundingQuotes(const std::string &s) {
+    if (s.size() >= 2 && s.front() == '"' && s.back() == '"')
+        return s.substr(1, s.size()-2);
+    return s;
+}
+
+// inline std::string pointToStr(const Point &p) {
+//     std::ostringstream oss;
+//     oss << std::fixed << std::setprecision(3) << "(" << p.x << "," << p.y << ")";
+//     return oss.str();
+// }
+// std::string serializeSExpr(const sexpr::Node* node, int /*indent*/) {
+//     using namespace sexpr;
+//     if (!node) return std::string();
+
+//     // LIST node -> produce "(child1 child2 ...)"
+//     if (node->IsList()) {
+//         const auto* kids = node->GetChildren(); // const std::vector<Node*>*
+//         if (!kids || kids->empty()) return std::string("()");
+//         std::ostringstream oss;
+//         oss << "(";
+//         bool first = true;
+//         for (Node* child : *kids) {
+//             if (!child) continue;
+//             if (!first) oss << " ";
+//             oss << serializeSExpr(child, 0);
+//             first = false;
+//         }
+//         oss << ")";
+//         return oss.str();
+//     }
+
+//     // SYMBOL
+//     if (node->IsSymbol()) {
+//         if (auto s = dynamic_cast<const NodeSymbol*>(node))
+//             return s->GetValue();
+//         return std::string("/*sym?*/");
+//     }
+
+//     // STRING: ensure exactly one pair of quotes, escape inside contents
+//     if (node->IsString()) {
+//         if (auto s = dynamic_cast<const NodeString*>(node)) {
+//             std::string raw = s->GetValue();
+//             raw = stripSurroundingQuotes(raw);           // remove if stored with quotes
+//             return std::string("\"") + escapeString(raw) + "\"";
+//         }
+//         return std::string("\"\"");
+//     }
+
+//     // INTEGER
+//     if (node->IsInteger()) {
+//         if (auto n = dynamic_cast<const NodeInteger*>(node))
+//             return std::to_string(n->GetValue());
+//         return std::string("0");
+//     }
+
+//     // DOUBLE
+//     if (node->IsDouble()) {
+//         if (auto d = dynamic_cast<const NodeDouble*>(node)) {
+//             std::ostringstream tmp;
+//             tmp << d->GetValue();
+//             return tmp.str();
+//         }
+//         return std::string("0.0");
+//     }
+// // POINT
+// if (node->IsPoint()) {   // assuming your Node class has IsPoint()
+//     if (auto pnode = dynamic_cast<const NodePoint*>(node)) {
+//         return pointToStr(pnode->GetValue()); // GetValue() returns Point
+//     }
+// }
+
+//     // Unknown node type -> placeholder
+//     return std::string("/*UNKNOWN*/");
+// }
+// remove duplicate struct Point (use PCBDesign::Point if needed)
+inline std::string pointToStr(const PCBDesign::Point &p) {
+    std::ostringstream oss;
+    oss << std::fixed << std::setprecision(3)
+        << "(" << p.x << "," << p.y << ")";
+    return oss.str();
+}
+
+// serializeSExpr without NodePoint
+std::string serializeSExpr(const sexpr::Node* node, int /*indent*/) {
+    using namespace sexpr;
+    if (!node) return std::string();
+
+    if (node->IsList()) {
+        const auto* kids = node->GetChildren();
+        if (!kids || kids->empty()) return std::string("()");
+        std::ostringstream oss;
+        oss << "(";
+        bool first = true;
+        for (Node* child : *kids) {
+            if (!child) continue;
+            if (!first) oss << " ";
+            oss << serializeSExpr(child, 0);
+            first = false;
+        }
+        oss << ")";
+        return oss.str();
+    }
+
+    if (node->IsSymbol()) {
+        if (auto s = dynamic_cast<const NodeSymbol*>(node))
+            return s->GetValue();
+        return std::string("/*sym?*/");
+    }
+
+    if (node->IsString()) {
+        if (auto s = dynamic_cast<const NodeString*>(node)) {
+            std::string raw = s->GetValue();
+            raw = stripSurroundingQuotes(raw);
+            return "\"" + escapeString(raw) + "\"";
+        }
+        return "\"\"";
+    }
+
+    if (node->IsInteger()) {
+        if (auto n = dynamic_cast<const NodeInteger*>(node))
+            return std::to_string(n->GetValue());
+        return "0";
+    }
+
+    if (node->IsDouble()) {
+        if (auto d = dynamic_cast<const NodeDouble*>(node)) {
+            std::ostringstream tmp;
+            tmp << d->GetValue();
+            return tmp.str();
+        }
+        return "0.0";
+    }
+
+    return "/*UNKNOWN*/";
+}

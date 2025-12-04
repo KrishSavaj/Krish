@@ -1,0 +1,195 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20201015
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20201015) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Amplifier_Audio:IR4301" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 20.955000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "IR4301" (id 1) (at -7.620000 19.050000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000) italic) hide)) (property "Datasheet" "https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "integrated class d amplifier" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "PowIRaudio Integrated Analog Input Class D Audio Amplifier, 160W/4ohm, 80V, PQFN-22" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Infineon*PQFN*4EP*6x5mm*P0.65mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "IR4301_0_1" (rectangle (start -7.620000 -15.240000) (end 7.620000 17.780000) (stroke (width 0.254000)) (fill (type background)))) (symbol "IR4301_1_1" (pin power_in line (at -10.160000 15.240000 0) (length 2.540000) (name "VAA" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 -17.780000 90) (length 2.540000) (name "VN" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output line (at 10.160000 0 180) (length 2.540000) (name "VS" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 20.320000 270) (length 2.540000) (name "VP" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 7.620000 180) (length 2.540000) (name "VB" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 10.160000 180) (length 2.540000) (name "CSH" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at -2.540000 -17.780000 90) (length 2.540000) hide (name "COM" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 0 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 12.700000 0) (length 2.540000) (name "IN+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 10.160000 0) (length 2.540000) (name "IN-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin output line (at -10.160000 7.620000 0) (length 2.540000) (name "COMP" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -10.160000 -2.540000 0) (length 2.540000) (name "CSD" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 -12.700000 0) (length 2.540000) (name "VSS" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 -7.620000 180) (length 2.540000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 2.540000) (name "COM" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at 10.160000 -3.810000 180) (length 2.540000) (name "PTNC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"af06e391-97a5-4828-9343-f3162acaa60a" }
+  <property> at=(132.080,60.325,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(132.080,62.230,0.000) attrs{name:"IR4301" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(139.700,81.280,0.000) attrs{name:"Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list> italic) token_2:hide }
+  <property> at=(139.700,81.280,0.000) attrs{name:"https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20201015) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Amplifier_Audio:IR4301" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 20.955000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "IR4301" (id 1) (at -7.620000 19.050000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000) italic) hide)) (property "Datasheet" "https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "integrated class d amplifier" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "PowIRaudio Integrated Analog Input Class D Audio Amplifier, 160W/4ohm, 80V, PQFN-22" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Infineon*PQFN*4EP*6x5mm*P0.65mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "IR4301_0_1" (rectangle (start -7.620000 -15.240000) (end 7.620000 17.780000) (stroke (width 0.254000)) (fill (type background)))) (symbol "IR4301_1_1" (pin power_in line (at -10.160000 15.240000 0) (length 2.540000) (name "VAA" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 -17.780000 90) (length 2.540000) (name "VN" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output line (at 10.160000 0 180) (length 2.540000) (name "VS" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 20.320000 270) (length 2.540000) (name "VP" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 7.620000 180) (length 2.540000) (name "VB" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 10.160000 180) (length 2.540000) (name "CSH" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at -2.540000 -17.780000 90) (length 2.540000) hide (name "COM" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 0 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 12.700000 0) (length 2.540000) (name "IN+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 10.160000 0) (length 2.540000) (name "IN-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin output line (at -10.160000 7.620000 0) (length 2.540000) (name "COMP" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -10.160000 -2.540000 0) (length 2.540000) (name "CSD" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 -12.700000 0) (length 2.540000) (name "VSS" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 -7.620000 180) (length 2.540000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 2.540000) (name "COM" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at 10.160000 -3.810000 180) (length 2.540000) (name "PTNC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"af06e391-97a5-4828-9343-f3162acaa60a" }
+  <property> at=(132.080,60.325,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(132.080,62.230,0.000) attrs{name:"IR4301" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(139.700,81.280,0.000) attrs{name:"Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list> italic) token_2:hide }
+  <property> at=(139.700,81.280,0.000) attrs{name:"https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20201015) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Amplifier_Audio:IR4301" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 20.955000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "IR4301" (id 1) (at -7.620000 19.050000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000) italic) hide)) (property "Datasheet" "https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "integrated class d amplifier" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "PowIRaudio Integrated Analog Input Class D Audio Amplifier, 160W/4ohm, 80V, PQFN-22" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Infineon*PQFN*4EP*6x5mm*P0.65mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "IR4301_0_1" (rectangle (start -7.620000 -15.240000) (end 7.620000 17.780000) (stroke (width 0.254000)) (fill (type background)))) (symbol "IR4301_1_1" (pin power_in line (at -10.160000 15.240000 0) (length 2.540000) (name "VAA" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 -17.780000 90) (length 2.540000) (name "VN" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output line (at 10.160000 0 180) (length 2.540000) (name "VS" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 20.320000 270) (length 2.540000) (name "VP" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 7.620000 180) (length 2.540000) (name "VB" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 10.160000 180) (length 2.540000) (name "CSH" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at -2.540000 -17.780000 90) (length 2.540000) hide (name "COM" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 0 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 12.700000 0) (length 2.540000) (name "IN+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 10.160000 0) (length 2.540000) (name "IN-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin output line (at -10.160000 7.620000 0) (length 2.540000) (name "COMP" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -10.160000 -2.540000 0) (length 2.540000) (name "CSD" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 -12.700000 0) (length 2.540000) (name "VSS" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 -7.620000 180) (length 2.540000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 2.540000) (name "COM" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at 10.160000 -3.810000 180) (length 2.540000) (name "PTNC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"af06e391-97a5-4828-9343-f3162acaa60a" }
+  <property> at=(132.080,60.325,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(132.080,62.230,0.000) attrs{name:"IR4301" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(139.700,81.280,0.000) attrs{name:"Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list> italic) token_2:hide }
+  <property> at=(139.700,81.280,0.000) attrs{name:"https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20201015) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Amplifier_Audio:IR4301" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 20.955000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "IR4301" (id 1) (at -7.620000 19.050000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000) italic) hide)) (property "Datasheet" "https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "integrated class d amplifier" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "PowIRaudio Integrated Analog Input Class D Audio Amplifier, 160W/4ohm, 80V, PQFN-22" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Infineon*PQFN*4EP*6x5mm*P0.65mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "IR4301_0_1" (rectangle (start -7.620000 -15.240000) (end 7.620000 17.780000) (stroke (width 0.254000)) (fill (type background)))) (symbol "IR4301_1_1" (pin power_in line (at -10.160000 15.240000 0) (length 2.540000) (name "VAA" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 -17.780000 90) (length 2.540000) (name "VN" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output line (at 10.160000 0 180) (length 2.540000) (name "VS" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 20.320000 270) (length 2.540000) (name "VP" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 7.620000 180) (length 2.540000) (name "VB" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 10.160000 180) (length 2.540000) (name "CSH" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at -2.540000 -17.780000 90) (length 2.540000) hide (name "COM" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 0 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 12.700000 0) (length 2.540000) (name "IN+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 10.160000 0) (length 2.540000) (name "IN-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin output line (at -10.160000 7.620000 0) (length 2.540000) (name "COMP" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -10.160000 -2.540000 0) (length 2.540000) (name "CSD" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 -12.700000 0) (length 2.540000) (name "VSS" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 -7.620000 180) (length 2.540000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 2.540000) (name "COM" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at 10.160000 -3.810000 180) (length 2.540000) (name "PTNC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"af06e391-97a5-4828-9343-f3162acaa60a" }
+  <property> at=(132.080,60.325,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(132.080,62.230,0.000) attrs{name:"IR4301" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(139.700,81.280,0.000) attrs{name:"Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list> italic) token_2:hide }
+  <property> at=(139.700,81.280,0.000) attrs{name:"https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20201015) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Amplifier_Audio:IR4301" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 20.955000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "IR4301" (id 1) (at -7.620000 19.050000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000) italic) hide)) (property "Datasheet" "https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "integrated class d amplifier" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "PowIRaudio Integrated Analog Input Class D Audio Amplifier, 160W/4ohm, 80V, PQFN-22" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Infineon*PQFN*4EP*6x5mm*P0.65mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "IR4301_0_1" (rectangle (start -7.620000 -15.240000) (end 7.620000 17.780000) (stroke (width 0.254000)) (fill (type background)))) (symbol "IR4301_1_1" (pin power_in line (at -10.160000 15.240000 0) (length 2.540000) (name "VAA" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 -17.780000 90) (length 2.540000) (name "VN" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output line (at 10.160000 0 180) (length 2.540000) (name "VS" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 20.320000 270) (length 2.540000) (name "VP" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 7.620000 180) (length 2.540000) (name "VB" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 10.160000 180) (length 2.540000) (name "CSH" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at -2.540000 -17.780000 90) (length 2.540000) hide (name "COM" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 0 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 12.700000 0) (length 2.540000) (name "IN+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 10.160000 0) (length 2.540000) (name "IN-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin output line (at -10.160000 7.620000 0) (length 2.540000) (name "COMP" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -10.160000 -2.540000 0) (length 2.540000) (name "CSD" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 -12.700000 0) (length 2.540000) (name "VSS" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 -7.620000 180) (length 2.540000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 2.540000) (name "COM" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at 10.160000 -3.810000 180) (length 2.540000) (name "PTNC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"af06e391-97a5-4828-9343-f3162acaa60a" }
+  <property> at=(132.080,60.325,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(132.080,62.230,0.000) attrs{name:"IR4301" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(139.700,81.280,0.000) attrs{name:"Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list> italic) token_2:hide }
+  <property> at=(139.700,81.280,0.000) attrs{name:"https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20201015) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Amplifier_Audio:IR4301" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 20.955000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "IR4301" (id 1) (at -7.620000 19.050000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000) italic) hide)) (property "Datasheet" "https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "integrated class d amplifier" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "PowIRaudio Integrated Analog Input Class D Audio Amplifier, 160W/4ohm, 80V, PQFN-22" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "Infineon*PQFN*4EP*6x5mm*P0.65mm*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "IR4301_0_1" (rectangle (start -7.620000 -15.240000) (end 7.620000 17.780000) (stroke (width 0.254000)) (fill (type background)))) (symbol "IR4301_1_1" (pin power_in line (at -10.160000 15.240000 0) (length 2.540000) (name "VAA" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 -17.780000 90) (length 2.540000) (name "VN" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output line (at 10.160000 0 180) (length 2.540000) (name "VS" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 5.080000 20.320000 270) (length 2.540000) (name "VP" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 7.620000 180) (length 2.540000) (name "VB" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 10.160000 10.160000 180) (length 2.540000) (name "CSH" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at -2.540000 -17.780000 90) (length 2.540000) hide (name "COM" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 0 0) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 12.700000 0) (length 2.540000) (name "IN+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 10.160000 0) (length 2.540000) (name "IN-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin output line (at -10.160000 7.620000 0) (length 2.540000) (name "COMP" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -10.160000 -2.540000 0) (length 2.540000) (name "CSD" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 -12.700000 0) (length 2.540000) (name "VSS" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 10.160000 -7.620000 180) (length 2.540000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 2.540000) (name "COM" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))) (pin unconnected line (at 10.160000 -3.810000 180) (length 2.540000) (name "PTNC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:139.700000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:"af06e391-97a5-4828-9343-f3162acaa60a" }
+  <property> at=(132.080,60.325,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(132.080,62.230,0.000) attrs{name:"IR4301" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(139.700,81.280,0.000) attrs{name:"Package_DFN_QFN:Infineon_PQFN-22-15-4EP_6x5mm_P0.65mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list> italic) token_2:hide }
+  <property> at=(139.700,81.280,0.000) attrs{name:"https://www.infineon.com/dgdl/ir4301.pdf?fileId=5546d462533600a4015355d5fc691819" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+  (wire (start 129.54 99.06) (end 129.54 93.98) (angle 0) (thickness 0.25))
+  (wire (start 139.7 99.06) (end 129.54 99.06) (angle 0) (thickness 0.25))
+  (wire (start 149.86 81.28) (end 154.94 81.28) (angle 0) (thickness 0.25))
+  (wire (start 149.86 85.09) (end 154.94 85.09) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,825 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20230819
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    fbe8cc01-1a76-41ca-8141-56f1641f6b96
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS138" (pin_names (offset 1.016000)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at -7.620000 11.430000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS138" (at -7.620000 -13.970000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS138" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Decoder 3 to 8 active low outputs" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL DECOD DECOD8" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP?16*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS138_1_0" (pin input line (at -12.700000 7.620000 0) (length 5.080000) (name "A0" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -5.080000 180) (length 5.080000) (name "O5" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -2.540000 180) (length 5.080000) (name "O4" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 0 180) (length 5.080000) (name "O3" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 2.540000 180) (length 5.080000) (name "O2" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 5.080000 180) (length 5.080000) (name "O1" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 7.620000 180) (length 5.080000) (name "O0" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 15.240000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 5.080000 0) (length 5.080000) (name "A1" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 2.540000 0) (length 5.080000) (name "A2" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -10.160000 0) (length 5.080000) (name "E1" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -7.620000 0) (length 5.080000) (name "E2" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 -5.080000 0) (length 5.080000) (name "E3" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -10.160000 180) (length 5.080000) (name "O7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -7.620000 180) (length 5.080000) (name "O6" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS138_1_1" (rectangle (start -7.620000 10.160000) (end 7.620000 -12.700000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:175.260000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:265c390b-dfa4-4ded-b3c0-a64d7e852a3b }
+  <property> at=(175.260,113.665,0.000) attrs{name:"#FLG02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,110.490,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#FLG02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2cfafb54-44b2-4d23-8777-6a5aea97f1be }
+  <property> at=(146.050,87.630,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,78.740,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR05" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:3cb53738-fc5e-418a-9319-ae679c48e3c2 }
+  <property> at=(146.050,123.190,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR06" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:99.060000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a47e62d0-6d36-402f-8a08-f4532bf659d8 }
+  <property> at=(148.244,83.820,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(148.244,86.360,0.000) attrs{name:"74LS138" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(146.050,99.060,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS138" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"Decoder 3 to 8 active low outputs" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"14" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"U2" path_unit:1 value:"issue12814" }
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (junction (at 133.350006 106.680000))
+  (junction (at 146.050003 116.839996))
+  (junction (at 133.350006 109.220001))
+  (junction (at 133.350006 106.680000) (uuid 591f0034-1c08-4385-8710-c0d768959d8f) (color 0 0 0 0))
+  (junction (at 146.050003 116.839996) (uuid b64e93fb-af17-48bf-b415-65b806c8699c) (color 0 0 0 0))
+  (junction (at 133.350006 109.220001) (uuid ff76e434-337c-4c44-9216-1bb5329e9465) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS138" (pin_names (offset 1.016000)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at -7.620000 11.430000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS138" (at -7.620000 -13.970000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS138" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Decoder 3 to 8 active low outputs" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL DECOD DECOD8" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP?16*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS138_1_0" (pin input line (at -12.700000 7.620000 0) (length 5.080000) (name "A0" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -5.080000 180) (length 5.080000) (name "O5" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -2.540000 180) (length 5.080000) (name "O4" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 0 180) (length 5.080000) (name "O3" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 2.540000 180) (length 5.080000) (name "O2" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 5.080000 180) (length 5.080000) (name "O1" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 7.620000 180) (length 5.080000) (name "O0" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 15.240000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 5.080000 0) (length 5.080000) (name "A1" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 2.540000 0) (length 5.080000) (name "A2" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -10.160000 0) (length 5.080000) (name "E1" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -7.620000 0) (length 5.080000) (name "E2" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 -5.080000 0) (length 5.080000) (name "E3" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -10.160000 180) (length 5.080000) (name "O7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -7.620000 180) (length 5.080000) (name "O6" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS138_1_1" (rectangle (start -7.620000 10.160000) (end 7.620000 -12.700000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:175.260000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:265c390b-dfa4-4ded-b3c0-a64d7e852a3b }
+  <property> at=(175.260,113.665,0.000) attrs{name:"#FLG02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,110.490,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#FLG02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2cfafb54-44b2-4d23-8777-6a5aea97f1be }
+  <property> at=(146.050,87.630,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,78.740,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR05" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:3cb53738-fc5e-418a-9319-ae679c48e3c2 }
+  <property> at=(146.050,123.190,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR06" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:99.060000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a47e62d0-6d36-402f-8a08-f4532bf659d8 }
+  <property> at=(148.244,83.820,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(148.244,86.360,0.000) attrs{name:"74LS138" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(146.050,99.060,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS138" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"Decoder 3 to 8 active low outputs" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"14" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"U2" path_unit:1 value:"issue12814" }
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (junction (at 133.350006 106.680000))
+  (junction (at 146.050003 116.839996))
+  (junction (at 133.350006 109.220001))
+  (junction (at 133.350006 106.680000) (uuid 591f0034-1c08-4385-8710-c0d768959d8f) (color 0 0 0 0))
+  (junction (at 146.050003 116.839996) (uuid b64e93fb-af17-48bf-b415-65b806c8699c) (color 0 0 0 0))
+  (junction (at 133.350006 109.220001) (uuid ff76e434-337c-4c44-9216-1bb5329e9465) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS138" (pin_names (offset 1.016000)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at -7.620000 11.430000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS138" (at -7.620000 -13.970000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS138" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Decoder 3 to 8 active low outputs" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL DECOD DECOD8" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP?16*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS138_1_0" (pin input line (at -12.700000 7.620000 0) (length 5.080000) (name "A0" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -5.080000 180) (length 5.080000) (name "O5" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -2.540000 180) (length 5.080000) (name "O4" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 0 180) (length 5.080000) (name "O3" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 2.540000 180) (length 5.080000) (name "O2" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 5.080000 180) (length 5.080000) (name "O1" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 7.620000 180) (length 5.080000) (name "O0" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 15.240000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 5.080000 0) (length 5.080000) (name "A1" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 2.540000 0) (length 5.080000) (name "A2" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -10.160000 0) (length 5.080000) (name "E1" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -7.620000 0) (length 5.080000) (name "E2" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 -5.080000 0) (length 5.080000) (name "E3" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -10.160000 180) (length 5.080000) (name "O7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -7.620000 180) (length 5.080000) (name "O6" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS138_1_1" (rectangle (start -7.620000 10.160000) (end 7.620000 -12.700000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:175.260000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:265c390b-dfa4-4ded-b3c0-a64d7e852a3b }
+  <property> at=(175.260,113.665,0.000) attrs{name:"#FLG02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,110.490,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#FLG02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2cfafb54-44b2-4d23-8777-6a5aea97f1be }
+  <property> at=(146.050,87.630,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,78.740,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR05" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:3cb53738-fc5e-418a-9319-ae679c48e3c2 }
+  <property> at=(146.050,123.190,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR06" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:99.060000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a47e62d0-6d36-402f-8a08-f4532bf659d8 }
+  <property> at=(148.244,83.820,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(148.244,86.360,0.000) attrs{name:"74LS138" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(146.050,99.060,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS138" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"Decoder 3 to 8 active low outputs" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"14" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"U2" path_unit:1 value:"issue12814" }
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (junction (at 133.350006 106.680000))
+  (junction (at 146.050003 116.839996))
+  (junction (at 133.350006 109.220001))
+  (junction (at 133.350006 106.680000) (uuid 591f0034-1c08-4385-8710-c0d768959d8f) (color 0 0 0 0))
+  (junction (at 146.050003 116.839996) (uuid b64e93fb-af17-48bf-b415-65b806c8699c) (color 0 0 0 0))
+  (junction (at 133.350006 109.220001) (uuid ff76e434-337c-4c44-9216-1bb5329e9465) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS138" (pin_names (offset 1.016000)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at -7.620000 11.430000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS138" (at -7.620000 -13.970000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS138" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Decoder 3 to 8 active low outputs" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL DECOD DECOD8" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP?16*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS138_1_0" (pin input line (at -12.700000 7.620000 0) (length 5.080000) (name "A0" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -5.080000 180) (length 5.080000) (name "O5" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -2.540000 180) (length 5.080000) (name "O4" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 0 180) (length 5.080000) (name "O3" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 2.540000 180) (length 5.080000) (name "O2" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 5.080000 180) (length 5.080000) (name "O1" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 7.620000 180) (length 5.080000) (name "O0" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 15.240000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 5.080000 0) (length 5.080000) (name "A1" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 2.540000 0) (length 5.080000) (name "A2" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -10.160000 0) (length 5.080000) (name "E1" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -7.620000 0) (length 5.080000) (name "E2" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 -5.080000 0) (length 5.080000) (name "E3" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -10.160000 180) (length 5.080000) (name "O7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -7.620000 180) (length 5.080000) (name "O6" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS138_1_1" (rectangle (start -7.620000 10.160000) (end 7.620000 -12.700000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:175.260000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:265c390b-dfa4-4ded-b3c0-a64d7e852a3b }
+  <property> at=(175.260,113.665,0.000) attrs{name:"#FLG02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,110.490,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#FLG02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2cfafb54-44b2-4d23-8777-6a5aea97f1be }
+  <property> at=(146.050,87.630,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,78.740,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR05" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:3cb53738-fc5e-418a-9319-ae679c48e3c2 }
+  <property> at=(146.050,123.190,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR06" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:99.060000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a47e62d0-6d36-402f-8a08-f4532bf659d8 }
+  <property> at=(148.244,83.820,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(148.244,86.360,0.000) attrs{name:"74LS138" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(146.050,99.060,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS138" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"Decoder 3 to 8 active low outputs" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"14" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"U2" path_unit:1 value:"issue12814" }
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (junction (at 133.350006 106.680000))
+  (junction (at 146.050003 116.839996))
+  (junction (at 133.350006 109.220001))
+  (junction (at 133.350006 106.680000) (uuid 591f0034-1c08-4385-8710-c0d768959d8f) (color 0 0 0 0))
+  (junction (at 146.050003 116.839996) (uuid b64e93fb-af17-48bf-b415-65b806c8699c) (color 0 0 0 0))
+  (junction (at 133.350006 109.220001) (uuid ff76e434-337c-4c44-9216-1bb5329e9465) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS138" (pin_names (offset 1.016000)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at -7.620000 11.430000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS138" (at -7.620000 -13.970000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS138" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Decoder 3 to 8 active low outputs" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL DECOD DECOD8" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP?16*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS138_1_0" (pin input line (at -12.700000 7.620000 0) (length 5.080000) (name "A0" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -5.080000 180) (length 5.080000) (name "O5" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -2.540000 180) (length 5.080000) (name "O4" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 0 180) (length 5.080000) (name "O3" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 2.540000 180) (length 5.080000) (name "O2" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 5.080000 180) (length 5.080000) (name "O1" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 7.620000 180) (length 5.080000) (name "O0" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 15.240000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 5.080000 0) (length 5.080000) (name "A1" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 2.540000 0) (length 5.080000) (name "A2" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -10.160000 0) (length 5.080000) (name "E1" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -7.620000 0) (length 5.080000) (name "E2" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 -5.080000 0) (length 5.080000) (name "E3" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -10.160000 180) (length 5.080000) (name "O7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -7.620000 180) (length 5.080000) (name "O6" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS138_1_1" (rectangle (start -7.620000 10.160000) (end 7.620000 -12.700000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:175.260000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:265c390b-dfa4-4ded-b3c0-a64d7e852a3b }
+  <property> at=(175.260,113.665,0.000) attrs{name:"#FLG02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,110.490,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#FLG02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2cfafb54-44b2-4d23-8777-6a5aea97f1be }
+  <property> at=(146.050,87.630,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,78.740,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR05" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:3cb53738-fc5e-418a-9319-ae679c48e3c2 }
+  <property> at=(146.050,123.190,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR06" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:99.060000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a47e62d0-6d36-402f-8a08-f4532bf659d8 }
+  <property> at=(148.244,83.820,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(148.244,86.360,0.000) attrs{name:"74LS138" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(146.050,99.060,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS138" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"Decoder 3 to 8 active low outputs" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"14" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"U2" path_unit:1 value:"issue12814" }
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (junction (at 133.350006 106.680000))
+  (junction (at 146.050003 116.839996))
+  (junction (at 133.350006 109.220001))
+  (junction (at 133.350006 106.680000) (uuid 591f0034-1c08-4385-8710-c0d768959d8f) (color 0 0 0 0))
+  (junction (at 146.050003 116.839996) (uuid b64e93fb-af17-48bf-b415-65b806c8699c) (color 0 0 0 0))
+  (junction (at 133.350006 109.220001) (uuid ff76e434-337c-4c44-9216-1bb5329e9465) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS138" (pin_names (offset 1.016000)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at -7.620000 11.430000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS138" (at -7.620000 -13.970000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS138" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Decoder 3 to 8 active low outputs" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL DECOD DECOD8" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP?16*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS138_1_0" (pin input line (at -12.700000 7.620000 0) (length 5.080000) (name "A0" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -5.080000 180) (length 5.080000) (name "O5" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -2.540000 180) (length 5.080000) (name "O4" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 0 180) (length 5.080000) (name "O3" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 2.540000 180) (length 5.080000) (name "O2" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 5.080000 180) (length 5.080000) (name "O1" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 7.620000 180) (length 5.080000) (name "O0" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 15.240000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "16" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 5.080000 0) (length 5.080000) (name "A1" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 2.540000 0) (length 5.080000) (name "A2" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -10.160000 0) (length 5.080000) (name "E1" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin input input_low (at -12.700000 -7.620000 0) (length 5.080000) (name "E2" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -12.700000 -5.080000 0) (length 5.080000) (name "E3" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -10.160000 180) (length 5.080000) (name "O7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -17.780000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin output output_low (at 12.700000 -7.620000 180) (length 5.080000) (name "O6" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS138_1_1" (rectangle (start -7.620000 10.160000) (end 7.620000 -12.700000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:175.260000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:265c390b-dfa4-4ded-b3c0-a64d7e852a3b }
+  <property> at=(175.260,113.665,0.000) attrs{name:"#FLG02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,110.490,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(175.260,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(175.260,115.570,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#FLG02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2cfafb54-44b2-4d23-8777-6a5aea97f1be }
+  <property> at=(146.050,87.630,0.000) attrs{name:"#PWR05" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,78.740,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,83.820,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR05" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:116.840000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:3cb53738-fc5e-418a-9319-ae679c48e3c2 }
+  <property> at=(146.050,123.190,0.000) attrs{name:"#PWR06" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,121.920,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,116.840,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"#PWR06" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:99.060000 value:146.050000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:a47e62d0-6d36-402f-8a08-f4532bf659d8 }
+  <property> at=(148.244,83.820,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(148.244,86.360,0.000) attrs{name:"74LS138" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(146.050,99.060,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS138" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(146.050,99.060,0.000) attrs{name:"Decoder 3 to 8 active low outputs" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"16" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"14" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/fd81cd4d-ed06-4c80-bc4c-cba1d4bc410f" path_reference:"U2" path_unit:1 value:"issue12814" }
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (wire (start 133.35 109.22) (end 133.35 116.84) (angle 0) (thickness 0.25))
+  (wire (start 146.05 116.84) (end 175.26 116.84) (angle 0) (thickness 0.25))
+  (wire (start 175.26 116.84) (end 175.26 115.57) (angle 0) (thickness 0.25))
+  (wire (start 133.35 116.84) (end 146.05 116.84) (angle 0) (thickness 0.25))
+  (wire (start 119.38 93.98) (end 133.35 93.98) (angle 0) (thickness 0.25))
+  (wire (start 133.35 106.68) (end 133.35 109.22) (angle 0) (thickness 0.25))
+  (wire (start 119.38 91.44) (end 133.35 91.44) (angle 0) (thickness 0.25))
+  (wire (start 119.38 96.52) (end 133.35 96.52) (angle 0) (thickness 0.25))
+  (wire (start 133.35 104.14) (end 133.35 106.68) (angle 0) (thickness 0.25))
+  (junction (at 133.350006 106.680000))
+  (junction (at 146.050003 116.839996))
+  (junction (at 133.350006 109.220001))
+  (junction (at 133.350006 106.680000) (uuid 591f0034-1c08-4385-8710-c0d768959d8f) (color 0 0 0 0))
+  (junction (at 146.050003 116.839996) (uuid b64e93fb-af17-48bf-b415-65b806c8699c) (color 0 0 0 0))
+  (junction (at 133.350006 109.220001) (uuid ff76e434-337c-4c44-9216-1bb5329e9465) (color 0 0 0 0))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,204 @@
+[DEBUG] Root children: 16
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="generator_version"
+  child 4 tag="uuid"
+  child 5 tag="paper"
+  child 6 tag="lib_symbols"
+  child 7 tag="no_connect"
+  child 8 tag="no_connect"
+  child 9 tag="wire"
+  child 10 tag="label"
+  child 11 tag="symbol"
+  child 12 tag="symbol"
+  child 13 tag="sheet"
+  child 14 tag="sheet_instances"
+  child 15 tag="embedded_fonts"
+[BaselineBoard] appendRawPiece len=4520
+kicad_sch  (children=16)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=22
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=26
+  generator_version  (children=2)
+[BaselineBoard] appendRawPiece len=45
+  uuid  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=1291
+  lib_symbols  (children=2)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=1291
+[BaselineBoard] setLibSymbolsRaw len=1291
+[BaselineBoard] appendRawPiece len=1291
+AstCleaner: handling lib_symbols at 0x7ffd111257f0
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5f7cb2cb9210 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5f7cb2cbb2e0 atom="exclude_from_sim"
+    [1] addr=0x5f7cb2cbb320 atom="no"
+[UNHANDLED] cleanInner:embedded_fonts addr=0x5f7cb2cb9510 -> (embedded_fonts no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5f7cb2cbeeb0 atom="embedded_fonts"
+    [1] addr=0x5f7cb2cbeef0 atom="no"
+[handleLibSymbolsCleanNode] called, children=1
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=1291
+[BaselineBoard] appendRawPiece len=1277
+    symbol  (children=17)
+[BaselineBoard] appendRawPiece len=84
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=84
+  no_connect  (children=3)
+[BaselineBoard] appendRawPiece len=144
+  wire  (children=4)
+[traverseAst] WIRE depth=1 raw_len=144
+[BaselineBoard] appendRawPiece len=144
+[handleWireFromClean] called for tag='wire'
+[handleWire] PUSH (pts.node.pts) 109.220001,57.150002->134.619995,57.150002 ; added=1
+[handleWire] saved 1 wire(s) from pts-children (deduped)
+[traverseAst] WIRE -> handleWireFromClean() called; board wireCount=1
+[BaselineBoard] appendRawPiece len=57
+    pts  (children=3)
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=25
+      xy  (children=3)
+[BaselineBoard] appendRawPiece len=10
+[BaselineBoard] appendRawPiece len=9
+[BaselineBoard] appendRawPiece len=33
+    stroke  (children=3)
+    [UNHANDLED-PCB] tag="stroke"
+[BaselineBoard] appendRawPiece len=9
+      width  (children=2)
+      [UNHANDLED-PCB] tag="width"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=14
+      type  (children=2)
+      [UNHANDLED-PCB] tag="type"
+[BaselineBoard] appendRawPiece len=7
+[BaselineBoard] appendRawPiece len=45
+    uuid  (children=2)
+[BaselineBoard] appendRawPiece len=177
+  label  (children=6)
+[BaselineBoard] appendRawPiece len=931
+  symbol  (children=18)
+[BaselineBoard] appendRawPiece len=954
+  symbol  (children=18)
+[BaselineBoard] appendRawPiece len=648
+  sheet  (children=14)
+[BaselineBoard] appendRawPiece len=39
+  sheet_instances  (children=2)
+  [UNHANDLED-PCB] tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=21
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+[BaselineBoard] appendRawPiece len=19
+  embedded_fonts  (children=2)
+[UNHANDLED] cleanInner:generator_version addr=0x5f7cb2cb6da0 -> (generator_version "8.99" )
+  children details (child_index: addr type extra):
+    [0] addr=0x5f7cb2cbb370 atom="generator_version"
+    [1] addr=0x5f7cb2cbb3b0 atom=""8.99""
+AstCleaner: handling lib_symbols at 0x5f7cb2cb6e60
+[UNHANDLED] cleanInner:exclude_from_sim addr=0x5f7cb2cc22b0 -> (exclude_from_sim no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5f7cb2cc57a0 atom="exclude_from_sim"
+    [1] addr=0x5f7cb2cc57e0 atom="no"
+[UNHANDLED] cleanInner:embedded_fonts addr=0x5f7cb2cc25b0 -> (embedded_fonts no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5f7cb2cc1160 atom="embedded_fonts"
+    [1] addr=0x5f7cb2cc11a0 atom="no"
+[UNHANDLED] cleanInner:no_connect addr=0x5f7cb2cb6ea0 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5f7cb2cc11f0 atom="no_connect"
+    [1] addr=0x5f7cb2cc1230 list_size=3 head="at"
+    [2] addr=0x5f7cb2cc1270 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:no_connect addr=0x5f7cb2cb6ee0 -> (no_connect (at) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x5f7cb2cc1420 atom="no_connect"
+    [1] addr=0x5f7cb2cc1460 list_size=3 head="at"
+    [2] addr=0x5f7cb2cc14a0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:embedded_fonts addr=0x5f7cb2cb70a0 -> (embedded_fonts no )
+  children details (child_index: addr type extra):
+    [0] addr=0x5f7cb2ccaf90 atom="embedded_fonts"
+    [1] addr=0x5f7cb2ccafd0 atom="no"
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20240620 }
+  <generator> attrs{value:"eeschema" }
+  <generator_version> attrs{value:"8.99" }
+  <paper> attrs{value:"A4" }
+  '...
+[BaselineBoard] appendRawPiece len=5618 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=14
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20240620 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:"eeschema" }'...
+[BaselineBoard] appendRawPiece len=36 head="generator"
+[walkSchematicOnce] child tag='generator_version' children=0
+[appendRawPieceFromClean] piece_head='<generator_version> attrs{value:"8.99" }'...
+[BaselineBoard] appendRawPiece len=40 head="generator_version"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=1
+[handleLibSymbolsCleanNode] called, children=1
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(101.600,57.150,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='no_connect' children=0
+[appendRawPieceFromClean] piece_head='<no_connect> at=(142.240,57.150,0.000)'...
+[BaselineBoard] appendRawPiece len=38 head="no_connect"
+[walkSchematicOnce] child tag='wire' children=1
+[handleWireFromClean] called for tag='wire'
+[handleWire] saved 1 wire(s) from clean.pts
+[walkSchematicOnce] child tag='label' children=4
+[handleTextFromClean] called for tag='label'
+[handleText] failed to convert text to shape
+[walkSchematicOnce] child tag='symbol' children=16
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=16
+[walkSchematicOnce] child tag='symbol' children=16
+[handleSymbolFromClean] lib_id='(none)' tag='symbol' children=16
+[walkSchematicOnce] child tag='sheet' children=12
+[appendRawPieceFromClean] piece_head='<sheet> attrs{fill_color:0,0,0,0.000000 }
+  <at> attrs{name:68.580000 value:151.130000 }
+  <size> attrs{name:31.750000 value:35.560000 }
+  <exclude_from_sim> at'...
+[BaselineBoard] appendRawPiece len=878 head="sheet"
+[walkSchematicOnce] child tag='sheet_instances' children=1
+[appendRawPieceFromClean] piece_head='<sheet_instances>
+  <path> attrs{page:"1" }'...
+[BaselineBoard] appendRawPiece len=43 head="sheet_instances"
+[walkSchematicOnce] child tag='embedded_fonts' children=0
+[appendRawPieceFromClean] piece_head='<embedded_fonts> attrs{value:no }'...
+[BaselineBoard] appendRawPiece len=33 head="embedded_fonts"
+=== SUMMARY === junctionShapes=0 wireShapes=2 symbols=2 rawPieces=46
+=== DUMP wires: count=2 ===
+ wire[0] start=(109.22,57.15) end=(134.62,57.15)
+ wire[1] start=(109.22,57.15) end=(134.62,57.15)
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

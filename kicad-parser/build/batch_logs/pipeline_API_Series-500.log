@@ -1,0 +1,34 @@
+INPUT: demofile.kicad_sch
+PARSER: ./kicadParser
+Running parser: ./kicadParser -> demofile_output.kicad_sch (stderr -> demofile_unhandled.log)
+Wrote orig_wires.txt -> 16 lines
+Wrote orig_junctions.txt -> 0 unique junctions
+Wrote orig_symbols.txt -> 1 lines
+Running normalize_wires_for_a2.py
+orig_wires.txt contains 16 line(s) -> copying to out_wires.txt to normalize.
+Wires normalized by copying orig -> out.
+Running dedupe_out_wires.py
+Deduped out_wires.txt -> out_wires_deduped.txt: 16 unique lines
+Converting out_wires_deduped.txt -> final_wires.txt
+Wrote 16 wire(s) to final_wires.txt
+Wrote final_junctions.txt -> 0 unique junctions
+Wrote final_symbols.txt -> 1 lines
+Running reconcile_blocks_robust.py
+✅ Cleaned junction: final_junctions.txt -> final_junctions_cleaned.txt: 0 items
+✅ Cleaned wire: final_wires.txt -> final_wires_cleaned.txt: 16 items
+✅ Cleaned symbol: final_symbols.txt -> final_symbols_cleaned.txt: 14 items
+Running validate_cleaned_files.py
+
+=== JUNCTION ===
+✅ Files match perfectly
+
+=== WIRE ===
+✅ Files match perfectly
+
+=== SYMBOL ===
+✅ Files match perfectly
+
+All cleaned files match the originals ✅
+
+Pipeline finished. Check: final_junctions.txt, final_wires.txt, final_symbols.txt, final_*_cleaned.txt
+If validation fails, inspect demofile_unhandled.log or demofile_unhandled.log for parser issues.

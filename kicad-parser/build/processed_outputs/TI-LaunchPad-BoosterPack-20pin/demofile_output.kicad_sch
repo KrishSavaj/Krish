@@ -1,0 +1,951 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20231120
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "d734cd3d-c573-423a-991d-59193f7acb85"
+Library symbols: 
+
+Title:        
+Date:         "19 oct 2012"
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "19 oct 2012")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x10" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 12.700000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x10" (at 0 -15.240000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x10_1_1" (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 11.430000) (end 1.270000 -13.970000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"78da23de-1006-46e5-8c2b-1930d382d592" }
+  <property> at=(49.530,22.860,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,39.370,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) extra_justify:(justify left) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J1" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:22.860000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a5c4aa61-c742-44ba-bdb2-6425c30d76ef" }
+  <property> at=(43.180,26.670,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,19.304,0.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:63.500000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"c4fa8853-74cd-43c9-9f31-23e13d3e7b9b" }
+  <property> at=(63.500,22.860,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(66.040,52.070,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J2" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:50.800000 value:71.120000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"f5be977d-b942-4d87-a9da-3ed7e08a970d" }
+  <property> at=(71.120,57.150,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,54.610,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "19 oct 2012")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x10" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 12.700000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x10" (at 0 -15.240000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x10_1_1" (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 11.430000) (end 1.270000 -13.970000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"78da23de-1006-46e5-8c2b-1930d382d592" }
+  <property> at=(49.530,22.860,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,39.370,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) extra_justify:(justify left) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J1" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:22.860000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a5c4aa61-c742-44ba-bdb2-6425c30d76ef" }
+  <property> at=(43.180,26.670,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,19.304,0.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:63.500000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"c4fa8853-74cd-43c9-9f31-23e13d3e7b9b" }
+  <property> at=(63.500,22.860,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(66.040,52.070,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J2" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:50.800000 value:71.120000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"f5be977d-b942-4d87-a9da-3ed7e08a970d" }
+  <property> at=(71.120,57.150,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,54.610,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "19 oct 2012")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x10" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 12.700000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x10" (at 0 -15.240000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x10_1_1" (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 11.430000) (end 1.270000 -13.970000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"78da23de-1006-46e5-8c2b-1930d382d592" }
+  <property> at=(49.530,22.860,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,39.370,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) extra_justify:(justify left) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J1" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:22.860000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a5c4aa61-c742-44ba-bdb2-6425c30d76ef" }
+  <property> at=(43.180,26.670,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,19.304,0.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:63.500000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"c4fa8853-74cd-43c9-9f31-23e13d3e7b9b" }
+  <property> at=(63.500,22.860,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(66.040,52.070,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J2" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:50.800000 value:71.120000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"f5be977d-b942-4d87-a9da-3ed7e08a970d" }
+  <property> at=(71.120,57.150,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,54.610,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "19 oct 2012")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x10" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 12.700000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x10" (at 0 -15.240000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x10_1_1" (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 11.430000) (end 1.270000 -13.970000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"78da23de-1006-46e5-8c2b-1930d382d592" }
+  <property> at=(49.530,22.860,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,39.370,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) extra_justify:(justify left) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J1" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:22.860000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a5c4aa61-c742-44ba-bdb2-6425c30d76ef" }
+  <property> at=(43.180,26.670,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,19.304,0.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:63.500000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"c4fa8853-74cd-43c9-9f31-23e13d3e7b9b" }
+  <property> at=(63.500,22.860,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(66.040,52.070,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J2" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:50.800000 value:71.120000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"f5be977d-b942-4d87-a9da-3ed7e08a970d" }
+  <property> at=(71.120,57.150,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,54.610,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "19 oct 2012")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x10" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 12.700000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x10" (at 0 -15.240000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x10_1_1" (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 11.430000) (end 1.270000 -13.970000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"78da23de-1006-46e5-8c2b-1930d382d592" }
+  <property> at=(49.530,22.860,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,39.370,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) extra_justify:(justify left) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J1" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:22.860000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a5c4aa61-c742-44ba-bdb2-6425c30d76ef" }
+  <property> at=(43.180,26.670,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,19.304,0.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:63.500000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"c4fa8853-74cd-43c9-9f31-23e13d3e7b9b" }
+  <property> at=(63.500,22.860,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(66.040,52.070,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J2" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:50.800000 value:71.120000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"f5be977d-b942-4d87-a9da-3ed7e08a970d" }
+  <property> at=(71.120,57.150,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,54.610,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "19 oct 2012")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x10" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 12.700000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x10" (at 0 -15.240000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x10_1_1" (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 11.430000) (end 1.270000 -13.970000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:50.800000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"78da23de-1006-46e5-8c2b-1930d382d592" }
+  <property> at=(49.530,22.860,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(53.340,39.370,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) extra_justify:(justify left) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J1" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:22.860000 value:43.180000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a5c4aa61-c742-44ba-bdb2-6425c30d76ef" }
+  <property> at=(43.180,26.670,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,19.304,0.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(43.180,22.860,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:35.560000 value:63.500000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"c4fa8853-74cd-43c9-9f31-23e13d3e7b9b" }
+  <property> at=(63.500,22.860,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(66.040,52.070,0.000) attrs{name:"Conn_01x10" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(63.500,35.560,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"J2" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  <symbol>
+  <at> attrs{misc:0 name:50.800000 value:71.120000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"f5be977d-b942-4d87-a9da-3ed7e08a970d" }
+  <property> at=(71.120,57.150,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,54.610,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(71.120,50.800,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" path_reference:"#PWR?" path_unit:1 value:"TI-LaunchPad-BoosterPack-20pin" }
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+  (wire (start 68.58 45.72) (end 88.9 45.72) (angle 0) (thickness 0.25))
+  (wire (start 68.58 27.94) (end 88.9 27.94) (angle 0) (thickness 0.25))
+  (wire (start 68.58 48.26) (end 88.9 48.26) (angle 0) (thickness 0.25))
+  (wire (start 25.4 35.56) (end 45.72 35.56) (angle 0) (thickness 0.25))
+  (wire (start 68.58 35.56) (end 88.9 35.56) (angle 0) (thickness 0.25))
+  (wire (start 25.4 40.64) (end 45.72 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 27.94) (end 45.72 27.94) (angle 0) (thickness 0.25))
+  (wire (start 25.4 30.48) (end 45.72 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 48.26) (end 45.72 48.26) (angle 0) (thickness 0.25))
+  (wire (start 68.58 30.48) (end 88.9 30.48) (angle 0) (thickness 0.25))
+  (wire (start 25.4 45.72) (end 45.72 45.72) (angle 0) (thickness 0.25))
+  (wire (start 25.4 43.18) (end 45.72 43.18) (angle 0) (thickness 0.25))
+  (wire (start 68.58 25.4) (end 71.12 25.4) (angle 0) (thickness 0.25))
+  (wire (start 71.12 25.4) (end 71.12 50.8) (angle 0) (thickness 0.25))
+  (wire (start 68.58 43.18) (end 88.9 43.18) (angle 0) (thickness 0.25))
+  (wire (start 43.18 22.86) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 45.72 25.4) (end 43.18 25.4) (angle 0) (thickness 0.25))
+  (wire (start 68.58 33.02) (end 88.9 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 40.64) (end 88.9 40.64) (angle 0) (thickness 0.25))
+  (wire (start 25.4 38.1) (end 45.72 38.1) (angle 0) (thickness 0.25))
+  (wire (start 25.4 33.02) (end 45.72 33.02) (angle 0) (thickness 0.25))
+  (wire (start 68.58 38.1) (end 88.9 38.1) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,555 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20230121
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    e6b320a0-220e-4490-90f1-e6b62c534a67
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "TEST_LIB:TEST_DOUBLE" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_DOUBLE_0_1" (rectangle (start -1.270000 -1.270000) (end 8.890000 -10.160000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_DOUBLE_1_1" (pin input line (at -3.810000 -3.810000 0) (length 2.540000) (name "PIN1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -3.810000 -7.620000 0) (length 2.540000) (name "PIN2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "TEST_LIB:TEST_STACKED" (in_bom yes) (on_board yes) (property "Reference" "U2" (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_STACKED_0_1" (rectangle (start -2.540000 1.270000) (end 3.810000 -3.810000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_STACKED_1_1" (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at 6.350000 -2.540000 180) (length 2.540000) (name "NC" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9aac22d0-4d93-4d78-b01c-00c820843aee }
+  <property> at=(132.080,87.630,0.000) attrs{name:"U4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U5" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:69.850000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c27d8823-b16a-4039-8b30-60b56b1d2929 }
+  <property> at=(120.015,67.310,0.000) attrs{name:"U6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U6" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:e925c8ad-ec08-437c-834b-98d5bc471e84 }
+  <property> at=(120.015,57.150,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U2" path_unit:1 value:"test_hier_no_connect" }
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (junction (at 113.029999 86.360001))
+  (junction (at 113.029999 86.360001) (uuid 455f723c-4e5b-4f2f-af3c-0245fc2a3847) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "TEST_LIB:TEST_DOUBLE" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_DOUBLE_0_1" (rectangle (start -1.270000 -1.270000) (end 8.890000 -10.160000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_DOUBLE_1_1" (pin input line (at -3.810000 -3.810000 0) (length 2.540000) (name "PIN1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -3.810000 -7.620000 0) (length 2.540000) (name "PIN2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "TEST_LIB:TEST_STACKED" (in_bom yes) (on_board yes) (property "Reference" "U2" (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_STACKED_0_1" (rectangle (start -2.540000 1.270000) (end 3.810000 -3.810000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_STACKED_1_1" (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at 6.350000 -2.540000 180) (length 2.540000) (name "NC" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9aac22d0-4d93-4d78-b01c-00c820843aee }
+  <property> at=(132.080,87.630,0.000) attrs{name:"U4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U5" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:69.850000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c27d8823-b16a-4039-8b30-60b56b1d2929 }
+  <property> at=(120.015,67.310,0.000) attrs{name:"U6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U6" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:e925c8ad-ec08-437c-834b-98d5bc471e84 }
+  <property> at=(120.015,57.150,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U2" path_unit:1 value:"test_hier_no_connect" }
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (junction (at 113.029999 86.360001))
+  (junction (at 113.029999 86.360001) (uuid 455f723c-4e5b-4f2f-af3c-0245fc2a3847) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "TEST_LIB:TEST_DOUBLE" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_DOUBLE_0_1" (rectangle (start -1.270000 -1.270000) (end 8.890000 -10.160000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_DOUBLE_1_1" (pin input line (at -3.810000 -3.810000 0) (length 2.540000) (name "PIN1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -3.810000 -7.620000 0) (length 2.540000) (name "PIN2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "TEST_LIB:TEST_STACKED" (in_bom yes) (on_board yes) (property "Reference" "U2" (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_STACKED_0_1" (rectangle (start -2.540000 1.270000) (end 3.810000 -3.810000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_STACKED_1_1" (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at 6.350000 -2.540000 180) (length 2.540000) (name "NC" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9aac22d0-4d93-4d78-b01c-00c820843aee }
+  <property> at=(132.080,87.630,0.000) attrs{name:"U4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U5" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:69.850000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c27d8823-b16a-4039-8b30-60b56b1d2929 }
+  <property> at=(120.015,67.310,0.000) attrs{name:"U6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U6" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:e925c8ad-ec08-437c-834b-98d5bc471e84 }
+  <property> at=(120.015,57.150,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U2" path_unit:1 value:"test_hier_no_connect" }
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (junction (at 113.029999 86.360001))
+  (junction (at 113.029999 86.360001) (uuid 455f723c-4e5b-4f2f-af3c-0245fc2a3847) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "TEST_LIB:TEST_DOUBLE" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_DOUBLE_0_1" (rectangle (start -1.270000 -1.270000) (end 8.890000 -10.160000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_DOUBLE_1_1" (pin input line (at -3.810000 -3.810000 0) (length 2.540000) (name "PIN1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -3.810000 -7.620000 0) (length 2.540000) (name "PIN2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "TEST_LIB:TEST_STACKED" (in_bom yes) (on_board yes) (property "Reference" "U2" (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_STACKED_0_1" (rectangle (start -2.540000 1.270000) (end 3.810000 -3.810000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_STACKED_1_1" (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at 6.350000 -2.540000 180) (length 2.540000) (name "NC" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9aac22d0-4d93-4d78-b01c-00c820843aee }
+  <property> at=(132.080,87.630,0.000) attrs{name:"U4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U5" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:69.850000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c27d8823-b16a-4039-8b30-60b56b1d2929 }
+  <property> at=(120.015,67.310,0.000) attrs{name:"U6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U6" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:e925c8ad-ec08-437c-834b-98d5bc471e84 }
+  <property> at=(120.015,57.150,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U2" path_unit:1 value:"test_hier_no_connect" }
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (junction (at 113.029999 86.360001))
+  (junction (at 113.029999 86.360001) (uuid 455f723c-4e5b-4f2f-af3c-0245fc2a3847) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "TEST_LIB:TEST_DOUBLE" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_DOUBLE_0_1" (rectangle (start -1.270000 -1.270000) (end 8.890000 -10.160000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_DOUBLE_1_1" (pin input line (at -3.810000 -3.810000 0) (length 2.540000) (name "PIN1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -3.810000 -7.620000 0) (length 2.540000) (name "PIN2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "TEST_LIB:TEST_STACKED" (in_bom yes) (on_board yes) (property "Reference" "U2" (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_STACKED_0_1" (rectangle (start -2.540000 1.270000) (end 3.810000 -3.810000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_STACKED_1_1" (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at 6.350000 -2.540000 180) (length 2.540000) (name "NC" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9aac22d0-4d93-4d78-b01c-00c820843aee }
+  <property> at=(132.080,87.630,0.000) attrs{name:"U4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U5" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:69.850000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c27d8823-b16a-4039-8b30-60b56b1d2929 }
+  <property> at=(120.015,67.310,0.000) attrs{name:"U6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U6" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:e925c8ad-ec08-437c-834b-98d5bc471e84 }
+  <property> at=(120.015,57.150,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U2" path_unit:1 value:"test_hier_no_connect" }
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (junction (at 113.029999 86.360001))
+  (junction (at 113.029999 86.360001) (uuid 455f723c-4e5b-4f2f-af3c-0245fc2a3847) (color 0 0 0 0))
+)
+(kicad_sch (version 20230121) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "TEST_LIB:TEST_DOUBLE" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_DOUBLE_0_1" (rectangle (start -1.270000 -1.270000) (end 8.890000 -10.160000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_DOUBLE_1_1" (pin input line (at -3.810000 -3.810000 0) (length 2.540000) (name "PIN1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -3.810000 -7.620000 0) (length 2.540000) (name "PIN2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))))) (symbol "TEST_LIB:TEST_STACKED" (in_bom yes) (on_board yes) (property "Reference" "U2" (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "TEST_STACKED_0_1" (rectangle (start -2.540000 1.270000) (end 3.810000 -3.810000) (stroke (width 0) (type default)) (fill (type background)))) (symbol "TEST_STACKED_1_1" (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -1.270000 0) (length 2.540000) (name "PIN" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin no_connect line (at 6.350000 -2.540000 180) (length 2.540000) (name "NC" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:81.280000 value:121.920000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9aac22d0-4d93-4d78-b01c-00c820843aee }
+  <property> at=(132.080,87.630,0.000) attrs{name:"U4" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(121.920,81.280,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U5" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:69.850000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:c27d8823-b16a-4039-8b30-60b56b1d2929 }
+  <property> at=(120.015,67.310,0.000) attrs{name:"U6" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,69.850,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U6" path_unit:1 value:"test_hier_no_connect" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:119.380000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:e925c8ad-ec08-437c-834b-98d5bc471e84 }
+  <property> at=(120.015,57.150,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"~" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(119.380,59.690,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <instances>
+  <project> attrs{path:"/a68fb8f1-2acf-4e52-8498-fd8a9cae28e4" path_reference:"U2" path_unit:1 value:"test_hier_no_connect" }
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (wire (start 113.03 88.9) (end 118.11 88.9) (angle 0) (thickness 0.25))
+  (wire (start 153.67 57.15) (end 146.05 57.15) (angle 0) (thickness 0.25))
+  (wire (start 107.95 86.36) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 86.36) (end 113.03 88.9) (angle 0) (thickness 0.25))
+  (wire (start 110.49 71.12) (end 114.3 71.12) (angle 0) (thickness 0.25))
+  (wire (start 118.11 85.09) (end 113.03 85.09) (angle 0) (thickness 0.25))
+  (wire (start 153.67 86.36) (end 146.05 86.36) (angle 0) (thickness 0.25))
+  (wire (start 113.03 85.09) (end 113.03 86.36) (angle 0) (thickness 0.25))
+  (wire (start 153.67 114.3) (end 146.05 114.3) (angle 0) (thickness 0.25))
+  (junction (at 113.029999 86.360001))
+  (junction (at 113.029999 86.360001) (uuid 455f723c-4e5b-4f2f-af3c-0245fc2a3847) (color 0 0 0 0))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

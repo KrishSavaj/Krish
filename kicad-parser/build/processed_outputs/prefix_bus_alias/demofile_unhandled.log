@@ -1,0 +1,186 @@
+[DEBUG] Root children: 10
+  child 0 (non-list or no head)
+  child 1 tag="version"
+  child 2 tag="generator"
+  child 3 tag="paper"
+  child 4 tag="lib_symbols"
+  child 5 tag="bus"
+  child 6 tag="sheet"
+  child 7 tag="sheet"
+  child 8 tag="sheet_instances"
+  child 9 tag="symbol_instances"
+[BaselineBoard] appendRawPiece len=2099
+kicad_sch  (children=10)
+[UNHANDLED-PCB] tag="kicad_sch"
+[BaselineBoard] appendRawPiece len=18
+  version  (children=2)
+[BaselineBoard] appendRawPiece len=20
+  generator  (children=2)
+[BaselineBoard] appendRawPiece len=12
+  paper  (children=2)
+[BaselineBoard] appendRawPiece len=13
+  lib_symbols  (children=1)
+[traverseAst] LIB_SYMBOLS depth=1 raw_len=13
+[BaselineBoard] setLibSymbolsRaw len=13
+[BaselineBoard] appendRawPiece len=13
+AstCleaner: handling lib_symbols at 0x7ffc910e7c60
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[traverseAst] LIB_SYMBOLS -> handleLibSymbolsCleanNode() called; libSymbolsRaw_len=13
+[BaselineBoard] appendRawPiece len=154
+  bus  (children=4)
+[BaselineBoard] appendRawPiece len=632
+  sheet  (children=9)
+[BaselineBoard] appendRawPiece len=629
+  sheet  (children=9)
+[BaselineBoard] appendRawPiece len=157
+  sheet_instances  (children=4)
+  [UNHANDLED-PCB] tag="sheet_instances"
+[BaselineBoard] appendRawPiece len=21
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=3
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+[BaselineBoard] appendRawPiece len=58
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=40
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+[BaselineBoard] appendRawPiece len=58
+    path  (children=3)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=40
+[BaselineBoard] appendRawPiece len=10
+      page  (children=2)
+[BaselineBoard] appendRawPiece len=444
+  symbol_instances  (children=3)
+  [UNHANDLED-PCB] tag="symbol_instances"
+[BaselineBoard] appendRawPiece len=212
+    path  (children=6)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=76
+[BaselineBoard] appendRawPiece len=16
+      reference  (children=2)
+      [UNHANDLED-PCB] tag="reference"
+[BaselineBoard] appendRawPiece len=4
+[BaselineBoard] appendRawPiece len=8
+      unit  (children=2)
+      [UNHANDLED-PCB] tag="unit"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=29
+      value  (children=2)
+      [UNHANDLED-PCB] tag="value"
+[BaselineBoard] appendRawPiece len=21
+[BaselineBoard] appendRawPiece len=72
+      footprint  (children=2)
+      [UNHANDLED-PCB] tag="footprint"
+[BaselineBoard] appendRawPiece len=60
+[BaselineBoard] appendRawPiece len=212
+    path  (children=6)
+    [UNHANDLED-PCB] tag="path"
+[BaselineBoard] appendRawPiece len=76
+[BaselineBoard] appendRawPiece len=16
+      reference  (children=2)
+      [UNHANDLED-PCB] tag="reference"
+[BaselineBoard] appendRawPiece len=4
+[BaselineBoard] appendRawPiece len=8
+      unit  (children=2)
+      [UNHANDLED-PCB] tag="unit"
+[BaselineBoard] appendRawPiece len=1
+[BaselineBoard] appendRawPiece len=29
+      value  (children=2)
+      [UNHANDLED-PCB] tag="value"
+[BaselineBoard] appendRawPiece len=21
+[BaselineBoard] appendRawPiece len=72
+      footprint  (children=2)
+      [UNHANDLED-PCB] tag="footprint"
+[BaselineBoard] appendRawPiece len=60
+AstCleaner: handling lib_symbols at 0x61e133a96120
+[UNHANDLED] cleanInner:bus addr=0x61e133a96160 -> (bus (pts) (stroke) (uuid) )
+  children details (child_index: addr type extra):
+    [0] addr=0x61e133a94e00 atom="bus"
+    [1] addr=0x61e133a94e40 list_size=3 head="pts"
+    [2] addr=0x61e133a94e80 list_size=4 head="stroke"
+    [3] addr=0x61e133a94ec0 list_size=2 head="uuid"
+[UNHANDLED] cleanInner:value addr=0x61e133a9b820 -> (value "Conn_02x05_Odd_Even" )
+  children details (child_index: addr type extra):
+    [0] addr=0x61e133a9ba30 atom="value"
+    [1] addr=0x61e133a9ba70 atom=""Conn_02x05_Odd_Even""
+[UNHANDLED] cleanInner:value addr=0x61e133a9bc80 -> (value "Conn_02x05_Odd_Even" )
+  children details (child_index: addr type extra):
+    [0] addr=0x61e133a9be90 atom="value"
+    [1] addr=0x61e133a9bed0 atom=""Conn_02x05_Odd_Even""
+[appendRawPieceFromClean] piece_head='<kicad_sch>
+  <version> attrs{value:20210126 }
+  <generator> attrs{value:eeschema }
+  <paper> attrs{value:"A4" }
+  <lib_symbols>
+  <bus>
+  <pts> pts=[(83.820,43'...
+[BaselineBoard] appendRawPiece len=2317 head="kicad_sch"
+[walkSchematicOnce] cleanedRoot children=9
+[walkSchematicOnce] child tag='version' children=0
+[appendRawPieceFromClean] piece_head='<version> attrs{value:20210126 }'...
+[BaselineBoard] appendRawPiece len=32 head="version"
+[walkSchematicOnce] child tag='generator' children=0
+[appendRawPieceFromClean] piece_head='<generator> attrs{value:eeschema }'...
+[BaselineBoard] appendRawPiece len=34 head="generator"
+[walkSchematicOnce] child tag='paper' children=0
+[appendRawPieceFromClean] piece_head='<paper> attrs{value:"A4" }'...
+[BaselineBoard] appendRawPiece len=26 head="paper"
+[walkSchematicOnce] child tag='lib_symbols' children=0
+[handleLibSymbolsCleanNode] called, children=0
+[WARNING] Duplicate lib_symbols differs; keeping first.
+[walkSchematicOnce] child tag='bus' children=2
+[appendRawPieceFromClean] piece_head='<bus>
+  <pts> pts=[(83.820,43.180),(114.300,43.180)]
+  <stroke> attrs{sub_color:0 sub_type:solid sub_width:0 }'...
+[BaselineBoard] appendRawPiece len=110 head="bus"
+[walkSchematicOnce] child tag='sheet' children=7
+[appendRawPieceFromClean] piece_head='<sheet> attrs{fill_color:0,0,0,0.000000 }
+  <at> attrs{name:40.640000 value:60.960000 }
+  <size> attrs{name:11.430000 value:22.860000 }
+  <stroke>
+  <width> att'...
+[BaselineBoard] appendRawPiece len=755 head="sheet"
+[walkSchematicOnce] child tag='sheet' children=7
+[appendRawPieceFromClean] piece_head='<sheet> attrs{fill_color:0,0,0,0.000000 }
+  <at> attrs{name:40.640000 value:114.300000 }
+  <size> attrs{name:11.430000 value:22.860000 }
+  <stroke>
+  <width> at'...
+[BaselineBoard] appendRawPiece len=760 head="sheet"
+[walkSchematicOnce] child tag='sheet_instances' children=3
+[appendRawPieceFromClean] piece_head='<sheet_instances>
+  <path> attrs{page:"1" }
+  <path> attrs{page:"2" }
+  <path> attrs{page:"3" }'...
+[BaselineBoard] appendRawPiece len=95 head="sheet_instances"
+[walkSchematicOnce] child tag='symbol_instances' children=2
+[appendRawPieceFromClean] piece_head='<symbol_instances>
+  <path> attrs{value:"/f0fa0db3-6edc-40e8-bad3-f5b79017ea91/3931f39c-8ab8-4fed-bea5-f51ad460910c" }
+  <reference> attrs{value:"J1" }
+  <unit>'...
+[BaselineBoard] appendRawPiece len=454 head="symbol_instances"
+=== SUMMARY === junctionShapes=0 wireShapes=0 symbols=0 rawPieces=49
+=== DUMP wires: count=0 ===
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.
+[main] writing KiCad S-expr via b->dumpKiCad(std::cout)
+[dumpKiCad] dumping board...
+[dumpKiCad] done.

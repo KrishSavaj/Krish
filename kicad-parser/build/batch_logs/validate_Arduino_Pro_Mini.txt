@@ -1,0 +1,68 @@
+
+=== JUNCTION ===
+❌ Missing (1):
+   - (38.099998, 26.67)
+
+=== WIRE ===
+❌ Missing (41):
+   - [(22.86, 44.45), (33.02, 44.45)]
+   - [(22.86, 46.99), (33.02, 46.99)]
+   - [(22.86, 49.53), (33.02, 49.53)]
+   - [(22.86, 54.61), (33.02, 54.61)]
+   - [(22.86, 57.15), (33.02, 57.15)]
+   - [(22.86, 59.69), (33.02, 59.69)]
+   - [(22.86, 62.23), (33.02, 62.23)]
+   - [(22.86, 64.77), (33.02, 64.77)]
+   - [(22.86, 67.31), (33.02, 67.31)]
+   - [(22.86, 69.85), (33.02, 69.85)]
+   - [(22.86, 72.39), (33.02, 72.39)]
+   - [(30.48, 26.67), (30.48, 29.21)]
+   - [(30.48, 26.67), (38.1, 26.67)]
+   - [(30.48, 52.07), (30.48, 74.93)]
+   - [(30.48, 52.07), (33.02, 52.07)]
+   - [(38.1, 26.67), (38.1, 29.21)]
+   - [(40.64, 26.67), (38.1, 26.67)]
+   - [(40.64, 29.21), (40.64, 26.67)]
+   - [(43.18, 24.13), (43.18, 29.21)]
+   - [(45.72, 24.13), (45.72, 29.21)]
+   - [(48.26, 24.13), (48.26, 29.21)]
+   - [(50.8, 24.13), (50.8, 29.21)]
+   - [(55.88, 44.45), (58.42, 44.45)]
+   - [(55.88, 46.99), (58.42, 46.99)]
+   - [(55.88, 49.53), (71.12, 49.53)]
+   - [(55.88, 52.07), (60.96, 52.07)]
+   - [(55.88, 54.61), (71.12, 54.61)]
+   - [(55.88, 57.15), (71.12, 57.15)]
+   - [(55.88, 59.69), (71.12, 59.69)]
+   - [(55.88, 62.23), (71.12, 62.23)]
+   - [(55.88, 64.77), (71.12, 64.77)]
+   - [(55.88, 67.31), (71.12, 67.31)]
+   - [(55.88, 69.85), (71.12, 69.85)]
+   - [(55.88, 72.39), (71.12, 72.39)]
+   - [(55.88, 85.09), (66.04, 85.09)]
+   - [(55.88, 87.63), (66.04, 87.63)]
+   - [(55.88, 95.25), (66.04, 95.25)]
+   - [(55.88, 97.79), (66.04, 97.79)]
+   - [(58.42, 41.91), (58.42, 44.45)]
+   - [(58.42, 46.99), (58.42, 74.93)]
+   - [(60.96, 41.91), (60.96, 52.07)]
+
+=== SYMBOL ===
+❌ Missing (15):
+   - (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.02) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 2.54 0) (effects (font (size 1.27 1.27)))) (property "Value" "Conn_01x02" (at 0 -5.08 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "Conn_01x02_1_1" (rectangle (start -1.27 -2.41) (end 0 -2.67) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 0.13) (end 0 -0.13) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 1.27) (end 1.27 -3.81) (stroke (width 0.25) (type default)) (fill (type background))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Connector_Generic:Conn_01x06" (pin_names (offset 1.02) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 7.62 0) (effects (font (size 1.27 1.27)))) (property "Value" "Conn_01x06" (at 0 -10.16 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "Conn_01x06_1_1" (rectangle (start -1.27 -7.49) (end 0 -7.75) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -4.95) (end 0 -5.21) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -2.41) (end 0 -2.67) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 0.13) (end 0 -0.13) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 2.67) (end 0 2.41) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 5.21) (end 0 4.95) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 6.35) (end 1.27 -8.89) (stroke (width 0.25) (type default)) (fill (type background))) (pin passive line (at -5.08 5.08 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 2.54 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -5.08 0) (length 3.81) (name "Pin_5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -7.62 0) (length 3.81) (name "Pin_6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Connector_Generic:Conn_01x12" (pin_names (offset 1.02) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 15.24 0) (effects (font (size 1.27 1.27)))) (property "Value" "Conn_01x12" (at 0 -17.78 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "Conn_01x12_1_1" (rectangle (start -1.27 -15.11) (end 0 -15.37) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -12.57) (end 0 -12.83) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -10.03) (end 0 -10.29) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -7.49) (end 0 -7.75) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -4.95) (end 0 -5.21) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 -2.41) (end 0 -2.67) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 0.13) (end 0 -0.13) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 2.67) (end 0 2.41) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 5.21) (end 0 4.95) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 7.75) (end 0 7.49) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 10.29) (end 0 10.03) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 12.83) (end 0 12.57) (stroke (width 0.15) (type default)) (fill (type none))) (rectangle (start -1.27 13.97) (end 1.27 -16.51) (stroke (width 0.25) (type default)) (fill (type background))) (pin passive line (at -5.08 12.7 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -10.16 0) (length 3.81) (name "Pin_10" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -12.7 0) (length 3.81) (name "Pin_11" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -15.24 0) (length 3.81) (name "Pin_12" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 10.16 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 7.62 0) (length 3.81) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 5.08 0) (length 3.81) (name "Pin_4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 2.54 0) (length 3.81) (name "Pin_5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_7" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -5.08 0) (length 3.81) (name "Pin_8" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -7.62 0) (length 3.81) (name "Pin_9" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "VCC" (at 0 3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "VCC_0_1" (polyline (pts (xy -0.76 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0.76 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:VDC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -2.54 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "VDC" (at 0 6.35 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"VDC\"" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+   - (symbol "VDC_0_1" (polyline (pts (xy -0.76 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0.76 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "VDC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VDC" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

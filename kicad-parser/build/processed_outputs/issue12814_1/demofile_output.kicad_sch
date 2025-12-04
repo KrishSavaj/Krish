@@ -1,0 +1,2385 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20230819
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    de738ddd-23b9-4ccd-ba81-c7c2c0ed0481
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS04" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS04" (at 0 -1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Hex Inverter" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL not inv" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP*W7.62mm* SSOP?14* TSSOP?14*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS04_1_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_2_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_3_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_4_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_5_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_6_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_0" (pin power_in line (at 0 12.700000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -12.700000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_1" (rectangle (start -5.080000 7.620000) (end 5.080000 -7.620000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:97.790000 value:153.670000 }
+  <unit> attrs{value:5 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0ea882fb-f346-4f1a-9423-dbc47ded0205 }
+  <property> at=(153.670,88.900,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,91.440,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,97.790,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:5 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:34.290000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:1ff11d6c-adf9-4e61-8d6d-130577837fec }
+  <property> at=(34.290,43.180,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,34.290,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR04" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:91.440000 }
+  <unit> attrs{value:3 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2a1824a7-66ec-44d4-9f04-9c9aecba191e }
+  <property> at=(91.440,83.820,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,86.360,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:3 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:48c6b4bb-5021-468f-bb09-6f5323a28cc7 }
+  <property> at=(91.440,52.070,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,54.610,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:144.780000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:626027c6-9e1b-43c2-9464-b518642bcbf6 }
+  <property> at=(120.650,151.130,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,149.860,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:152.400000 }
+  <unit> attrs{value:4 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6d95a234-ea98-490d-9f8f-f05f1063ff01 }
+  <property> at=(152.400,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,60.960,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:4 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:89a482f5-b70a-4372-bd8e-0af65e503bab }
+  <property> at=(120.650,123.190,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,114.300,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR01" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:153.670000 }
+  <unit> attrs{value:6 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8c2c5fc0-d74a-41eb-bbbf-dfd62553e61b }
+  <property> at=(153.670,106.680,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,109.220,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:6 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:77.470000 value:91.440000 }
+  <unit> attrs{value:2 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9026d633-b610-4235-b62a-980af41b1676 }
+  <property> at=(91.440,68.580,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,71.120,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,77.470,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:2 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:132.080000 value:120.650000 }
+  <unit> attrs{value:7 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0203b05-f01b-416d-bf2e-36daa92850be }
+  <property> at=(127.000,130.810,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,133.350,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(120.650,132.080,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:7 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:111.760000 value:74.930000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d1f5ebbc-9601-4409-8a39-0fadb71aa308 }
+  <property> at=(74.930,118.110,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,116.840,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR03" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:dc0c64af-8040-4c41-af31-19a1958b2c74 }
+  <property> at=(40.640,37.465,0.000) attrs{name:"#FLG01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,34.290,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#FLG01" path_unit:1 value:"issue12814" }
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (junction (at 74.930000 92.709999))
+  (junction (at 132.080002 50.799999))
+  (junction (at 74.930000 77.470001))
+  (junction (at 74.930000 92.709999) (uuid 1d7eaedf-f2fd-4620-bf09-d91463bc7f99) (color 0 0 0 0))
+  (junction (at 132.080002 50.799999) (uuid 60b12172-0481-4957-b530-cc38cb78adba) (color 0 0 0 0))
+  (junction (at 74.930000 77.470001) (uuid c5a90bcd-b93e-40f4-9f93-b60e27ea24ea) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS04" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS04" (at 0 -1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Hex Inverter" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL not inv" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP*W7.62mm* SSOP?14* TSSOP?14*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS04_1_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_2_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_3_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_4_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_5_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_6_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_0" (pin power_in line (at 0 12.700000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -12.700000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_1" (rectangle (start -5.080000 7.620000) (end 5.080000 -7.620000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:97.790000 value:153.670000 }
+  <unit> attrs{value:5 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0ea882fb-f346-4f1a-9423-dbc47ded0205 }
+  <property> at=(153.670,88.900,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,91.440,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,97.790,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:5 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:34.290000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:1ff11d6c-adf9-4e61-8d6d-130577837fec }
+  <property> at=(34.290,43.180,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,34.290,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR04" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:91.440000 }
+  <unit> attrs{value:3 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2a1824a7-66ec-44d4-9f04-9c9aecba191e }
+  <property> at=(91.440,83.820,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,86.360,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:3 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:48c6b4bb-5021-468f-bb09-6f5323a28cc7 }
+  <property> at=(91.440,52.070,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,54.610,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:144.780000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:626027c6-9e1b-43c2-9464-b518642bcbf6 }
+  <property> at=(120.650,151.130,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,149.860,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:152.400000 }
+  <unit> attrs{value:4 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6d95a234-ea98-490d-9f8f-f05f1063ff01 }
+  <property> at=(152.400,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,60.960,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:4 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:89a482f5-b70a-4372-bd8e-0af65e503bab }
+  <property> at=(120.650,123.190,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,114.300,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR01" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:153.670000 }
+  <unit> attrs{value:6 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8c2c5fc0-d74a-41eb-bbbf-dfd62553e61b }
+  <property> at=(153.670,106.680,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,109.220,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:6 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:77.470000 value:91.440000 }
+  <unit> attrs{value:2 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9026d633-b610-4235-b62a-980af41b1676 }
+  <property> at=(91.440,68.580,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,71.120,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,77.470,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:2 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:132.080000 value:120.650000 }
+  <unit> attrs{value:7 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0203b05-f01b-416d-bf2e-36daa92850be }
+  <property> at=(127.000,130.810,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,133.350,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(120.650,132.080,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:7 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:111.760000 value:74.930000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d1f5ebbc-9601-4409-8a39-0fadb71aa308 }
+  <property> at=(74.930,118.110,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,116.840,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR03" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:dc0c64af-8040-4c41-af31-19a1958b2c74 }
+  <property> at=(40.640,37.465,0.000) attrs{name:"#FLG01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,34.290,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#FLG01" path_unit:1 value:"issue12814" }
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (junction (at 74.930000 92.709999))
+  (junction (at 132.080002 50.799999))
+  (junction (at 74.930000 77.470001))
+  (junction (at 74.930000 92.709999) (uuid 1d7eaedf-f2fd-4620-bf09-d91463bc7f99) (color 0 0 0 0))
+  (junction (at 132.080002 50.799999) (uuid 60b12172-0481-4957-b530-cc38cb78adba) (color 0 0 0 0))
+  (junction (at 74.930000 77.470001) (uuid c5a90bcd-b93e-40f4-9f93-b60e27ea24ea) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS04" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS04" (at 0 -1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Hex Inverter" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL not inv" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP*W7.62mm* SSOP?14* TSSOP?14*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS04_1_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_2_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_3_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_4_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_5_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_6_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_0" (pin power_in line (at 0 12.700000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -12.700000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_1" (rectangle (start -5.080000 7.620000) (end 5.080000 -7.620000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:97.790000 value:153.670000 }
+  <unit> attrs{value:5 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0ea882fb-f346-4f1a-9423-dbc47ded0205 }
+  <property> at=(153.670,88.900,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,91.440,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,97.790,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:5 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:34.290000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:1ff11d6c-adf9-4e61-8d6d-130577837fec }
+  <property> at=(34.290,43.180,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,34.290,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR04" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:91.440000 }
+  <unit> attrs{value:3 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2a1824a7-66ec-44d4-9f04-9c9aecba191e }
+  <property> at=(91.440,83.820,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,86.360,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:3 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:48c6b4bb-5021-468f-bb09-6f5323a28cc7 }
+  <property> at=(91.440,52.070,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,54.610,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:144.780000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:626027c6-9e1b-43c2-9464-b518642bcbf6 }
+  <property> at=(120.650,151.130,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,149.860,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:152.400000 }
+  <unit> attrs{value:4 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6d95a234-ea98-490d-9f8f-f05f1063ff01 }
+  <property> at=(152.400,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,60.960,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:4 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:89a482f5-b70a-4372-bd8e-0af65e503bab }
+  <property> at=(120.650,123.190,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,114.300,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR01" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:153.670000 }
+  <unit> attrs{value:6 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8c2c5fc0-d74a-41eb-bbbf-dfd62553e61b }
+  <property> at=(153.670,106.680,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,109.220,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:6 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:77.470000 value:91.440000 }
+  <unit> attrs{value:2 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9026d633-b610-4235-b62a-980af41b1676 }
+  <property> at=(91.440,68.580,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,71.120,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,77.470,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:2 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:132.080000 value:120.650000 }
+  <unit> attrs{value:7 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0203b05-f01b-416d-bf2e-36daa92850be }
+  <property> at=(127.000,130.810,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,133.350,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(120.650,132.080,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:7 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:111.760000 value:74.930000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d1f5ebbc-9601-4409-8a39-0fadb71aa308 }
+  <property> at=(74.930,118.110,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,116.840,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR03" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:dc0c64af-8040-4c41-af31-19a1958b2c74 }
+  <property> at=(40.640,37.465,0.000) attrs{name:"#FLG01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,34.290,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#FLG01" path_unit:1 value:"issue12814" }
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (junction (at 74.930000 92.709999))
+  (junction (at 132.080002 50.799999))
+  (junction (at 74.930000 77.470001))
+  (junction (at 74.930000 92.709999) (uuid 1d7eaedf-f2fd-4620-bf09-d91463bc7f99) (color 0 0 0 0))
+  (junction (at 132.080002 50.799999) (uuid 60b12172-0481-4957-b530-cc38cb78adba) (color 0 0 0 0))
+  (junction (at 74.930000 77.470001) (uuid c5a90bcd-b93e-40f4-9f93-b60e27ea24ea) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS04" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS04" (at 0 -1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Hex Inverter" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL not inv" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP*W7.62mm* SSOP?14* TSSOP?14*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS04_1_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_2_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_3_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_4_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_5_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_6_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_0" (pin power_in line (at 0 12.700000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -12.700000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_1" (rectangle (start -5.080000 7.620000) (end 5.080000 -7.620000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:97.790000 value:153.670000 }
+  <unit> attrs{value:5 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0ea882fb-f346-4f1a-9423-dbc47ded0205 }
+  <property> at=(153.670,88.900,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,91.440,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,97.790,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:5 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:34.290000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:1ff11d6c-adf9-4e61-8d6d-130577837fec }
+  <property> at=(34.290,43.180,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,34.290,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR04" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:91.440000 }
+  <unit> attrs{value:3 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2a1824a7-66ec-44d4-9f04-9c9aecba191e }
+  <property> at=(91.440,83.820,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,86.360,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:3 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:48c6b4bb-5021-468f-bb09-6f5323a28cc7 }
+  <property> at=(91.440,52.070,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,54.610,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:144.780000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:626027c6-9e1b-43c2-9464-b518642bcbf6 }
+  <property> at=(120.650,151.130,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,149.860,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:152.400000 }
+  <unit> attrs{value:4 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6d95a234-ea98-490d-9f8f-f05f1063ff01 }
+  <property> at=(152.400,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,60.960,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:4 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:89a482f5-b70a-4372-bd8e-0af65e503bab }
+  <property> at=(120.650,123.190,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,114.300,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR01" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:153.670000 }
+  <unit> attrs{value:6 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8c2c5fc0-d74a-41eb-bbbf-dfd62553e61b }
+  <property> at=(153.670,106.680,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,109.220,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:6 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:77.470000 value:91.440000 }
+  <unit> attrs{value:2 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9026d633-b610-4235-b62a-980af41b1676 }
+  <property> at=(91.440,68.580,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,71.120,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,77.470,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:2 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:132.080000 value:120.650000 }
+  <unit> attrs{value:7 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0203b05-f01b-416d-bf2e-36daa92850be }
+  <property> at=(127.000,130.810,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,133.350,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(120.650,132.080,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:7 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:111.760000 value:74.930000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d1f5ebbc-9601-4409-8a39-0fadb71aa308 }
+  <property> at=(74.930,118.110,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,116.840,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR03" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:dc0c64af-8040-4c41-af31-19a1958b2c74 }
+  <property> at=(40.640,37.465,0.000) attrs{name:"#FLG01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,34.290,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#FLG01" path_unit:1 value:"issue12814" }
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (junction (at 74.930000 92.709999))
+  (junction (at 132.080002 50.799999))
+  (junction (at 74.930000 77.470001))
+  (junction (at 74.930000 92.709999) (uuid 1d7eaedf-f2fd-4620-bf09-d91463bc7f99) (color 0 0 0 0))
+  (junction (at 132.080002 50.799999) (uuid 60b12172-0481-4957-b530-cc38cb78adba) (color 0 0 0 0))
+  (junction (at 74.930000 77.470001) (uuid c5a90bcd-b93e-40f4-9f93-b60e27ea24ea) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS04" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS04" (at 0 -1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Hex Inverter" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL not inv" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP*W7.62mm* SSOP?14* TSSOP?14*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS04_1_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_2_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_3_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_4_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_5_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_6_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_0" (pin power_in line (at 0 12.700000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -12.700000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_1" (rectangle (start -5.080000 7.620000) (end 5.080000 -7.620000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:97.790000 value:153.670000 }
+  <unit> attrs{value:5 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0ea882fb-f346-4f1a-9423-dbc47ded0205 }
+  <property> at=(153.670,88.900,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,91.440,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,97.790,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:5 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:34.290000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:1ff11d6c-adf9-4e61-8d6d-130577837fec }
+  <property> at=(34.290,43.180,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,34.290,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR04" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:91.440000 }
+  <unit> attrs{value:3 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2a1824a7-66ec-44d4-9f04-9c9aecba191e }
+  <property> at=(91.440,83.820,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,86.360,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:3 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:48c6b4bb-5021-468f-bb09-6f5323a28cc7 }
+  <property> at=(91.440,52.070,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,54.610,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:144.780000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:626027c6-9e1b-43c2-9464-b518642bcbf6 }
+  <property> at=(120.650,151.130,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,149.860,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:152.400000 }
+  <unit> attrs{value:4 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6d95a234-ea98-490d-9f8f-f05f1063ff01 }
+  <property> at=(152.400,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,60.960,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:4 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:89a482f5-b70a-4372-bd8e-0af65e503bab }
+  <property> at=(120.650,123.190,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,114.300,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR01" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:153.670000 }
+  <unit> attrs{value:6 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8c2c5fc0-d74a-41eb-bbbf-dfd62553e61b }
+  <property> at=(153.670,106.680,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,109.220,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:6 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:77.470000 value:91.440000 }
+  <unit> attrs{value:2 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9026d633-b610-4235-b62a-980af41b1676 }
+  <property> at=(91.440,68.580,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,71.120,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,77.470,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:2 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:132.080000 value:120.650000 }
+  <unit> attrs{value:7 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0203b05-f01b-416d-bf2e-36daa92850be }
+  <property> at=(127.000,130.810,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,133.350,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(120.650,132.080,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:7 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:111.760000 value:74.930000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d1f5ebbc-9601-4409-8a39-0fadb71aa308 }
+  <property> at=(74.930,118.110,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,116.840,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR03" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:dc0c64af-8040-4c41-af31-19a1958b2c74 }
+  <property> at=(40.640,37.465,0.000) attrs{name:"#FLG01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,34.290,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#FLG01" path_unit:1 value:"issue12814" }
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (junction (at 74.930000 92.709999))
+  (junction (at 132.080002 50.799999))
+  (junction (at 74.930000 77.470001))
+  (junction (at 74.930000 92.709999) (uuid 1d7eaedf-f2fd-4620-bf09-d91463bc7f99) (color 0 0 0 0))
+  (junction (at 132.080002 50.799999) (uuid 60b12172-0481-4957-b530-cc38cb78adba) (color 0 0 0 0))
+  (junction (at 74.930000 77.470001) (uuid c5a90bcd-b93e-40f4-9f93-b60e27ea24ea) (color 0 0 0 0))
+)
+(kicad_sch (version 20230819) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "74xx:74LS04" (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "74LS04" (at 0 -1.270000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Hex Inverter" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "TTL not inv" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "DIP*W7.62mm* SSOP?14* TSSOP?14*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "74LS04_1_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_2_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_3_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_4_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_5_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_6_0" (polyline (pts (xy -3.810000 3.810000) (xy -3.810000 -3.810000) (xy 3.810000 0) (xy -3.810000 3.810000)) (stroke (width 0.254000) (type default)) (fill (type background))) (pin output inverted (at 7.620000 0 180) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 0 0) (length 3.810000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_0" (pin power_in line (at 0 12.700000 270) (length 5.080000) (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -12.700000 90) (length 5.080000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "74LS04_7_1" (rectangle (start -5.080000 7.620000) (end 5.080000 -7.620000) (stroke (width 0.254000) (type default)) (fill (type background))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.905000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "PWR_FLAG" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "flag power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000)))))) (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy -1.016000 1.905000) (xy 0 2.540000) (xy 1.016000 1.905000) (xy 0 1.270000)) (stroke (width 0) (type default)) (fill (type none))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:97.790000 value:153.670000 }
+  <unit> attrs{value:5 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:0ea882fb-f346-4f1a-9423-dbc47ded0205 }
+  <property> at=(153.670,88.900,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,91.440,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,97.790,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,97.790,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:5 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:34.290000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:1ff11d6c-adf9-4e61-8d6d-130577837fec }
+  <property> at=(34.290,43.180,0.000) attrs{name:"#PWR04" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,34.290,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(34.290,39.370,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR04" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:92.710000 value:91.440000 }
+  <unit> attrs{value:3 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:2a1824a7-66ec-44d4-9f04-9c9aecba191e }
+  <property> at=(91.440,83.820,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,86.360,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,92.710,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,92.710,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:3 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:91.440000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:48c6b4bb-5021-468f-bb09-6f5323a28cc7 }
+  <property> at=(91.440,52.070,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,54.610,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,60.960,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:144.780000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:626027c6-9e1b-43c2-9464-b518642bcbf6 }
+  <property> at=(120.650,151.130,0.000) attrs{name:"#PWR02" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,149.860,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,144.780,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR02" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:67.310000 value:152.400000 }
+  <unit> attrs{value:4 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:6d95a234-ea98-490d-9f8f-f05f1063ff01 }
+  <property> at=(152.400,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,60.960,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(152.400,67.310,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(152.400,67.310,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:4 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:89a482f5-b70a-4372-bd8e-0af65e503bab }
+  <property> at=(120.650,123.190,0.000) attrs{name:"#PWR01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,114.300,0.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,119.380,0.000) attrs{name:"Power symbol creates a global label with name \"VCC\"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR01" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:115.570000 value:153.670000 }
+  <unit> attrs{value:6 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:8c2c5fc0-d74a-41eb-bbbf-dfd62553e61b }
+  <property> at=(153.670,106.680,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,109.220,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(153.670,115.570,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(153.670,115.570,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:6 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:77.470000 value:91.440000 }
+  <unit> attrs{value:2 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:9026d633-b610-4235-b62a-980af41b1676 }
+  <property> at=(91.440,68.580,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,71.120,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(91.440,77.470,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(91.440,77.470,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:2 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:132.080000 value:120.650000 }
+  <unit> attrs{value:7 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:b0203b05-f01b-416d-bf2e-36daa92850be }
+  <property> at=(127.000,130.810,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(127.000,133.350,0.000) attrs{name:"74LS04" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(120.650,132.080,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"http://www.ti.com/lit/gpn/sn74LS04" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,132.080,0.000) attrs{name:"Hex Inverter" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"9" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"U1" path_unit:7 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:111.760000 value:74.930000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:d1f5ebbc-9601-4409-8a39-0fadb71aa308 }
+  <property> at=(74.930,118.110,0.000) attrs{name:"#PWR03" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,116.840,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(74.930,111.760,0.000) attrs{name:"Power symbol creates a global label with name \"GND\" , ground" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#PWR03" path_unit:1 value:"issue12814" }
+  <symbol>
+  <at> attrs{misc:0 name:39.370000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced>
+  <uuid> attrs{value:dc0c64af-8040-4c41-af31-19a1958b2c74 }
+  <property> at=(40.640,37.465,0.000) attrs{name:"#FLG01" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,34.290,0.000) attrs{name:"PWR_FLAG" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,39.370,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(40.640,39.370,0.000) attrs{name:"Special symbol for telling ERC where power comes from" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/9d9c2574-56a3-45db-8021-2a92a85311b1/9a030759-73ea-44ba-bd5b-ba78c58ff624" path_reference:"#FLG01" path_unit:1 value:"issue12814" }
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 40.64 39.37) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 83.82 77.47) (angle 0) (thickness 0.25))
+  (wire (start 99.06 92.71) (end 114.3 92.71) (angle 0) (thickness 0.25))
+  (wire (start 74.93 77.47) (end 74.93 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 60.96) (end 83.82 60.96) (angle 0) (thickness 0.25))
+  (wire (start 134.62 67.31) (end 144.78 67.31) (angle 0) (thickness 0.25))
+  (wire (start 34.29 41.91) (end 40.64 41.91) (angle 0) (thickness 0.25))
+  (wire (start 74.93 92.71) (end 83.82 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 60.96) (end 114.3 60.96) (angle 0) (thickness 0.25))
+  (wire (start 74.93 111.76) (end 74.93 92.71) (angle 0) (thickness 0.25))
+  (wire (start 99.06 77.47) (end 114.3 77.47) (angle 0) (thickness 0.25))
+  (wire (start 34.29 39.37) (end 34.29 41.91) (angle 0) (thickness 0.25))
+  (junction (at 74.930000 92.709999))
+  (junction (at 132.080002 50.799999))
+  (junction (at 74.930000 77.470001))
+  (junction (at 74.930000 92.709999) (uuid 1d7eaedf-f2fd-4620-bf09-d91463bc7f99) (color 0 0 0 0))
+  (junction (at 132.080002 50.799999) (uuid 60b12172-0481-4957-b530-cc38cb78adba) (color 0 0 0 0))
+  (junction (at 74.930000 77.470001) (uuid c5a90bcd-b93e-40f4-9f93-b60e27ea24ea) (color 0 0 0 0))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,112 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Usage:
+#   ./batch_import_and_run.sh "C:\Users\kulsu\OneDrive\Desktop\kicad_pcb_files"
+# or pass a linux path:
+#   ./batch_import_and_run.sh /mnt/c/Users/...
+#
+# If no argument given, a sensible default (your earlier folder) is used.
+
+DEFAULT_WIN_PATH='C:\Users\kulsu\OneDrive\Desktop\kicad_pcb_files'
+
+SRC_ARG="${1:-$DEFAULT_WIN_PATH}"
+PIPELINE="./run_full_pipeline.sh"   # your pipeline that expects demofile.kicad_sch in cwd
+BUILD_DIR="$(pwd)"
+OUTPUT_ROOT="$BUILD_DIR/processed_outputs"
+LOGROOT="$BUILD_DIR/batch_logs"
+
+# Convert Windows path to WSL/Linux path if needed
+if [ -d "$SRC_ARG" ]; then
+  SRC_DIR="$SRC_ARG"
+else
+  if command -v wslpath >/dev/null 2>&1; then
+    SRC_DIR="$(wslpath -u "$SRC_ARG")"
+  else
+    # naive converter: C:\path\to -> /mnt/c/path/to
+    drive="${SRC_ARG:0:1}"
+    rest="${SRC_ARG:2}"
+    rest="${rest#\\}"
+    rest="${rest//\\//}"
+    drive_lower="$(echo "$drive" | tr '[:upper:]' '[:lower:]')"
+    SRC_DIR="/mnt/$drive_lower/$rest"
+  fi
+fi
+
+if [ ! -d "$SRC_DIR" ]; then
+  echo "Error: source directory not found: $SRC_DIR" >&2
+  exit 3
+fi
+
+mkdir -p "$OUTPUT_ROOT"
+mkdir -p "$LOGROOT"
+
+# Safety: ensure pipeline script exists
+if [ ! -x "$PIPELINE" ]; then
+  if [ -f "$PIPELINE" ]; then
+    chmod +x "$PIPELINE" || true
+  else
+    echo "Warning: pipeline $PIPELINE not found in $(pwd). The script will still attempt to run it." >&2
+  fi
+fi
+
+echo "Source dir: $SRC_DIR"
+echo "Will write per-file outputs under: $OUTPUT_ROOT"
+echo
+
+count=0
+shopt -s nullglob
+for src in "$SRC_DIR"/*.kicad_sch "$SRC_DIR"/*.kicad_sch.txt; do
+  # allow some flexible extensions (if any files have .kicad_sch.txt)
+  [ -e "$src" ] || continue
+  base="$(basename "$src")"
+  name="${base%.*}"        # remove extension
+  outdir="$OUTPUT_ROOT/$name"
+  mkdir -p "$outdir"
+
+  echo "=== Processing: $base -> demofile.kicad_sch (run #$((count+1))) ==="
+  echo "copying $src -> demofile.kicad_sch"
+  cp -f "$src" "$BUILD_DIR/demofile.kicad_sch"
+
+  # normalize CRLF in demofile
+  sed -i 's/\r$//' "$BUILD_DIR/demofile.kicad_sch" || true
+
+  # run the pipeline and capture stdout/stderr
+  pipeline_log="$LOGROOT/pipeline_${name}.log"
+  echo "running pipeline -> $pipeline_log"
+  if ./run_full_pipeline.sh > "$pipeline_log" 2>&1; then
+    echo "pipeline succeeded for $name"
+  else
+    echo "pipeline failed for $name (see $pipeline_log). continuing to next file." >&2
+  fi
+
+  # capture the validator output (human-readable)
+  validate_log="$LOGROOT/validate_${name}.txt"
+  python3 validate_cleaned_files.py > "$validate_log" 2>&1 || true
+
+  # collect key outputs (only move the files that typically are produced)
+  echo "collecting outputs to $outdir"
+  for f in demofile_output.kicad_sch demofile_unhandled.log \
+           orig_junctions.txt orig_wires.txt final_junctions.txt final_wires.txt final_symbols.txt \
+           final_junctions_cleaned.txt final_wires_cleaned.txt final_symbols_cleaned.txt \
+           out_wires.txt out_wires_deduped.txt final_wires_rebuilt.txt \
+           "$pipeline_log" "$validate_log"; do
+    if [ -e "$BUILD_DIR/$f" ]; then
+      mv -f "$BUILD_DIR/$f" "$outdir/" || true
+    fi
+  done
+
+  # also move any reconciliation/diagnostic files (optional)
+  if [ -d "$BUILD_DIR/diagnostics" ]; then
+    mkdir -p "$outdir/diagnostics"
+    cp -a "$BUILD_DIR/diagnostics/." "$outdir/diagnostics/" 2>/dev/null || true
+  fi
+
+  echo "finished $name -> outputs in $outdir"
+  echo
+  count=$((count+1))
+done
+shopt -u nullglob
+
+echo "Batch finished. Processed $count file(s)."
+echo "See $OUTPUT_ROOT and $LOGROOT for results and logs."

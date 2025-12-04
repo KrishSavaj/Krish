@@ -1,0 +1,34 @@
+
+=== JUNCTION ===
+❌ Missing (3):
+   - (137.160004, 88.900002)
+   - (139.699997, 88.900002)
+   - (142.240005, 88.900002)
+
+=== WIRE ===
+❌ Missing (11):
+   - [(127.0, 88.9), (128.27, 88.9)]
+   - [(135.89, 88.9), (137.16, 88.9)]
+   - [(137.16, 72.39), (142.24, 72.39)]
+   - [(137.16, 80.01), (137.16, 88.9)]
+   - [(137.16, 88.9), (139.7, 88.9)]
+   - [(139.7, 101.6), (139.7, 100.33)]
+   - [(139.7, 92.71), (139.7, 88.9)]
+   - [(142.24, 80.01), (142.24, 88.9)]
+   - [(142.24, 88.9), (139.7, 88.9)]
+   - [(143.51, 88.9), (142.24, 88.9)]
+   - [(151.13, 88.9), (152.4, 88.9)]
+
+=== SYMBOL ===
+❌ Missing (9):
+   - (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.25)) (in_bom yes) (on_board yes) (property "Reference" "C" (id 0) (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C" (id 1) (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (id 2) (at 0.97 -3.81 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "cap capacitor" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Unpolarized capacitor" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "C_*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "C_0_1" (polyline (pts (xy -2.03 -0.76) (xy 2.03 -0.76)) (stroke (width 0.51) (type default)) (fill (type none))) (polyline (pts (xy -2.03 0.76) (xy 2.03 0.76)) (stroke (width 0.51) (type default)) (fill (type none))))
+   - (symbol "C_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at -1.78 0 90) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistor" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "GND" (id 1) (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "power-flag" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

@@ -1,0 +1,1545 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20231120
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "fee43712-22d8-4db1-92a8-2882253af55d"
+Library symbols: 
+
+Title:        
+Date:         "sam. 04 avril 2015"
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "sam. 04 avril 2015")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x15" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x15" (at 0 -20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x15_1_1" (rectangle (start -1.270000 -17.653000) (end 0 -17.907000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -15.113000) (end 0 -15.367000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 12.827000) (end 0 12.573000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 15.367000) (end 0 15.113000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 17.907000) (end 0 17.653000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 19.050000) (end 1.270000 -19.050000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 17.780000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_11" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_12" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_13" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -15.240000 0) (length 3.810000) (name "Pin_14" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -17.780000 0) (length 3.810000) (name "Pin_15" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 15.240000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 12.700000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+5V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+5V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+5V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+5V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d719df" }
+  <property> at=(40.640,24.130,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"Analog" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J1" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:50.800000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d71a21" }
+  <property> at=(50.800,24.130,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"Digital" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J2" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:30.480000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"64d63185-6201-47f7-9382-f0edd99f9af9" }
+  <property> at=(30.480,27.940,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,20.574,90.000) attrs{name:"+5V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0103" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"6a687ce9-fb57-4ecb-8030-aa131281c14a" }
+  <property> at=(33.020,27.940,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,20.574,90.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0102" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:27.940000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"7bf09870-c7ef-41a9-9a8c-4910c93d4ef8" }
+  <property> at=(27.940,27.940,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,20.320,90.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0101" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:58.420000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a2b409d2-5a30-4151-b7cb-b6e74c99f083" }
+  <property> at=(58.420,71.120,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0105" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"db3ca061-004c-45dd-981d-90a093b53fa7" }
+  <property> at=(33.020,71.120,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0104" path_unit:1 value:"Arduino_Nano" }
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "sam. 04 avril 2015")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x15" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x15" (at 0 -20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x15_1_1" (rectangle (start -1.270000 -17.653000) (end 0 -17.907000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -15.113000) (end 0 -15.367000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 12.827000) (end 0 12.573000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 15.367000) (end 0 15.113000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 17.907000) (end 0 17.653000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 19.050000) (end 1.270000 -19.050000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 17.780000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_11" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_12" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_13" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -15.240000 0) (length 3.810000) (name "Pin_14" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -17.780000 0) (length 3.810000) (name "Pin_15" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 15.240000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 12.700000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+5V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+5V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+5V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+5V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d719df" }
+  <property> at=(40.640,24.130,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"Analog" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J1" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:50.800000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d71a21" }
+  <property> at=(50.800,24.130,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"Digital" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J2" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:30.480000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"64d63185-6201-47f7-9382-f0edd99f9af9" }
+  <property> at=(30.480,27.940,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,20.574,90.000) attrs{name:"+5V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0103" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"6a687ce9-fb57-4ecb-8030-aa131281c14a" }
+  <property> at=(33.020,27.940,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,20.574,90.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0102" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:27.940000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"7bf09870-c7ef-41a9-9a8c-4910c93d4ef8" }
+  <property> at=(27.940,27.940,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,20.320,90.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0101" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:58.420000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a2b409d2-5a30-4151-b7cb-b6e74c99f083" }
+  <property> at=(58.420,71.120,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0105" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"db3ca061-004c-45dd-981d-90a093b53fa7" }
+  <property> at=(33.020,71.120,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0104" path_unit:1 value:"Arduino_Nano" }
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "sam. 04 avril 2015")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x15" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x15" (at 0 -20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x15_1_1" (rectangle (start -1.270000 -17.653000) (end 0 -17.907000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -15.113000) (end 0 -15.367000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 12.827000) (end 0 12.573000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 15.367000) (end 0 15.113000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 17.907000) (end 0 17.653000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 19.050000) (end 1.270000 -19.050000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 17.780000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_11" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_12" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_13" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -15.240000 0) (length 3.810000) (name "Pin_14" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -17.780000 0) (length 3.810000) (name "Pin_15" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 15.240000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 12.700000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+5V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+5V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+5V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+5V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d719df" }
+  <property> at=(40.640,24.130,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"Analog" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J1" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:50.800000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d71a21" }
+  <property> at=(50.800,24.130,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"Digital" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J2" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:30.480000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"64d63185-6201-47f7-9382-f0edd99f9af9" }
+  <property> at=(30.480,27.940,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,20.574,90.000) attrs{name:"+5V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0103" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"6a687ce9-fb57-4ecb-8030-aa131281c14a" }
+  <property> at=(33.020,27.940,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,20.574,90.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0102" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:27.940000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"7bf09870-c7ef-41a9-9a8c-4910c93d4ef8" }
+  <property> at=(27.940,27.940,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,20.320,90.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0101" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:58.420000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a2b409d2-5a30-4151-b7cb-b6e74c99f083" }
+  <property> at=(58.420,71.120,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0105" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"db3ca061-004c-45dd-981d-90a093b53fa7" }
+  <property> at=(33.020,71.120,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0104" path_unit:1 value:"Arduino_Nano" }
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "sam. 04 avril 2015")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x15" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x15" (at 0 -20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x15_1_1" (rectangle (start -1.270000 -17.653000) (end 0 -17.907000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -15.113000) (end 0 -15.367000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 12.827000) (end 0 12.573000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 15.367000) (end 0 15.113000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 17.907000) (end 0 17.653000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 19.050000) (end 1.270000 -19.050000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 17.780000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_11" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_12" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_13" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -15.240000 0) (length 3.810000) (name "Pin_14" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -17.780000 0) (length 3.810000) (name "Pin_15" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 15.240000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 12.700000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+5V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+5V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+5V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+5V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d719df" }
+  <property> at=(40.640,24.130,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"Analog" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J1" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:50.800000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d71a21" }
+  <property> at=(50.800,24.130,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"Digital" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J2" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:30.480000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"64d63185-6201-47f7-9382-f0edd99f9af9" }
+  <property> at=(30.480,27.940,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,20.574,90.000) attrs{name:"+5V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0103" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"6a687ce9-fb57-4ecb-8030-aa131281c14a" }
+  <property> at=(33.020,27.940,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,20.574,90.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0102" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:27.940000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"7bf09870-c7ef-41a9-9a8c-4910c93d4ef8" }
+  <property> at=(27.940,27.940,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,20.320,90.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0101" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:58.420000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a2b409d2-5a30-4151-b7cb-b6e74c99f083" }
+  <property> at=(58.420,71.120,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0105" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"db3ca061-004c-45dd-981d-90a093b53fa7" }
+  <property> at=(33.020,71.120,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0104" path_unit:1 value:"Arduino_Nano" }
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "sam. 04 avril 2015")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x15" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x15" (at 0 -20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x15_1_1" (rectangle (start -1.270000 -17.653000) (end 0 -17.907000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -15.113000) (end 0 -15.367000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 12.827000) (end 0 12.573000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 15.367000) (end 0 15.113000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 17.907000) (end 0 17.653000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 19.050000) (end 1.270000 -19.050000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 17.780000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_11" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_12" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_13" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -15.240000 0) (length 3.810000) (name "Pin_14" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -17.780000 0) (length 3.810000) (name "Pin_15" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 15.240000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 12.700000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+5V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+5V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+5V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+5V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d719df" }
+  <property> at=(40.640,24.130,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"Analog" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J1" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:50.800000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d71a21" }
+  <property> at=(50.800,24.130,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"Digital" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J2" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:30.480000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"64d63185-6201-47f7-9382-f0edd99f9af9" }
+  <property> at=(30.480,27.940,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,20.574,90.000) attrs{name:"+5V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0103" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"6a687ce9-fb57-4ecb-8030-aa131281c14a" }
+  <property> at=(33.020,27.940,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,20.574,90.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0102" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:27.940000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"7bf09870-c7ef-41a9-9a8c-4910c93d4ef8" }
+  <property> at=(27.940,27.940,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,20.320,90.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0101" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:58.420000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a2b409d2-5a30-4151-b7cb-b6e74c99f083" }
+  <property> at=(58.420,71.120,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0105" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"db3ca061-004c-45dd-981d-90a093b53fa7" }
+  <property> at=(33.020,71.120,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0104" path_unit:1 value:"Arduino_Nano" }
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20231120) (generator "eeschema")
+  (paper "A4")
+  (title_block
+    (date "sam. 04 avril 2015")
+  )
+(lib_symbols (symbol "Connector_Generic:Conn_01x15" (pin_names (offset 1.016000) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "J" (at 0 20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "Conn_01x15" (at 0 -20.320000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "Conn_01x15_1_1" (rectangle (start -1.270000 -17.653000) (end 0 -17.907000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -15.113000) (end 0 -15.367000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -12.573000) (end 0 -12.827000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -10.033000) (end 0 -10.287000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -7.493000) (end 0 -7.747000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -4.953000) (end 0 -5.207000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 -2.413000) (end 0 -2.667000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 0.127000) (end 0 -0.127000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 2.667000) (end 0 2.413000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 5.207000) (end 0 4.953000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 7.747000) (end 0 7.493000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 10.287000) (end 0 10.033000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 12.827000) (end 0 12.573000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 15.367000) (end 0 15.113000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 17.907000) (end 0 17.653000) (stroke (width 0.152400) (type default)) (fill (type none))) (rectangle (start -1.270000 19.050000) (end 1.270000 -19.050000) (stroke (width 0.254000) (type default)) (fill (type background))) (pin passive line (at -5.080000 17.780000 0) (length 3.810000) (name "Pin_1" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -5.080000 0) (length 3.810000) (name "Pin_10" (effects (font (size 1.270000 1.270000)))) (number "10" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -7.620000 0) (length 3.810000) (name "Pin_11" (effects (font (size 1.270000 1.270000)))) (number "11" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -10.160000 0) (length 3.810000) (name "Pin_12" (effects (font (size 1.270000 1.270000)))) (number "12" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -12.700000 0) (length 3.810000) (name "Pin_13" (effects (font (size 1.270000 1.270000)))) (number "13" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -15.240000 0) (length 3.810000) (name "Pin_14" (effects (font (size 1.270000 1.270000)))) (number "14" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -17.780000 0) (length 3.810000) (name "Pin_15" (effects (font (size 1.270000 1.270000)))) (number "15" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 15.240000 0) (length 3.810000) (name "Pin_2" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 12.700000 0) (length 3.810000) (name "Pin_3" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 10.160000 0) (length 3.810000) (name "Pin_4" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 7.620000 0) (length 3.810000) (name "Pin_5" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 5.080000 0) (length 3.810000) (name "Pin_6" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 2.540000 0) (length 3.810000) (name "Pin_7" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 0 0) (length 3.810000) (name "Pin_8" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))) (pin passive line (at -5.080000 -2.540000 0) (length 3.810000) (name "Pin_9" (effects (font (size 1.270000 1.270000)))) (number "9" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+3.3V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+3.3V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+3.3V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+3V3" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:+5V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "+5V" (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "+5V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+5V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.350000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "GND" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "power:VCC" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Value" "VCC" (at 0 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "VCC_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default)) (fill (type none)))) (symbol "VCC_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VCC" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:40.640000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d719df" }
+  <property> at=(40.640,24.130,0.000) attrs{name:"J1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,64.770,0.000) attrs{name:"Analog" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(40.640,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J1" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:44.450000 value:50.800000 }
+  <mirror> attrs{value:y }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"00000000-0000-0000-0000-000056d71a21" }
+  <property> at=(50.800,24.130,0.000) attrs{name:"J2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,64.770,0.000) attrs{name:"Digital" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(50.800,44.450,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"10" }
+  <pin> attrs{value:"11" }
+  <pin> attrs{value:"12" }
+  <pin> attrs{value:"13" }
+  <pin> attrs{value:"14" }
+  <pin> attrs{value:"15" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"9" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"J2" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:30.480000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"64d63185-6201-47f7-9382-f0edd99f9af9" }
+  <property> at=(30.480,27.940,0.000) attrs{name:"#PWR0103" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,20.574,90.000) attrs{name:"+5V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(30.480,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0103" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"6a687ce9-fb57-4ecb-8030-aa131281c14a" }
+  <property> at=(33.020,27.940,0.000) attrs{name:"#PWR0102" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,20.574,90.000) attrs{name:"+3V3" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0102" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:24.130000 value:27.940000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"7bf09870-c7ef-41a9-9a8c-4910c93d4ef8" }
+  <property> at=(27.940,27.940,0.000) attrs{name:"#PWR0101" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,20.320,90.000) attrs{name:"VCC" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(27.940,24.130,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0101" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:58.420000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"a2b409d2-5a30-4151-b7cb-b6e74c99f083" }
+  <property> at=(58.420,71.120,0.000) attrs{name:"#PWR0105" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(58.420,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0105" path_unit:1 value:"Arduino_Nano" }
+  <symbol>
+  <at> attrs{misc:0 name:64.770000 value:33.020000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <uuid> attrs{value:"db3ca061-004c-45dd-981d-90a093b53fa7" }
+  <property> at=(33.020,71.120,0.000) attrs{name:"#PWR0104" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,68.580,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(33.020,64.770,0.000) attrs{name:"" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <instances>
+  <project> attrs{path:"/0d35483a-0b12-46cc-b9f2-896fd6831779" path_reference:"#PWR0104" path_unit:1 value:"Arduino_Nano" }
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 59.69) (end 71.12 59.69) (angle 0) (thickness 0.25))
+  (wire (start 35.56 29.21) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 17.78 39.37) (end 35.56 39.37) (angle 0) (thickness 0.25))
+  (wire (start 17.78 44.45) (end 35.56 44.45) (angle 0) (thickness 0.25))
+  (wire (start 30.48 24.13) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 35.56 54.61) (end 30.48 54.61) (angle 0) (thickness 0.25))
+  (wire (start 17.78 41.91) (end 35.56 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 31.75) (end 71.12 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 36.83) (end 71.12 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 39.37) (end 71.12 39.37) (angle 0) (thickness 0.25))
+  (wire (start 55.88 52.07) (end 71.12 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 31.75) (end 35.56 31.75) (angle 0) (thickness 0.25))
+  (wire (start 55.88 44.45) (end 71.12 44.45) (angle 0) (thickness 0.25))
+  (wire (start 33.02 24.13) (end 33.02 29.21) (angle 0) (thickness 0.25))
+  (wire (start 55.88 54.61) (end 58.42 54.61) (angle 0) (thickness 0.25))
+  (wire (start 55.88 26.67) (end 71.12 26.67) (angle 0) (thickness 0.25))
+  (wire (start 27.94 24.13) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 35.56 62.23) (end 27.94 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 57.15) (end 35.56 57.15) (angle 0) (thickness 0.25))
+  (wire (start 55.88 41.91) (end 71.12 41.91) (angle 0) (thickness 0.25))
+  (wire (start 55.88 46.99) (end 71.12 46.99) (angle 0) (thickness 0.25))
+  (wire (start 17.78 34.29) (end 35.56 34.29) (angle 0) (thickness 0.25))
+  (wire (start 17.78 26.67) (end 35.56 26.67) (angle 0) (thickness 0.25))
+  (wire (start 55.88 49.53) (end 71.12 49.53) (angle 0) (thickness 0.25))
+  (wire (start 17.78 52.07) (end 35.56 52.07) (angle 0) (thickness 0.25))
+  (wire (start 17.78 46.99) (end 35.56 46.99) (angle 0) (thickness 0.25))
+  (wire (start 55.88 34.29) (end 71.12 34.29) (angle 0) (thickness 0.25))
+  (wire (start 55.88 57.15) (end 71.12 57.15) (angle 0) (thickness 0.25))
+  (wire (start 58.42 54.61) (end 58.42 64.77) (angle 0) (thickness 0.25))
+  (wire (start 55.88 62.23) (end 71.12 62.23) (angle 0) (thickness 0.25))
+  (wire (start 17.78 49.53) (end 35.56 49.53) (angle 0) (thickness 0.25))
+  (wire (start 33.02 59.69) (end 33.02 64.77) (angle 0) (thickness 0.25))
+  (wire (start 35.56 59.69) (end 33.02 59.69) (angle 0) (thickness 0.25))
+  (wire (start 17.78 36.83) (end 35.56 36.83) (angle 0) (thickness 0.25))
+  (wire (start 55.88 29.21) (end 71.12 29.21) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

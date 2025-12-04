@@ -1,0 +1,121 @@
+
+=== JUNCTION ===
+❌ Missing (15):
+   - (129.539993, 71.120003)
+   - (151.130005, 81.279999)
+   - (154.940002, 62.23)
+   - (170.179993, 71.120003)
+   - (179.070007, 62.23)
+   - (195.580002, 73.660004)
+   - (198.119995, 22.860001)
+   - (198.119995, 38.099998)
+   - (204.470001, 38.099998)
+   - (222.25, 73.660004)
+   - (233.679993, 38.099998)
+   - (233.679993, 45.720001)
+   - (233.679993, 53.34)
+   - (238.759995, 74.93)
+   - (97.790001, 106.68)
+
+=== WIRE ===
+❌ Missing (64):
+   - [(111.76, 71.12), (129.54, 71.12)]
+   - [(129.54, 44.45), (129.54, 45.72)]
+   - [(129.54, 58.42), (129.54, 71.12)]
+   - [(129.54, 71.12), (129.54, 83.82)]
+   - [(129.54, 71.12), (134.62, 71.12)]
+   - [(129.54, 96.52), (129.54, 97.79)]
+   - [(146.05, 44.45), (146.05, 45.72)]
+   - [(146.05, 62.23), (146.05, 58.42)]
+   - [(146.05, 80.01), (146.05, 81.28)]
+   - [(146.05, 81.28), (151.13, 81.28)]
+   - [(151.13, 81.28), (151.13, 83.82)]
+   - [(151.13, 81.28), (154.94, 81.28)]
+   - [(151.13, 96.52), (151.13, 97.79)]
+   - [(154.94, 44.45), (154.94, 45.72)]
+   - [(154.94, 62.23), (154.94, 58.42)]
+   - [(154.94, 62.23), (179.07, 62.23)]
+   - [(154.94, 81.28), (154.94, 80.01)]
+   - [(166.37, 71.12), (170.18, 71.12)]
+   - [(170.18, 44.45), (170.18, 45.72)]
+   - [(170.18, 58.42), (170.18, 71.12)]
+   - [(170.18, 71.12), (170.18, 83.82)]
+   - [(170.18, 97.79), (170.18, 96.52)]
+   - [(179.07, 62.23), (184.15, 62.23)]
+   - [(179.07, 66.04), (179.07, 62.23)]
+   - [(179.07, 80.01), (179.07, 78.74)]
+   - [(190.5, 22.86), (190.5, 21.59)]
+   - [(195.58, 53.34), (233.68, 53.34)]
+   - [(195.58, 71.12), (195.58, 73.66)]
+   - [(195.58, 73.66), (195.58, 76.2)]
+   - [(195.58, 90.17), (195.58, 88.9)]
+   - [(198.12, 21.59), (198.12, 22.86)]
+   - [(198.12, 22.86), (190.5, 22.86)]
+   - [(198.12, 22.86), (198.12, 24.13)]
+   - [(198.12, 36.83), (198.12, 38.1)]
+   - [(198.12, 38.1), (198.12, 45.72)]
+   - [(198.12, 38.1), (204.47, 38.1)]
+   - [(198.12, 45.72), (208.28, 45.72)]
+   - [(203.2, 73.66), (195.58, 73.66)]
+   - [(204.47, 26.67), (204.47, 38.1)]
+   - [(204.47, 38.1), (209.55, 38.1)]
+   - [(209.55, 26.67), (204.47, 26.67)]
+   - [(215.9, 73.66), (222.25, 73.66)]
+   - [(222.25, 26.67), (233.68, 26.67)]
+   - [(222.25, 71.12), (222.25, 73.66)]
+   - [(222.25, 73.66), (222.25, 77.47)]
+   - [(222.25, 77.47), (224.79, 77.47)]
+   - [(224.79, 71.12), (222.25, 71.12)]
+   - [(233.68, 26.67), (233.68, 38.1)]
+   - [(233.68, 38.1), (222.25, 38.1)]
+   - [(233.68, 38.1), (233.68, 45.72)]
+   - [(233.68, 45.72), (220.98, 45.72)]
+   - [(233.68, 45.72), (233.68, 53.34)]
+   - [(233.68, 53.34), (234.95, 53.34)]
+   - [(237.49, 71.12), (238.76, 71.12)]
+   - [(238.76, 71.12), (238.76, 74.93)]
+   - [(238.76, 74.93), (238.76, 77.47)]
+   - [(238.76, 74.93), (242.57, 74.93)]
+   - [(238.76, 77.47), (237.49, 77.47)]
+   - [(242.57, 88.9), (242.57, 87.63)]
+   - [(72.39, 73.66), (72.39, 74.93)]
+   - [(92.71, 106.68), (92.71, 107.95)]
+   - [(97.79, 106.68), (92.71, 106.68)]
+   - [(97.79, 106.68), (97.79, 107.95)]
+   - [(99.06, 71.12), (97.79, 71.12)]
+
+=== SYMBOL ===
+❌ Missing (31):
+   - (symbol "R_1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R_1" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "ki_keywords" "R DEV" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistance" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_1_0_1" (rectangle (start -1.02 3.81) (end 1.02 -3.81) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "R_1_1_1" (pin passive line (at 0 6.35 270) (length 2.54) (name "1" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))) (pin passive line (at 0 -6.35 90) (length 2.54) (name "2" (effects (font (size 0.51 0.51)))) (number "2" (effects (font (size 0.51 0.51)))))))
+   - (symbol "schematic_libspice:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "+12V" (at 0 3.56 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "Power Flag Symbol" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "power-flag symbol" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "+12V_0_1" (polyline (pts (xy -0.76 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0.76 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+12V" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "schematic_libspice:0" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#GND" (at 0 -2.54 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "0" (at 0 -1.78 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+   - (symbol "0_0_1" (polyline (pts (xy -1.27 0) (xy 0 -1.27) (xy 1.27 0) (xy -1.27 0)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "0_1_1" (pin power_in line (at 0 0 0) (length 0) hide (name "0" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02)))))))
+   - (symbol "schematic_libspice:C" (pin_names (offset 0.25)) (in_bom yes) (on_board yes) (property "Reference" "C" (at 2.54 3.81 90) (effects (font (size 1.27 1.27)))) (property "Value" "C" (at 2.54 -3.81 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+   - (symbol "C_0_1" (polyline (pts (xy -3.81 -1.27) (xy 3.81 -1.27)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.81 1.27) (xy 3.81 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "C_1_1" (pin passive line (at 0 6.35 270) (length 5.08) (name "~" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02))))) (pin passive line (at 0 -6.35 90) (length 5.08) (name "~" (effects (font (size 1.02 1.02)))) (number "2" (effects (font (size 1.02 1.02)))))))
+   - (symbol "schematic_libspice:CAP" (pin_names (offset 0.25)) (in_bom yes) (on_board yes) (property "Reference" "C" (at 2.54 3.81 90) (effects (font (size 1.27 1.27)))) (property "Value" "CAP" (at 2.54 -3.81 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+   - (symbol "CAP_0_1" (polyline (pts (xy -3.81 -1.27) (xy 3.81 -1.27)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.81 1.27) (xy 3.81 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "CAP_1_1" (pin passive line (at 0 6.35 270) (length 5.08) (name "~" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02))))) (pin passive line (at 0 -6.35 90) (length 5.08) (name "~" (effects (font (size 1.02 1.02)))) (number "2" (effects (font (size 1.02 1.02)))))))
+   - (symbol "schematic_libspice:INDUCTOR" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "L" (at 0 2.54 0) (effects (font (size 1.27 1.27)))) (property "Value" "INDUCTOR" (at 0 -1.27 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+   - (symbol "INDUCTOR_0_1" (arc (start -2.54 0) (mid -3.81 1.26) (end -5.08 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid -1.27 1.26) (end -2.54 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 2.54 0) (mid 1.27 1.26) (end 0 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 5.08 0) (mid 3.81 1.26) (end 2.54 0) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "INDUCTOR_1_1" (pin input line (at -6.35 0 0) (length 1.27) (name "1" (effects (font (size 0.76 0.76)))) (number "1" (effects (font (size 0.76 0.76))))) (pin input line (at 6.35 0 180) (length 1.27) (name "2" (effects (font (size 0.76 0.76)))) (number "2" (effects (font (size 0.76 0.76)))))))
+   - (symbol "schematic_libspice:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.91 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "PWR_FLAG" (at 0 3.81 0) (effects (font (size 1.02 1.02)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "Power Flag Symbol" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "general power-flag symbol" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+   - (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy -1.02 1.91) (xy 0 2.54) (xy 1.02 1.91) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none)))))
+   - (symbol "schematic_libspice:QNPN" (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "Q" (at -2.54 7.62 0) (effects (font (size 1.27 1.27)))) (property "Value" "QNPN" (at -2.54 5.08 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+   - (symbol "QNPN_0_0" (polyline (pts (xy 0 0) (xy 3.81 -3.81)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 3.81 -3.81) (xy 3.81 -1.27) (xy 1.27 -3.81) (xy 3.81 -3.81)) (stroke (width 0) (type default)) (fill (type outline))))
+   - (symbol "QNPN_0_1" (polyline (pts (xy 0 -3.81) (xy 0 3.81)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0) (xy 3.81 3.81)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "QNPN_1_1" (pin passive line (at 3.81 8.89 270) (length 5.08) (name "C" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02))))) (pin input line (at -7.62 0 0) (length 7.62) (name "B" (effects (font (size 1.02 1.02)))) (number "2" (effects (font (size 1.02 1.02))))) (pin passive line (at 3.81 -8.89 90) (length 5.08) (name "E" (effects (font (size 1.02 1.02)))) (number "3" (effects (font (size 1.02 1.02)))))))
+   - (symbol "schematic_libspice:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "ki_keywords" "R DEV" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistance" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 3.81) (end 1.02 -3.81) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 6.35 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -6.35 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "schematic_libspice:VSOURCE" (pin_names (offset 1.02)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 0 -2.54 0) (effects (font (size 1.27 1.27)))) (property "Value" "VSOURCE" (at 0 2.54 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+   - (symbol "VSOURCE_0_1" (polyline (pts (xy -6.35 -6.35) (xy -6.35 3.81)) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy -7.62 3.81) (xy -6.35 6.35) (xy -5.08 3.81)) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 0 0) (radius 10.16) (stroke (width 0) (type default)) (fill (type none))) (text "V" (at -8.13 -0.25 0) (effects (font (size 2.54 2.54)))))
+   - (symbol "VSOURCE_1_1" (pin input line (at 0 17.78 270) (length 7.62) (name "E1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at 0 -17.78 90) (length 7.62) (name "E2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

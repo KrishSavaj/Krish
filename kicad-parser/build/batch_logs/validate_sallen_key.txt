@@ -1,0 +1,78 @@
+
+=== JUNCTION ===
+❌ Missing (8):
+   - (168.910004, 109.220001)
+   - (186.690002, 109.220001)
+   - (187.960007, 125.730003)
+   - (212.089996, 111.760002)
+   - (238.759995, 53.34)
+   - (245.110001, 40.639999)
+   - (245.110001, 53.34)
+   - (245.110001, 64.769997)
+
+=== WIRE ===
+❌ Missing (29):
+   - [(152.4, 109.22), (152.4, 114.3)]
+   - [(152.4, 124.46), (152.4, 127.0)]
+   - [(158.75, 109.22), (152.4, 109.22)]
+   - [(166.37, 109.22), (168.91, 109.22)]
+   - [(168.91, 109.22), (172.72, 109.22)]
+   - [(168.91, 125.73), (168.91, 109.22)]
+   - [(173.99, 125.73), (168.91, 125.73)]
+   - [(180.34, 109.22), (186.69, 109.22)]
+   - [(186.69, 105.41), (186.69, 109.22)]
+   - [(186.69, 109.22), (191.77, 109.22)]
+   - [(186.69, 96.52), (186.69, 97.79)]
+   - [(187.96, 114.3), (191.77, 114.3)]
+   - [(187.96, 125.73), (181.61, 125.73)]
+   - [(187.96, 125.73), (187.96, 114.3)]
+   - [(207.01, 111.76), (212.09, 111.76)]
+   - [(212.09, 111.76), (226.06, 111.76)]
+   - [(212.09, 125.73), (187.96, 125.73)]
+   - [(212.09, 125.73), (212.09, 111.76)]
+   - [(232.41, 53.34), (232.41, 54.61)]
+   - [(232.41, 53.34), (238.76, 53.34)]
+   - [(237.49, 64.77), (237.49, 66.04)]
+   - [(238.76, 40.64), (245.11, 40.64)]
+   - [(238.76, 53.34), (238.76, 54.61)]
+   - [(238.76, 53.34), (245.11, 53.34)]
+   - [(245.11, 40.64), (245.11, 41.91)]
+   - [(245.11, 52.07), (245.11, 53.34)]
+   - [(245.11, 53.34), (245.11, 54.61)]
+   - [(245.11, 64.77), (237.49, 64.77)]
+   - [(245.11, 66.04), (245.11, 64.77)]
+
+=== SYMBOL ===
+❌ Missing (30):
+   - (symbol "C_1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C_1" (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0.97 -3.81 0) (effects (font (size 0.76 0.76)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "C_1_0_1" (polyline (pts (xy -2.03 -0.76) (xy 2.03 -0.76)) (stroke (width 0.51) (type default)) (fill (type none))) (polyline (pts (xy -2.03 0.76) (xy 2.03 0.76)) (stroke (width 0.51) (type default)) (fill (type none))))
+   - (symbol "C_1_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "1" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "2" (effects (font (size 0.51 0.51)))) (number "2" (effects (font (size 0.51 0.51)))))))
+   - (symbol "R_1" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R_1" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 0.76 0.76)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 0.76 0.76)))) (property "ki_fp_filters" "R_* Resistor_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_1_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "1" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "2" (effects (font (size 0.51 0.51)))) (number "2" (effects (font (size 0.51 0.51)))))))
+   - (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.91 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "PWR_FLAG" (at 0 3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+   - (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy -1.02 1.91) (xy 0 2.54) (xy 1.02 1.91) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none)))))
+   - (symbol "sallen_key_schlib:C" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C" (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0.97 -3.81 0) (effects (font (size 0.76 0.76)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "C_0_1" (polyline (pts (xy -2.03 -0.76) (xy 2.03 -0.76)) (stroke (width 0.51) (type default)) (fill (type none))) (polyline (pts (xy -2.03 0.76) (xy 2.03 0.76)) (stroke (width 0.51) (type default)) (fill (type none))))
+   - (symbol "C_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "1" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "2" (effects (font (size 0.51 0.51)))) (number "2" (effects (font (size 0.51 0.51)))))))
+   - (symbol "sallen_key_schlib:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52))))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "sallen_key_schlib:Generic_Opamp" (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 6.35 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "Generic_Opamp" (at 0 3.81 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at -2.54 -2.54 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27))))
+   - (symbol "Generic_Opamp_0_1" (polyline (pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "Generic_Opamp_1_1" (pin input line (at -7.62 2.54 0) (length 2.54) (name "+" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 -2.54 0) (length 2.54) (name "-" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 7.62 270) (length 3.81) (name "V+" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 -7.62 90) (length 3.81) (name "V-" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin output line (at 7.62 0 180) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))))
+   - (symbol "sallen_key_schlib:R" (pin_names (offset 0) hide) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 0.76 0.76)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 0.76 0.76)))) (property "ki_fp_filters" "R_* Resistor_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "1" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "2" (effects (font (size 0.51 0.51)))) (number "2" (effects (font (size 0.51 0.51)))))))
+   - (symbol "sallen_key_schlib:VDD" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "VDD" (at 0 3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52))))
+   - (symbol "VDD_0_1" (polyline (pts (xy 0 0) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 0 1.91) (radius 0.64) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "VDD_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VDD" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "sallen_key_schlib:VSOURCE" (pin_names (offset 1.02)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 5.08 5.08 0) (effects (font (size 1.27 1.27)))) (property "Value" "VSOURCE" (at 6.35 2.54 0) (effects (font (size 1.27 1.27)) hide)) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "Fieldname" "Value" (at 0 0 0) (effects (font (size 1.52 1.52)) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.52 1.52)) hide)) (property "Spice_Node_Sequence" "1 2" (at -7.62 5.08 0) (effects (font (size 1.52 1.52)) hide))
+   - (symbol "VSOURCE_0_1" (polyline (pts (xy 0 -1.91) (xy 0 1.91)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 1.91) (xy -0.64 0.64) (xy 0.64 0.64) (xy 0 1.91)) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 0 0) (radius 2.54) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "VSOURCE_1_1" (pin input line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "sallen_key_schlib:VSS" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "VSS" (at 0 3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52))))
+   - (symbol "VSS_0_1" (polyline (pts (xy 0 0) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 0 1.91) (radius 0.64) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "VSS_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "VSS" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

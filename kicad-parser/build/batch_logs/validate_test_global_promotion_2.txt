@@ -1,0 +1,29 @@
+
+=== JUNCTION ===
+❌ Missing (1):
+   - (115.57, 82.550003)
+
+=== WIRE ===
+❌ Missing (15):
+   - [(115.57, 107.95), (134.62, 107.95)]
+   - [(115.57, 80.01), (115.57, 82.55)]
+   - [(115.57, 82.55), (115.57, 107.95)]
+   - [(115.57, 82.55), (134.62, 82.55)]
+   - [(127.0, 100.33), (134.62, 100.33)]
+   - [(127.0, 77.47), (127.0, 100.33)]
+   - [(130.81, 104.14), (134.62, 104.14)]
+   - [(130.81, 58.42), (130.81, 104.14)]
+   - [(133.35, 55.88), (96.52, 55.88)]
+   - [(133.35, 78.74), (133.35, 55.88)]
+   - [(134.62, 74.93), (97.79, 74.93)]
+   - [(134.62, 78.74), (133.35, 78.74)]
+   - [(96.52, 58.42), (130.81, 58.42)]
+   - [(97.79, 77.47), (127.0, 77.47)]
+   - [(97.79, 80.01), (115.57, 80.01)]
+
+=== SYMBOL ===
+❌ Missing (2):
+   - (symbol "Connector:Conn_01x03_Male" (pin_names hide) (property "Reference" "J" (id 0) (at 0 5.08 0)) (property "Value" "Conn_01x03_Male" (id 1) (at 0 -5.08 0)) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "connector" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "Conn_01x03_Male_1_1" (rectangle (start 0.86 -2.41) (end 0 -2.67) (fill (type outline))) (rectangle (start 0.86 0.13) (end 0 -0.13) (fill (type outline))) (rectangle (start 0.86 2.67) (end 0 2.41) (fill (type outline))) (polyline (pts (xy 1.27 -2.54) (xy 0.86 -2.54))) (polyline (pts (xy 1.27 0) (xy 0.86 0))) (polyline (pts (xy 1.27 2.54) (xy 0.86 2.54))) (pin passive line (at 5.08 2.54 180) (length 3.81) (name "Pin_1") (number "1")) (pin passive line (at 5.08 0 180) (length 3.81) (name "Pin_2") (number "2")) (pin passive line (at 5.08 -2.54 180) (length 3.81) (name "Pin_3") (number "3")))))
+
+Some cleaned files differ from originals ❌

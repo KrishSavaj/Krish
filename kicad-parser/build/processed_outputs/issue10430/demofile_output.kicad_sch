@@ -1,0 +1,225 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20220904
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    27e1c1f5-72d5-42f5-8cbf-b0e66edfa028
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Power_Management:AP2161W" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 -6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "AP2161W" (id 1) (at -7.620000 6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 0 -10.160000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2161.pdf" (id 3) (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Limit USB Active Low" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Current limited power switch, single channel, SOT-23-5" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT?23*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "AP2161W_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "AP2161W_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 -2.540000 180) (length 2.540000) (name "~{FLG}" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 -2.540000 0) (length 2.540000) (name "~{EN}" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e7a1845d-9baf-4d49-988c-c34cdb7edbfb }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"AP2161W" }
+  <footprint>
+  <property> at=(120.650,74.930,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,77.470,0.000) attrs{name:"AP2161W" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,93.980,0.000) attrs{name:"Package_TO_SOT_SMD:SOT-23-5" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,82.550,0.000) attrs{name:"https://www.diodes.com/assets/Datasheets/AP2161.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Power_Management:AP2161W" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 -6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "AP2161W" (id 1) (at -7.620000 6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 0 -10.160000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2161.pdf" (id 3) (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Limit USB Active Low" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Current limited power switch, single channel, SOT-23-5" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT?23*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "AP2161W_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "AP2161W_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 -2.540000 180) (length 2.540000) (name "~{FLG}" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 -2.540000 0) (length 2.540000) (name "~{EN}" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e7a1845d-9baf-4d49-988c-c34cdb7edbfb }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"AP2161W" }
+  <footprint>
+  <property> at=(120.650,74.930,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,77.470,0.000) attrs{name:"AP2161W" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,93.980,0.000) attrs{name:"Package_TO_SOT_SMD:SOT-23-5" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,82.550,0.000) attrs{name:"https://www.diodes.com/assets/Datasheets/AP2161.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Power_Management:AP2161W" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 -6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "AP2161W" (id 1) (at -7.620000 6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 0 -10.160000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2161.pdf" (id 3) (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Limit USB Active Low" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Current limited power switch, single channel, SOT-23-5" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT?23*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "AP2161W_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "AP2161W_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 -2.540000 180) (length 2.540000) (name "~{FLG}" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 -2.540000 0) (length 2.540000) (name "~{EN}" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e7a1845d-9baf-4d49-988c-c34cdb7edbfb }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"AP2161W" }
+  <footprint>
+  <property> at=(120.650,74.930,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,77.470,0.000) attrs{name:"AP2161W" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,93.980,0.000) attrs{name:"Package_TO_SOT_SMD:SOT-23-5" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,82.550,0.000) attrs{name:"https://www.diodes.com/assets/Datasheets/AP2161.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Power_Management:AP2161W" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 -6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "AP2161W" (id 1) (at -7.620000 6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 0 -10.160000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2161.pdf" (id 3) (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Limit USB Active Low" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Current limited power switch, single channel, SOT-23-5" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT?23*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "AP2161W_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "AP2161W_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 -2.540000 180) (length 2.540000) (name "~{FLG}" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 -2.540000 0) (length 2.540000) (name "~{EN}" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e7a1845d-9baf-4d49-988c-c34cdb7edbfb }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"AP2161W" }
+  <footprint>
+  <property> at=(120.650,74.930,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,77.470,0.000) attrs{name:"AP2161W" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,93.980,0.000) attrs{name:"Package_TO_SOT_SMD:SOT-23-5" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,82.550,0.000) attrs{name:"https://www.diodes.com/assets/Datasheets/AP2161.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Power_Management:AP2161W" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 -6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "AP2161W" (id 1) (at -7.620000 6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 0 -10.160000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2161.pdf" (id 3) (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Limit USB Active Low" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Current limited power switch, single channel, SOT-23-5" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT?23*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "AP2161W_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "AP2161W_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 -2.540000 180) (length 2.540000) (name "~{FLG}" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 -2.540000 0) (length 2.540000) (name "~{EN}" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e7a1845d-9baf-4d49-988c-c34cdb7edbfb }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"AP2161W" }
+  <footprint>
+  <property> at=(120.650,74.930,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,77.470,0.000) attrs{name:"AP2161W" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,93.980,0.000) attrs{name:"Package_TO_SOT_SMD:SOT-23-5" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,82.550,0.000) attrs{name:"https://www.diodes.com/assets/Datasheets/AP2161.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20220904) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Power_Management:AP2161W" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -7.620000 -6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "AP2161W" (id 1) (at -7.620000 6.350000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 0 -10.160000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2161.pdf" (id 3) (at 0 1.270000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_keywords" "Limit USB Active Low" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Current limited power switch, single channel, SOT-23-5" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOT?23*" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "AP2161W_0_1" (rectangle (start -7.620000 5.080000) (end 7.620000 -5.080000) (stroke (width 0.254000) (type default)) (fill (type background)))) (symbol "AP2161W_1_1" (pin power_out line (at 10.160000 2.540000 180) (length 2.540000) (name "OUT" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at 0 -7.620000 90) (length 2.540000) (name "GND" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 10.160000 -2.540000 180) (length 2.540000) (name "~{FLG}" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000))))) (pin input line (at -10.160000 -2.540000 0) (length 2.540000) (name "~{EN}" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -10.160000 2.540000 0) (length 2.540000) (name "IN" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:120.650000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e7a1845d-9baf-4d49-988c-c34cdb7edbfb }
+  <default_instance>
+  <reference> attrs{value:"U1" }
+  <unit> attrs{value:1 }
+  <value> attrs{value:"AP2161W" }
+  <footprint>
+  <property> at=(120.650,74.930,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,77.470,0.000) attrs{name:"AP2161W" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(120.650,93.980,0.000) attrs{name:"Package_TO_SOT_SMD:SOT-23-5" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(120.650,82.550,0.000) attrs{name:"https://www.diodes.com/assets/Datasheets/AP2161.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"5" }
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+  (wire (start 85.09 81.28) (end 110.49 81.28) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,83 @@
+
+=== JUNCTION ===
+❌ Missing (11):
+   - (114.300003, 127.0)
+   - (139.699997, 101.599998)
+   - (139.699997, 88.900002)
+   - (152.399994, 101.599998)
+   - (152.399994, 88.900002)
+   - (158.75, 101.599998)
+   - (158.75, 88.900002)
+   - (177.800003, 101.599998)
+   - (196.850006, 101.599998)
+   - (196.850006, 120.650002)
+   - (196.850006, 91.440002)
+
+=== WIRE ===
+❌ Missing (40):
+   - [(113.03, 127.0), (114.3, 127.0)]
+   - [(114.3, 114.3), (127.0, 114.3)]
+   - [(114.3, 115.57), (114.3, 114.3)]
+   - [(114.3, 125.73), (114.3, 127.0)]
+   - [(114.3, 127.0), (114.3, 128.27)]
+   - [(114.3, 139.7), (114.3, 138.43)]
+   - [(114.3, 88.9), (139.7, 88.9)]
+   - [(114.3, 90.17), (114.3, 88.9)]
+   - [(127.0, 114.3), (127.0, 119.38)]
+   - [(127.0, 134.62), (127.0, 139.7)]
+   - [(127.0, 139.7), (114.3, 139.7)]
+   - [(139.7, 101.6), (139.7, 88.9)]
+   - [(139.7, 139.7), (139.7, 101.6)]
+   - [(139.7, 88.9), (142.24, 88.9)]
+   - [(142.24, 101.6), (139.7, 101.6)]
+   - [(149.86, 101.6), (152.4, 101.6)]
+   - [(149.86, 88.9), (152.4, 88.9)]
+   - [(152.4, 101.6), (152.4, 104.14)]
+   - [(152.4, 101.6), (152.4, 88.9)]
+   - [(152.4, 88.9), (158.75, 88.9)]
+   - [(158.75, 101.6), (158.75, 99.06)]
+   - [(158.75, 118.11), (158.75, 101.6)]
+   - [(158.75, 88.9), (177.8, 88.9)]
+   - [(158.75, 91.44), (158.75, 88.9)]
+   - [(162.56, 118.11), (158.75, 118.11)]
+   - [(167.64, 101.6), (158.75, 101.6)]
+   - [(177.8, 101.6), (175.26, 101.6)]
+   - [(177.8, 101.6), (177.8, 93.98)]
+   - [(177.8, 101.6), (180.34, 101.6)]
+   - [(177.8, 115.57), (177.8, 101.6)]
+   - [(177.8, 120.65), (196.85, 120.65)]
+   - [(187.96, 101.6), (196.85, 101.6)]
+   - [(196.85, 101.6), (196.85, 91.44)]
+   - [(196.85, 104.14), (196.85, 101.6)]
+   - [(196.85, 111.76), (196.85, 120.65)]
+   - [(196.85, 120.65), (196.85, 129.54)]
+   - [(196.85, 137.16), (196.85, 139.7)]
+   - [(196.85, 139.7), (139.7, 139.7)]
+   - [(196.85, 91.44), (193.04, 91.44)]
+   - [(196.85, 91.44), (203.2, 91.44)]
+
+=== SYMBOL ===
+❌ Missing (21):
+   - (symbol "Amplifier_Operational:LM358" (pin_names (offset 0.13)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 5.08 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "LM358" (at 0 -5.08 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_locked" "" (at 0 0 0) (effects (font (size 1.27 1.27)))) (property "ki_keywords" "dual opamp" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "LM358_1_1" (polyline (pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)) (stroke (width 0.25) (type default)) (fill (type background))) (pin output line (at 7.62 0 180) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 -2.54 0) (length 2.54) (name "-" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 2.54 0) (length 2.54) (name "+" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))))
+   - (symbol "LM358_2_1" (polyline (pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)) (stroke (width 0.25) (type default)) (fill (type background))) (pin input line (at -7.62 2.54 0) (length 2.54) (name "+" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 -2.54 0) (length 2.54) (name "-" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin output line (at 7.62 0 180) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))))
+   - (symbol "LM358_3_1" (pin power_in line (at -2.54 -7.62 90) (length 3.81) (name "V-" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 7.62 270) (length 3.81) (name "V+" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.25)) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C" (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0.97 -3.81 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "cap capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Unpolarized capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "C_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "C_0_1" (polyline (pts (xy -2.03 -0.76) (xy 2.03 -0.76)) (stroke (width 0.51) (type default)) (fill (type none))) (polyline (pts (xy -2.03 0.76) (xy 2.03 0.76)) (stroke (width 0.51) (type default)) (fill (type none))))
+   - (symbol "C_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Simulation_SPICE:VDC" (pin_numbers hide) (pin_names (offset 0.03)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "VDC" (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Model" "dc(1)" (at 2.54 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Voltage source, DC" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "VDC_0_0" (polyline (pts (xy -1.27 0.25) (xy 1.27 0.25)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.76 -0.25) (xy -1.27 -0.25)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.25 -0.25) (xy -0.25 -0.25)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -0.25) (xy 0.76 -0.25)) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.91 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VDC_0_1" (circle (center 0 0) (radius 2.54) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "VDC_1_1" (pin passive line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.03)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "VSIN" (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Model" "sin(0 1 1k)" (at 2.54 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.64 0.63) (end -1.27 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.64 -0.63) (end 1.27 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.91 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.54) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "VSIN_1_1" (pin passive line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌

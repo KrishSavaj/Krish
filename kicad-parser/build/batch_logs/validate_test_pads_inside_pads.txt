@@ -1,0 +1,16 @@
+
+=== JUNCTION ===
+✅ Files match perfectly
+
+=== WIRE ===
+❌ Missing (2):
+   - [(105.41, 36.83), (95.25, 36.83)]
+   - [(105.41, 44.45), (95.25, 44.45)]
+
+=== SYMBOL ===
+❌ Missing (3):
+   - (symbol "test_pads_inside_pads_schlib:CONN_1" (pin_numbers hide) (pin_names (offset 0.76) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "P" (at 2.03 0 0) (effects (font (size 1.02 1.02)) (justify left))) (property "Value" "CONN_1" (at 0 1.4 0) (effects (font (size 0.76 0.76)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "CONN_1_0_1" (polyline (pts (xy -0.76 0) (xy -1.27 0)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 0 0) (radius 0.79) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "CONN_1_1_1" (pin passive line (at -3.81 0 0) (length 2.54) (name "1" (effects (font (size 1.52 1.52)))) (number "1" (effects (font (size 1.52 1.52))))))))
+
+Some cleaned files differ from originals ❌

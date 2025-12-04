@@ -1,0 +1,1107 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20211123
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    e63e39d7-6ac0-4ffd-8aa3-1841a4541b55
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Comparator:LM2903" (pin_names (offset 0.127000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 3.810000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LM2903" (id 1) (at 6.350000 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "cmp open collector" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3.0x3.0mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LM2903_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "_" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:Opamp_Dual" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "Opamp_Dual" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "dual opamp" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Dual operational amplifier" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Opamp_Dual_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:4beb5b03-60d3-49da-ad35-51f275a031d5 }
+  <property> at=(156.210,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,60.960,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:9c6c5675-d78d-4a6d-b00f-22547ffb1790 }
+  <property> at=(156.210,87.630,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,90.170,0.000) attrs{name:"" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,88.900,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:90.170000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:a2689e5c-8ccd-4e2c-8098-087f3c734022 }
+  <property> at=(99.060,80.010,0.000) attrs{name:"U2" value:"Reference" }
+  <property> at=(99.060,82.550,0.000) attrs{name:"" value:"Value" }
+  <property> at=(99.060,90.170,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,90.170,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:120.650000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:cf058f25-2bad-4c49-a0c4-f059825c427f }
+  <property> at=(99.060,110.490,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(99.060,113.030,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,120.650,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,120.650,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:db066797-b21c-4c1c-9591-8c7c549f8087 }
+  <property> at=(156.210,118.110,0.000) attrs{name:"U99" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,120.650,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e09508cd-85e8-48bb-9bcb-9bab32279ab6 }
+  <property> at=(99.060,50.800,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(99.060,53.340,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,60.960,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e0a3a04a-2f9e-4cce-bac0-1a7c08ef4522 }
+  <property> at=(129.540,49.530,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(129.540,52.070,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e6c8127f-e282-4128-8744-05f7893bc3ec }
+  <property> at=(129.540,109.220,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(129.540,111.760,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Comparator:LM2903" (pin_names (offset 0.127000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 3.810000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LM2903" (id 1) (at 6.350000 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "cmp open collector" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3.0x3.0mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LM2903_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "_" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:Opamp_Dual" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "Opamp_Dual" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "dual opamp" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Dual operational amplifier" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Opamp_Dual_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:4beb5b03-60d3-49da-ad35-51f275a031d5 }
+  <property> at=(156.210,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,60.960,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:9c6c5675-d78d-4a6d-b00f-22547ffb1790 }
+  <property> at=(156.210,87.630,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,90.170,0.000) attrs{name:"" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,88.900,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:90.170000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:a2689e5c-8ccd-4e2c-8098-087f3c734022 }
+  <property> at=(99.060,80.010,0.000) attrs{name:"U2" value:"Reference" }
+  <property> at=(99.060,82.550,0.000) attrs{name:"" value:"Value" }
+  <property> at=(99.060,90.170,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,90.170,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:120.650000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:cf058f25-2bad-4c49-a0c4-f059825c427f }
+  <property> at=(99.060,110.490,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(99.060,113.030,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,120.650,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,120.650,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:db066797-b21c-4c1c-9591-8c7c549f8087 }
+  <property> at=(156.210,118.110,0.000) attrs{name:"U99" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,120.650,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e09508cd-85e8-48bb-9bcb-9bab32279ab6 }
+  <property> at=(99.060,50.800,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(99.060,53.340,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,60.960,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e0a3a04a-2f9e-4cce-bac0-1a7c08ef4522 }
+  <property> at=(129.540,49.530,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(129.540,52.070,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e6c8127f-e282-4128-8744-05f7893bc3ec }
+  <property> at=(129.540,109.220,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(129.540,111.760,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Comparator:LM2903" (pin_names (offset 0.127000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 3.810000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LM2903" (id 1) (at 6.350000 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "cmp open collector" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3.0x3.0mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LM2903_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "_" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:Opamp_Dual" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "Opamp_Dual" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "dual opamp" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Dual operational amplifier" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Opamp_Dual_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:4beb5b03-60d3-49da-ad35-51f275a031d5 }
+  <property> at=(156.210,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,60.960,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:9c6c5675-d78d-4a6d-b00f-22547ffb1790 }
+  <property> at=(156.210,87.630,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,90.170,0.000) attrs{name:"" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,88.900,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:90.170000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:a2689e5c-8ccd-4e2c-8098-087f3c734022 }
+  <property> at=(99.060,80.010,0.000) attrs{name:"U2" value:"Reference" }
+  <property> at=(99.060,82.550,0.000) attrs{name:"" value:"Value" }
+  <property> at=(99.060,90.170,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,90.170,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:120.650000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:cf058f25-2bad-4c49-a0c4-f059825c427f }
+  <property> at=(99.060,110.490,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(99.060,113.030,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,120.650,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,120.650,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:db066797-b21c-4c1c-9591-8c7c549f8087 }
+  <property> at=(156.210,118.110,0.000) attrs{name:"U99" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,120.650,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e09508cd-85e8-48bb-9bcb-9bab32279ab6 }
+  <property> at=(99.060,50.800,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(99.060,53.340,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,60.960,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e0a3a04a-2f9e-4cce-bac0-1a7c08ef4522 }
+  <property> at=(129.540,49.530,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(129.540,52.070,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e6c8127f-e282-4128-8744-05f7893bc3ec }
+  <property> at=(129.540,109.220,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(129.540,111.760,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Comparator:LM2903" (pin_names (offset 0.127000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 3.810000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LM2903" (id 1) (at 6.350000 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "cmp open collector" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3.0x3.0mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LM2903_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "_" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:Opamp_Dual" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "Opamp_Dual" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "dual opamp" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Dual operational amplifier" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Opamp_Dual_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:4beb5b03-60d3-49da-ad35-51f275a031d5 }
+  <property> at=(156.210,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,60.960,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:9c6c5675-d78d-4a6d-b00f-22547ffb1790 }
+  <property> at=(156.210,87.630,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,90.170,0.000) attrs{name:"" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,88.900,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:90.170000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:a2689e5c-8ccd-4e2c-8098-087f3c734022 }
+  <property> at=(99.060,80.010,0.000) attrs{name:"U2" value:"Reference" }
+  <property> at=(99.060,82.550,0.000) attrs{name:"" value:"Value" }
+  <property> at=(99.060,90.170,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,90.170,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:120.650000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:cf058f25-2bad-4c49-a0c4-f059825c427f }
+  <property> at=(99.060,110.490,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(99.060,113.030,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,120.650,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,120.650,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:db066797-b21c-4c1c-9591-8c7c549f8087 }
+  <property> at=(156.210,118.110,0.000) attrs{name:"U99" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,120.650,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e09508cd-85e8-48bb-9bcb-9bab32279ab6 }
+  <property> at=(99.060,50.800,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(99.060,53.340,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,60.960,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e0a3a04a-2f9e-4cce-bac0-1a7c08ef4522 }
+  <property> at=(129.540,49.530,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(129.540,52.070,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e6c8127f-e282-4128-8744-05f7893bc3ec }
+  <property> at=(129.540,109.220,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(129.540,111.760,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Comparator:LM2903" (pin_names (offset 0.127000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 3.810000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LM2903" (id 1) (at 6.350000 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "cmp open collector" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3.0x3.0mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LM2903_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "_" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:Opamp_Dual" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "Opamp_Dual" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "dual opamp" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Dual operational amplifier" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Opamp_Dual_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:4beb5b03-60d3-49da-ad35-51f275a031d5 }
+  <property> at=(156.210,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,60.960,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:9c6c5675-d78d-4a6d-b00f-22547ffb1790 }
+  <property> at=(156.210,87.630,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,90.170,0.000) attrs{name:"" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,88.900,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:90.170000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:a2689e5c-8ccd-4e2c-8098-087f3c734022 }
+  <property> at=(99.060,80.010,0.000) attrs{name:"U2" value:"Reference" }
+  <property> at=(99.060,82.550,0.000) attrs{name:"" value:"Value" }
+  <property> at=(99.060,90.170,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,90.170,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:120.650000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:cf058f25-2bad-4c49-a0c4-f059825c427f }
+  <property> at=(99.060,110.490,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(99.060,113.030,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,120.650,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,120.650,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:db066797-b21c-4c1c-9591-8c7c549f8087 }
+  <property> at=(156.210,118.110,0.000) attrs{name:"U99" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,120.650,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e09508cd-85e8-48bb-9bcb-9bab32279ab6 }
+  <property> at=(99.060,50.800,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(99.060,53.340,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,60.960,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e0a3a04a-2f9e-4cce-bac0-1a7c08ef4522 }
+  <property> at=(129.540,49.530,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(129.540,52.070,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e6c8127f-e282-4128-8744-05f7893bc3ec }
+  <property> at=(129.540,109.220,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(129.540,111.760,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+)
+(kicad_sch (version 20211123) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Comparator:LM2903" (pin_names (offset 0.127000)) (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 3.810000 3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Value" "LM2903" (id 1) (at 6.350000 -3.810000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "cmp open collector" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3.0x3.0mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "LM2903_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (polyline (pts (xy 3.302000 -0.508000) (xy 2.794000 -0.508000) (xy 3.302000 0) (xy 2.794000 0.508000) (xy 2.286000 0) (xy 2.794000 -0.508000) (xy 2.286000 -0.508000)) (stroke (width 0.127000) (type default) (color 0 0 0 0)) (fill (type none))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "_" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin open_collector line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "LM2903_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))) (symbol "Device:Opamp_Dual" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at 0 5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "Opamp_Dual" (id 1) (at 0 -5.080000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Datasheet" "~" (id 3) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_locked" "" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)))) (property "ki_keywords" "dual opamp" (id 5) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_description" "Dual operational amplifier" (id 6) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*" (id 7) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "Opamp_Dual_1_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "3" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_2_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type background))) (pin input line (at -7.620000 2.540000 0) (length 2.540000) (name "+" (effects (font (size 1.270000 1.270000)))) (number "5" (effects (font (size 1.270000 1.270000))))) (pin input line (at -7.620000 -2.540000 0) (length 2.540000) (name "-" (effects (font (size 1.270000 1.270000)))) (number "6" (effects (font (size 1.270000 1.270000))))) (pin output line (at 7.620000 0 180) (length 2.540000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "7" (effects (font (size 1.270000 1.270000)))))) (symbol "Opamp_Dual_3_1" (pin power_in line (at -2.540000 -7.620000 90) (length 3.810000) (name "V-" (effects (font (size 1.270000 1.270000)))) (number "4" (effects (font (size 1.270000 1.270000))))) (pin power_in line (at -2.540000 7.620000 270) (length 3.810000) (name "V+" (effects (font (size 1.270000 1.270000)))) (number "8" (effects (font (size 1.270000 1.270000))))))))
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:4beb5b03-60d3-49da-ad35-51f275a031d5 }
+  <property> at=(156.210,58.420,0.000) attrs{name:"U1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,60.960,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:88.900000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:9c6c5675-d78d-4a6d-b00f-22547ffb1790 }
+  <property> at=(156.210,87.630,0.000) attrs{name:"U2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,90.170,0.000) attrs{name:"" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,88.900,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,88.900,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:90.170000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:a2689e5c-8ccd-4e2c-8098-087f3c734022 }
+  <property> at=(99.060,80.010,0.000) attrs{name:"U2" value:"Reference" }
+  <property> at=(99.060,82.550,0.000) attrs{name:"" value:"Value" }
+  <property> at=(99.060,90.170,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,90.170,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:120.650000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:cf058f25-2bad-4c49-a0c4-f059825c427f }
+  <property> at=(99.060,110.490,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(99.060,113.030,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,120.650,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,120.650,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:157.480000 }
+  <unit> attrs{value:3 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:db066797-b21c-4c1c-9591-8c7c549f8087 }
+  <property> at=(156.210,118.110,0.000) attrs{name:"U99" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(156.210,120.650,0.000) attrs{name:"LM2903" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(157.480,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(157.480,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:60.960000 value:99.060000 }
+  <unit> attrs{value:1 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e09508cd-85e8-48bb-9bcb-9bab32279ab6 }
+  <property> at=(99.060,50.800,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(99.060,53.340,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(99.060,60.960,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(99.060,60.960,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:59.690000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e0a3a04a-2f9e-4cce-bac0-1a7c08ef4522 }
+  <property> at=(129.540,49.530,0.000) attrs{name:"U1" value:"Reference" }
+  <property> at=(129.540,52.070,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,59.690,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,59.690,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <symbol>
+  <at> attrs{misc:0 name:119.380000 value:129.540000 }
+  <unit> attrs{value:2 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <fields_autoplaced>
+  <uuid> attrs{value:e6c8127f-e282-4128-8744-05f7893bc3ec }
+  <property> at=(129.540,109.220,0.000) attrs{name:"U99" value:"Reference" }
+  <property> at=(129.540,111.760,0.000) attrs{name:"LM2903" value:"Value" }
+  <property> at=(129.540,119.380,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(129.540,119.380,0.000) attrs{name:"http://www.ti.com/lit/ds/symlink/lm393.pdf" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <pin> attrs{value:"5" }
+  <pin> attrs{value:"6" }
+  <pin> attrs{value:"7" }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

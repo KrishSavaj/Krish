@@ -1,0 +1,1329 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20210621
+Generator:    eeschema
+Paper size:   "A4"
+Root UUID:    fc832956-b2d0-45da-bd8d-32419f35e307
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "complex_hierarchy_schlib:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+12V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "+12V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+12V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "complex_hierarchy_schlib:-VAA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 2.540000 0) (effects (font (size 0.508000 0.508000)) hide)) (property "Value" "-VAA" (id 1) (at 0 2.540000 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "-VAA_0_0" (pin power_in line (at 0 0 90) (length 0) hide (name "-VAA" (effects (font (size 0.508000 0.508000)))) (number "1" (effects (font (size 0.508000 0.508000)))))) (symbol "-VAA_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy 0 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.032000) (xy 0.762000 1.270000) (xy -0.508000 1.270000) (xy -0.762000 1.270000) (xy 0 2.032000) (xy 0 2.032000) (xy 0 2.032000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type outline))))) (symbol "complex_hierarchy_schlib:C" (pin_numbers hide) (pin_names (offset 0.254000)) (in_bom yes) (on_board yes) (property "Reference" "C" (id 0) (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "C" (id 1) (at 0.635000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0.965200 -3.810000 0) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "C_0_1" (polyline (pts (xy -2.032000 -0.762000) (xy 2.032000 -0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -2.032000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "C_1_1" (pin passive line (at 0 3.810000 270) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin passive line (at 0 -3.810000 90) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.124200 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 0.762000 0.762000)))) (number "1" (effects (font (size 0.508000 0.508000))))))) (symbol "complex_hierarchy_schlib:LM358N" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -1.270000 5.080000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Value" "LM358N" (id 1) (at -1.270000 -6.350000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "LM358N_0_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type background))) (pin power_in line (at -2.540000 -10.160000 90) (length 6.350000) (name "V-" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at -2.540000 10.160000 270) (length 6.350000) (name "V+" (effects (font (size 1.016000 1.016000)))) (number "8" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_1_1" (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_2_1" (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "6" (effects (font (size 1.016000 1.016000))))) (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "7" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 0.762000 0.762000)))) (property "ki_fp_filters" "R_* Resistor_*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "1" (effects (font (size 1.524000 1.524000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "2" (effects (font (size 1.524000 1.524000))))))))
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:133.985000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:081c3c72-72f1-4db7-a695-190810f5e0b2 }
+  <property> at=(133.985,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(133.985,72.390,90.000) attrs{name:"1K" value:"Value" }
+  <property> at=(133.985,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(133.985,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:13b885fb-5bd2-4588-97c4-2e9d439c6552 }
+  <property> at=(144.145,83.820,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,85.598,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:194.945000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1ba44369-aca1-4e8e-b594-64d846d506c3 }
+  <property> at=(196.215,77.470,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(198.755,87.630,0.000) attrs{name:"LM358N" value:"Value" }
+  <property> at=(201.295,88.900,0.000) attrs{name:"Package_DIP:DIP-8_W7.62mm_LongPads" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(194.945,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:172.085000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:2c209735-1dbf-4b3e-baa7-bc32ea5dab52 }
+  <property> at=(172.085,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(172.085,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(172.085,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(172.085,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:4455ef3a-e35b-4615-ad5f-26baccc4160f }
+  <property> at=(175.895,83.820,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(175.895,88.900,0.000) attrs{name:"4.7nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(177.165,90.170,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(173.355,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:71.120000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:51596b74-88f9-41c6-bf3e-4b161083e60a }
+  <property> at=(192.405,72.390,0.000) attrs{name:"#U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,68.580,0.000) attrs{name:"+12V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:62.230000 value:182.245000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ae8cd78e-0822-4415-9231-a4c0e273dc45 }
+  <property> at=(182.245,58.420,90.000) attrs{name:"C?" value:"Reference" }
+  <property> at=(182.245,66.040,90.000) attrs{name:"15nF" value:"Value" }
+  <property> at=(182.245,57.150,90.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(182.245,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:180 name:93.980000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:b1d4f16d-b3db-43af-9510-15252f0e89d0 }
+  <property> at=(192.405,96.520,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,96.520,0.000) attrs{name:"-VAA" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:bab733ae-c848-41b4-980d-e9b38b672102 }
+  <property> at=(147.955,77.470,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.955,80.010,0.000) attrs{name:"150nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(151.765,81.280,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(144.145,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e20910b1-873d-464d-a97b-5b9569b3bd71 }
+  <property> at=(173.355,91.440,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,93.218,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:154.305000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:eeb42d24-b703-45f5-b3d4-7bfebac0b2d3 }
+  <property> at=(154.305,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(154.305,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(155.575,74.930,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(154.305,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (junction (at 144.145004 72.389999))
+  (junction (at 182.244995 77.470001))
+  (junction (at 210.184998 82.550003))
+  (junction (at 163.195007 72.389999))
+  (junction (at 144.145004 72.389999) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 182.244995 77.470001) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 210.184998 82.550003) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 163.195007 72.389999) (color 0 0 0 0) (diameter 1.016000))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "complex_hierarchy_schlib:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+12V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "+12V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+12V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "complex_hierarchy_schlib:-VAA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 2.540000 0) (effects (font (size 0.508000 0.508000)) hide)) (property "Value" "-VAA" (id 1) (at 0 2.540000 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "-VAA_0_0" (pin power_in line (at 0 0 90) (length 0) hide (name "-VAA" (effects (font (size 0.508000 0.508000)))) (number "1" (effects (font (size 0.508000 0.508000)))))) (symbol "-VAA_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy 0 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.032000) (xy 0.762000 1.270000) (xy -0.508000 1.270000) (xy -0.762000 1.270000) (xy 0 2.032000) (xy 0 2.032000) (xy 0 2.032000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type outline))))) (symbol "complex_hierarchy_schlib:C" (pin_numbers hide) (pin_names (offset 0.254000)) (in_bom yes) (on_board yes) (property "Reference" "C" (id 0) (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "C" (id 1) (at 0.635000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0.965200 -3.810000 0) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "C_0_1" (polyline (pts (xy -2.032000 -0.762000) (xy 2.032000 -0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -2.032000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "C_1_1" (pin passive line (at 0 3.810000 270) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin passive line (at 0 -3.810000 90) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.124200 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 0.762000 0.762000)))) (number "1" (effects (font (size 0.508000 0.508000))))))) (symbol "complex_hierarchy_schlib:LM358N" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -1.270000 5.080000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Value" "LM358N" (id 1) (at -1.270000 -6.350000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "LM358N_0_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type background))) (pin power_in line (at -2.540000 -10.160000 90) (length 6.350000) (name "V-" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at -2.540000 10.160000 270) (length 6.350000) (name "V+" (effects (font (size 1.016000 1.016000)))) (number "8" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_1_1" (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_2_1" (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "6" (effects (font (size 1.016000 1.016000))))) (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "7" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 0.762000 0.762000)))) (property "ki_fp_filters" "R_* Resistor_*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "1" (effects (font (size 1.524000 1.524000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "2" (effects (font (size 1.524000 1.524000))))))))
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:133.985000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:081c3c72-72f1-4db7-a695-190810f5e0b2 }
+  <property> at=(133.985,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(133.985,72.390,90.000) attrs{name:"1K" value:"Value" }
+  <property> at=(133.985,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(133.985,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:13b885fb-5bd2-4588-97c4-2e9d439c6552 }
+  <property> at=(144.145,83.820,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,85.598,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:194.945000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1ba44369-aca1-4e8e-b594-64d846d506c3 }
+  <property> at=(196.215,77.470,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(198.755,87.630,0.000) attrs{name:"LM358N" value:"Value" }
+  <property> at=(201.295,88.900,0.000) attrs{name:"Package_DIP:DIP-8_W7.62mm_LongPads" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(194.945,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:172.085000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:2c209735-1dbf-4b3e-baa7-bc32ea5dab52 }
+  <property> at=(172.085,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(172.085,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(172.085,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(172.085,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:4455ef3a-e35b-4615-ad5f-26baccc4160f }
+  <property> at=(175.895,83.820,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(175.895,88.900,0.000) attrs{name:"4.7nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(177.165,90.170,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(173.355,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:71.120000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:51596b74-88f9-41c6-bf3e-4b161083e60a }
+  <property> at=(192.405,72.390,0.000) attrs{name:"#U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,68.580,0.000) attrs{name:"+12V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:62.230000 value:182.245000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ae8cd78e-0822-4415-9231-a4c0e273dc45 }
+  <property> at=(182.245,58.420,90.000) attrs{name:"C?" value:"Reference" }
+  <property> at=(182.245,66.040,90.000) attrs{name:"15nF" value:"Value" }
+  <property> at=(182.245,57.150,90.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(182.245,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:180 name:93.980000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:b1d4f16d-b3db-43af-9510-15252f0e89d0 }
+  <property> at=(192.405,96.520,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,96.520,0.000) attrs{name:"-VAA" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:bab733ae-c848-41b4-980d-e9b38b672102 }
+  <property> at=(147.955,77.470,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.955,80.010,0.000) attrs{name:"150nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(151.765,81.280,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(144.145,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e20910b1-873d-464d-a97b-5b9569b3bd71 }
+  <property> at=(173.355,91.440,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,93.218,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:154.305000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:eeb42d24-b703-45f5-b3d4-7bfebac0b2d3 }
+  <property> at=(154.305,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(154.305,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(155.575,74.930,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(154.305,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (junction (at 144.145004 72.389999))
+  (junction (at 182.244995 77.470001))
+  (junction (at 210.184998 82.550003))
+  (junction (at 163.195007 72.389999))
+  (junction (at 144.145004 72.389999) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 182.244995 77.470001) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 210.184998 82.550003) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 163.195007 72.389999) (color 0 0 0 0) (diameter 1.016000))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "complex_hierarchy_schlib:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+12V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "+12V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+12V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "complex_hierarchy_schlib:-VAA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 2.540000 0) (effects (font (size 0.508000 0.508000)) hide)) (property "Value" "-VAA" (id 1) (at 0 2.540000 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "-VAA_0_0" (pin power_in line (at 0 0 90) (length 0) hide (name "-VAA" (effects (font (size 0.508000 0.508000)))) (number "1" (effects (font (size 0.508000 0.508000)))))) (symbol "-VAA_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy 0 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.032000) (xy 0.762000 1.270000) (xy -0.508000 1.270000) (xy -0.762000 1.270000) (xy 0 2.032000) (xy 0 2.032000) (xy 0 2.032000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type outline))))) (symbol "complex_hierarchy_schlib:C" (pin_numbers hide) (pin_names (offset 0.254000)) (in_bom yes) (on_board yes) (property "Reference" "C" (id 0) (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "C" (id 1) (at 0.635000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0.965200 -3.810000 0) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "C_0_1" (polyline (pts (xy -2.032000 -0.762000) (xy 2.032000 -0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -2.032000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "C_1_1" (pin passive line (at 0 3.810000 270) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin passive line (at 0 -3.810000 90) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.124200 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 0.762000 0.762000)))) (number "1" (effects (font (size 0.508000 0.508000))))))) (symbol "complex_hierarchy_schlib:LM358N" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -1.270000 5.080000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Value" "LM358N" (id 1) (at -1.270000 -6.350000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "LM358N_0_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type background))) (pin power_in line (at -2.540000 -10.160000 90) (length 6.350000) (name "V-" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at -2.540000 10.160000 270) (length 6.350000) (name "V+" (effects (font (size 1.016000 1.016000)))) (number "8" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_1_1" (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_2_1" (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "6" (effects (font (size 1.016000 1.016000))))) (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "7" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 0.762000 0.762000)))) (property "ki_fp_filters" "R_* Resistor_*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "1" (effects (font (size 1.524000 1.524000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "2" (effects (font (size 1.524000 1.524000))))))))
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:133.985000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:081c3c72-72f1-4db7-a695-190810f5e0b2 }
+  <property> at=(133.985,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(133.985,72.390,90.000) attrs{name:"1K" value:"Value" }
+  <property> at=(133.985,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(133.985,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:13b885fb-5bd2-4588-97c4-2e9d439c6552 }
+  <property> at=(144.145,83.820,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,85.598,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:194.945000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1ba44369-aca1-4e8e-b594-64d846d506c3 }
+  <property> at=(196.215,77.470,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(198.755,87.630,0.000) attrs{name:"LM358N" value:"Value" }
+  <property> at=(201.295,88.900,0.000) attrs{name:"Package_DIP:DIP-8_W7.62mm_LongPads" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(194.945,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:172.085000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:2c209735-1dbf-4b3e-baa7-bc32ea5dab52 }
+  <property> at=(172.085,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(172.085,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(172.085,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(172.085,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:4455ef3a-e35b-4615-ad5f-26baccc4160f }
+  <property> at=(175.895,83.820,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(175.895,88.900,0.000) attrs{name:"4.7nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(177.165,90.170,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(173.355,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:71.120000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:51596b74-88f9-41c6-bf3e-4b161083e60a }
+  <property> at=(192.405,72.390,0.000) attrs{name:"#U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,68.580,0.000) attrs{name:"+12V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:62.230000 value:182.245000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ae8cd78e-0822-4415-9231-a4c0e273dc45 }
+  <property> at=(182.245,58.420,90.000) attrs{name:"C?" value:"Reference" }
+  <property> at=(182.245,66.040,90.000) attrs{name:"15nF" value:"Value" }
+  <property> at=(182.245,57.150,90.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(182.245,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:180 name:93.980000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:b1d4f16d-b3db-43af-9510-15252f0e89d0 }
+  <property> at=(192.405,96.520,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,96.520,0.000) attrs{name:"-VAA" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:bab733ae-c848-41b4-980d-e9b38b672102 }
+  <property> at=(147.955,77.470,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.955,80.010,0.000) attrs{name:"150nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(151.765,81.280,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(144.145,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e20910b1-873d-464d-a97b-5b9569b3bd71 }
+  <property> at=(173.355,91.440,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,93.218,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:154.305000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:eeb42d24-b703-45f5-b3d4-7bfebac0b2d3 }
+  <property> at=(154.305,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(154.305,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(155.575,74.930,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(154.305,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (junction (at 144.145004 72.389999))
+  (junction (at 182.244995 77.470001))
+  (junction (at 210.184998 82.550003))
+  (junction (at 163.195007 72.389999))
+  (junction (at 144.145004 72.389999) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 182.244995 77.470001) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 210.184998 82.550003) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 163.195007 72.389999) (color 0 0 0 0) (diameter 1.016000))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "complex_hierarchy_schlib:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+12V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "+12V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+12V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "complex_hierarchy_schlib:-VAA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 2.540000 0) (effects (font (size 0.508000 0.508000)) hide)) (property "Value" "-VAA" (id 1) (at 0 2.540000 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "-VAA_0_0" (pin power_in line (at 0 0 90) (length 0) hide (name "-VAA" (effects (font (size 0.508000 0.508000)))) (number "1" (effects (font (size 0.508000 0.508000)))))) (symbol "-VAA_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy 0 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.032000) (xy 0.762000 1.270000) (xy -0.508000 1.270000) (xy -0.762000 1.270000) (xy 0 2.032000) (xy 0 2.032000) (xy 0 2.032000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type outline))))) (symbol "complex_hierarchy_schlib:C" (pin_numbers hide) (pin_names (offset 0.254000)) (in_bom yes) (on_board yes) (property "Reference" "C" (id 0) (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "C" (id 1) (at 0.635000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0.965200 -3.810000 0) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "C_0_1" (polyline (pts (xy -2.032000 -0.762000) (xy 2.032000 -0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -2.032000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "C_1_1" (pin passive line (at 0 3.810000 270) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin passive line (at 0 -3.810000 90) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.124200 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 0.762000 0.762000)))) (number "1" (effects (font (size 0.508000 0.508000))))))) (symbol "complex_hierarchy_schlib:LM358N" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -1.270000 5.080000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Value" "LM358N" (id 1) (at -1.270000 -6.350000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "LM358N_0_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type background))) (pin power_in line (at -2.540000 -10.160000 90) (length 6.350000) (name "V-" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at -2.540000 10.160000 270) (length 6.350000) (name "V+" (effects (font (size 1.016000 1.016000)))) (number "8" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_1_1" (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_2_1" (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "6" (effects (font (size 1.016000 1.016000))))) (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "7" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 0.762000 0.762000)))) (property "ki_fp_filters" "R_* Resistor_*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "1" (effects (font (size 1.524000 1.524000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "2" (effects (font (size 1.524000 1.524000))))))))
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:133.985000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:081c3c72-72f1-4db7-a695-190810f5e0b2 }
+  <property> at=(133.985,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(133.985,72.390,90.000) attrs{name:"1K" value:"Value" }
+  <property> at=(133.985,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(133.985,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:13b885fb-5bd2-4588-97c4-2e9d439c6552 }
+  <property> at=(144.145,83.820,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,85.598,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:194.945000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1ba44369-aca1-4e8e-b594-64d846d506c3 }
+  <property> at=(196.215,77.470,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(198.755,87.630,0.000) attrs{name:"LM358N" value:"Value" }
+  <property> at=(201.295,88.900,0.000) attrs{name:"Package_DIP:DIP-8_W7.62mm_LongPads" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(194.945,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:172.085000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:2c209735-1dbf-4b3e-baa7-bc32ea5dab52 }
+  <property> at=(172.085,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(172.085,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(172.085,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(172.085,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:4455ef3a-e35b-4615-ad5f-26baccc4160f }
+  <property> at=(175.895,83.820,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(175.895,88.900,0.000) attrs{name:"4.7nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(177.165,90.170,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(173.355,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:71.120000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:51596b74-88f9-41c6-bf3e-4b161083e60a }
+  <property> at=(192.405,72.390,0.000) attrs{name:"#U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,68.580,0.000) attrs{name:"+12V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:62.230000 value:182.245000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ae8cd78e-0822-4415-9231-a4c0e273dc45 }
+  <property> at=(182.245,58.420,90.000) attrs{name:"C?" value:"Reference" }
+  <property> at=(182.245,66.040,90.000) attrs{name:"15nF" value:"Value" }
+  <property> at=(182.245,57.150,90.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(182.245,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:180 name:93.980000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:b1d4f16d-b3db-43af-9510-15252f0e89d0 }
+  <property> at=(192.405,96.520,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,96.520,0.000) attrs{name:"-VAA" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:bab733ae-c848-41b4-980d-e9b38b672102 }
+  <property> at=(147.955,77.470,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.955,80.010,0.000) attrs{name:"150nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(151.765,81.280,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(144.145,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e20910b1-873d-464d-a97b-5b9569b3bd71 }
+  <property> at=(173.355,91.440,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,93.218,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:154.305000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:eeb42d24-b703-45f5-b3d4-7bfebac0b2d3 }
+  <property> at=(154.305,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(154.305,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(155.575,74.930,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(154.305,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (junction (at 144.145004 72.389999))
+  (junction (at 182.244995 77.470001))
+  (junction (at 210.184998 82.550003))
+  (junction (at 163.195007 72.389999))
+  (junction (at 144.145004 72.389999) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 182.244995 77.470001) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 210.184998 82.550003) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 163.195007 72.389999) (color 0 0 0 0) (diameter 1.016000))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "complex_hierarchy_schlib:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+12V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "+12V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+12V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "complex_hierarchy_schlib:-VAA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 2.540000 0) (effects (font (size 0.508000 0.508000)) hide)) (property "Value" "-VAA" (id 1) (at 0 2.540000 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "-VAA_0_0" (pin power_in line (at 0 0 90) (length 0) hide (name "-VAA" (effects (font (size 0.508000 0.508000)))) (number "1" (effects (font (size 0.508000 0.508000)))))) (symbol "-VAA_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy 0 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.032000) (xy 0.762000 1.270000) (xy -0.508000 1.270000) (xy -0.762000 1.270000) (xy 0 2.032000) (xy 0 2.032000) (xy 0 2.032000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type outline))))) (symbol "complex_hierarchy_schlib:C" (pin_numbers hide) (pin_names (offset 0.254000)) (in_bom yes) (on_board yes) (property "Reference" "C" (id 0) (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "C" (id 1) (at 0.635000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0.965200 -3.810000 0) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "C_0_1" (polyline (pts (xy -2.032000 -0.762000) (xy 2.032000 -0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -2.032000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "C_1_1" (pin passive line (at 0 3.810000 270) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin passive line (at 0 -3.810000 90) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.124200 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 0.762000 0.762000)))) (number "1" (effects (font (size 0.508000 0.508000))))))) (symbol "complex_hierarchy_schlib:LM358N" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -1.270000 5.080000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Value" "LM358N" (id 1) (at -1.270000 -6.350000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "LM358N_0_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type background))) (pin power_in line (at -2.540000 -10.160000 90) (length 6.350000) (name "V-" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at -2.540000 10.160000 270) (length 6.350000) (name "V+" (effects (font (size 1.016000 1.016000)))) (number "8" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_1_1" (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_2_1" (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "6" (effects (font (size 1.016000 1.016000))))) (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "7" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 0.762000 0.762000)))) (property "ki_fp_filters" "R_* Resistor_*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "1" (effects (font (size 1.524000 1.524000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "2" (effects (font (size 1.524000 1.524000))))))))
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:133.985000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:081c3c72-72f1-4db7-a695-190810f5e0b2 }
+  <property> at=(133.985,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(133.985,72.390,90.000) attrs{name:"1K" value:"Value" }
+  <property> at=(133.985,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(133.985,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:13b885fb-5bd2-4588-97c4-2e9d439c6552 }
+  <property> at=(144.145,83.820,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,85.598,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:194.945000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1ba44369-aca1-4e8e-b594-64d846d506c3 }
+  <property> at=(196.215,77.470,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(198.755,87.630,0.000) attrs{name:"LM358N" value:"Value" }
+  <property> at=(201.295,88.900,0.000) attrs{name:"Package_DIP:DIP-8_W7.62mm_LongPads" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(194.945,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:172.085000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:2c209735-1dbf-4b3e-baa7-bc32ea5dab52 }
+  <property> at=(172.085,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(172.085,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(172.085,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(172.085,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:4455ef3a-e35b-4615-ad5f-26baccc4160f }
+  <property> at=(175.895,83.820,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(175.895,88.900,0.000) attrs{name:"4.7nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(177.165,90.170,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(173.355,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:71.120000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:51596b74-88f9-41c6-bf3e-4b161083e60a }
+  <property> at=(192.405,72.390,0.000) attrs{name:"#U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,68.580,0.000) attrs{name:"+12V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:62.230000 value:182.245000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ae8cd78e-0822-4415-9231-a4c0e273dc45 }
+  <property> at=(182.245,58.420,90.000) attrs{name:"C?" value:"Reference" }
+  <property> at=(182.245,66.040,90.000) attrs{name:"15nF" value:"Value" }
+  <property> at=(182.245,57.150,90.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(182.245,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:180 name:93.980000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:b1d4f16d-b3db-43af-9510-15252f0e89d0 }
+  <property> at=(192.405,96.520,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,96.520,0.000) attrs{name:"-VAA" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:bab733ae-c848-41b4-980d-e9b38b672102 }
+  <property> at=(147.955,77.470,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.955,80.010,0.000) attrs{name:"150nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(151.765,81.280,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(144.145,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e20910b1-873d-464d-a97b-5b9569b3bd71 }
+  <property> at=(173.355,91.440,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,93.218,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:154.305000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:eeb42d24-b703-45f5-b3d4-7bfebac0b2d3 }
+  <property> at=(154.305,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(154.305,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(155.575,74.930,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(154.305,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (junction (at 144.145004 72.389999))
+  (junction (at 182.244995 77.470001))
+  (junction (at 210.184998 82.550003))
+  (junction (at 163.195007 72.389999))
+  (junction (at 144.145004 72.389999) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 182.244995 77.470001) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 210.184998 82.550003) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 163.195007 72.389999) (color 0 0 0 0) (diameter 1.016000))
+)
+(kicad_sch (version 20210621) (generator eeschema)
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "complex_hierarchy_schlib:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "+12V" (id 1) (at 0 3.556000 0) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "+12V_0_1" (polyline (pts (xy -0.762000 1.270000) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.540000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.540000) (xy 0.762000 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+12V" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))))) (symbol "complex_hierarchy_schlib:-VAA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 2.540000 0) (effects (font (size 0.508000 0.508000)) hide)) (property "Value" "-VAA" (id 1) (at 0 2.540000 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "-VAA_0_0" (pin power_in line (at 0 0 90) (length 0) hide (name "-VAA" (effects (font (size 0.508000 0.508000)))) (number "1" (effects (font (size 0.508000 0.508000)))))) (symbol "-VAA_0_1" (polyline (pts (xy 0 0) (xy 0 1.270000) (xy 0 1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.032000) (xy 0.762000 1.270000) (xy -0.508000 1.270000) (xy -0.762000 1.270000) (xy 0 2.032000) (xy 0 2.032000) (xy 0 2.032000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type outline))))) (symbol "complex_hierarchy_schlib:C" (pin_numbers hide) (pin_names (offset 0.254000)) (in_bom yes) (on_board yes) (property "Reference" "C" (id 0) (at 0.635000 2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Value" "C" (id 1) (at 0.635000 -2.540000 0) (effects (font (size 1.270000 1.270000)) (justify left))) (property "Footprint" "" (id 2) (at 0.965200 -3.810000 0) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "C_0_1" (polyline (pts (xy -2.032000 -0.762000) (xy 2.032000 -0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -2.032000 0.762000) (xy 2.032000 0.762000)) (stroke (width 0.508000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "C_1_1" (pin passive line (at 0 3.810000 270) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin passive line (at 0 -3.810000 90) (length 2.794000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.810000 0) (effects (font (size 1.270000 1.270000)) hide)) (property "Value" "GND" (id 1) (at 0 -3.124200 0) (effects (font (size 0.762000 0.762000)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.270000) (xy 1.270000 -1.270000) (xy 0 -2.540000) (xy -1.270000 -1.270000) (xy 0 -1.270000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 0.762000 0.762000)))) (number "1" (effects (font (size 0.508000 0.508000))))))) (symbol "complex_hierarchy_schlib:LM358N" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -1.270000 5.080000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Value" "LM358N" (id 1) (at -1.270000 -6.350000 0) (effects (font (size 1.524000 1.524000)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.524000 1.524000)))) (symbol "LM358N_0_1" (polyline (pts (xy -5.080000 5.080000) (xy 5.080000 0) (xy -5.080000 -5.080000) (xy -5.080000 5.080000)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type background))) (pin power_in line (at -2.540000 -10.160000 90) (length 6.350000) (name "V-" (effects (font (size 1.016000 1.016000)))) (number "4" (effects (font (size 1.016000 1.016000))))) (pin power_in line (at -2.540000 10.160000 270) (length 6.350000) (name "V+" (effects (font (size 1.016000 1.016000)))) (number "8" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_1_1" (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "1" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "2" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "3" (effects (font (size 1.016000 1.016000)))))) (symbol "LM358N_2_1" (pin input line (at -12.700000 2.540000 0) (length 7.620000) (name "+" (effects (font (size 1.016000 1.016000)))) (number "5" (effects (font (size 1.016000 1.016000))))) (pin input line (at -12.700000 -2.540000 0) (length 7.620000) (name "-" (effects (font (size 1.016000 1.016000)))) (number "6" (effects (font (size 1.016000 1.016000))))) (pin output line (at 12.700000 0 180) (length 7.620000) (name "~" (effects (font (size 1.016000 1.016000)))) (number "7" (effects (font (size 1.016000 1.016000))))))) (symbol "complex_hierarchy_schlib:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (id 2) (at -1.778000 0 90) (effects (font (size 0.762000 0.762000)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 0.762000 0.762000)))) (property "ki_fp_filters" "R_* Resistor_*" (id 4) (at 0 0 0) (effects (font (size 1.270000 1.270000)) hide)) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default) (color 0 0 0 0)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "1" (effects (font (size 1.524000 1.524000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.524000 1.524000)))) (number "2" (effects (font (size 1.524000 1.524000))))))))
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:133.985000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:081c3c72-72f1-4db7-a695-190810f5e0b2 }
+  <property> at=(133.985,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(133.985,72.390,90.000) attrs{name:"1K" value:"Value" }
+  <property> at=(133.985,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(133.985,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:83.820000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:13b885fb-5bd2-4588-97c4-2e9d439c6552 }
+  <property> at=(144.145,83.820,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,85.598,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(144.145,83.820,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:82.550000 value:194.945000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:1ba44369-aca1-4e8e-b594-64d846d506c3 }
+  <property> at=(196.215,77.470,0.000) attrs{name:"U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(198.755,87.630,0.000) attrs{name:"LM358N" value:"Value" }
+  <property> at=(201.295,88.900,0.000) attrs{name:"Package_DIP:DIP-8_W7.62mm_LongPads" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(194.945,82.550,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"4" }
+  <pin> attrs{value:"8" }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <pin> attrs{value:"3" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:172.085000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:2c209735-1dbf-4b3e-baa7-bc32ea5dab52 }
+  <property> at=(172.085,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(172.085,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(172.085,68.580,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(172.085,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:86.360000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:4455ef3a-e35b-4615-ad5f-26baccc4160f }
+  <property> at=(175.895,83.820,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(175.895,88.900,0.000) attrs{name:"4.7nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(177.165,90.170,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(173.355,86.360,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:71.120000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:51596b74-88f9-41c6-bf3e-4b161083e60a }
+  <property> at=(192.405,72.390,0.000) attrs{name:"#U?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,68.580,0.000) attrs{name:"+12V" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,71.120,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:62.230000 value:182.245000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:ae8cd78e-0822-4415-9231-a4c0e273dc45 }
+  <property> at=(182.245,58.420,90.000) attrs{name:"C?" value:"Reference" }
+  <property> at=(182.245,66.040,90.000) attrs{name:"15nF" value:"Value" }
+  <property> at=(182.245,57.150,90.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(182.245,62.230,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:180 name:93.980000 value:192.405000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:b1d4f16d-b3db-43af-9510-15252f0e89d0 }
+  <property> at=(192.405,96.520,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,96.520,0.000) attrs{name:"-VAA" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(192.405,93.980,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:0 name:78.740000 value:144.145000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:bab733ae-c848-41b4-980d-e9b38b672102 }
+  <property> at=(147.955,77.470,0.000) attrs{name:"C?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(147.955,80.010,0.000) attrs{name:"150nF" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(151.765,81.280,0.000) attrs{name:"Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(144.145,78.740,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <symbol>
+  <at> attrs{misc:0 name:91.440000 value:173.355000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:e20910b1-873d-464d-a97b-5b9569b3bd71 }
+  <property> at=(173.355,91.440,0.000) attrs{name:"#PWR?" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,93.218,0.000) attrs{name:"GND" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <property> at=(173.355,91.440,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <symbol>
+  <at> attrs{misc:270 name:72.390000 value:154.305000 }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <uuid> attrs{value:eeb42d24-b703-45f5-b3d4-7bfebac0b2d3 }
+  <property> at=(154.305,69.850,90.000) attrs{name:"R?" value:"Reference" }
+  <property> at=(154.305,72.390,90.000) attrs{name:"22K" value:"Value" }
+  <property> at=(155.575,74.930,90.000) attrs{name:"Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(154.305,72.390,0.000) attrs{name:"" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) token_2:hide }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 182.245 77.47) (angle 0) (thickness 0.25))
+  (wire (start 182.245 72.39) (end 175.895 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 182.245 80.01) (angle 0) (thickness 0.25))
+  (wire (start 137.795 72.39) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 163.195 62.23) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 173.355 91.44) (end 173.355 90.17) (angle 0) (thickness 0.25))
+  (wire (start 144.145 74.93) (end 144.145 72.39) (angle 0) (thickness 0.25))
+  (wire (start 144.145 72.39) (end 150.495 72.39) (angle 0) (thickness 0.25))
+  (wire (start 127 72.39) (end 130.175 72.39) (angle 0) (thickness 0.25))
+  (wire (start 192.405 71.12) (end 192.405 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 97.79) (end 210.185 97.79) (angle 0) (thickness 0.25))
+  (wire (start 144.145 83.82) (end 144.145 82.55) (angle 0) (thickness 0.25))
+  (wire (start 182.245 85.09) (end 182.245 97.79) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 210.185 62.23) (angle 0) (thickness 0.25))
+  (wire (start 210.185 97.79) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 62.23) (end 186.055 62.23) (angle 0) (thickness 0.25))
+  (wire (start 163.195 72.39) (end 168.275 72.39) (angle 0) (thickness 0.25))
+  (wire (start 182.245 77.47) (end 173.355 77.47) (angle 0) (thickness 0.25))
+  (wire (start 173.355 77.47) (end 173.355 82.55) (angle 0) (thickness 0.25))
+  (wire (start 192.405 93.98) (end 192.405 92.71) (angle 0) (thickness 0.25))
+  (wire (start 207.645 82.55) (end 210.185 82.55) (angle 0) (thickness 0.25))
+  (wire (start 210.185 82.55) (end 241.3 82.55) (angle 0) (thickness 0.25))
+  (wire (start 158.115 72.39) (end 163.195 72.39) (angle 0) (thickness 0.25))
+  (wire (start 178.435 62.23) (end 163.195 62.23) (angle 0) (thickness 0.25))
+  (junction (at 144.145004 72.389999))
+  (junction (at 182.244995 77.470001))
+  (junction (at 210.184998 82.550003))
+  (junction (at 163.195007 72.389999))
+  (junction (at 144.145004 72.389999) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 182.244995 77.470001) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 210.184998 82.550003) (color 0 0 0 0) (diameter 1.016000))
+  (junction (at 163.195007 72.389999) (color 0 0 0 0) (diameter 1.016000))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

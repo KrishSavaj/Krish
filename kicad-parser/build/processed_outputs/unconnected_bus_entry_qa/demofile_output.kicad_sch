@@ -1,0 +1,363 @@
+
+=== Parsing "demofile.kicad_sch" ===
+Parsed successfully.
+
+=== Schematic Metadata ===
+Version:      20241209
+Generator:    "eeschema"
+Paper size:   "A4"
+Root UUID:    "d989d335-946b-4c72-9eef-718def2aa89b"
+Library symbols: 
+
+Title:        
+Date:         
+Revision:     
+Company:      
+
+
+=== Parsed Components Summary ===
+Top-level components: 0
+=================================
+
+
+=== Bus Aliases ===
+(kicad_sch (version 20241209) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:60.960000 value:105.410000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"7ac934ad-d2c2-4a3c-b10e-8c7665b1fb9d" }
+  <property> at=(105.410,54.610,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,57.150,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,62.738,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R2" path_unit:1 value:"unconnected_bus_entry_qa" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:82.550000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"ea63b1f4-4f1b-4506-ad51-049f597d4bbd" }
+  <property> at=(85.090,55.880,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(85.090,58.420,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(80.772,57.150,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R1" path_unit:1 value:"" }
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20241209) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:60.960000 value:105.410000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"7ac934ad-d2c2-4a3c-b10e-8c7665b1fb9d" }
+  <property> at=(105.410,54.610,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,57.150,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,62.738,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R2" path_unit:1 value:"unconnected_bus_entry_qa" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:82.550000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"ea63b1f4-4f1b-4506-ad51-049f597d4bbd" }
+  <property> at=(85.090,55.880,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(85.090,58.420,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(80.772,57.150,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R1" path_unit:1 value:"" }
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20241209) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:60.960000 value:105.410000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"7ac934ad-d2c2-4a3c-b10e-8c7665b1fb9d" }
+  <property> at=(105.410,54.610,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,57.150,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,62.738,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R2" path_unit:1 value:"unconnected_bus_entry_qa" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:82.550000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"ea63b1f4-4f1b-4506-ad51-049f597d4bbd" }
+  <property> at=(85.090,55.880,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(85.090,58.420,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(80.772,57.150,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R1" path_unit:1 value:"" }
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20241209) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:60.960000 value:105.410000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"7ac934ad-d2c2-4a3c-b10e-8c7665b1fb9d" }
+  <property> at=(105.410,54.610,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,57.150,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,62.738,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R2" path_unit:1 value:"unconnected_bus_entry_qa" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:82.550000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"ea63b1f4-4f1b-4506-ad51-049f597d4bbd" }
+  <property> at=(85.090,55.880,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(85.090,58.420,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(80.772,57.150,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R1" path_unit:1 value:"" }
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20241209) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:60.960000 value:105.410000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"7ac934ad-d2c2-4a3c-b10e-8c7665b1fb9d" }
+  <property> at=(105.410,54.610,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,57.150,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,62.738,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R2" path_unit:1 value:"unconnected_bus_entry_qa" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:82.550000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"ea63b1f4-4f1b-4506-ad51-049f597d4bbd" }
+  <property> at=(85.090,55.880,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(85.090,58.420,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(80.772,57.150,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R1" path_unit:1 value:"" }
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+)
+(kicad_sch (version 20241209) (generator "eeschema")
+  (paper "A4")
+  (title_block
+  )
+(lib_symbols (symbol "Device:R" (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.032000 0 90) (effects (font (size 1.270000 1.270000)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.270000 1.270000)))) (property "Footprint" "" (at -1.778000 0 90) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.270000 1.270000)) (hide yes))) (symbol "R_0_1" (rectangle (start -1.016000 -2.540000) (end 1.016000 2.540000) (stroke (width 0.254000) (type default)) (fill (type none)))) (symbol "R_1_1" (pin passive line (at 0 3.810000 270) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "1" (effects (font (size 1.270000 1.270000))))) (pin passive line (at 0 -3.810000 90) (length 1.270000) (name "~" (effects (font (size 1.270000 1.270000)))) (number "2" (effects (font (size 1.270000 1.270000)))))) (embedded_fonts no)))
+  <symbol>
+  <at> attrs{misc:90 name:60.960000 value:105.410000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"7ac934ad-d2c2-4a3c-b10e-8c7665b1fb9d" }
+  <property> at=(105.410,54.610,90.000) attrs{name:"R2" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,57.150,90.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) }
+  <property> at=(105.410,62.738,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(105.410,60.960,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R2" path_unit:1 value:"unconnected_bus_entry_qa" }
+  <symbol>
+  <at> attrs{misc:0 name:57.150000 value:82.550000 }
+  <unit> attrs{value:1 }
+  <exclude_from_sim> attrs{value:no }
+  <in_bom> attrs{value:yes }
+  <on_board> attrs{value:yes }
+  <dnp> attrs{value:no }
+  <fields_autoplaced> attrs{value:yes }
+  <uuid> attrs{value:"ea63b1f4-4f1b-4506-ad51-049f597d4bbd" }
+  <property> at=(85.090,55.880,0.000) attrs{name:"R1" value:"Reference" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(85.090,58.420,0.000) attrs{name:"R" value:"Value" }
+  <effects> attrs{extra_font:(font <list>) extra_justify:(justify left) }
+  <property> at=(80.772,57.150,90.000) attrs{name:"" value:"Footprint" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"~" value:"Datasheet" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <property> at=(82.550,57.150,0.000) attrs{name:"Resistor" value:"Description" }
+  <effects> attrs{extra_font:(font <list>) extra_hide:(hide yes) }
+  <pin> attrs{value:"1" }
+  <pin> attrs{value:"2" }
+  <instances>
+  <project> attrs{path:"/c33a2675-2f07-49e1-8de7-5364c718d121" path_reference:"R1" path_unit:1 value:"" }
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+  (wire (start 82.55 48.26) (end 82.55 53.34) (angle 0) (thickness 0.25))
+  (wire (start 96.52 60.96) (end 101.6 60.96) (angle 0) (thickness 0.25))
+)
+
+=== Parsed Shapes ===
+Total shapes collected: 0
+=================================

@@ -1,0 +1,28 @@
+
+=== JUNCTION ===
+❌ Missing (2):
+   - (52.07, 56.514999)
+   - (76.199997, 56.514999)
+
+=== WIRE ===
+❌ Missing (7):
+   - [(46.355, 56.515), (52.07, 56.515)]
+   - [(52.07, 56.515), (52.07, 72.39)]
+   - [(52.07, 56.515), (57.15, 56.515)]
+   - [(52.07, 72.39), (46.355, 72.39)]
+   - [(64.77, 56.515), (76.2, 56.515)]
+   - [(76.2, 51.435), (76.2, 56.515)]
+   - [(76.2, 56.515), (76.2, 62.23)]
+
+=== SYMBOL ===
+❌ Missing (8):
+   - (symbol ".Project_Library:REF${#}" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "REF${#}" (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Description" "Power symbol creates a local label (not global) with name \"REF${#}\", where the text variable \"#\" is the current sheet number " (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "local power" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "REF${#}_1_1" (polyline (pts (xy 0 0) (xy 0 -1.91) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.91)) (stroke (width 0) (type default)) (fill (type outline))) (pin power_in line (at 0 0 270) (length 0) hide (name "REF${#}" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "R" (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at -1.78 0 90) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "PCM_4ms_Power-symbol:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "#FLG" (at 0 1.91 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "PWR_FLAG" (at 0 3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "PWR_FLAG_0_0" (pin power_out line (at 0 0 90) (length 0) (name "pwr" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+   - (symbol "PWR_FLAG_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy -1.02 1.91) (xy 0 2.54) (xy 1.02 1.91) (xy 0 1.27)) (stroke (width 0) (type default)) (fill (type none))))))
+
+Some cleaned files differ from originals ❌

@@ -1,0 +1,58 @@
+
+=== JUNCTION ===
+❌ Missing (4):
+   - (144.145004, 72.389999)
+   - (163.195007, 72.389999)
+   - (182.244995, 77.470001)
+   - (210.184998, 82.550003)
+
+=== WIRE ===
+❌ Missing (24):
+   - [(127.0, 72.39), (130.175, 72.39)]
+   - [(137.795, 72.39), (144.145, 72.39)]
+   - [(144.145, 72.39), (150.495, 72.39)]
+   - [(144.145, 74.93), (144.145, 72.39)]
+   - [(144.145, 83.82), (144.145, 82.55)]
+   - [(158.115, 72.39), (163.195, 72.39)]
+   - [(163.195, 62.23), (163.195, 72.39)]
+   - [(163.195, 72.39), (168.275, 72.39)]
+   - [(173.355, 77.47), (173.355, 82.55)]
+   - [(173.355, 91.44), (173.355, 90.17)]
+   - [(178.435, 62.23), (163.195, 62.23)]
+   - [(182.245, 72.39), (175.895, 72.39)]
+   - [(182.245, 72.39), (182.245, 77.47)]
+   - [(182.245, 77.47), (173.355, 77.47)]
+   - [(182.245, 77.47), (182.245, 80.01)]
+   - [(182.245, 85.09), (182.245, 97.79)]
+   - [(182.245, 97.79), (210.185, 97.79)]
+   - [(192.405, 71.12), (192.405, 72.39)]
+   - [(192.405, 93.98), (192.405, 92.71)]
+   - [(207.645, 82.55), (210.185, 82.55)]
+   - [(210.185, 62.23), (186.055, 62.23)]
+   - [(210.185, 82.55), (210.185, 62.23)]
+   - [(210.185, 82.55), (241.3, 82.55)]
+   - [(210.185, 97.79), (210.185, 82.55)]
+
+=== SYMBOL ===
+❌ Missing (19):
+   - (symbol "complex_hierarchy_schlib:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "+12V" (id 1) (at 0 3.56 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.52 1.52))))
+   - (symbol "+12V_0_1" (polyline (pts (xy -0.76 1.27) (xy 0 2.54)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0.76 1.27)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))))
+   - (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide (name "+12V" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))))
+   - (symbol "complex_hierarchy_schlib:-VAA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 2.54 0) (effects (font (size 0.51 0.51)) hide)) (property "Value" "-VAA" (id 1) (at 0 2.54 0) (effects (font (size 0.76 0.76)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.52 1.52))))
+   - (symbol "-VAA_0_0" (pin power_in line (at 0 0 90) (length 0) hide (name "-VAA" (effects (font (size 0.51 0.51)))) (number "1" (effects (font (size 0.51 0.51))))))
+   - (symbol "-VAA_0_1" (polyline (pts (xy 0 0) (xy 0 1.27) (xy 0 1.27)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy 0 2.03) (xy 0.76 1.27) (xy -0.51 1.27) (xy -0.76 1.27) (xy 0 2.03) (xy 0 2.03) (xy 0 2.03)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type outline)))))
+   - (symbol "complex_hierarchy_schlib:C" (pin_numbers hide) (pin_names (offset 0.25)) (in_bom yes) (on_board yes) (property "Reference" "C" (id 0) (at 0.64 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C" (id 1) (at 0.64 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (id 2) (at 0.97 -3.81 0) (effects (font (size 0.76 0.76)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "ki_fp_filters" "C? C_????_* C_???? SMD*_c Capacitor*" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "C_0_1" (polyline (pts (xy -2.03 -0.76) (xy 2.03 -0.76)) (stroke (width 0.51) (type default) (color 0 0 0 0)) (fill (type none))) (polyline (pts (xy -2.03 0.76) (xy 2.03 0.76)) (stroke (width 0.51) (type default) (color 0 0 0 0)) (fill (type none))))
+   - (symbol "C_1_1" (pin passive line (at 0 3.81 270) (length 2.79) (name "~" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02))))) (pin passive line (at 0 -3.81 90) (length 2.79) (name "~" (effects (font (size 1.02 1.02)))) (number "2" (effects (font (size 1.02 1.02)))))))
+   - (symbol "complex_hierarchy_schlib:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (id 0) (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "GND" (id 1) (at 0 -3.12 0) (effects (font (size 0.76 0.76)))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.52 1.52))))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 0.76 0.76)))) (number "1" (effects (font (size 0.51 0.51)))))))
+   - (symbol "complex_hierarchy_schlib:LM358N" (in_bom yes) (on_board yes) (property "Reference" "U" (id 0) (at -1.27 5.08 0) (effects (font (size 1.52 1.52)) (justify left))) (property "Value" "LM358N" (id 1) (at -1.27 -6.35 0) (effects (font (size 1.52 1.52)) (justify left))) (property "Footprint" "" (id 2) (at 0 0 0) (effects (font (size 1.52 1.52)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 1.52 1.52))))
+   - (symbol "LM358N_0_1" (polyline (pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)) (stroke (width 0) (type default) (color 0 0 0 0)) (fill (type background))) (pin power_in line (at -2.54 -10.16 90) (length 6.35) (name "V-" (effects (font (size 1.02 1.02)))) (number "4" (effects (font (size 1.02 1.02))))) (pin power_in line (at -2.54 10.16 270) (length 6.35) (name "V+" (effects (font (size 1.02 1.02)))) (number "8" (effects (font (size 1.02 1.02))))))
+   - (symbol "LM358N_1_1" (pin output line (at 12.7 0 180) (length 7.62) (name "~" (effects (font (size 1.02 1.02)))) (number "1" (effects (font (size 1.02 1.02))))) (pin input line (at -12.7 -2.54 0) (length 7.62) (name "-" (effects (font (size 1.02 1.02)))) (number "2" (effects (font (size 1.02 1.02))))) (pin input line (at -12.7 2.54 0) (length 7.62) (name "+" (effects (font (size 1.02 1.02)))) (number "3" (effects (font (size 1.02 1.02))))))
+   - (symbol "LM358N_2_1" (pin input line (at -12.7 2.54 0) (length 7.62) (name "+" (effects (font (size 1.02 1.02)))) (number "5" (effects (font (size 1.02 1.02))))) (pin input line (at -12.7 -2.54 0) (length 7.62) (name "-" (effects (font (size 1.02 1.02)))) (number "6" (effects (font (size 1.02 1.02))))) (pin output line (at 12.7 0 180) (length 7.62) (name "~" (effects (font (size 1.02 1.02)))) (number "7" (effects (font (size 1.02 1.02)))))))
+   - (symbol "complex_hierarchy_schlib:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "R" (id 0) (at 2.03 0 90) (effects (font (size 1.27 1.27)))) (property "Value" "R" (id 1) (at 0 0 90) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (id 2) (at -1.78 0 90) (effects (font (size 0.76 0.76)))) (property "Datasheet" "" (id 3) (at 0 0 0) (effects (font (size 0.76 0.76)))) (property "ki_fp_filters" "R_* Resistor_*" (id 4) (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_0_1" (rectangle (start -1.02 -2.54) (end 1.02 2.54) (stroke (width 0.25) (type default) (color 0 0 0 0)) (fill (type none))))
+   - (symbol "R_1_1" (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.52 1.52)))) (number "1" (effects (font (size 1.52 1.52))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.52 1.52)))) (number "2" (effects (font (size 1.52 1.52))))))))
+
+Some cleaned files differ from originals ❌

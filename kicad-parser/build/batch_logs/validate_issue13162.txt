@@ -1,0 +1,39 @@
+
+=== JUNCTION ===
+❌ Missing (3):
+   - (111.760002, 71.120003)
+   - (118.110001, 71.120003)
+   - (137.160004, 71.120003)
+
+=== WIRE ===
+❌ Missing (12):
+   - [(111.76, 71.12), (110.49, 71.12)]
+   - [(111.76, 77.47), (111.76, 71.12)]
+   - [(111.76, 87.63), (111.76, 90.17)]
+   - [(118.11, 62.865), (118.11, 71.12)]
+   - [(118.11, 71.12), (111.76, 71.12)]
+   - [(122.555, 62.865), (118.11, 62.865)]
+   - [(123.19, 71.12), (118.11, 71.12)]
+   - [(127.635, 62.865), (137.16, 62.865)]
+   - [(137.16, 62.865), (137.16, 71.12)]
+   - [(137.16, 71.12), (128.27, 71.12)]
+   - [(137.16, 71.12), (137.16, 77.47)]
+   - [(137.16, 82.55), (137.16, 83.82)]
+
+=== SYMBOL ===
+❌ Missing (13):
+   - (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.25) hide) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0.25 1.78 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "C_Small" (at 0.25 -2.03 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "capacitor cap" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Unpolarized capacitor, small symbol" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "C_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "C_Small_0_1" (polyline (pts (xy -1.52 -0.51) (xy 1.52 -0.51)) (stroke (width 0.33) (type default)) (fill (type none))) (polyline (pts (xy -1.52 0.51) (xy 1.52 0.51)) (stroke (width 0.3) (type default)) (fill (type none))))
+   - (symbol "C_Small_1_1" (pin passive line (at 0 2.54 270) (length 2.03) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -2.54 90) (length 2.03) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Device:R_Small" (pin_numbers hide) (pin_names (offset 0.25) hide) (in_bom yes) (on_board yes) (property "Reference" "R" (at 0.76 0.51 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "R_Small" (at 0.76 -1.02 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "R resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Resistor, small symbol" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "R_Small_0_1" (rectangle (start -0.76 1.78) (end 0.76 -1.78) (stroke (width 0.2) (type default)) (fill (type none))))
+   - (symbol "R_Small_1_1" (pin passive line (at 0 2.54 270) (length 0.76) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -2.54 90) (length 0.76) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "Simulation_SPICE:VSIN" (pin_numbers hide) (pin_names (offset 0.03)) (in_bom yes) (on_board yes) (property "Reference" "V" (at 2.54 2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "VSIN" (at 2.54 0 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Spice_Netlist_Enabled" "Y" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Primitive" "V" (at 0 0 0) (effects (font (size 1.27 1.27)) (justify left) hide)) (property "Spice_Model" "sin(0 1 1k)" (at 2.54 -2.54 0) (effects (font (size 1.27 1.27)) (justify left))) (property "ki_keywords" "simulation" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Voltage source, sinusoidal" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "VSIN_0_0" (arc (start 0 0) (mid -0.64 0.63) (end -1.27 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.64 -0.63) (end 1.27 0) (stroke (width 0) (type default)) (fill (type none))) (text "+" (at 0 1.91 0) (effects (font (size 1.27 1.27)))))
+   - (symbol "VSIN_0_1" (circle (center 0 0) (radius 2.54) (stroke (width 0.25) (type default)) (fill (type background))))
+   - (symbol "VSIN_1_1" (pin passive line (at 0 5.08 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))))
+   - (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes) (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide)) (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_keywords" "power-flag" (at 0 0 0) (effects (font (size 1.27 1.27)) hide)) (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+   - (symbol "GND_0_1" (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0) (type default)) (fill (type none))))
+   - (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))))
+
+Some cleaned files differ from originals ❌
