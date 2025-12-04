@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0"
+    />
+    <title>PCBDev - Professional PCB Development Environment</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <div class="logo">
+          <div class="logo-icon">P</div>
+          <span>PCBDev</span>
+        </div>
+
+        <div class="toolbar-separator"></div>
+
+        <div class="toolbar-group">
+          <button class="btn btn-primary" id="newProjectBtn"><span>📄</span> New</button>
+          <button class="btn" id="openProjectBtn"><span>📁</span> Open</button>
+          <button class="btn" id="saveProjectBtn"><span>💾</span> Save</button>
+        </div>
+
+        <div class="toolbar-separator"></div>
+
+        <div class="toolbar-group">
+          <button class="btn btn-icon" id="undoBtn" title="Undo">↶</button>
+          <button class="btn btn-icon" id="redoBtn" title="Redo">↷</button>
+        </div>
+
+        <div class="toolbar-separator"></div>
+
+        <div class="toolbar-group">
+          <button class="btn" id="gerberBtn"><span>📋</span> Gerber</button>
+          <button class="btn" id="kicadBtn"><span>⚡</span> KiCad</button>
+          <button class="btn" id="viewer3dBtn"><span>📦</span> 3D View</button>
+        </div>
+
+        <div style="flex:1;"></div>
+
+        <div class="toolbar-group">
+          <button class="btn btn-icon" id="settingsBtn" title="Settings">⚙️</button>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+          <div class="sidebar-header">
+            <span class="sidebar-title">Project Explorer</span>
+            <button class="collapse-btn" id="sidebarCollapseBtn">◀</button>
+          </div>
+          <div class="sidebar-content">
+            <div class="tool-category">
+              <div class="category-header" onclick="toggleCategory('parsers')">
+                <span class="category-icon">📁</span><span>File Parsers</span><span style="margin-left:auto;">▼</span>
+              </div>
+              <div class="category-tools" id="parsers-tools">
+                <div class="tool-item" data-tool="gerber_parser"><span>📋</span> Gerber Parser</div>
+                <div class="tool-item" data-tool="kicad_parser"><span>⚡</span> KiCad Parser</div>
+                <div class="tool-item" data-tool="ipc_parser"><span>🔧</span> IPC Parser</div>
+                <div class="tool-item" data-tool="odb_parser"><span>🗄️</span> ODB++ Parser</div>
+              </div>
+            </div>
+
+            <div class="tool-category">
+              <div class="category-header" onclick="toggleCategory('visualization')">
+                <span class="category-icon">👁️</span><span>Visualization</span><span style="margin-left:auto;">▼</span>
+              </div>
+              <div class="category-tools" id="visualization-tools">
+                <div class="tool-item" data-tool="3dviewer"><span>📦</span> 3D Viewer</div>
+                <div class="tool-item" data-tool="layer_viewer"><span>📑</span> Layer Viewer</div>
+              </div>
+            </div>
+
+            <div class="tool-category">
+              <div class="category-header" onclick="toggleCategory('design')">
+                <span class="category-icon">🔨</span><span>Design Tools</span><span style="margin-left:auto;">▼</span>
+              </div>
+              <div class="category-tools" id="design-tools">
+                <div class="tool-item" data-tool="pcb_routing_oop"><span>🔀</span> PCB Routing</div>
+                <div class="tool-item" data-tool="editor"><span>✏️</span> Component Editor</div>
+                <div class="tool-item" data-tool="footprintmaker"><span>🎯</span> Footprint Maker</div>
+              </div>
+            </div>
+
+            <div class="tool-category">
+              <div class="category-header" onclick="toggleCategory('libraries')">
+                <span class="category-icon">📚</span><span>Libraries</span><span style="margin-left:auto;">▼</span>
+              </div>
+              <div class="category-tools" id="libraries-tools">
+                <div class="tool-item" data-tool="libs"><span>📦</span> Component Libraries</div>
+                <div class="tool-item" data-tool="libsrc"><span>💻</span> Source Libraries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Canvas Container -->
+        <div class="canvas-container">
+          <div class="canvas-header">
+            <div class="canvas-tabs">
+              <button class="canvas-tab active" data-tab="design">Design View</button>
+              <button class="canvas-tab" data-tab="3d">3D View</button>
+              <button class="canvas-tab" data-tab="gerber">Gerber Preview</button>
+            </div>
+            <div class="toolbar-group">
+              <button class="btn btn-icon" id="zoomToFitBtn" title="Zoom to Fit">🔍</button>
+              <button class="btn btn-icon" id="gridToggleBtn" title="Grid Toggle">⊞</button>
+              <button class="btn btn-icon" id="layersBtn" title="Layers">📑</button>
+            </div>
+          </div>
+
+          <div class="canvas-viewport" id="canvasViewport">
+            <div class="canvas-overlay">
+              <div class="zoom-controls">
+                <button class="zoom-btn" id="zoomInBtn" title="Zoom In">+</button>
+                <button class="zoom-btn" id="zoomOutBtn" title="Zoom Out">−</button>
+                <button class="zoom-btn" id="zoomFitBtn" title="Zoom to Fit">⊡</button>
+              </div>
+            </div>
+
+            <!-- Welcome message -->
+            <div class="welcome-message" id="welcomeMessage">
+              <div class="welcome-title">Welcome to PCBDev GUI</div>
+              <div class="welcome-subtitle">Professional PCB Development Environment</div>
+              <div class="welcome-actions">
+                <button class="btn btn-primary" id="createProjectBtn"><span>📄</span> Create New Project</button>
+                <button class="btn" id="openFileBtn"><span>📁</span> Open File</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Properties Panel -->
+        <div class="properties-panel" id="propertiesPanel">
+          <div class="properties-header">
+            <span>Properties</span>
+            <button class="collapse-btn" id="propertiesCollapseBtn">▶</button>
+          </div>
+          <div class="properties-content">
+            <div class="property-group">
+              <div class="property-group-title">Selection</div>
+              <div class="property-item">
+                <label class="property-label">Type:</label>
+                <input type="text" class="property-input" value="None Selected" readonly />
+              </div>
+              <div class="property-item">
+                <label class="property-label">Name:</label>
+                <input type="text" class="property-input" placeholder="Object name" />
+              </div>
+            </div>
+
+            <div class="property-group">
+              <div class="property-group-title">Transform</div>
+              <div class="property-item">
+                <label class="property-label">X Position (mm):</label>
+                <input type="number" class="property-input" value="0" step="0.1" />
+              </div>
+              <div class="property-item">
+                <label class="property-label">Y Position (mm):</label>
+                <input type="number" class="property-input" value="0" step="0.1" />
+              </div>
+              <div class="property-item">
+                <label class="property-label">Rotation (°):</label>
+                <input type="number" class="property-input" value="0" step="1" />
+              </div>
+            </div>
+
+            <div class="property-group">
+              <div class="property-group-title">Layers</div>
+              <div class="layer-panel">
+                <div class="layer-item"><input type="checkbox" class="layer-checkbox" checked /><div class="layer-color" style="background-color:#ff0000;"></div><span class="layer-name">Top Copper</span></div>
+                <div class="layer-item"><input type="checkbox" class="layer-checkbox" checked /><div class="layer-color" style="background-color:#0000ff;"></div><span class="layer-name">Bottom Copper</span></div>
+                <div class="layer-item"><input type="checkbox" class="layer-checkbox" checked /><div class="layer-color" style="background-color:#008000;"></div><span class="layer-name">Solder Mask</span></div>
+                <div class="layer-item"><input type="checkbox" class="layer-checkbox" checked /><div class="layer-color" style="background-color:#ffffff;"></div><span class="layer-name">Silk Screen</span></div>
+                <div class="layer-item"><input type="checkbox" class="layer-checkbox" checked /><div class="layer-color" style="background-color:#000000;"></div><span class="layer-name">Drill Holes</span></div>
+                <div class="layer-item"><input type="checkbox" class="layer-checkbox" checked /><div class="layer-color" style="background-color:#ffff00;"></div><span class="layer-name">Board Outline</span></div>
+              </div>
+            </div>
+
+            <div class="property-group">
+              <div class="property-group-title">Design Rules</div>
+              <div class="property-item"><label class="property-label">Min Track Width (mm):</label><input type="number" class="property-input" value="0.2" step="0.05" /></div>
+              <div class="property-item"><label class="property-label">Min Via Size (mm):</label><input type="number" class="property-input" value="0.3" step="0.05" /></div>
+              <div class="property-item"><label class="property-label">Min Clearance (mm):</label><input type="number" class="property-input" value="0.2" step="0.05" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div class="status-section">
+          <div class="status-item"><span>Ready</span></div>
+          <div class="status-item"><span>Grid: 1.27mm</span></div>
+          <div class="status-item"><span id="mousePosition">X: 0.00 Y: 0.00</span></div>
+        </div>
+        <div class="status-section">
+          <div class="status-item"><span>Layers: 6</span></div>
+          <div class="status-item"><span id="zoomLevel">Zoom: 100%</span></div>
+          <div class="status-item"><span>PCBDev v1.0.0 - Standalone</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden file input -->
+    <input
+      type="file"
+      id="fileInput"
+      class="file-input"
+      accept=".gbr,.grb,.gtl,.gbl,.gto,.gbo,.gts,.gbs,.kicad_pcb,.pro,.sch,.txt,.json"
+    />
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
