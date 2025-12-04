@@ -1,0 +1,212 @@
+[
+  {
+    "ref": "J1",
+    "value": "Screw_Terminal_01x02",
+    "footprint": "TerminalBlock:TerminalBlock_bornier-2_P5.08mm",
+    "x": 132.4,
+    "y": 87.64,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "Net-(D3-A)",
+        "x": 132.4,
+        "y": 87.64
+      },
+      {
+        "pad": "2",
+        "net": "Net-(D1-A)",
+        "x": 132.4,
+        "y": 82.56
+      }
+    ]
+  },
+  {
+    "ref": "R1",
+    "value": "10K",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "x": 152.1,
+    "y": 78.58,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "/+VE",
+        "x": 152.1,
+        "y": 78.58
+      },
+      {
+        "pad": "2",
+        "net": "GND",
+        "x": 152.1,
+        "y": 86.2
+      }
+    ]
+  },
+  {
+    "ref": "R2",
+    "value": "2.2K",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "x": 150.69,
+    "y": 91.6,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "/+VE",
+        "x": 150.69,
+        "y": 91.6
+      },
+      {
+        "pad": "2",
+        "net": "Net-(D5-A)",
+        "x": 158.31,
+        "y": 91.6
+      }
+    ]
+  },
+  {
+    "ref": "D5",
+    "value": "LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "x": 158.325,
+    "y": 82.4,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "GND",
+        "x": 158.325,
+        "y": 82.4
+      },
+      {
+        "pad": "2",
+        "net": "Net-(D5-A)",
+        "x": 160.865,
+        "y": 82.4
+      }
+    ]
+  },
+  {
+    "ref": "D4",
+    "value": "1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "x": 146.0,
+    "y": 93.02,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "Net-(D3-A)",
+        "x": 146.0,
+        "y": 93.02
+      },
+      {
+        "pad": "2",
+        "net": "GND",
+        "x": 146.0,
+        "y": 103.18
+      }
+    ]
+  },
+  {
+    "ref": "D3",
+    "value": "1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "x": 146.0,
+    "y": 78.62,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "/+VE",
+        "x": 146.0,
+        "y": 78.62
+      },
+      {
+        "pad": "2",
+        "net": "Net-(D3-A)",
+        "x": 146.0,
+        "y": 88.78
+      }
+    ]
+  },
+  {
+    "ref": "C1",
+    "value": "1000uF",
+    "footprint": "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm",
+    "x": 154.6,
+    "y": 98.95,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "/+VE",
+        "x": 154.6,
+        "y": 98.95
+      },
+      {
+        "pad": "2",
+        "net": "GND",
+        "x": 154.6,
+        "y": 102.45
+      }
+    ]
+  },
+  {
+    "ref": "J2",
+    "value": "Screw_Terminal_01x02",
+    "footprint": "TerminalBlock:TerminalBlock_bornier-2_P5.08mm",
+    "x": 132.3,
+    "y": 99.24,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "GND",
+        "x": 132.3,
+        "y": 99.24
+      },
+      {
+        "pad": "2",
+        "net": "/+VE",
+        "x": 132.3,
+        "y": 94.16
+      }
+    ]
+  },
+  {
+    "ref": "D2",
+    "value": "1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "x": 141.2,
+    "y": 93.02,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "Net-(D1-A)",
+        "x": 141.2,
+        "y": 93.02
+      },
+      {
+        "pad": "2",
+        "net": "GND",
+        "x": 141.2,
+        "y": 103.18
+      }
+    ]
+  },
+  {
+    "ref": "D1",
+    "value": "1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "x": 141.2,
+    "y": 78.62,
+    "pins": [
+      {
+        "pad": "1",
+        "net": "/+VE",
+        "x": 141.2,
+        "y": 78.62
+      },
+      {
+        "pad": "2",
+        "net": "Net-(D1-A)",
+        "x": 141.2,
+        "y": 88.78
+      }
+    ]
+  }
+]

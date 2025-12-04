@@ -1,0 +1,92 @@
+Here’s a clear **conclusion and mapping** of all the concepts we discussed:
+
+---
+
+### 🧩 **Key Concepts and Their Roles**
+
+| **Concept**     | **Purpose**                                                                 | **Your Class**            | **ODB++ Mapping**                   |
+|-----------------|------------------------------------------------------------------------------|----------------------------|--------------------------------------|
+| `Net`           | A **logical electrical signal** (e.g., GND, VCC, CLK).                      | `Net`                      | `NET` record (in `cadnet/netlist` & `eda/data`) |
+| `NetRecord`     | A **GUI-wrapped representation of a net**, with ID and name for display.   | `NetRecord` (or extended `Net`) | `NET` + attributes for GUI |
+| `Netlist`       | A **file** that lists all nets and their connected points (pins).           | —                          | `cadnet/netlist`, `refnet/netlist`, `curnet/netlist` |
+| `NetPoint`      | A **physical point** (coordinate, side) that belongs to a net.              | `NetPointRecord` (or renamed `PinRecordPerNet`) | Point entry in `cadnet/netlist` |
+| `Pin`           | A **design-level physical connection** point of a component.                | `Pin`                      | Same as net point, but internal model |
+| `Wire`          | A **physical copper trace** between points on the same net.                 | `Wire`                     | `FID` features linked to `NET`/`SNT` in `eda/data` |
+
+---
+
+### 🧠 Final Understanding
+
+- 🔌 **`Net`** is the abstract idea of a signal.
+- 🧾 **`NetRecord`** is how you display or manage a `Net` in a GUI (with attributes).
+- 📃 **`Netlist`** is the source file defining nets and which points are connected.
+- 📍 **`NetPoint` / `Pin`** is a real-world coordinate (pad, via, test point) where the net connects.
+- 🔗 **`Wire`** shows **how** those points are routed — the actual copper paths on PCB layers.
+
+---
+
+This passage is explaining **where and how ODB++ stores data about the physical and logical "wiring" of electrical nets** in a PCB design. Here's a simplified breakdown of what it's trying to say:
+
+---
+
+## 🧠 Main Idea:
+In ODB++, the **"wires"** of a net — meaning the **physical paths or traces** — are described in **multiple files**, depending on the source and purpose of the data.
+
+---
+
+## 🔹 1. **Netlist Files**
+**Location**:  
+`<job_name>/steps/<step_name>/netlists/`
+
+**Files Inside**:
+- `cadnet/netlist`: The **original netlist** from the CAD system.
+- `refnet/netlist`: A **reference** netlist used for comparison or validation.
+- `curnet/netlist`: The **current** (possibly modified) netlist after import or processing.
+
+**What They Contain**:
+- A list of **nets** (e.g., GND, VCC, CLK).
+- Each net has:
+  - A group of **net points** (x, y positions).
+  - **Side** of the board:  
+    `T` = top, `D` = bottom, `B` = both.
+  - Optional flag:  
+    - `'e'` → endpoint  
+    - `'m'` → midpoint
+  - **Radius** field (e.g., `0.002`) often used to describe SMD pad size.
+- **Note**: If a feature (like a pad or trace) isn't connected to any net, it's assigned to a special net: `$NONE$`.
+
+---
+
+## 🔹 2. **EDA Data File**
+**Location**:  
+`<job_name>/steps/<step_name>/eda/data`
+
+**Purpose**:  
+Direct dump of **electrical connectivity data from the EDA tool/database**.
+
+**What It Contains**:
+- `NET` records: Define individual electrical nets.
+- `SNT` (Subnet) records: Define **subsections** of a net (e.g., part of a bus or a branched connection).
+- `FID` (Feature ID) records: Link those subnets to **physical features** (lines, arcs, pads) on the PCB layout.
+
+> This is where ODB++ starts associating **electrical nets to physical geometry** — these **features form the actual copper traces or "wires"**.
+
+---
+
+## 🧩 So How Does It All Fit?
+| File            | Role |
+|----------------|------|
+| `cadnet/netlist` | Net → List of points on the board (like `PinRecordPerNet`) |
+| `eda/data`       | Net/Subnet → Actual geometry (`Wire`, `Pad`, etc.) that carries the signal |
+
+---
+
+### 💡 TL;DR:
+- **`cadnet/netlist`** describes **what points are connected** in a net (logical + partial physical).
+- **`eda/data`** describes **how those points are physically connected** on the board (actual geometry).
+
+If you're modeling both pins and wires in your code:
+- Your `Pin` class maps to **net points** in `cadnet/netlist`.
+- Your `Wire` class maps to **features** (via FID links) in `eda/data`.
+
+Let me know if you want a diagram to visualize this data flow across files.

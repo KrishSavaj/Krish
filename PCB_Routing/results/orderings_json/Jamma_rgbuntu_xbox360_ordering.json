@@ -1,0 +1,562 @@
+{
+  "board": "Jamma_rgbuntu_xbox360.kicad_pcb",
+  "num_nets": 111,
+  "optimized_order": [
+    {
+      "rank": 0,
+      "net": "/P2_B_B2",
+      "predicted_cost": 139.41397094726562
+    },
+    {
+      "rank": 1,
+      "net": "/P1_Y_B4",
+      "predicted_cost": 173.50473022460938
+    },
+    {
+      "rank": 2,
+      "net": "/+12V",
+      "predicted_cost": 72.79859924316406
+    },
+    {
+      "rank": 3,
+      "net": "/SPK+",
+      "predicted_cost": 47.752845764160156
+    },
+    {
+      "rank": 4,
+      "net": "/P1_X_B3",
+      "predicted_cost": 276.117919921875
+    },
+    {
+      "rank": 5,
+      "net": "/GND",
+      "predicted_cost": 422.9928894042969
+    },
+    {
+      "rank": 6,
+      "net": "/P2_COIN_B7",
+      "predicted_cost": 45.34634017944336
+    },
+    {
+      "rank": 7,
+      "net": "/P1_DPAD_DOWN",
+      "predicted_cost": 242.78465270996094
+    },
+    {
+      "rank": 8,
+      "net": "/P1_DPAD_UP",
+      "predicted_cost": 236.5130615234375
+    },
+    {
+      "rank": 9,
+      "net": "/P2_DPAD_UP",
+      "predicted_cost": 143.5028076171875
+    },
+    {
+      "rank": 10,
+      "net": "/P2_X_B3",
+      "predicted_cost": 127.45503997802734
+    },
+    {
+      "rank": 11,
+      "net": "/P2_START_B8",
+      "predicted_cost": 105.2950668334961
+    },
+    {
+      "rank": 12,
+      "net": "/P1_L_B5",
+      "predicted_cost": 76.7677230834961
+    },
+    {
+      "rank": 13,
+      "net": "/P2_Y_B4",
+      "predicted_cost": 129.29702758789062
+    },
+    {
+      "rank": 14,
+      "net": "/P2_DPAD_DOWN",
+      "predicted_cost": 144.2344970703125
+    },
+    {
+      "rank": 15,
+      "net": "/P2_R_B6",
+      "predicted_cost": 27.11439323425293
+    },
+    {
+      "rank": 16,
+      "net": "/P1_B6",
+      "predicted_cost": 150.60067749023438
+    },
+    {
+      "rank": 17,
+      "net": "unconnected-(U1-PadD3)",
+      "predicted_cost": -22.238998413085938
+    },
+    {
+      "rank": 18,
+      "net": "/P1_TRB_B10",
+      "predicted_cost": -21.925195693969727
+    },
+    {
+      "rank": 19,
+      "net": "/PICO2_D-",
+      "predicted_cost": 15.871417045593262
+    },
+    {
+      "rank": 20,
+      "net": "unconnected-(J9-PadJ)",
+      "predicted_cost": -23.407102584838867
+    },
+    {
+      "rank": 21,
+      "net": "/P2_B5",
+      "predicted_cost": 146.9466552734375
+    },
+    {
+      "rank": 22,
+      "net": "/USB_SHIELD",
+      "predicted_cost": 68.46466827392578
+    },
+    {
+      "rank": 23,
+      "net": "/P1_START_B8",
+      "predicted_cost": 189.44833374023438
+    },
+    {
+      "rank": 24,
+      "net": "unconnected-(U2-Pad39)",
+      "predicted_cost": -24.489471435546875
+    },
+    {
+      "rank": 25,
+      "net": "/P1_A_B1",
+      "predicted_cost": 261.6990966796875
+    },
+    {
+      "rank": 26,
+      "net": "/P1_B5",
+      "predicted_cost": 196.54742431640625
+    },
+    {
+      "rank": 27,
+      "net": "/P1_RT",
+      "predicted_cost": 61.05905532836914
+    },
+    {
+      "rank": 28,
+      "net": "/P1_R_B6",
+      "predicted_cost": 70.27864837646484
+    },
+    {
+      "rank": 29,
+      "net": "unconnected-(U1-Pad35)",
+      "predicted_cost": -20.696392059326172
+    },
+    {
+      "rank": 30,
+      "net": "unconnected-(U1-Pad30)",
+      "predicted_cost": -20.73274040222168
+    },
+    {
+      "rank": 31,
+      "net": "unconnected-(J9-Pad11)",
+      "predicted_cost": -23.492942810058594
+    },
+    {
+      "rank": 32,
+      "net": "unconnected-(J9-PadD)",
+      "predicted_cost": -23.323623657226562
+    },
+    {
+      "rank": 33,
+      "net": "unconnected-(J9-PadR)",
+      "predicted_cost": -23.774757385253906
+    },
+    {
+      "rank": 34,
+      "net": "/P2_A_B1",
+      "predicted_cost": 140.02879333496094
+    },
+    {
+      "rank": 35,
+      "net": "unconnected-(U1-Pad29)",
+      "predicted_cost": -21.201465606689453
+    },
+    {
+      "rank": 36,
+      "net": "unconnected-(J9-PadK)",
+      "predicted_cost": -23.71235466003418
+    },
+    {
+      "rank": 37,
+      "net": "/PICO1_D+",
+      "predicted_cost": 17.533151626586914
+    },
+    {
+      "rank": 38,
+      "net": "unconnected-(U1-Pad33)",
+      "predicted_cost": -20.700881958007812
+    },
+    {
+      "rank": 39,
+      "net": "/PICO2_D+",
+      "predicted_cost": 19.943666458129883
+    },
+    {
+      "rank": 40,
+      "net": "unconnected-(U1-Pad31)",
+      "predicted_cost": -20.724262237548828
+    },
+    {
+      "rank": 41,
+      "net": "/P1_JAMMA_B6_GND",
+      "predicted_cost": 17.923315048217773
+    },
+    {
+      "rank": 42,
+      "net": "unconnected-(J9-PadP)",
+      "predicted_cost": -23.6711368560791
+    },
+    {
+      "rank": 43,
+      "net": "/P2_DPAD_RIGHT",
+      "predicted_cost": 148.2547607421875
+    },
+    {
+      "rank": 44,
+      "net": "/P1_DPAD_RIGHT",
+      "predicted_cost": 255.39889526367188
+    },
+    {
+      "rank": 45,
+      "net": "unconnected-(U2-PadD3)",
+      "predicted_cost": -23.12911605834961
+    },
+    {
+      "rank": 46,
+      "net": "unconnected-(J9-PadN)",
+      "predicted_cost": -23.609439849853516
+    },
+    {
+      "rank": 47,
+      "net": "/USB_PICO2_VCC",
+      "predicted_cost": 15.14989185333252
+    },
+    {
+      "rank": 48,
+      "net": "/P1_DPAD_LEFT",
+      "predicted_cost": 249.05801391601562
+    },
+    {
+      "rank": 49,
+      "net": "unconnected-(J9-PadM)",
+      "predicted_cost": -23.492942810058594
+    },
+    {
+      "rank": 50,
+      "net": "/SPK-",
+      "predicted_cost": 44.54960250854492
+    },
+    {
+      "rank": 51,
+      "net": "unconnected-(U1-Pad39)",
+      "predicted_cost": -23.161556243896484
+    },
+    {
+      "rank": 52,
+      "net": "unconnected-(U1-PadD1)",
+      "predicted_cost": -22.362709045410156
+    },
+    {
+      "rank": 53,
+      "net": "/P1_LT",
+      "predicted_cost": 70.46891784667969
+    },
+    {
+      "rank": 54,
+      "net": "unconnected-(U1-PadTP5)",
+      "predicted_cost": -23.49676513671875
+    },
+    {
+      "rank": 55,
+      "net": "/P1_TLB_B9",
+      "predicted_cost": -21.92119598388672
+    },
+    {
+      "rank": 56,
+      "net": "/PICO1_D-",
+      "predicted_cost": 14.728074073791504
+    },
+    {
+      "rank": 57,
+      "net": "/P2_B6",
+      "predicted_cost": 129.4429931640625
+    },
+    {
+      "rank": 58,
+      "net": "unconnected-(U2-PadTP4)",
+      "predicted_cost": -22.746501922607422
+    },
+    {
+      "rank": 59,
+      "net": "unconnected-(U1-Pad36)",
+      "predicted_cost": -21.039648056030273
+    },
+    {
+      "rank": 60,
+      "net": "/P1_B_B2",
+      "predicted_cost": 268.04815673828125
+    },
+    {
+      "rank": 61,
+      "net": "unconnected-(U2-Pad1)",
+      "predicted_cost": -22.86502456665039
+    },
+    {
+      "rank": 62,
+      "net": "unconnected-(U1-Pad32)",
+      "predicted_cost": -20.71361541748047
+    },
+    {
+      "rank": 63,
+      "net": "unconnected-(U1-Pad37)",
+      "predicted_cost": -23.228666305541992
+    },
+    {
+      "rank": 64,
+      "net": "unconnected-(U1-Pad34)",
+      "predicted_cost": -20.479602813720703
+    },
+    {
+      "rank": 65,
+      "net": "/P2_HOME",
+      "predicted_cost": 17.43056869506836
+    },
+    {
+      "rank": 66,
+      "net": "unconnected-(U2-Pad31)",
+      "predicted_cost": -23.795516967773438
+    },
+    {
+      "rank": 67,
+      "net": "unconnected-(U2-Pad33)",
+      "predicted_cost": -23.748620986938477
+    },
+    {
+      "rank": 68,
+      "net": "unconnected-(J9-Pad4)",
+      "predicted_cost": -23.323619842529297
+    },
+    {
+      "rank": 69,
+      "net": "unconnected-(J9-PadS)",
+      "predicted_cost": -23.810203552246094
+    },
+    {
+      "rank": 70,
+      "net": "unconnected-(U2-Pad2)",
+      "predicted_cost": -22.930816650390625
+    },
+    {
+      "rank": 71,
+      "net": "/P1_HOME",
+      "predicted_cost": 33.30261993408203
+    },
+    {
+      "rank": 72,
+      "net": "/P2_RT",
+      "predicted_cost": 27.581228256225586
+    },
+    {
+      "rank": 73,
+      "net": "unconnected-(U2-Pad37)",
+      "predicted_cost": -23.62607765197754
+    },
+    {
+      "rank": 74,
+      "net": "/USB_PICO1_VCC",
+      "predicted_cost": 15.280396461486816
+    },
+    {
+      "rank": 75,
+      "net": "unconnected-(U2-Pad36)",
+      "predicted_cost": -23.341144561767578
+    },
+    {
+      "rank": 76,
+      "net": "unconnected-(J9-PadE)",
+      "predicted_cost": -23.376258850097656
+    },
+    {
+      "rank": 77,
+      "net": "unconnected-(U2-Pad30)",
+      "predicted_cost": -23.781414031982422
+    },
+    {
+      "rank": 78,
+      "net": "/P2_LT",
+      "predicted_cost": 30.275102615356445
+    },
+    {
+      "rank": 79,
+      "net": "unconnected-(J9-Pad13)",
+      "predicted_cost": -23.671133041381836
+    },
+    {
+      "rank": 80,
+      "net": "unconnected-(U2-PadTP5)",
+      "predicted_cost": -22.578289031982422
+    },
+    {
+      "rank": 81,
+      "net": "unconnected-(U2-PadTP6)",
+      "predicted_cost": -23.023345947265625
+    },
+    {
+      "rank": 82,
+      "net": "/P2_L_B5",
+      "predicted_cost": 27.112043380737305
+    },
+    {
+      "rank": 83,
+      "net": "unconnected-(U2-Pad29)",
+      "predicted_cost": -23.90070343017578
+    },
+    {
+      "rank": 84,
+      "net": "unconnected-(J9-Pad3)",
+      "predicted_cost": -23.94601058959961
+    },
+    {
+      "rank": 85,
+      "net": "unconnected-(J9-Pad8)",
+      "predicted_cost": -23.407102584838867
+    },
+    {
+      "rank": 86,
+      "net": "unconnected-(J9-Pad9)",
+      "predicted_cost": -23.712356567382812
+    },
+    {
+      "rank": 87,
+      "net": "unconnected-(U2-Pad34)",
+      "predicted_cost": -23.73647689819336
+    },
+    {
+      "rank": 88,
+      "net": "/P1_COIN_B7",
+      "predicted_cost": 39.45474624633789
+    },
+    {
+      "rank": 89,
+      "net": "/P2_JAMMA_B6_GND",
+      "predicted_cost": 16.65149688720703
+    },
+    {
+      "rank": 90,
+      "net": "unconnected-(J9-Pad12)",
+      "predicted_cost": -23.609437942504883
+    },
+    {
+      "rank": 91,
+      "net": "unconnected-(J9-PadC)",
+      "predicted_cost": -23.94601058959961
+    },
+    {
+      "rank": 92,
+      "net": "unconnected-(J9-Pad15)",
+      "predicted_cost": -23.81020736694336
+    },
+    {
+      "rank": 93,
+      "net": "unconnected-(J9-Pad14)",
+      "predicted_cost": -23.774761199951172
+    },
+    {
+      "rank": 94,
+      "net": "unconnected-(U2-Pad32)",
+      "predicted_cost": -23.933734893798828
+    },
+    {
+      "rank": 95,
+      "net": "unconnected-(U1-Pad27)",
+      "predicted_cost": -21.20763397216797
+    },
+    {
+      "rank": 96,
+      "net": "unconnected-(U1-Pad2)",
+      "predicted_cost": -23.479541778564453
+    },
+    {
+      "rank": 97,
+      "net": "unconnected-(U1-Pad19)",
+      "predicted_cost": -23.18749237060547
+    },
+    {
+      "rank": 98,
+      "net": "/P2_TRB_B10",
+      "predicted_cost": -23.636608123779297
+    },
+    {
+      "rank": 99,
+      "net": "unconnected-(U2-PadD1)",
+      "predicted_cost": -22.94866180419922
+    },
+    {
+      "rank": 100,
+      "net": "unconnected-(J9-Pad5)",
+      "predicted_cost": -23.376262664794922
+    },
+    {
+      "rank": 101,
+      "net": "unconnected-(U2-Pad20)",
+      "predicted_cost": -21.609779357910156
+    },
+    {
+      "rank": 102,
+      "net": "unconnected-(U2-Pad19)",
+      "predicted_cost": -21.620908737182617
+    },
+    {
+      "rank": 103,
+      "net": "unconnected-(U1-Pad20)",
+      "predicted_cost": -23.18152618408203
+    },
+    {
+      "rank": 104,
+      "net": "unconnected-(U2-Pad35)",
+      "predicted_cost": -23.38898468017578
+    },
+    {
+      "rank": 105,
+      "net": "/P2_DPAD_LEFT",
+      "predicted_cost": 140.5270233154297
+    },
+    {
+      "rank": 106,
+      "net": "unconnected-(U1-PadTP6)",
+      "predicted_cost": -21.388538360595703
+    },
+    {
+      "rank": 107,
+      "net": "unconnected-(U1-PadTP4)",
+      "predicted_cost": -24.26425552368164
+    },
+    {
+      "rank": 108,
+      "net": "unconnected-(U2-Pad27)",
+      "predicted_cost": -23.66463851928711
+    },
+    {
+      "rank": 109,
+      "net": "/P2_TLB_B9",
+      "predicted_cost": -23.623937606811523
+    },
+    {
+      "rank": 110,
+      "net": "unconnected-(U1-Pad1)",
+      "predicted_cost": -23.425918579101562
+    }
+  ],
+  "ga_used": true
+}
