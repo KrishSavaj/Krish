@@ -1,0 +1,33 @@
+<svg xml:space="preserve"
+     data-version="0.0.1"
+     data-connection-points='{"top":[{"id":1,"name":"A","location":0.5}],"right":[],"bottom":[{"id":2,"name":"K","location":0.5}],"left":[]}'
+     viewBox="0 0 60 100"
+     x="0px" y="0px" version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="max-height: 500px"
+     width="60" height="100">
+
+  <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top lead & connection point (Anode) -->
+    <line x1="30" y1="0" x2="30" y2="30" stroke-width="3"/>
+
+    <!-- Triangle (pointing down) -->
+    <!-- Top corners of triangle -->
+    <path d="M18 30 L42 30 L30 54 Z" stroke-width="3"/>
+
+    <!-- Horizontal cathode bar -->
+    <line x1="16" y1="60" x2="44" y2="60" stroke-width="4"/>
+
+    <!-- Vertical lead below the bar -->
+    <line x1="30" y1="60" x2="30" y2="100" stroke-width="3"/>
+
+    <!-- Light emission arrows (down-right) -->
+    <!-- Arrow 1 -->
+    <line x1="38" y1="70" x2="50" y2="82" stroke-width="3"/>
+    <polyline points="46,82 50,82 50,78" stroke-width="3"/>
+    <!-- Arrow 2 (slightly below/left) -->
+    <line x1="32" y1="76" x2="44" y2="88" stroke-width="3"/>
+    <polyline points="40,88 44,88 44,84" stroke-width="3"/>
+  </g>
+</svg>

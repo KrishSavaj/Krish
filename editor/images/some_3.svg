@@ -1,0 +1,18 @@
+<svg xml:space="preserve"
+     data-version="0.0.1"
+     data-connection-points='{"top":[{"id":1,"name":"GND","location":0.5}],"right":[],"bottom":[],"left":[]}'
+     viewBox="0 0 50 70"
+     x="0px" y="0px" version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="max-height: 500px"
+     width="50" height="70">
+
+  <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top lead -->
+    <line x1="25" y1="0" x2="25" y2="40" stroke-width="3"/>
+
+    <!-- Downward pointing triangle (ground) -->
+    <path d="M10 40 L40 40 L25 70 Z" stroke-width="3"/>
+  </g>
+</svg>

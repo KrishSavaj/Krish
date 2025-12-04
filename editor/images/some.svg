@@ -1,0 +1,25 @@
+<svg xml:space="preserve"
+     data-version="0.0.1"
+     data-connection-points='{"top":[{"id":1,"name":"+","location":0.5}],"right":[],"bottom":[{"id":2,"name":"-","location":0.5}],"left":[]}'
+     viewBox="0 0 60 100"
+     x="0px" y="0px" version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="max-height: 500px"
+     width="60" height="100">
+
+  <g>
+    <!-- TOP bar (longer) -->
+    <line x1="10" y1="40" x2="50" y2="40" stroke="#000000" stroke-width="4"/>
+
+    <!-- BOTTOM bar (shorter) -->
+    <line x1="20" y1="60" x2="40" y2="60" stroke="#000000" stroke-width="4"/>
+
+    <!-- TOP connection point -->
+    <line x1="30" y1="40" x2="30" y2="0" stroke="#000000" stroke-width="2"/>
+
+    <!-- BOTTOM connection point -->
+    <line x1="30" y1="60" x2="30" y2="100" stroke="#000000" stroke-width="2"/>
+
+  </g>
+</svg>

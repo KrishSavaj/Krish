@@ -1,0 +1,14 @@
+// typedoc.json
+{
+  "entryPointStrategy": "expand",
+  "umlClassDiagram": {
+    "format": "svg", // svg or png
+    "generatorProcessCount": 1, // number of PlantUML processes
+    "theme": "default" // PlantUML skinparams theme
+  },
+  "entryPoints": ["src/**/*.ts"],
+  "plugin": ["typedoc-umlclass"],
+  "out": "docs",
+  "tsconfig": "tsconfig.json",
+  "exclude": ["**/*.spec.ts", "**/*.d.ts"]
+}

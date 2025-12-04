@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #f5f5f5;
+}
+svg rect,
+svg circle {
+  pointer-events: all;
+}
+
+svg path:hover {
+  cursor: pointer;
+}
+
+svg .connection-point {
+  transition: r 0.2s ease-in-out;
+}
+svg .connection-point:hover {
+  cursor: pointer;
+  r: 4;
+}
+
+svg .connection-point-group .tooltip,
+svg .connection-point-group rect {
+  visibility: hidden;
+  pointer-events: none;
+}
+svg .connection-point-group:hover .tooltip,
+svg .connection-point-group:hover rect {
+  visibility: visible;
+  pointer-events: all;
+}
+
+svg g[id^="rectangle-"]:hover {
+  cursor: move;
+}
+
+svg g[id^="rectangle-"] .resize-point-1 {
+  cursor: nwse-resize;
+}
+
+svg g[id^="rectangle-"] .resize-point-2 {
+  cursor: nesw-resize;
+}
+
+svg g[id^="rectangle-"] .resize-point-1,
+svg g[id^="rectangle-"] .resize-point-2,
+svg g[id^="rectangle-"] .highlight {
+  display: none;
+}
+
+svg g[id^="rectangle-"].selected .resize-point-1,
+svg g[id^="rectangle-"].selected .resize-point-2,
+svg g[id^="rectangle-"].selected .highlight {
+  display: inline;
+}
+
+svg g[id^="rectangle-"].selected:hover {
+  cursor: move;
+}
+
+svg g[id^="rectangle-"].selected {
+  cursor: move;
+}
+
+#container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #f5f5f5;
+  overflow: auto;
+  padding-left: 280px;
+  position: relative;
+}
+
+#svg-wrapper {
+  background: #ffffff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin: 20px;
+  overflow: auto;
+  flex: 1;
+  /* Canvas will be sized dynamically via JavaScript */
+}
+
+/* Scrollbar styling for canvas container */
+#svg-wrapper::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+#svg-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+#svg-wrapper::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 6px;
+  border: 2px solid #f1f1f1;
+}
+
+#svg-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+#svg-wrapper::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+.component-menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.component-menu-container .component-wrapper {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+#componentGroup .component-image {
+  cursor: move;
+}
+#componentGroup .component-outline {
+  fill: none;
+  stroke: none;
+  stroke-width: 2;
+}
+#componentGroup .component-outline.selected {
+  stroke: #0066ff;
+  stroke-width: 2;
+  fill: none;
+}
+#componentGroup .component-outline.colliding {
+  stroke: #ff3b30;
+  stroke-width: 2;
+  fill: none;
+}
+
+#componentGroup .component-pins .component-pin {
+  fill: #ff3b30;
+}
+
+#componentGroup .component-pins .component-pin:hover {
+  fill: #ff9500;
+  r: 3;
+  cursor: pointer;
+}
+
+#componentGroup .component-pins .component-pin.active {
+  fill: #34c759;
+  r: 3;
+}
+
+/* Component Label (shown when selected) */
+#componentGroup .component-label-group {
+  cursor: move;
+}
+
+#componentGroup .component-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  fill: #2d3748;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: all;
+}
+
+#componentGroup .component-label-bg {
+  fill: #ffffff;
+  stroke: #ccc;
+  stroke-width: 1;
+  pointer-events: all;
+  cursor: move;
+}
+
+#componentGroup .component-label-bg:hover {
+  stroke: #0066ff;
+  stroke-width: 2;
+}
+
+#componentGroup .component-label-line {
+  stroke: #999;
+  stroke-width: 1;
+  stroke-dasharray: 3, 3;
+  pointer-events: none;
+  fill: none;
+}
+
+/* Hide resize points by default */
+#componentGroup .component-resize-points .resize-point {
+  fill: #0066ff;
+  stroke: none;
+  display: none;
+}
+
+/* Show resize points only when component is selected */
+#componentGroup g[id^="component-"] .component-outline.selected ~ .component-resize-points .resize-point {
+  display: inline;
+}
+
+#componentGroup .component-resize-points .resize-point.top-left,
+#componentGroup .component-resize-points .resize-point.bottom-right {
+  cursor: nwse-resize;
+}
+
+#componentGroup .component-resize-points .resize-point.top-right,
+#componentGroup .component-resize-points .resize-point.bottom-left {
+  cursor: nesw-resize;
+}
+
+#selectBoxGroup rect {
+  cursor: move;
+  fill: rgba(0, 102, 255, 0.1);
+  stroke: #0066ff;
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.to-json {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 20px;
+  width: 220px;
+}
+
+.to-json button {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 0.5rem;
+}
+
+.to-json textarea {
+  width: 100%;
+  height: 400px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  resize: none;
+}
+
+/* Virtual Terminal Styles */
+#vtGroup [id^="vt-group-"] {
+  cursor: move;
+}
+
+#vtGroup [id^="vt-group-"] rect {
+  cursor: move;
+  fill: #ffffff;
+  stroke: #6b7280;
+  stroke-width: 1.5;
+  rx: 4px;
+}
+
+#vtGroup [id^="vt-group-"]:hover rect {
+  stroke: #4b5563;
+  stroke-width: 1.5;
+}
+
+#vtGroup [id^="vt-group-"].selected rect {
+  stroke: #0066ff;
+  stroke-width: 2;
+  fill: #ffffff;
+}
+
+#vtGroup [id^="vt-group-"].highlighted rect {
+  stroke: #ff9500;
+  stroke-width: 2;
+  fill: #fff4e6;
+}
+
+#vtGroup [id^="vt-group-"].highlighted [id^="vt-text-"] {
+  fill: #cc6600;
+  font-weight: 600;
+}
+
+/* Virtual Terminal Text */
+#vtGroup [id^="vt-text-"] {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  fill: #000000;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: all;
+  cursor: move;
+}
+
+/* Virtual Terminal Connection Point */
+#vtGroup .component-pin {
+  fill: #ff3b30;
+  cursor: pointer;
+}
+
+#vtGroup .component-pin:hover {
+  fill: #ff9500;
+  r: 3;
+  cursor: pointer;
+}
+
+#vtGroup .component-pin.active {
+  fill: #34c759;
+  r: 3;
+}
+
+/* Context Menu Styles */
+.cxm-root {
+  position: fixed;
+  min-width: 180px;
+  max-width: 320px;
+  padding: 6px;
+  margin: 0;
+  list-style: none;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+  z-index: 99999;
+  user-select: none;
+  font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+.cxm-root li {
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  outline: none;
+}
+.cxm-root li:hover,
+.cxm-root li.cxm-highlight {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+/* Side Menu Styles */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 24px 16px;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.side-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.side-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.side-menu::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+.side-menu-section {
+  margin-bottom: 32px;
+}
+
+.side-menu-heading {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #2d3748;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.side-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 12px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: grab;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 90px;
+}
+
+.side-menu-item:hover {
+  background: #f7fafc;
+  border-color: #4299e1;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(66, 153, 225, 0.2);
+}
+
+.side-menu-item:active {
+  cursor: grabbing;
+  transform: translateY(-1px) scale(1.01);
+}
+
+.vt-icon {
+  margin-bottom: 10px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component-thumbnail {
+  margin-bottom: 10px;
+  pointer-events: none;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: filter 0.2s ease;
+}
+
+.side-menu-item:hover .component-thumbnail {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.side-menu-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #4a5568;
+  text-align: center;
+  pointer-events: none;
+  line-height: 1.4;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.side-menu-item:hover .side-menu-label {
+  color: #2d3748;
+}
+
+.components-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
