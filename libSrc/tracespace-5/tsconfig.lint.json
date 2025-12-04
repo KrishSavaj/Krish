@@ -1,0 +1,15 @@
+{
+  "extends": "./config/tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true
+  },
+  "files": [],
+  "include": [
+    "./**/*.js",
+    "./config/*.ts",
+    "./*.config.ts",
+    "./www/*.config.ts",
+    "./packages/*/*.config.ts"
+  ]
+}

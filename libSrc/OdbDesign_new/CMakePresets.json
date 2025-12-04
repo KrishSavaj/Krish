@@ -1,0 +1,367 @@
+﻿{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21
+  },
+  "configurePresets": [
+    {
+      "name": "windows-base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "installDir": "${sourceDir}/out/install/${presetName}",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "cl",
+        "CMAKE_CXX_COMPILER": "cl",
+        "CMAKE_TOOLCHAIN_FILE": {
+          "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+          "type": "FILEPATH"
+        }
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    },
+    {
+      "name": "x64-debug",
+      "displayName": "x64 Debug",
+      "inherits": "windows-base",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },    
+    {
+      "name": "x64-release",
+      "displayName": "x64 Release",
+      "inherits": "x64-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },   
+    {
+      "name": "x86-debug",
+      "displayName": "x86 Debug",
+      "inherits": "windows-base",
+      "architecture": {
+        "value": "x86",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "x86-release",
+      "displayName": "x86 Release",
+      "inherits": "x86-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "linux-base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "installDir": "${sourceDir}/out/install/${presetName}",
+      "cacheVariables": {        
+        "CMAKE_TOOLCHAIN_FILE": {
+          "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+          "type": "FILEPATH"
+        },
+        "CMAKE_C_COMPILER": "cc",
+        "CMAKE_CXX_COMPILER": "c++"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      },
+      "vendor": {
+        "microsoft.com/VisualStudioRemoteSettings/CMake/1.0": {
+          "sourceDir": "$env{HOME}/.vs/$ms{projectDirName}"
+        }
+      }
+    },
+    {
+      "name": "linux-debug",
+      "displayName": "Linux Debug",
+      "inherits": "linux-base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"       
+      }   
+    },
+    {
+      "name": "linux-release",
+      "displayName": "Linux Release",
+      "inherits": "linux-base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"      
+      }     
+    },    
+    {
+      "name": "linux-mingw-w64-debug",
+      "displayName": "Linux MinGW-w64 Debug",  
+      "inherits": "linux-debug",   
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "x86_64-w64-mingw32-gcc",
+        "CMAKE_CXX_COMPILER": "x86_64-w64-mingw32-g++",
+        "CMAKE_CXX_FLAGS": "-static-libgcc -static-libstdc++"       
+      }     
+    },
+    {
+      "name": "linux-mingw-w64-release",
+      "displayName": "Linux MinGW-w64 Release",
+      "inherits": "linux-release",      
+      "cacheVariables": {        
+        "CMAKE_C_COMPILER": "x86_64-w64-mingw32-gcc",
+        "CMAKE_CXX_COMPILER": "x86_64-w64-mingw32-g++",
+        "CMAKE_CXX_FLAGS": "-static-libgcc -static-libstdc++"      
+      }     
+    },
+    {
+      "name": "macos-base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "installDir": "${sourceDir}/out/install/${presetName}",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": {
+          "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+          "type": "FILEPATH"
+        },
+        "CMAKE_C_COMPILER": "cc",
+        "CMAKE_CXX_COMPILER": "c++"
+      },
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Darwin"
+      },
+      "vendor": {
+        "microsoft.com/VisualStudioRemoteSettings/CMake/1.0": {
+          "sourceDir": "$env{HOME}/.vs/$ms{projectDirName}"
+        }
+      }
+    },
+    {
+      "name": "macos-debug",
+      "displayName": "macOS Debug",
+      "inherits": "macos-base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }     
+    },
+    {
+      "name": "macos-release",
+      "displayName": "macOS Release",
+      "inherits": "macos-base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }      
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-base",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }
+    },
+    {
+      "name": "x64-debug",
+      "displayName": "x64 Debug",
+      "inherits": "windows-base",
+      "configurePreset": "x64-debug"
+    },
+    {
+      "name": "x64-release",
+      "displayName": "x64 Release",
+      "inherits": "windows-base",
+      "configurePreset": "x64-release"
+    },    
+    {
+      "name": "x86-debug",
+      "displayName": "x86 Debug",
+      "inherits": "windows-base",
+      "configurePreset": "x86-debug"
+    },
+    {
+      "name": "x86-release",
+      "displayName": "x86 Release",
+      "inherits": "windows-base",
+      "configurePreset": "x86-release"
+    },    
+    {
+      "name": "linux-base",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      }
+    },
+    {
+      "name": "linux-debug",
+      "displayName": "Linux Debug",
+      "configurePreset": "linux-debug",
+      "inherits": "linux-base"
+    },
+    {
+      "name": "linux-release",
+      "displayName": "Linux Release",
+      "configurePreset": "linux-release",
+      "inherits": "linux-base"
+    },   
+    {
+      "name": "linux-mingw-w64-base",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      }
+    },
+    {
+      "name": "linux-mingw-w64-debug",
+      "displayName": "Linux MinGW-w64 Debug",
+      "configurePreset": "linux-mingw-w64-debug",
+      "inherits": "linux-mingw-w64-base"
+    },
+    {
+      "name": "linux-mingw-w64-release",
+      "displayName": "Linux MinGW-w64 Release",
+      "configurePreset": "linux-mingw-w64-release",
+      "inherits": "linux-mingw-w64-base"
+    },
+    {
+      "name": "macos-base",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Darwin"
+      }
+    },
+    {
+      "name": "macos-debug",
+      "displayName": "MacOS Debug",
+      "configurePreset": "macos-debug",
+      "inherits": "macos-base"
+    },
+    {
+      "name": "macos-release",
+      "displayName": "MacOS Release",
+      "configurePreset": "macos-release",
+      "inherits": "macos-base"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "windows-base",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      }     
+    },
+    {
+      "name": "x64-debug",
+      "displayName": "Test x64-Debug",
+      "inherits": "windows-base",
+      "configurePreset": "x64-debug"
+    },
+    {
+      "name": "x64-release",
+      "displayName": "Test x64-Release",
+      "inherits": "windows-base",
+      "configurePreset": "x64-release"
+    },
+    {
+      "name": "x86-debug",
+      "displayName": "Test x86-Debug",
+      "inherits": "windows-base",
+      "configurePreset": "x86-debug"
+    },
+    {
+      "name": "x86-release",
+      "displayName": "Test x86-Release",
+      "inherits": "windows-base",
+      "configurePreset": "x86-release"
+    }, 
+    {
+      "name": "linux-base",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      }      
+    },
+    {
+      "name": "linux-debug",
+      "displayName": "Test Linux Debug",
+      "configurePreset": "linux-debug",
+      "inherits": "linux-base"
+    },
+    {
+      "name": "linux-release",
+      "displayName": "Test Linux Release",
+      "configurePreset": "linux-release",
+      "inherits": "linux-base"
+    },   
+    {
+      "name": "linux-mingw-w64-base",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      }
+    },
+    {
+      "name": "linux-mingw-w64-debug",
+      "displayName": "Test Linux MinGW-w64 Debug",
+      "configurePreset": "linux-mingw-w64-debug",
+      "inherits": "linux-mingw-w64-base"
+    },
+    {
+      "name": "linux-mingw-w64-release",
+      "displayName": "Test Linux MinGW-w64 Release",
+      "configurePreset": "linux-mingw-w64-release",
+      "inherits": "linux-mingw-w64-base"
+    },
+    {
+      "name": "macos-base",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Darwin"
+      }
+    },
+    {
+      "name": "macos-debug",
+      "displayName": "Test MacOS Debug",
+      "configurePreset": "macos-debug",
+      "inherits": "macos-base"
+    },
+    {
+      "name": "macos-release",
+      "displayName": "Test MacOS Release",
+      "configurePreset": "macos-release",
+      "inherits": "macos-base"
+    }
+  ]
+}
