@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+server="fossil.thought2design.com"
+repo=pcbdev
+user=$FOSSIL_USER
+action=$1
+export EDITOR=/usr/bin/vim
+
+if [ "$action" == "commit" ]; then
+    cmd="fossil commit --user $user"
+else
+    cmd="fossil $action --user $user http://$user@$server/$repo"
+fi
+
+echo $cmd
+eval $cmd
